@@ -41,10 +41,10 @@ const App: React.FC = () => {
     let newScore = gameState.score;
 
     if (isCorrect) {
-      newEnemyHp = Math.max(0, gameState.enemyHp - 3);
+      newEnemyHp = Math.max(0, gameState.enemyHp - 2);
       newScore = gameState.score + 1;
     } else {
-      newPlayerHp = Math.max(0, gameState.playerHp - 2);
+      newPlayerHp = Math.max(0, gameState.playerHp - 10);
     }
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;

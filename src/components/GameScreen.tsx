@@ -44,7 +44,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
                 </div>
               </div>
               <div className="text-center">
-                <h3 className="text-lg font-bold text-white mb-2">薬剤師</h3>
+                <h3 className="text-lg font-bold text-white mb-2">プレイヤー</h3>
                 <div className="w-32 bg-black/50 rounded-full h-3 border border-blue-400">
                   <div 
                     className="bg-gradient-to-r from-blue-400 to-blue-600 h-3 rounded-full transition-all duration-500 shadow-inner"
@@ -76,7 +76,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
                 </div>
               </div>
               <div className="text-center">
-                <h3 className="text-lg font-bold text-white mb-2">病原菌</h3>
+                <h3 className="text-lg font-bold text-white mb-2">モンスター</h3>
                 <div className="w-32 bg-black/50 rounded-full h-3 border border-red-400">
                   <div 
                     className="bg-gradient-to-r from-red-400 to-red-600 h-3 rounded-full transition-all duration-500 shadow-inner"
