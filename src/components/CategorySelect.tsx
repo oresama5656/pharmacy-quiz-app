@@ -1,88 +1,78 @@
 import React from 'react';
-import { BACKGROUND_IMAGES } from '../constants';
-import { quizData } from '../data/quizData';
+import { getCategories, Category } from '../data/quizManager';
+import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
 
 interface CategorySelectProps {
-  onCategorySelect: (category: keyof typeof quizData) => void;
+  onCategorySelect: (categoryId: string) => void;
 }
 
 const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => {
+  const categories = getCategories();
+
   return (
     <div 
-      className="min-h-screen relative flex items-center justify-center p-4"
+      className="min-h-screen flex flex-col bg-black text-white"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${BACKGROUND_IMAGES.category})`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${BACKGROUND_IMAGES.title})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundPosition: 'center'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-purple-900/80 to-indigo-900/80"></div>
-      
-      <div className="relative z-10 bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 w-full max-w-md border border-white/20">
-        <div className="text-center mb-8">
-          <div className="text-6xl mb-4">⚗️</div>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-            薬剤師クイズRPG
-          </h1>
-          <p className="text-gray-600 text-lg">
-            知識を武器に敵を倒そう！
-          </p>
+      {/* ヘッダー */}
+      <header className="p-4 sm:p-6 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          薬学クイズバトル
+        </h1>
+        <p className="mt-2 text-gray-300">知識を武器に戦おう！</p>
+      </header>
+
+      {/* メインコンテンツ */}
+      <main className="flex-1 flex flex-col items-center justify-center p-4">
+        <div className="max-w-md w-full">
+          <div className="bg-gray-900/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-purple-500/30 shadow-xl">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-center text-yellow-400">
+              カテゴリを選択
+            </h2>
+            
+            <div className="space-y-3">
+              {categories.map((category: Category) => (
+                <button
+                  key={category.id}
+                  onClick={() => onCategorySelect(category.id)}
+                  className="w-full bg-gradient-to-r from-gray-800 to-gray-900 hover:from-blue-600 hover:to-purple-600 p-3 sm:p-4 rounded-lg border border-gray-700 hover:border-yellow-400 transition-all duration-300 flex items-center group"
+                >
+                  <span className="text-2xl mr-3">{category.icon}</span>
+                  <div className="flex-1 text-left">
+                    <h3 className="font-bold text-white group-hover:text-yellow-200">
+                      {category.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-400 group-hover:text-gray-200">
+                      {category.description}
+                    </p>
+                  </div>
+                  <span className="bg-gray-700 text-xs px-2 py-1 rounded-full text-gray-300 group-hover:bg-yellow-500 group-hover:text-black">
+                    {category.difficulty}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
-        
-        <div className="space-y-4">
-          <button
-            onClick={() => onCategorySelect('brand2generic')}
-            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-blue-300/50"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex items-center mb-1">
-                <span className="text-2xl mr-2">💊</span>
-                <span className="text-lg font-bold">基本医薬品</span>
-              </div>
-              <span className="text-sm">商品名 → 一般名</span>
-            </div>
-          </button>
-          
-          <button
-            onClick={() => onCategorySelect('brand2effect')}
-            className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-green-300/50"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex items-center mb-1">
-                <span className="text-2xl mr-2">🎯</span>
-                <span className="text-lg font-bold">薬効</span>
-              </div>
-              <span className="text-sm">商品名 → 効果</span>
-            </div>
-          </button>
-          
-          <button
-            onClick={() => onCategorySelect('generic2effect')}
-            className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-purple-300/50"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex items-center mb-1">
-                <span className="text-2xl mr-2">🧪</span>
-                <span className="text-lg font-bold">一般成分</span>
-              </div>
-              <span className="text-sm">一般名 → 効果</span>
-            </div>
-          </button>
-          
-          <button
-            onClick={() => onCategorySelect('brand2generic_diabetes')}
-            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-red-300/50"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex items-center mb-1">
-                <span className="text-2xl mr-2">🩸</span>
-                <span className="text-lg font-bold">糖尿病薬</span>
-              </div>
-              <span className="text-sm">商品名 → 一般名</span>
-            </div>
-          </button>
-        </div>
+      </main>
+
+      {/* フッター */}
+      <footer className="p-4 text-center text-gray-500 text-sm">
+        <p>© 2023 薬学クイズバトル</p>
+      </footer>
+
+      {/* キャラクター画像 */}
+      <div className="absolute bottom-0 right-0 h-32 sm:h-40 md:h-48 pointer-events-none opacity-70">
+        <img 
+          src={CHARACTER_IMAGES.player} 
+          alt="プレイヤーキャラクター" 
+          className="h-full object-contain"
+          style={{ filter: 'drop-shadow(0 0 10px rgba(59, 130, 246, 0.5))' }}
+        />
       </div>
     </div>
   );

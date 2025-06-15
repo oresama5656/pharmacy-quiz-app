@@ -8,6 +8,7 @@ export const CHARACTER_IMAGES = {
   
   // 背景画像のURL
   export const BACKGROUND_IMAGES = {
+    title: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
     category: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
     // battle: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
     battle: "https://github.com/oresama5656/GameData_Public/blob/main/background/sougen.png?raw=true",

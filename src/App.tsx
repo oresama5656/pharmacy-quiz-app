@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { GameState } from './types';
-import { quizData } from './data/quizData';
+import { getQuizzesByCategory } from './data/quizManager';
 import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
-  const [selectedCategory, setSelectedCategory] = useState<keyof typeof quizData | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
@@ -18,8 +18,8 @@ const App: React.FC = () => {
     playerWon: false
   });
 
-  const handleCategorySelect = (category: keyof typeof quizData) => {
-    setSelectedCategory(category);
+  const handleCategorySelect = (categoryId: string) => {
+    setSelectedCategory(categoryId);
     setGameState({
       playerHp: 20,
       enemyHp: 10,
@@ -34,7 +34,8 @@ const App: React.FC = () => {
   const handleAnswer = (selectedAnswer: string) => {
     if (!selectedCategory) return;
 
-    const currentQuiz = quizData[selectedCategory][gameState.currentQuizIndex];
+    const quizzes = getQuizzesByCategory(selectedCategory);
+    const currentQuiz = quizzes[gameState.currentQuizIndex];
     const isCorrect = selectedAnswer === currentQuiz.correct;
     
     let newPlayerHp = gameState.playerHp;
@@ -57,7 +58,7 @@ const App: React.FC = () => {
     }, 500);
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;
-    const isLastQuiz = nextQuizIndex >= quizData[selectedCategory].length;
+    const isLastQuiz = nextQuizIndex >= quizzes.length;
     const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
     const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
@@ -103,9 +104,10 @@ const App: React.FC = () => {
   }
 
   if (currentScreen === 'game' && selectedCategory) {
+    const quizzes = getQuizzesByCategory(selectedCategory);
     return (
       <GameScreen
-        quizzes={quizData[selectedCategory]}
+        quizzes={quizzes}
         gameState={gameState}
         onAnswer={handleAnswer}
         attackEffect={attackEffect}

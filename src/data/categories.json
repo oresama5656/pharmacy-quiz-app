@@ -1,0 +1,30 @@
+[
+  {
+    "id": "brand2generic",
+    "name": "商品名→一般名",
+    "description": "薬の商品名から一般名を答える問題です",
+    "icon": "🔄",
+    "difficulty": "基本"
+  },
+  {
+    "id": "brand2effect",
+    "name": "商品名→効果",
+    "description": "薬の商品名から効果・効能を答える問題です",
+    "icon": "💊",
+    "difficulty": "基本"
+  },
+  {
+    "id": "generic2effect",
+    "name": "一般名→効果",
+    "description": "薬の一般名から効果・効能を答える問題です",
+    "icon": "🧪",
+    "difficulty": "基本"
+  },
+  {
+    "id": "brand2generic_diabetes",
+    "name": "糖尿病薬：商品名→一般名",
+    "description": "糖尿病治療薬の商品名から一般名を答える問題です",
+    "icon": "🍬",
+    "difficulty": "応用"
+  }
+] 
