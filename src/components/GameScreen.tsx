@@ -25,14 +25,13 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
       <div 
         className="flex-1 relative overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(${BACKGROUND_IMAGES.battle})`,
+          // backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(${BACKGROUND_IMAGES.battle})`,
+          backgroundImage: `url(${BACKGROUND_IMAGES.battle})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '50vh'
         }}
       >
-        {/* 戦闘エフェクトオーバーレイ */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-black/60"></div>
         
         {/* 攻撃エフェクト */}
         {attackEffect === 'player-attack' && (
