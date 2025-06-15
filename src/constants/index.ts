@@ -1,7 +1,7 @@
 // キャラクター画像のURL（簡単に差し替え可能）
 export const CHARACTER_IMAGES = {
     // player: "https://api.dicebear.com/7.x/adventurer/svg?seed=pharmacist&backgroundColor=b6e3f4&clothing=blazer&clothingColor=0369a1&eyes=variant12&eyebrows=variant03&mouth=variant26&skinColor=f3e8d0",
-    player: "https://raw.githubusercontent.com/oresama5656/GameData_Public/main/asset_repo/v1/images/enemy_boss/sephiros.png",
+    player: "https://github.com/oresama5656/GameData_Public/blob/main/character/battle_unit/fighter_mini.png?raw=true",
     // enemy: "https://api.dicebear.com/7.x/bottts/svg?seed=virus&backgroundColor=ef4444&primaryColor=991b1b&secondaryColor=7f1d1d&mouth=smile01&eyes=eva&texture=circuits"
     enemy: "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/black_dragon_right.png?raw=true"
   };

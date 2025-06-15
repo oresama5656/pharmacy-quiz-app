@@ -6,9 +6,10 @@ interface GameScreenProps {
   quizzes: Quiz[];
   gameState: GameState;
   onAnswer: (selectedAnswer: string) => void;
+  attackEffect?: 'player-attack' | 'enemy-attack' | null;
 }
 
-const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer }) => {
+const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect }) => {
   const currentQuiz = quizzes[gameState.currentQuizIndex];
   
   if (!currentQuiz) {
@@ -33,6 +34,35 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
         {/* 戦闘エフェクトオーバーレイ */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-black/60"></div>
         
+        {/* 攻撃エフェクト */}
+        {attackEffect === 'player-attack' && (
+          <>
+            {/* プレイヤー攻撃エフェクト */}
+            <div className="absolute inset-0 bg-cyan-400/30 animate-pulse"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="w-32 h-32 bg-cyan-400 rounded-full opacity-70 animate-ping"></div>
+            </div>
+            <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white rounded-full opacity-80 animate-bounce"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-yellow-400 rounded-full opacity-90 animate-pulse"></div>
+            {/* 攻撃ライン */}
+            <div className="absolute top-1/2 right-1/4 w-1/2 h-1 bg-gradient-to-l from-cyan-400 to-transparent animate-pulse"></div>
+          </>
+        )}
+        
+        {attackEffect === 'enemy-attack' && (
+          <>
+            {/* 敵攻撃エフェクト */}
+            <div className="absolute inset-0 bg-red-500/30 animate-pulse"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="w-40 h-40 bg-red-500 rounded-full opacity-60 animate-ping"></div>
+            </div>
+            <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-orange-500 rounded-full opacity-70 animate-bounce"></div>
+            <div className="absolute bottom-1/3 left-1/3 w-14 h-14 bg-red-600 rounded-full opacity-80 animate-pulse"></div>
+            {/* 攻撃ライン */}
+            <div className="absolute top-1/2 left-1/4 w-1/2 h-1 bg-gradient-to-r from-red-500 to-transparent animate-pulse"></div>
+          </>
+        )}
+        
         {/* キャラクター配置 */}
         <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end px-4 sm:px-8 pb-4 sm:pb-5">
           {/* 敵側（左下） */}
@@ -41,9 +71,13 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
               <img 
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
-                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom"
+                className={`w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300 ${
+                  attackEffect === 'player-attack' ? 'animate-pulse filter brightness-150' : ''
+                }`}
                 style={{ 
-                  filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
+                  filter: `drop-shadow(0 0 20px rgba(239, 68, 68, 0.8)) ${
+                    attackEffect === 'player-attack' ? 'brightness(1.5) saturate(1.5)' : ''
+                  }`,
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
@@ -74,9 +108,15 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
               <img 
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom"
+                className={`w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom transition-all duration-300 ${
+                  attackEffect === 'enemy-attack' ? 'animate-pulse filter brightness-150' : ''
+                } ${
+                  attackEffect === 'player-attack' ? 'transform scale-110' : ''
+                }`}
                 style={{ 
-                  filter: 'drop-shadow(0 0 15px rgba(34, 211, 238, 0.7))',
+                  filter: `drop-shadow(0 0 15px rgba(34, 211, 238, 0.7)) ${
+                    attackEffect === 'enemy-attack' ? 'brightness(1.5) saturate(1.5)' : ''
+                  }`,
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}

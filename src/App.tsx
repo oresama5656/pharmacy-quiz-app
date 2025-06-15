@@ -8,6 +8,7 @@ import ResultScreen from './components/ResultScreen';
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<keyof typeof quizData | null>(null);
+  const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
     enemyHp: 10,
@@ -40,33 +41,45 @@ const App: React.FC = () => {
     let newEnemyHp = gameState.enemyHp;
     let newScore = gameState.score;
 
+    // 攻撃エフェクトを表示
     if (isCorrect) {
+      setAttackEffect('player-attack');
       newEnemyHp = Math.max(0, gameState.enemyHp - 2);
       newScore = gameState.score + 1;
     } else {
+      setAttackEffect('enemy-attack');
       newPlayerHp = Math.max(0, gameState.playerHp - 10);
     }
+
+    // 1.5秒後にエフェクトを消す
+    setTimeout(() => {
+      setAttackEffect(null);
+    }, 1500);
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;
     const isLastQuiz = nextQuizIndex >= quizData[selectedCategory].length;
     const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
     const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
-    setGameState({
-      playerHp: newPlayerHp,
-      enemyHp: newEnemyHp,
-      currentQuizIndex: nextQuizIndex,
-      score: newScore,
-      isGameOver: gameOver,
-      playerWon: playerWon
-    });
+    // ゲーム状態の更新を少し遅らせる（エフェクトを見せるため）
+    setTimeout(() => {
+      setGameState({
+        playerHp: newPlayerHp,
+        enemyHp: newEnemyHp,
+        currentQuizIndex: nextQuizIndex,
+        score: newScore,
+        isGameOver: gameOver,
+        playerWon: playerWon
+      });
 
-    if (gameOver) {
-      setTimeout(() => setCurrentScreen('result'), 1000);
-    }
+      if (gameOver) {
+        setTimeout(() => setCurrentScreen('result'), 1000);
+      }
+    }, 500);
   };
 
   const handleRestart = () => {
+    setAttackEffect(null);
     setGameState({
       playerHp: 20,
       enemyHp: 10,
@@ -79,6 +92,7 @@ const App: React.FC = () => {
   };
 
   const handleBackToCategory = () => {
+    setAttackEffect(null);
     setCurrentScreen('category');
     setSelectedCategory(null);
   };
@@ -94,6 +108,7 @@ const App: React.FC = () => {
         quizzes={quizData[selectedCategory]}
         gameState={gameState}
         onAnswer={handleAnswer}
+        attackEffect={attackEffect}
       />
     );
   }
