@@ -34,14 +34,14 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-black/60"></div>
         
         {/* キャラクター配置 */}
-        <div className="relative h-full flex items-end justify-between px-4 sm:px-8 pb-16 sm:pb-20">
-          {/* 敵側（左下、大きいサイズ） */}
+        <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end px-4 sm:px-8 pb-4 sm:pb-5">
+          {/* 敵側（左下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
-            <div className="relative">
+            <div className="relative flex items-end" style={{ height: '256px' }}>
               <img 
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
-                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain"
+                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom"
                 style={{ 
                   filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
                   backgroundColor: 'transparent',
@@ -70,13 +70,13 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
             </div>
           </div>
           
-          {/* プレイヤー側（右下、小さいサイズ） */}
+          {/* プレイヤー側（右下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
-            <div className="relative">
+            <div className="relative flex items-end" style={{ height: '256px' }}>
               <img 
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom"
                 style={{ 
                   filter: 'drop-shadow(0 0 15px rgba(34, 211, 238, 0.7))',
                   backgroundColor: 'transparent',
@@ -105,11 +105,6 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
             </div>
           </div>
         </div>
-        
-        
-        {/* HPバー表示エリア - 削除してキャラクター下に移動 */}
-        
-        {/* バトル状態表示 - 削除 */}
       </div>
 
       {/* クイズUI下半分 */}
