@@ -51,10 +51,10 @@ const App: React.FC = () => {
       newPlayerHp = Math.max(0, gameState.playerHp - 10);
     }
 
-    // 1.5秒後にエフェクトを消す
+    // 0.5秒後にエフェクトを消す
     setTimeout(() => {
       setAttackEffect(null);
-    }, 1500);
+    }, 500);
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;
     const isLastQuiz = nextQuizIndex >= quizData[selectedCategory].length;
@@ -75,7 +75,7 @@ const App: React.FC = () => {
       if (gameOver) {
         setTimeout(() => setCurrentScreen('result'), 1000);
       }
-    }, 500);
+    }, 100);
   };
 
   const handleRestart = () => {

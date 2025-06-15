@@ -37,29 +37,31 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
         {/* 攻撃エフェクト */}
         {attackEffect === 'player-attack' && (
           <>
-            {/* プレイヤー攻撃エフェクト */}
-            <div className="absolute inset-0 bg-cyan-400/30 animate-pulse"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="w-32 h-32 bg-cyan-400 rounded-full opacity-70 animate-ping"></div>
+            {/* 太刀筋エフェクト - 敵キャラクター上 */}
+            <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-8 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 pointer-events-none z-10">
+              {/* 斜め太刀筋 */}
+              <div className="absolute top-1/4 left-1/4 w-3/4 h-1 bg-gradient-to-r from-transparent via-cyan-300 to-transparent transform rotate-45 animate-pulse shadow-lg" 
+                   style={{ boxShadow: '0 0 10px rgba(34, 211, 238, 0.8)' }}></div>
+              <div className="absolute top-1/3 left-1/5 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent transform rotate-45 animate-pulse delay-100"></div>
+              {/* 逆斜め太刀筋 */}
+              <div className="absolute top-1/2 left-1/6 w-2/3 h-1 bg-gradient-to-r from-transparent via-cyan-300 to-transparent transform -rotate-45 animate-pulse delay-200 shadow-lg"
+                   style={{ boxShadow: '0 0 8px rgba(34, 211, 238, 0.6)' }}></div>
             </div>
-            <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white rounded-full opacity-80 animate-bounce"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-yellow-400 rounded-full opacity-90 animate-pulse"></div>
-            {/* 攻撃ライン */}
-            <div className="absolute top-1/2 right-1/4 w-1/2 h-1 bg-gradient-to-l from-cyan-400 to-transparent animate-pulse"></div>
           </>
         )}
         
         {attackEffect === 'enemy-attack' && (
           <>
-            {/* 敵攻撃エフェクト */}
-            <div className="absolute inset-0 bg-red-500/30 animate-pulse"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="w-40 h-40 bg-red-500 rounded-full opacity-60 animate-ping"></div>
+            {/* 爪痕エフェクト - プレイヤーキャラクター上 */}
+            <div className="absolute bottom-4 sm:bottom-5 right-4 sm:right-8 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 pointer-events-none z-10">
+              {/* 3本の爪痕 */}
+              <div className="absolute top-1/4 left-1/4 w-1/2 h-0.5 bg-gradient-to-r from-transparent via-red-400 to-transparent transform -rotate-12 animate-pulse shadow-lg"
+                   style={{ boxShadow: '0 0 6px rgba(239, 68, 68, 0.8)' }}></div>
+              <div className="absolute top-1/3 left-1/5 w-3/5 h-0.5 bg-gradient-to-r from-transparent via-red-400 to-transparent transform -rotate-12 animate-pulse delay-100 shadow-lg"
+                   style={{ boxShadow: '0 0 6px rgba(239, 68, 68, 0.8)' }}></div>
+              <div className="absolute top-2/5 left-1/6 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-red-400 to-transparent transform -rotate-12 animate-pulse delay-200 shadow-lg"
+                   style={{ boxShadow: '0 0 6px rgba(239, 68, 68, 0.8)' }}></div>
             </div>
-            <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-orange-500 rounded-full opacity-70 animate-bounce"></div>
-            <div className="absolute bottom-1/3 left-1/3 w-14 h-14 bg-red-600 rounded-full opacity-80 animate-pulse"></div>
-            {/* 攻撃ライン */}
-            <div className="absolute top-1/2 left-1/4 w-1/2 h-1 bg-gradient-to-r from-red-500 to-transparent animate-pulse"></div>
           </>
         )}
         
@@ -71,13 +73,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
               <img 
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
-                className={`w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300 ${
-                  attackEffect === 'player-attack' ? 'animate-pulse filter brightness-150' : ''
-                }`}
+                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300"
                 style={{ 
-                  filter: `drop-shadow(0 0 20px rgba(239, 68, 68, 0.8)) ${
-                    attackEffect === 'player-attack' ? 'brightness(1.5) saturate(1.5)' : ''
-                  }`,
+                  filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
@@ -108,15 +106,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
               <img 
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
-                className={`w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom transition-all duration-300 ${
-                  attackEffect === 'enemy-attack' ? 'animate-pulse filter brightness-150' : ''
-                } ${
-                  attackEffect === 'player-attack' ? 'transform scale-110' : ''
-                }`}
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom transition-all duration-300"
                 style={{ 
-                  filter: `drop-shadow(0 0 15px rgba(34, 211, 238, 0.7)) ${
-                    attackEffect === 'enemy-attack' ? 'brightness(1.5) saturate(1.5)' : ''
-                  }`,
+                  filter: 'drop-shadow(0 0 15px rgba(34, 211, 238, 0.7))',
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
