@@ -35,9 +35,12 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             onClick={() => onCategorySelect('brand2generic')}
             className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-blue-300/50"
           >
-            <div className="flex items-center justify-center space-x-2">
-              <span className="text-2xl">💊</span>
-              <span>商品名 → 一般名</span>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center mb-1">
+                <span className="text-2xl mr-2">💊</span>
+                <span className="text-lg font-bold">基本医薬品</span>
+              </div>
+              <span className="text-sm">商品名 → 一般名</span>
             </div>
           </button>
           
@@ -45,9 +48,12 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             onClick={() => onCategorySelect('brand2effect')}
             className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-green-300/50"
           >
-            <div className="flex items-center justify-center space-x-2">
-              <span className="text-2xl">🎯</span>
-              <span>商品名 → 効果</span>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center mb-1">
+                <span className="text-2xl mr-2">🎯</span>
+                <span className="text-lg font-bold">薬効</span>
+              </div>
+              <span className="text-sm">商品名 → 効果</span>
             </div>
           </button>
           
@@ -55,9 +61,25 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             onClick={() => onCategorySelect('generic2effect')}
             className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-purple-300/50"
           >
-            <div className="flex items-center justify-center space-x-2">
-              <span className="text-2xl">🧪</span>
-              <span>一般名 → 効果</span>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center mb-1">
+                <span className="text-2xl mr-2">🧪</span>
+                <span className="text-lg font-bold">一般成分</span>
+              </div>
+              <span className="text-sm">一般名 → 効果</span>
+            </div>
+          </button>
+          
+          <button
+            onClick={() => onCategorySelect('brand2generic_diabetes')}
+            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-red-300/50"
+          >
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center mb-1">
+                <span className="text-2xl mr-2">🩸</span>
+                <span className="text-lg font-bold">糖尿病薬</span>
+              </div>
+              <span className="text-sm">商品名 → 一般名</span>
             </div>
           </button>
         </div>
