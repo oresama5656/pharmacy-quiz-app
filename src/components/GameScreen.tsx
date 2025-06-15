@@ -37,7 +37,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
         <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end px-4 sm:px-8 pb-4 sm:pb-5">
           {/* 敵側（左下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
-            <div className="relative flex items-end" style={{ height: '256px' }}>
+            <div className="flex items-end" style={{ height: '256px' }}>
               <img 
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
@@ -48,8 +48,6 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
                   imageRendering: 'auto'
                 }}
               />
-              {/* 敵の威圧エフェクト */}
-              <div className="absolute inset-0 bg-red-500/10 animate-pulse"></div>
             </div>
             {/* 敵HPバー */}
             <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-red-400/50 shadow-xl">
@@ -72,7 +70,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
           
           {/* プレイヤー側（右下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
-            <div className="relative flex items-end" style={{ height: '256px' }}>
+            <div className="flex items-end" style={{ height: '256px' }}>
               <img 
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
@@ -83,8 +81,6 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
                   imageRendering: 'auto'
                 }}
               />
-              {/* 戦闘エフェクト */}
-              <div className="absolute inset-0 bg-cyan-400/10 animate-pulse"></div>
             </div>
             {/* プレイヤーHPバー */}
             <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-cyan-400/50 shadow-xl">
