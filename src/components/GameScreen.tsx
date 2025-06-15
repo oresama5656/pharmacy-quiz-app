@@ -34,90 +34,80 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer })
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-black/60"></div>
         
         {/* キャラクター配置 */}
-        <div className="relative h-full flex items-end justify-between px-4 sm:px-8 pb-4 sm:pb-8">
-          {/* 敵側（左下） */}
-          <div className="flex flex-col items-start space-y-2 sm:space-y-4">
+        <div className="relative h-full flex items-end justify-between px-4 sm:px-8 pb-16 sm:pb-20">
+          {/* 敵側（左下、大きいサイズ） */}
+          <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="relative">
               <img 
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain"
+                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain"
                 style={{ 
-                  filter: 'drop-shadow(0 0 15px rgba(239, 68, 68, 0.8))',
-                  maxWidth: '160px',
-                  maxHeight: '160px'
+                  filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
+                  backgroundColor: 'transparent',
+                  imageRendering: 'auto'
                 }}
               />
               {/* 敵の威圧エフェクト */}
-              <div className="absolute inset-0 bg-red-500/20 animate-pulse rounded-lg"></div>
+              <div className="absolute inset-0 bg-red-500/10 animate-pulse"></div>
+            </div>
+            {/* 敵HPバー */}
+            <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-red-400/50 shadow-xl">
+              <div className="space-y-1">
+                <div className="flex justify-between text-xs text-gray-300">
+                  <span>感染モンスター</span>
+                  <span>{gameState.enemyHp}/10</span>
+                </div>
+                <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
+                  <div 
+                    className="h-full bg-gradient-to-r from-red-400 via-orange-400 to-red-400 transition-all duration-1000 ease-out shadow-inner relative"
+                    style={{ width: `${enemyHpPercentage}%` }}
+                  >
+                    <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
-          {/* プレイヤー側（右下） */}
-          <div className="flex flex-col items-end space-y-2 sm:space-y-4">
+          {/* プレイヤー側（右下、小さいサイズ） */}
+          <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="relative">
               <img 
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
-                className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain"
                 style={{ 
                   filter: 'drop-shadow(0 0 15px rgba(34, 211, 238, 0.7))',
-                  maxWidth: '128px',
-                  maxHeight: '128px'
+                  backgroundColor: 'transparent',
+                  imageRendering: 'auto'
                 }}
               />
               {/* 戦闘エフェクト */}
-              <div className="absolute inset-0 bg-cyan-400/20 animate-pulse rounded-lg"></div>
+              <div className="absolute inset-0 bg-cyan-400/10 animate-pulse"></div>
+            </div>
+            {/* プレイヤーHPバー */}
+            <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-cyan-400/50 shadow-xl">
+              <div className="space-y-1">
+                <div className="flex justify-between text-xs text-gray-300">
+                  <span>プレイヤー</span>
+                  <span>{gameState.playerHp}/20</span>
+                </div>
+                <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
+                  <div 
+                    className="h-full bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 transition-all duration-1000 ease-out shadow-inner relative"
+                    style={{ width: `${playerHpPercentage}%` }}
+                  >
+                    <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        {/* HPバー表示エリア（FF風） */}
-        <div className="absolute top-2 sm:top-4 left-2 sm:left-4 right-2 sm:right-4 flex justify-between items-start">
-          {/* 敵HP（左上） */}
-          <div className="bg-black/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-red-400/50 shadow-xl">
-            <div className="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2">
-              <span className="text-red-400 font-bold text-sm sm:text-lg">感染モンスター</span>
-              <span className="text-white text-xs sm:text-sm bg-red-600 px-2 py-1 rounded">Lv.2</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex justify-between text-xs text-gray-300">
-                <span>HP</span>
-                <span>{gameState.enemyHp}/10</span>
-              </div>
-              <div className="w-32 sm:w-48 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-red-400 via-orange-400 to-red-400 transition-all duration-1000 ease-out shadow-inner relative"
-                  style={{ width: `${enemyHpPercentage}%` }}
-                >
-                  <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* プレイヤーHP（右上） */}
-          <div className="bg-black/80 backdrop-blur-sm rounded-lg p-2 sm:p-4 border border-cyan-400/50 shadow-xl">
-            <div className="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2">
-              <span className="text-cyan-400 font-bold text-sm sm:text-lg">プレイヤー</span>
-              <span className="text-white text-xs sm:text-sm bg-cyan-600 px-2 py-1 rounded">Lv.1</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex justify-between text-xs text-gray-300">
-                <span>HP</span>
-                <span>{gameState.playerHp}/20</span>
-              </div>
-              <div className="w-32 sm:w-48 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 transition-all duration-1000 ease-out shadow-inner relative"
-                  style={{ width: `${playerHpPercentage}%` }}
-                >
-                  <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+        {/* HPバー表示エリア - 削除してキャラクター下に移動 */}
         
         {/* バトル状態表示 - 削除 */}
       </div>
