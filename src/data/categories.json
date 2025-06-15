@@ -26,5 +26,12 @@
     "description": "糖尿病治療薬の商品名から一般名を答える問題です",
     "icon": "🍬",
     "difficulty": "応用"
+  },
+  {
+    "id": "antibiotics",
+    "name": "抗生物質の分類",
+    "description": "抗生物質の一般名から系統・分類を答える問題です",
+    "icon": "🦠",
+    "difficulty": "応用"
   }
 ] 
