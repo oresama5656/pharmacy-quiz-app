@@ -74,10 +74,10 @@ const App: React.FC = () => {
       newPlayerHp = Math.max(0, gameState.playerHp - 10);
     }
 
-    // 0.5秒後にエフェクトを消す
+    // 攻撃エフェクトを短時間で消す（300ms → 200ms）
     setTimeout(() => {
       setAttackEffect(null);
-    }, 500);
+    }, 200);
 
     let newCurrentFloor = gameState.currentFloor;
     let newMaxFloor = gameState.maxFloorReached;
@@ -87,26 +87,19 @@ const App: React.FC = () => {
     const playerWon = false;
 
     if (newEnemyHp <= 0) {
-      // 一旦敵HPを0にして倒れる演出を見せる
-      setGameState({
-        playerHp: newPlayerHp,
-        enemyHp: 0,
-        currentQuizIndex: nextQuizIndex,
-        score: newScore,
-        isGameOver: gameOver,
-        playerWon: playerWon,
-        currentFloor: newCurrentFloor,
-        maxFloorReached: newMaxFloor
-      });
-
+      // 敵を倒した場合：即座に次のフロアに進む
       const nextFloor = newCurrentFloor + 1;
       const enemyHpAfter = getEnemyHpForFloor(nextFloor);
       if (nextFloor > newMaxFloor) {
         newMaxFloor = nextFloor;
       }
 
+      // 新しい敵画像をすぐに選択
+      const newEnemyImage = selectRandomEnemyImage();
+      setSelectedEnemyImage(newEnemyImage);
+
+      // わずかな遅延で状態を更新（敵消滅エフェクトの時間を短縮：800ms → 250ms）
       setTimeout(() => {
-        setSelectedEnemyImage(selectRandomEnemyImage());
         setGameState({
           playerHp: newPlayerHp,
           enemyHp: enemyHpAfter,
@@ -119,11 +112,11 @@ const App: React.FC = () => {
         });
 
         if (gameOver) {
-          setTimeout(() => setCurrentScreen('result'), 1000);
+          setTimeout(() => setCurrentScreen('result'), 500);
         }
-      }, 800);
+      }, 250);
     } else {
-      // 敵がまだ生きている場合はそのまま更新
+      // 敵がまだ生きている場合はより高速で更新（100ms → 50ms）
       setTimeout(() => {
         setGameState({
           playerHp: newPlayerHp,
@@ -137,9 +130,9 @@ const App: React.FC = () => {
         });
 
         if (gameOver) {
-          setTimeout(() => setCurrentScreen('result'), 1000);
+          setTimeout(() => setCurrentScreen('result'), 500);
         }
-      }, 100);
+      }, 50);
     }
   };
 

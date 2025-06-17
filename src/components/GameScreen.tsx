@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -50,7 +49,6 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
       <div 
         className="flex-1 relative overflow-hidden"
         style={{
-          // backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(${BACKGROUND_IMAGES.battle})`,
           backgroundImage: `url(${BACKGROUND_IMAGES.battle})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -105,11 +103,15 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                     backgroundColor: 'transparent',
                     imageRendering: 'auto'
                   }}
-                  // 敵が攻撃されたら右に1000px移動
+                  // 敵が攻撃されたら右に移動（より高速化）
                   animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0] } : { x: 0, opacity: 1 }}
                   initial={{ x: -200, opacity: 0 }}
-                  exit={{ opacity: 0, scale: 1.2, filter: 'blur(8px)' }}
-                  transition={{ duration: attackEffect === 'enemy-attack' ? 0.2 : 0.5 }}
+                  // 退場エフェクトを高速化（scale, blurエフェクトを削除してシンプルに）
+                  exit={{ opacity: 0, x: 200 }}
+                  transition={{ 
+                    duration: attackEffect === 'enemy-attack' ? 0.15 : 0.2,  // より高速化
+                    ease: "easeOut"
+                  }}
                 />
               </AnimatePresence>
             </div>
@@ -122,7 +124,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 </div>
                 <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
                   <div 
-                    className="h-full bg-gradient-to-r from-red-400 via-orange-400 to-red-400 transition-all duration-1000 ease-out shadow-inner relative"
+                    className="h-full bg-gradient-to-r from-red-400 via-orange-400 to-red-400 transition-all duration-500 ease-out shadow-inner relative"
                     style={{ width: `${enemyHpPercentage}%` }}
                   >
                     <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
@@ -144,9 +146,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
-                // プレイヤーが攻撃されたら左に1000px移動
+                // プレイヤーが攻撃されたら左に移動（より高速化）
                 animate={attackEffect === 'player-attack' ? { x: [0, -1000, 0] } : { x: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}  // より高速化
               />
             </div>
             {/* プレイヤーHPバー */}
@@ -158,7 +160,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 </div>
                 <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
                   <div 
-                    className="h-full bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 transition-all duration-1000 ease-out shadow-inner relative"
+                    className="h-full bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 transition-all duration-500 ease-out shadow-inner relative"
                     style={{ width: `${playerHpPercentage}%` }}
                   >
                     <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
@@ -200,7 +202,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 <button
                   key={index}
                   onClick={() => onAnswer(choice)}
-                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2"
+                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2"
                 >
                   <div className="flex-shrink-0">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-sm sm:text-lg shadow-lg">

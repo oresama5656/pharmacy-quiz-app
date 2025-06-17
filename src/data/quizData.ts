@@ -8,6 +8,7 @@ import brand2generic_diabetes from './brand2generic_diabetes.json';
 import antibiotics from './antibiotics.json';
 import simple_math from './simple_math.json';
 
+
 // クイズデータをエクスポート
 export const quizData = {
   brand2generic: brand2generic as Quiz[],
