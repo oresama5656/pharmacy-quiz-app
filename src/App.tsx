@@ -11,19 +11,12 @@ const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
-<<<<<<< codex/階層制バトルの実装とui更新
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
-
-  const [gameState, setGameState] = useState<GameState>({
-    playerHp: 20,
-    enemyHp: getEnemyHpForFloor(1),
-=======
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
-    enemyHp: 1000,
->>>>>>> main
+    enemyHp: getEnemyHpForFloor(1),
     currentQuizIndex: 0,
     score: 0,
     isGameOver: false,
@@ -97,15 +90,11 @@ const App: React.FC = () => {
     }
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;
-<<<<<<< codex/階層制バトルの実装とui更新
-    const isLastQuiz = nextQuizIndex >= quizzes.length;
+    const isLastQuiz = nextQuizIndex >= shuffledQuizzes.length;
     const gameOver = newPlayerHp <= 0 || isLastQuiz;
     const playerWon = isLastQuiz && newPlayerHp > 0;
-=======
-    const isLastQuiz = nextQuizIndex >= shuffledQuizzes.length;
-    const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
-    const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
->>>>>>> main
+    // const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
+    // const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
     // ゲーム状態の更新を少し遅らせる（エフェクトを見せるため）
     setTimeout(() => {
