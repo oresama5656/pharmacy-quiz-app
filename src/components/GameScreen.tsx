@@ -184,7 +184,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 </span>
                 <span className="text-yellow-400 text-lg sm:text-xl">🧬</span>
               </div>
-              <span className="text-white text-xs sm:text-sm">Floor: {gameState.currentFloor}</span>
+              <span className="text-white text-xs sm:text-sm">Floor: {gameState.currentFloor}/{gameState.clearFloor}</span>
             </div>
             
             <h2 className="text-white text-base sm:text-lg md:text-xl font-bold mb-2 leading-tight">

@@ -4,41 +4,47 @@
     "name": "商品名→一般名",
     "description": "薬の商品名から一般名を答える問題です",
     "icon": "🔄",
-    "difficulty": "基本"
+    "difficulty": "基本",
+    "clearFloor": 10
   },
   {
     "id": "brand2effect",
     "name": "商品名→効果",
     "description": "薬の商品名から効果・効能を答える問題です",
     "icon": "💊",
-    "difficulty": "基本"
+    "difficulty": "基本",
+    "clearFloor": 20
   },
   {
     "id": "generic2effect",
     "name": "一般名→効果",
     "description": "薬の一般名から効果・効能を答える問題です",
     "icon": "🧪",
-    "difficulty": "基本"
+    "difficulty": "基本",
+    "clearFloor": 30
   },
   {
     "id": "brand2generic_diabetes",
     "name": "糖尿病薬：商品名→一般名",
     "description": "糖尿病治療薬の商品名から一般名を答える問題です",
     "icon": "🍬",
-    "difficulty": "応用"
+    "difficulty": "応用",
+    "clearFloor": 40
   },
     {
       "id": "antibiotics",
       "name": "抗生物質の分類",
       "description": "抗生物質の一般名から系統・分類を答える問題です",
       "icon": "🦠",
-      "difficulty": "応用"
+      "difficulty": "応用",
+      "clearFloor": 50
     },
     {
       "id": "simple_math",
       "name": "足し算",
       "description": "一桁の足し算を答える問題です",
       "icon": "🧮",
-      "difficulty": "基本"
+      "difficulty": "基本",
+      "clearFloor": 60
     }
 ] 

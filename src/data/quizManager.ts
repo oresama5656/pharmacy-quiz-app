@@ -9,6 +9,7 @@ export interface Category {
   description: string;
   icon: string;
   difficulty: string;
+  clearFloor: number;
 }
 
 // カテゴリIDの型を定義
