@@ -28,3 +28,11 @@ export const BGM = {
   win: "https://github.com/oresama5656/GameData_Public/blob/main/win.mp3?raw=true",
   lose: "https://github.com/oresama5656/GameData_Public/blob/main/dq_zenmetsu.mp3?raw=true"
 };
+
+// 効果音のURL
+export const SOUND_EFFECTS = {
+  // プレイヤーが敵を攻撃する音
+  playerAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/slash.mp3?raw=true",
+  // 敵がプレイヤーを攻撃する音
+  enemyAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/blow.mp3?raw=true"
+};
