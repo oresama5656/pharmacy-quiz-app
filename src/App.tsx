@@ -1,24 +1,42 @@
 import React, { useState } from 'react';
 import { GameState } from './types';
-import { getQuizzesByCategory } from './data/quizManager';
+import { getQuizzesByCategory, shuffleQuizzes, shuffleChoices } from './data/quizManager';
 import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
+import { Quiz } from './types';
+import { ENEMY_IMAGES } from './constants';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
+  const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
+  const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
-    enemyHp: 10,
+    enemyHp: 1000,
     currentQuizIndex: 0,
     score: 0,
     isGameOver: false,
     playerWon: false
   });
 
+  // ランダムに敵の画像を選択する関数
+  const selectRandomEnemyImage = () => {
+    const randomIndex = Math.floor(Math.random() * ENEMY_IMAGES.length);
+    return ENEMY_IMAGES[randomIndex];
+  };
+
   const handleCategorySelect = (categoryId: string) => {
+    // カテゴリ選択時に一度だけクイズをシャッフル
+    const quizzes = getQuizzesByCategory(categoryId);
+    const shuffled = shuffleQuizzes(quizzes).map(quiz => shuffleChoices(quiz));
+    setShuffledQuizzes(shuffled);
+    
+    // ランダムな敵の画像を選択
+    setSelectedEnemyImage(selectRandomEnemyImage());
+    
     setSelectedCategory(categoryId);
     setGameState({
       playerHp: 20,
@@ -32,10 +50,9 @@ const App: React.FC = () => {
   };
 
   const handleAnswer = (selectedAnswer: string) => {
-    if (!selectedCategory) return;
+    if (!selectedCategory || shuffledQuizzes.length === 0) return;
 
-    const quizzes = getQuizzesByCategory(selectedCategory);
-    const currentQuiz = quizzes[gameState.currentQuizIndex];
+    const currentQuiz = shuffledQuizzes[gameState.currentQuizIndex];
     const isCorrect = selectedAnswer === currentQuiz.correct;
     
     let newPlayerHp = gameState.playerHp;
@@ -58,7 +75,7 @@ const App: React.FC = () => {
     }, 500);
 
     const nextQuizIndex = gameState.currentQuizIndex + 1;
-    const isLastQuiz = nextQuizIndex >= quizzes.length;
+    const isLastQuiz = nextQuizIndex >= shuffledQuizzes.length;
     const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
     const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
@@ -80,6 +97,9 @@ const App: React.FC = () => {
   };
 
   const handleRestart = () => {
+    // リスタート時に新しい敵の画像を選択
+    setSelectedEnemyImage(selectRandomEnemyImage());
+    
     setAttackEffect(null);
     setGameState({
       playerHp: 20,
@@ -96,6 +116,7 @@ const App: React.FC = () => {
     setAttackEffect(null);
     setCurrentScreen('category');
     setSelectedCategory(null);
+    setShuffledQuizzes([]);
   };
 
   // 画面の表示制御
@@ -104,13 +125,13 @@ const App: React.FC = () => {
   }
 
   if (currentScreen === 'game' && selectedCategory) {
-    const quizzes = getQuizzesByCategory(selectedCategory);
     return (
       <GameScreen
-        quizzes={quizzes}
+        quizzes={shuffledQuizzes}
         gameState={gameState}
         onAnswer={handleAnswer}
         attackEffect={attackEffect}
+        enemyImage={selectedEnemyImage}
       />
     );
   }
