@@ -13,10 +13,18 @@ export const ENEMY_IMAGES = [
   "https://github.com/oresama5656/GameData_Public/blob/main/Fukushi.png?raw=true"
 ];
   
-// 背景画像のURL
+  // 背景画像のURL
 export const BACKGROUND_IMAGES = {
   title: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
   category: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
   battle: "https://github.com/oresama5656/GameData_Public/blob/main/background/sougen.png?raw=true",
   result: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80"
+};
+
+// BGM ファイルのURL
+export const BGM = {
+  game: "https://github.com/oresama5656/GameData_Public/blob/main/ff7_battle.mp3?raw=true",
+  category: "https://github.com/oresama5656/GameData_Public/blob/main/FF_Prerude.mp3?raw=true",
+  win: "https://github.com/oresama5656/GameData_Public/blob/main/win.mp3?raw=true",
+  lose: "https://github.com/oresama5656/GameData_Public/blob/main/dq_zenmetsu.mp3?raw=true"
 };
