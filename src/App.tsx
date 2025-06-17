@@ -67,7 +67,7 @@ const App: React.FC = () => {
       setGameState({
         playerHp: newPlayerHp,
         enemyHp: newEnemyHp,
-        currentQuizIndex: nextQuizIndex,
+        currentQuizIndex: Math.min(nextQuizIndex, quizzes.length - 1),
         score: newScore,
         isGameOver: gameOver,
         playerWon: playerWon
