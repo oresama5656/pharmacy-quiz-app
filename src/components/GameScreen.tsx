@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Quiz, GameState } from '../types';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
+import { playAttackSound } from '../utils/sound';
 
 interface GameScreenProps {
   quizzes: Quiz[];
@@ -18,6 +19,12 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
 
   const playerHpPercentage = (gameState.playerHp / 20) * 100;
   const enemyHpPercentage = (gameState.enemyHp / 10) * 100;
+
+  useEffect(() => {
+    if (attackEffect) {
+      playAttackSound(attackEffect);
+    }
+  }, [attackEffect]);
 
   return (
     <div className="min-h-screen flex flex-col bg-black">
