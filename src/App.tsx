@@ -81,26 +81,16 @@ const App: React.FC = () => {
 
     let newCurrentFloor = gameState.currentFloor;
     let newMaxFloor = gameState.maxFloorReached;
-    if (newEnemyHp <= 0) {
-      newCurrentFloor += 1;
-      newEnemyHp = getEnemyHpForFloor(newCurrentFloor);
-      if (newCurrentFloor > newMaxFloor) {
-        newMaxFloor = newCurrentFloor;
-      }
-    }
-
     const nextIndexRaw = gameState.currentQuizIndex + 1;
     const nextQuizIndex = nextIndexRaw >= shuffledQuizzes.length ? 0 : nextIndexRaw;
     const gameOver = newPlayerHp <= 0;
     const playerWon = false;
-    // const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
-    // const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
-    // ゲーム状態の更新を少し遅らせる（エフェクトを見せるため）
-    setTimeout(() => {
+    if (newEnemyHp <= 0) {
+      // 一旦敵HPを0にして倒れる演出を見せる
       setGameState({
         playerHp: newPlayerHp,
-        enemyHp: newEnemyHp,
+        enemyHp: 0,
         currentQuizIndex: nextQuizIndex,
         score: newScore,
         isGameOver: gameOver,
@@ -109,10 +99,48 @@ const App: React.FC = () => {
         maxFloorReached: newMaxFloor
       });
 
-      if (gameOver) {
-        setTimeout(() => setCurrentScreen('result'), 1000);
+      const nextFloor = newCurrentFloor + 1;
+      const enemyHpAfter = getEnemyHpForFloor(nextFloor);
+      if (nextFloor > newMaxFloor) {
+        newMaxFloor = nextFloor;
       }
-    }, 100);
+
+      setTimeout(() => {
+        setSelectedEnemyImage(selectRandomEnemyImage());
+        setGameState({
+          playerHp: newPlayerHp,
+          enemyHp: enemyHpAfter,
+          currentQuizIndex: nextQuizIndex,
+          score: newScore,
+          isGameOver: gameOver,
+          playerWon: playerWon,
+          currentFloor: nextFloor,
+          maxFloorReached: newMaxFloor
+        });
+
+        if (gameOver) {
+          setTimeout(() => setCurrentScreen('result'), 1000);
+        }
+      }, 800);
+    } else {
+      // 敵がまだ生きている場合はそのまま更新
+      setTimeout(() => {
+        setGameState({
+          playerHp: newPlayerHp,
+          enemyHp: newEnemyHp,
+          currentQuizIndex: nextQuizIndex,
+          score: newScore,
+          isGameOver: gameOver,
+          playerWon: playerWon,
+          currentFloor: newCurrentFloor,
+          maxFloorReached: newMaxFloor
+        });
+
+        if (gameOver) {
+          setTimeout(() => setCurrentScreen('result'), 1000);
+        }
+      }, 100);
+    }
   };
 
   const handleRestart = () => {

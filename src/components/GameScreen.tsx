@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz, GameState } from '../types';
 import { playAttackSound } from '../utils/sound';
 
@@ -94,19 +94,24 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           {/* 敵側（左下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="flex items-end" style={{ height: '256px' }}>
-              <motion.img
-                src={enemyImage}
-                alt="敵"
-                className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300"
-                style={{
-                  filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
-                  backgroundColor: 'transparent',
-                  imageRendering: 'auto'
-                }}
-                // 敵が攻撃されたら右に1000px移動
-                animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0] } : { x: 0 }}
-                transition={{ duration: 0.2 }}
-              />
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={enemyImage}
+                  src={enemyImage}
+                  alt="敵"
+                  className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300"
+                  style={{
+                    filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
+                    backgroundColor: 'transparent',
+                    imageRendering: 'auto'
+                  }}
+                  // 敵が攻撃されたら右に1000px移動
+                  animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0] } : { x: 0, opacity: 1 }}
+                  initial={{ x: -200, opacity: 0 }}
+                  exit={{ opacity: 0, scale: 1.2, filter: 'blur(8px)' }}
+                  transition={{ duration: attackEffect === 'enemy-attack' ? 0.2 : 0.5 }}
+                />
+              </AnimatePresence>
             </div>
             {/* 敵HPバー */}
             <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-red-400/50 shadow-xl">
