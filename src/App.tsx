@@ -11,15 +11,25 @@ const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
+<<<<<<< codex/階層制バトルの実装とui更新
+  const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
+
+  const [gameState, setGameState] = useState<GameState>({
+    playerHp: 20,
+    enemyHp: getEnemyHpForFloor(1),
+=======
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
     enemyHp: 1000,
+>>>>>>> main
     currentQuizIndex: 0,
     score: 0,
     isGameOver: false,
-    playerWon: false
+    playerWon: false,
+    currentFloor: 1,
+    maxFloorReached: 1
   });
 
   // ランダムに敵の画像を選択する関数
@@ -40,11 +50,13 @@ const App: React.FC = () => {
     setSelectedCategory(categoryId);
     setGameState({
       playerHp: 20,
-      enemyHp: 10,
+      enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,
       isGameOver: false,
-      playerWon: false
+      playerWon: false,
+      currentFloor: 1,
+      maxFloorReached: 1
     });
     setCurrentScreen('game');
   };
@@ -74,10 +86,26 @@ const App: React.FC = () => {
       setAttackEffect(null);
     }, 500);
 
+    let newCurrentFloor = gameState.currentFloor;
+    let newMaxFloor = gameState.maxFloorReached;
+    if (newEnemyHp <= 0) {
+      newCurrentFloor += 1;
+      newEnemyHp = getEnemyHpForFloor(newCurrentFloor);
+      if (newCurrentFloor > newMaxFloor) {
+        newMaxFloor = newCurrentFloor;
+      }
+    }
+
     const nextQuizIndex = gameState.currentQuizIndex + 1;
+<<<<<<< codex/階層制バトルの実装とui更新
+    const isLastQuiz = nextQuizIndex >= quizzes.length;
+    const gameOver = newPlayerHp <= 0 || isLastQuiz;
+    const playerWon = isLastQuiz && newPlayerHp > 0;
+=======
     const isLastQuiz = nextQuizIndex >= shuffledQuizzes.length;
     const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
     const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
+>>>>>>> main
 
     // ゲーム状態の更新を少し遅らせる（エフェクトを見せるため）
     setTimeout(() => {
@@ -87,7 +115,9 @@ const App: React.FC = () => {
         currentQuizIndex: isLastQuiz ? gameState.currentQuizIndex : nextQuizIndex,
         score: newScore,
         isGameOver: gameOver,
-        playerWon: playerWon
+        playerWon: playerWon,
+        currentFloor: newCurrentFloor,
+        maxFloorReached: newMaxFloor
       });
 
       if (gameOver) {
@@ -103,11 +133,13 @@ const App: React.FC = () => {
     setAttackEffect(null);
     setGameState({
       playerHp: 20,
-      enemyHp: 10,
+      enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,
       isGameOver: false,
-      playerWon: false
+      playerWon: false,
+      currentFloor: 1,
+      maxFloorReached: 1
     });
     setCurrentScreen('game');
   };

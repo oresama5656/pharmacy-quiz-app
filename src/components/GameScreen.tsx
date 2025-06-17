@@ -34,7 +34,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   }
 
   const playerHpPercentage = (gameState.playerHp / 20) * 100;
-  const enemyHpPercentage = (gameState.enemyHp / 10) * 100;
+  const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
+  const enemyMaxHp = getEnemyHpForFloor(gameState.currentFloor);
+  const enemyHpPercentage = (gameState.enemyHp / enemyMaxHp) * 100;
 
   useEffect(() => {
     if (attackEffect) {
@@ -111,7 +113,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
               <div className="space-y-1">
                 <div className="flex justify-between text-xs text-gray-300">
                   <span>感染モンスター</span>
-                  <span>{gameState.enemyHp}/10</span>
+                  <span>{gameState.enemyHp}/{enemyMaxHp}</span>
                 </div>
                 <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
                   <div 
@@ -175,6 +177,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 </span>
                 <span className="text-yellow-400 text-lg sm:text-xl">🧬</span>
               </div>
+              <span className="text-white text-xs sm:text-sm">Floor: {gameState.currentFloor}</span>
             </div>
             
             <h2 className="text-white text-base sm:text-lg md:text-xl font-bold mb-2 leading-tight">
