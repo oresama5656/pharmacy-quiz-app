@@ -84,7 +84,7 @@ const App: React.FC = () => {
       setGameState({
         playerHp: newPlayerHp,
         enemyHp: newEnemyHp,
-        currentQuizIndex: nextQuizIndex,
+        currentQuizIndex: isLastQuiz ? gameState.currentQuizIndex : nextQuizIndex,
         score: newScore,
         isGameOver: gameOver,
         playerWon: playerWon
