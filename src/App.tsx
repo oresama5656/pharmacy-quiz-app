@@ -9,24 +9,30 @@ const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
+  const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
+
   const [gameState, setGameState] = useState<GameState>({
     playerHp: 20,
-    enemyHp: 10,
+    enemyHp: getEnemyHpForFloor(1),
     currentQuizIndex: 0,
     score: 0,
     isGameOver: false,
-    playerWon: false
+    playerWon: false,
+    currentFloor: 1,
+    maxFloorReached: 1
   });
 
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId);
     setGameState({
       playerHp: 20,
-      enemyHp: 10,
+      enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,
       isGameOver: false,
-      playerWon: false
+      playerWon: false,
+      currentFloor: 1,
+      maxFloorReached: 1
     });
     setCurrentScreen('game');
   };
@@ -57,10 +63,20 @@ const App: React.FC = () => {
       setAttackEffect(null);
     }, 500);
 
+    let newCurrentFloor = gameState.currentFloor;
+    let newMaxFloor = gameState.maxFloorReached;
+    if (newEnemyHp <= 0) {
+      newCurrentFloor += 1;
+      newEnemyHp = getEnemyHpForFloor(newCurrentFloor);
+      if (newCurrentFloor > newMaxFloor) {
+        newMaxFloor = newCurrentFloor;
+      }
+    }
+
     const nextQuizIndex = gameState.currentQuizIndex + 1;
     const isLastQuiz = nextQuizIndex >= quizzes.length;
-    const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
-    const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
+    const gameOver = newPlayerHp <= 0 || isLastQuiz;
+    const playerWon = isLastQuiz && newPlayerHp > 0;
 
     // ゲーム状態の更新を少し遅らせる（エフェクトを見せるため）
     setTimeout(() => {
@@ -70,7 +86,9 @@ const App: React.FC = () => {
         currentQuizIndex: nextQuizIndex,
         score: newScore,
         isGameOver: gameOver,
-        playerWon: playerWon
+        playerWon: playerWon,
+        currentFloor: newCurrentFloor,
+        maxFloorReached: newMaxFloor
       });
 
       if (gameOver) {
@@ -83,11 +101,13 @@ const App: React.FC = () => {
     setAttackEffect(null);
     setGameState({
       playerHp: 20,
-      enemyHp: 10,
+      enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,
       isGameOver: false,
-      playerWon: false
+      playerWon: false,
+      currentFloor: 1,
+      maxFloorReached: 1
     });
     setCurrentScreen('game');
   };
