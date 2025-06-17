@@ -1,16 +1,19 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
 import { Quiz, GameState } from '../types';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
+import { playAttackSound } from '../utils/sound';
 
 interface GameScreenProps {
   quizzes: Quiz[];
   gameState: GameState;
   onAnswer: (selectedAnswer: string) => void;
   attackEffect?: 'player-attack' | 'enemy-attack' | null;
+  enemyImage: string;
 }
 
-const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect }) => {
+const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect, enemyImage }) => {
   const currentQuiz = quizzes[gameState.currentQuizIndex];
   
   if (!currentQuiz) {
@@ -19,6 +22,12 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
 
   const playerHpPercentage = (gameState.playerHp / 20) * 100;
   const enemyHpPercentage = (gameState.enemyHp / 10) * 100;
+
+  useEffect(() => {
+    if (attackEffect) {
+      playAttackSound(attackEffect);
+    }
+  }, [attackEffect]);
 
   return (
     <div className="min-h-screen flex flex-col bg-black">
@@ -71,7 +80,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="flex items-end" style={{ height: '256px' }}>
               <motion.img
-                src={CHARACTER_IMAGES.enemy}
+                src={enemyImage}
                 alt="敵"
                 className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300"
                 style={{
