@@ -13,7 +13,7 @@
     "description": "薬の商品名から効果・効能を答える問題です",
     "icon": "💊",
     "difficulty": "基本",
-    "clearFloor": 20
+    "clearFloor": 10
   },
   {
     "id": "generic2effect",
@@ -21,7 +21,7 @@
     "description": "薬の一般名から効果・効能を答える問題です",
     "icon": "🧪",
     "difficulty": "基本",
-    "clearFloor": 30
+    "clearFloor": 10
   },
   {
     "id": "brand2generic_diabetes",
@@ -29,7 +29,7 @@
     "description": "糖尿病治療薬の商品名から一般名を答える問題です",
     "icon": "🍬",
     "difficulty": "応用",
-    "clearFloor": 40
+    "clearFloor": 20
   },
     {
       "id": "antibiotics",
@@ -37,7 +37,7 @@
       "description": "抗生物質の一般名から系統・分類を答える問題です",
       "icon": "🦠",
       "difficulty": "応用",
-      "clearFloor": 50
+      "clearFloor": 20
     },
     {
       "id": "simple_math",
@@ -45,6 +45,6 @@
       "description": "一桁の足し算を答える問題です",
       "icon": "🧮",
       "difficulty": "基本",
-      "clearFloor": 60
+      "clearFloor": 30
     }
 ] 
