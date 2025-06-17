@@ -89,10 +89,10 @@ const App: React.FC = () => {
       }
     }
 
-    const nextQuizIndex = gameState.currentQuizIndex + 1;
-    const isLastQuiz = nextQuizIndex >= shuffledQuizzes.length;
-    const gameOver = newPlayerHp <= 0 || isLastQuiz;
-    const playerWon = isLastQuiz && newPlayerHp > 0;
+    const nextIndexRaw = gameState.currentQuizIndex + 1;
+    const nextQuizIndex = nextIndexRaw >= shuffledQuizzes.length ? 0 : nextIndexRaw;
+    const gameOver = newPlayerHp <= 0;
+    const playerWon = false;
     // const gameOver = newPlayerHp <= 0 || newEnemyHp <= 0 || isLastQuiz;
     // const playerWon = newEnemyHp <= 0 || (isLastQuiz && newPlayerHp > 0);
 
@@ -101,7 +101,7 @@ const App: React.FC = () => {
       setGameState({
         playerHp: newPlayerHp,
         enemyHp: newEnemyHp,
-        currentQuizIndex: isLastQuiz ? gameState.currentQuizIndex : nextQuizIndex,
+        currentQuizIndex: nextQuizIndex,
         score: newScore,
         isGameOver: gameOver,
         playerWon: playerWon,
