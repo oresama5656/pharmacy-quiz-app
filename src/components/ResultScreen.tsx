@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { GameState } from '../types';
-import { BACKGROUND_IMAGES } from '../constants';
+import { BACKGROUND_IMAGES, BGM } from '../constants';
 
 interface ResultScreenProps {
   gameState: GameState;
@@ -9,6 +9,20 @@ interface ResultScreenProps {
 }
 
 const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBackToCategory }) => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const src = gameState.playerWon ? BGM.win : BGM.lose;
+    const audio = new Audio(src);
+    audioRef.current = audio;
+    audio.loop = false;
+    audio.play().catch(() => {});
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, [gameState.playerWon]);
+
   return (
     <div 
       className="min-h-screen relative flex items-center justify-center p-4"

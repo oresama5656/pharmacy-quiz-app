@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Quiz, GameState } from '../types';
-import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
+import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 
 interface GameScreenProps {
   quizzes: Quiz[];
@@ -11,6 +11,18 @@ interface GameScreenProps {
 
 const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect }) => {
   const currentQuiz = quizzes[gameState.currentQuizIndex];
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audio = new Audio(BGM.game);
+    audio.loop = true;
+    audioRef.current = audio;
+    audio.play().catch(() => {});
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
   
   if (!currentQuiz) {
     return <div>クイズデータがありません</div>;
