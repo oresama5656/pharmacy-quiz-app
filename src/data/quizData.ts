@@ -16,7 +16,11 @@ export const quizData = {
   generic2effect: generic2effect as Quiz[],
   brand2generic_diabetes: brand2generic_diabetes as Quiz[],
   antibiotics: antibiotics as Quiz[],
-  simple_math: simple_math as Quiz[]
+  simple_math: simple_math.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[]
 };
 
 // 新しいカテゴリを追加する場合は、JSONファイルを作成してここにインポートするだけでOK
