@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Quiz, GameState } from '../types';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
 
@@ -69,15 +70,17 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           {/* 敵側（左下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="flex items-end" style={{ height: '256px' }}>
-              <img 
+              <motion.img
                 src={CHARACTER_IMAGES.enemy}
                 alt="敵"
                 className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain object-bottom transition-all duration-300"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 0.8))',
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
+                animate={attackEffect === 'enemy-attack' ? { x: [0, 10, 0] } : { x: 0 }}
+                transition={{ duration: 0.2 }}
               />
             </div>
             {/* 敵HPバー */}
@@ -102,15 +105,17 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           {/* プレイヤー側（右下） */}
           <div className="flex flex-col items-center space-y-2 sm:space-y-3">
             <div className="flex items-end" style={{ height: '256px' }}>
-              <img 
+              <motion.img
                 src={CHARACTER_IMAGES.player}
                 alt="プレイヤー"
                 className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain object-bottom transition-all duration-300"
-                style={{ 
+                style={{
                   filter: 'drop-shadow(0 0 15px rgba(34, 211, 238, 0.7))',
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
+                animate={attackEffect === 'player-attack' ? { x: [0, -10, 0] } : { x: 0 }}
+                transition={{ duration: 0.2 }}
               />
             </div>
             {/* プレイヤーHPバー */}
