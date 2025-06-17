@@ -14,4 +14,5 @@ export interface GameState {
     playerWon: boolean;
     currentFloor: number;
     maxFloorReached: number;
+    clearFloor: number;
 }

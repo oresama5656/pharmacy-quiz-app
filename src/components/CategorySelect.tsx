@@ -62,9 +62,14 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
                       {category.description}
                     </p>
                   </div>
-                  <span className="bg-gray-700 text-xs px-2 py-1 rounded-full text-gray-300 group-hover:bg-yellow-500 group-hover:text-black">
-                    {category.difficulty}
-                  </span>
+                  <div className="flex flex-col items-end text-xs space-y-1">
+                    <span className="bg-gray-700 px-2 py-1 rounded-full text-gray-300 group-hover:bg-yellow-500 group-hover:text-black">
+                      {category.difficulty}
+                    </span>
+                    <span className="text-gray-400 group-hover:text-gray-200">
+                      {`Clear: ${category.clearFloor}F`}
+                    </span>
+                  </div>
                 </button>
               ))}
             </div>

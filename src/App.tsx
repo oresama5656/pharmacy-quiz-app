@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GameState } from './types';
-import { getQuizzesByCategory, shuffleQuizzes, shuffleChoices } from './data/quizManager';
+import { getQuizzesByCategory, shuffleQuizzes, shuffleChoices, getCategoryById } from './data/quizManager';
 import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
@@ -22,7 +22,8 @@ const App: React.FC = () => {
     isGameOver: false,
     playerWon: false,
     currentFloor: 1,
-    maxFloorReached: 1
+    maxFloorReached: 1,
+    clearFloor: 10
   });
 
   // ランダムに敵の画像を選択する関数
@@ -36,10 +37,13 @@ const App: React.FC = () => {
     const quizzes = getQuizzesByCategory(categoryId);
     const shuffled = shuffleQuizzes(quizzes).map(quiz => shuffleChoices(quiz));
     setShuffledQuizzes(shuffled);
-    
+
+    const categoryInfo = getCategoryById(categoryId);
+    const clearFloor = categoryInfo ? categoryInfo.clearFloor : 10;
+
     // ランダムな敵の画像を選択
     setSelectedEnemyImage(selectRandomEnemyImage());
-    
+
     setSelectedCategory(categoryId);
     setGameState({
       playerHp: 20,
@@ -49,7 +53,8 @@ const App: React.FC = () => {
       isGameOver: false,
       playerWon: false,
       currentFloor: 1,
-      maxFloorReached: 1
+      maxFloorReached: 1,
+      clearFloor
     });
     setCurrentScreen('game');
   };
@@ -87,6 +92,22 @@ const App: React.FC = () => {
     const playerWon = false;
 
     if (newEnemyHp <= 0) {
+      if (newCurrentFloor >= gameState.clearFloor) {
+        // クリア階層の敵を倒した場合
+        setTimeout(() => {
+          setGameState({
+            ...gameState,
+            playerHp: newPlayerHp,
+            enemyHp: 0,
+            score: newScore,
+            isGameOver: true,
+            playerWon: true
+          });
+          setTimeout(() => setCurrentScreen('result'), 500);
+        }, 250);
+        return;
+      }
+
       // 敵を倒した場合：即座に次のフロアに進む
       const nextFloor = newCurrentFloor + 1;
       const enemyHpAfter = getEnemyHpForFloor(nextFloor);
@@ -106,9 +127,10 @@ const App: React.FC = () => {
           currentQuizIndex: nextQuizIndex,
           score: newScore,
           isGameOver: gameOver,
-          playerWon: playerWon,
+          playerWon: false,
           currentFloor: nextFloor,
-          maxFloorReached: newMaxFloor
+          maxFloorReached: newMaxFloor,
+          clearFloor: gameState.clearFloor
         });
 
         if (gameOver) {
@@ -126,7 +148,8 @@ const App: React.FC = () => {
           isGameOver: gameOver,
           playerWon: playerWon,
           currentFloor: newCurrentFloor,
-          maxFloorReached: newMaxFloor
+          maxFloorReached: newMaxFloor,
+          clearFloor: gameState.clearFloor
         });
 
         if (gameOver) {
@@ -149,7 +172,8 @@ const App: React.FC = () => {
       isGameOver: false,
       playerWon: false,
       currentFloor: 1,
-      maxFloorReached: 1
+      maxFloorReached: 1,
+      clearFloor: gameState.clearFloor
     });
     setCurrentScreen('game');
   };
