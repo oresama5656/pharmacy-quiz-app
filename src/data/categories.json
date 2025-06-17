@@ -27,11 +27,18 @@
     "icon": "🍬",
     "difficulty": "応用"
   },
-  {
-    "id": "antibiotics",
-    "name": "抗生物質の分類",
-    "description": "抗生物質の一般名から系統・分類を答える問題です",
-    "icon": "🦠",
-    "difficulty": "応用"
-  }
+    {
+      "id": "antibiotics",
+      "name": "抗生物質の分類",
+      "description": "抗生物質の一般名から系統・分類を答える問題です",
+      "icon": "🦠",
+      "difficulty": "応用"
+    },
+    {
+      "id": "simple_math",
+      "name": "足し算",
+      "description": "一桁の足し算を答える問題です",
+      "icon": "🧮",
+      "difficulty": "基本"
+    }
 ] 

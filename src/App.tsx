@@ -67,7 +67,7 @@ const App: React.FC = () => {
     // 攻撃エフェクトを表示
     if (isCorrect) {
       setAttackEffect('player-attack');
-      newEnemyHp = Math.max(0, gameState.enemyHp - 2);
+      newEnemyHp = Math.max(0, gameState.enemyHp - 10);
       newScore = gameState.score + 1;
     } else {
       setAttackEffect('enemy-attack');
