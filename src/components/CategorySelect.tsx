@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { getCategories, Category } from '../data/quizManager';
-import { CHARACTER_IMAGES, BACKGROUND_IMAGES } from '../constants';
+import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 
 interface CategorySelectProps {
   onCategorySelect: (categoryId: string) => void;
@@ -8,6 +8,18 @@ interface CategorySelectProps {
 
 const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => {
   const categories = getCategories();
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audio = new Audio(BGM.category);
+    audio.loop = true;
+    audioRef.current = audio;
+    audio.play().catch(() => {});
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
 
   return (
     <div 
