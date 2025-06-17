@@ -11,9 +11,10 @@ interface GameScreenProps {
   onAnswer: (selectedAnswer: string) => void;
   attackEffect?: 'player-attack' | 'enemy-attack' | null;
   enemyImage: string;
+  showWarning?: boolean;
 }
 
-const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect, enemyImage }) => {
+const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect, enemyImage, showWarning }) => {
   const currentQuiz = quizzes[gameState.currentQuizIndex];
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -46,7 +47,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   return (
     <div className="min-h-screen flex flex-col bg-black">
       {/* 戦闘シーン上半分 */}
-      <div 
+      <div
         className="flex-1 relative overflow-hidden"
         style={{
           backgroundImage: `url(${BACKGROUND_IMAGES.battle})`,
@@ -55,6 +56,13 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           minHeight: '50vh'
         }}
       >
+
+        {/* ボス出現警告 */}
+        {showWarning && (
+          <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/70">
+            <h1 className="text-red-600 text-5xl sm:text-6xl font-extrabold animate-pulse">WARNING</h1>
+          </div>
+        )}
         
         {/* 攻撃エフェクト */}
         {attackEffect === 'player-attack' && (

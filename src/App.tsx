@@ -5,12 +5,13 @@ import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
-import { ENEMY_IMAGES } from './constants';
+import { ENEMY_IMAGES, BOSS_IMAGE } from './constants';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
+  const [showWarning, setShowWarning] = useState(false);
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
@@ -43,6 +44,7 @@ const App: React.FC = () => {
 
     // ランダムな敵の画像を選択
     setSelectedEnemyImage(selectRandomEnemyImage());
+    setShowWarning(false);
 
     setSelectedCategory(categoryId);
     setGameState({
@@ -115,28 +117,50 @@ const App: React.FC = () => {
         newMaxFloor = nextFloor;
       }
 
-      // 新しい敵画像をすぐに選択
-      const newEnemyImage = selectRandomEnemyImage();
-      setSelectedEnemyImage(newEnemyImage);
+      const isBossFloor = nextFloor % 10 === 0;
+      const newEnemyImage = isBossFloor ? BOSS_IMAGE : selectRandomEnemyImage();
 
-      // わずかな遅延で状態を更新（敵消滅エフェクトの時間を短縮：800ms → 250ms）
-      setTimeout(() => {
-        setGameState({
-          playerHp: newPlayerHp,
-          enemyHp: enemyHpAfter,
-          currentQuizIndex: nextQuizIndex,
-          score: newScore,
-          isGameOver: gameOver,
-          playerWon: false,
-          currentFloor: nextFloor,
-          maxFloorReached: newMaxFloor,
-          clearFloor: gameState.clearFloor
-        });
+      if (isBossFloor) {
+        setShowWarning(true);
+        setTimeout(() => {
+          setShowWarning(false);
+          setSelectedEnemyImage(newEnemyImage);
+          setGameState({
+            playerHp: newPlayerHp,
+            enemyHp: enemyHpAfter,
+            currentQuizIndex: nextQuizIndex,
+            score: newScore,
+            isGameOver: gameOver,
+            playerWon: false,
+            currentFloor: nextFloor,
+            maxFloorReached: newMaxFloor,
+            clearFloor: gameState.clearFloor
+          });
 
-        if (gameOver) {
-          setTimeout(() => setCurrentScreen('result'), 500);
-        }
-      }, 250);
+          if (gameOver) {
+            setTimeout(() => setCurrentScreen('result'), 500);
+          }
+        }, 1000);
+      } else {
+        setSelectedEnemyImage(newEnemyImage);
+        setTimeout(() => {
+          setGameState({
+            playerHp: newPlayerHp,
+            enemyHp: enemyHpAfter,
+            currentQuizIndex: nextQuizIndex,
+            score: newScore,
+            isGameOver: gameOver,
+            playerWon: false,
+            currentFloor: nextFloor,
+            maxFloorReached: newMaxFloor,
+            clearFloor: gameState.clearFloor
+          });
+
+          if (gameOver) {
+            setTimeout(() => setCurrentScreen('result'), 500);
+          }
+        }, 250);
+      }
     } else {
       // 敵がまだ生きている場合はより高速で更新（100ms → 50ms）
       setTimeout(() => {
@@ -162,6 +186,7 @@ const App: React.FC = () => {
   const handleRestart = () => {
     // リスタート時に新しい敵の画像を選択
     setSelectedEnemyImage(selectRandomEnemyImage());
+    setShowWarning(false);
     
     setAttackEffect(null);
     setGameState({
@@ -183,6 +208,7 @@ const App: React.FC = () => {
     setCurrentScreen('category');
     setSelectedCategory(null);
     setShuffledQuizzes([]);
+    setShowWarning(false);
   };
 
   // 画面の表示制御
@@ -198,6 +224,7 @@ const App: React.FC = () => {
         onAnswer={handleAnswer}
         attackEffect={attackEffect}
         enemyImage={selectedEnemyImage}
+        showWarning={showWarning}
       />
     );
   }

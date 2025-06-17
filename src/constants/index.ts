@@ -12,6 +12,10 @@ export const ENEMY_IMAGES = [
   "https://github.com/oresama5656/GameData_Public/blob/main/asset_repo/v1/images/enemy_boss/angry_hosoya.png?raw=true",
   "https://github.com/oresama5656/GameData_Public/blob/main/Fukushi.png?raw=true"
 ];
+
+// ボスキャラクターの画像URL
+export const BOSS_IMAGE =
+  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/engel.png?raw=true";
   
   // 背景画像のURL
 export const BACKGROUND_IMAGES = {
