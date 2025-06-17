@@ -25,7 +25,7 @@ export const BACKGROUND_IMAGES = {
 export const BGM = {
   game: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/battle/Fallen%20Dreams.wav?raw=true",
   category: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/sleepy.mp3?raw=true",
-  win: "https://github.com/oresama5656/GameData_Public/blob/main/win.mp3?raw=true",
+  win: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Victory's%20Echo.wav?raw=true",
   lose: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Fallen%20Dreams.wav?raw=true"
 };
 

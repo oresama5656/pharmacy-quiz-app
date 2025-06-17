@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { GameState } from '../types';
-import { BACKGROUND_IMAGES, BGM } from '../constants';
+import { BACKGROUND_IMAGES, BGM, CHARACTER_IMAGES } from '../constants';
 
 interface ResultScreenProps {
   gameState: GameState;
@@ -17,7 +17,7 @@ const RESULT_ASSETS = {
   defeatLogo: null,          // 敗北時ロゴ画像URL ← ここを追加
   // キャラクター画像（後で差し替え用）
   characterImages: {
-    victory: null, // 勝利時キャラクター画像URL
+    victory: CHARACTER_IMAGES.player, // 勝利時キャラクター画像URL
     defeat: null,  // 敗北時キャラクター画像URL
   },
   // 装飾オブジェクト
