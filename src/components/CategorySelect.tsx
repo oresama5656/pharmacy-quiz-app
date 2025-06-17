@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { getCategories, Category } from '../data/quizManager';
-import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
+import { BACKGROUND_IMAGES, BGM } from '../constants';
 
 interface CategorySelectProps {
   onCategorySelect: (categoryId: string) => void;
