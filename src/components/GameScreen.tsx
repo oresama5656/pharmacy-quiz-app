@@ -88,7 +88,8 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
-                animate={attackEffect === 'enemy-attack' ? { x: [0, 10, 0] } : { x: 0 }}
+                // 敵が攻撃されたら右に1000px移動
+                animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0] } : { x: 0 }}
                 transition={{ duration: 0.2 }}
               />
             </div>
@@ -123,7 +124,8 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                   backgroundColor: 'transparent',
                   imageRendering: 'auto'
                 }}
-                animate={attackEffect === 'player-attack' ? { x: [0, -10, 0] } : { x: 0 }}
+                // プレイヤーが攻撃されたら左に1000px移動
+                animate={attackEffect === 'player-attack' ? { x: [0, -1000, 0] } : { x: 0 }}
                 transition={{ duration: 0.2 }}
               />
             </div>
