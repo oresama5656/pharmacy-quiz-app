@@ -100,7 +100,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
         }`}>
           {(gameState.playerWon ? RESULT_ASSETS.congratulationsLogo : RESULT_ASSETS.defeatLogo) ? (
             <img 
-              src={gameState.playerWon ? RESULT_ASSETS.congratulationsLogo : RESULT_ASSETS.defeatLogo} 
+              src={gameState.playerWon ? RESULT_ASSETS.congratulationsLogo : RESULT_ASSETS.defeatLogo || ""} 
               alt={gameState.playerWon ? "Congratulations" : "Game Over"} 
               className="max-w-full h-auto max-h-16 sm:max-h-20 md:max-h-24"
             />
