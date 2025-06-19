@@ -221,6 +221,16 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
             <p className="text-gray-300 text-xs sm:text-sm">
               🎯 正解して敵にダメージを与えよう！
             </p>
+            {isAnswerCorrect === false && (
+              <div className="mt-3 text-center">
+                <p className="text-red-500 text-xl sm:text-2xl md:text-3xl font-extrabold">
+                  不正解
+                </p>
+                <p className="text-white text-base sm:text-lg md:text-xl mt-1 font-semibold">
+                  正解：{currentQuiz.correct}
+                </p>
+              </div>
+            )}
           </div>
 
           {/* 選択肢エリア */}
