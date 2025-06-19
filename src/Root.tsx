@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TownMap from './pages/TownMap';
 import CategoryList from './pages/CategoryList';
-import GameScreen from './components/GameScreen';
+import GameScreen from './pages/GameScreen';
 
 const Root: React.FC = () => (
   <BrowserRouter>

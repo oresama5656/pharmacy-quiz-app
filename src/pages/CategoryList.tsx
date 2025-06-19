@@ -29,7 +29,7 @@ const CategoryList: React.FC = () => {
                   floors,
                   currentQuizIndex: 0,
                   starLevel: star,
-                  categoryName: cat.name,
+                  categoryId: cat.id,
                 },
               });
             }}
