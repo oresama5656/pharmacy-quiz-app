@@ -1,6 +1,7 @@
 import React from 'react';
 // 画像を静的インポート
-import townBg from '/assets/map-town.png';
+// アセットは相対パスで読み込む
+import townBg from '../assets/map-town.png';
 
 const TownMap: React.FC = () => (
   <div
