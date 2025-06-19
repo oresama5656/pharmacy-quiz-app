@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { guilds } from '../data/guilds';
+import { quizData } from '../data/quizManager';
 
 const CategoryList: React.FC = () => {
   const { guildId } = useParams();
@@ -17,7 +18,21 @@ const CategoryList: React.FC = () => {
         {guild.categories.map(cat => (
           <button
             key={cat.id}
-            onClick={() => nav(`/battle/${guildId}/${cat.id}/${cat.star}`)}
+            onClick={() => {
+              const star = cat.star;
+              const floors = star === 1 ? 10 : 20;
+              const quizzes = (quizData as any)[cat.id] ?? [];
+
+              nav(`/battle/${guildId}/${cat.id}/${star}`, {
+                state: {
+                  quizzes,
+                  floors,
+                  currentQuizIndex: 0,
+                  starLevel: star,
+                  categoryName: cat.name,
+                },
+              });
+            }}
             className="relative flex items-start gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20"
           >
             <span className="text-3xl">{cat.icon}</span>
