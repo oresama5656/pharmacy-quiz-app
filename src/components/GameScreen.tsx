@@ -210,14 +210,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 <button
                   key={index}
                   onClick={() => onAnswer(choice)}
-                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2"
+                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-3 sm:p-4 transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center text-center"
                 >
-                  <div className="flex-shrink-0">
-                    <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-sm sm:text-lg shadow-lg">
-                      {String.fromCharCode(65 + index)}
-                    </span>
-                  </div>
-                  <span className="text-white font-medium text-xs sm:text-sm md:text-base text-center leading-tight overflow-hidden">
+                  <span className="text-white font-medium text-sm sm:text-base md:text-lg leading-tight">
                     {choice}
                   </span>
                 </button>
