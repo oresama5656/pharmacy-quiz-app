@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz, GameState } from '../types';
@@ -17,6 +17,8 @@ interface GameScreenProps {
 const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect, enemyImage, showWarning }) => {
   const currentQuiz = quizzes[gameState.currentQuizIndex];
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean | null>(null);
 
   useEffect(() => {
     const audio = new Audio(BGM.game);
@@ -37,6 +39,18 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const enemyMaxHp = getEnemyHpForFloor(gameState.currentFloor);
   const enemyHpPercentage = (gameState.enemyHp / enemyMaxHp) * 100;
+
+  useEffect(() => {
+    setSelectedAnswer(null);
+    setIsAnswerCorrect(null);
+  }, [currentQuiz]);
+
+  const handleChoiceClick = (choice: string) => {
+    if (selectedAnswer) return;
+    setSelectedAnswer(choice);
+    setIsAnswerCorrect(choice === currentQuiz.correct);
+    onAnswer(choice);
+  };
 
   useEffect(() => {
     if (attackEffect) {
@@ -209,9 +223,16 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
               {currentQuiz.choices.map((choice, index) => (
                 <button
                   key={index}
-                  onClick={() => onAnswer(choice)}
-                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2"
+                  onClick={() => handleChoiceClick(choice)}
+                  className={`relative bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2 ${
+                    isAnswerCorrect === false && choice === currentQuiz.correct
+                      ? 'ring-2 ring-yellow-300 animate-pulse'
+                      : ''
+                  }`}
                 >
+                  {selectedAnswer === choice && isAnswerCorrect === false && (
+                    <span className="absolute inset-0 rounded-xl bg-red-600/70 animate-[ping_0.6s_ease-out] pointer-events-none" />
+                  )}
                   <div className="flex-shrink-0">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-bold text-sm sm:text-lg shadow-lg">
                       {String.fromCharCode(65 + index)}
