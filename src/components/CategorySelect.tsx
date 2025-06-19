@@ -81,18 +81,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
       <footer className="p-4 text-center text-gray-500 text-sm">
         <p>© 2023 薬学クイズバトル</p>
       </footer>
-
-      {/* キャラクター画像 */}
-      {/*
-      <div className="absolute bottom-0 right-0 h-32 sm:h-40 md:h-48 pointer-events-none opacity-70">
-        <img
-          src={CHARACTER_IMAGES.player}
-          alt="プレイヤーキャラクター"
-          className="h-full object-contain"
-          style={{ filter: 'drop-shadow(0 0 10px rgba(59, 130, 246, 0.5))' }}
-        />
-      </div>
-      */}
     </div>
   );
 };
