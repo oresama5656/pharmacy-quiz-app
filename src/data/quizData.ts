@@ -7,6 +7,7 @@ import generic2effect from './generic2effect.json';
 import brand2generic_diabetes from './brand2generic_diabetes.json';
 import antibiotics from './antibiotics.json';
 import simple_math from './simple_math.json';
+import text_length from './text_length.json';
 
 
 // クイズデータをエクスポート
@@ -20,7 +21,8 @@ export const quizData = {
     question: quiz.question,
     correct: String(quiz.correct),
     choices: quiz.choices.map(choice => String(choice))
-  })) as Quiz[]
+  })) as Quiz[],
+  text_length: text_length as Quiz[]
 };
 
 // 新しいカテゴリを追加する場合は、JSONファイルを作成してここにインポートするだけでOK

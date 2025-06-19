@@ -46,5 +46,13 @@
       "icon": "🧮",
       "difficulty": "基本",
       "clearFloor": 30
+    },
+    {
+      "id": "text_length",
+      "name": "文章表示テスト",
+      "description": "長文や長い選択肢の表示確認用",
+      "icon": "📜",
+      "difficulty": "基本",
+      "clearFloor": 10
     }
 ] 
