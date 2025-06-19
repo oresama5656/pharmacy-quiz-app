@@ -7,6 +7,10 @@ import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
 import { ENEMY_IMAGES, BOSS_IMAGE } from './constants';
 
+// 不正解時に次の問題へ進むまでのウェイト時間（ms）
+// 適宜この値を変更して表示時間を調整できる
+export const INCORRECT_WAIT_MS = 1000;
+
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -162,7 +166,9 @@ const App: React.FC = () => {
         }, 250);
       }
     } else {
-      // 敵がまだ生きている場合は演出後に更新（0.6秒）
+      // 敵がまだ生きている場合は演出後に更新
+      // 不正解時のウェイトは INCORRECT_WAIT_MS で調整する
+      const delay = isCorrect ? 600 : INCORRECT_WAIT_MS; // 正解時は従来通り0.6秒、不正解時のみ待機時間を延長
       setTimeout(() => {
         setGameState({
           playerHp: newPlayerHp,
@@ -179,7 +185,7 @@ const App: React.FC = () => {
         if (gameOver) {
           setTimeout(() => setCurrentScreen('result'), 500);
         }
-      }, 600);
+      }, delay);
     }
   };
 
