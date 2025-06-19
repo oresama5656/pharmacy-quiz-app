@@ -6,12 +6,14 @@ import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
 import { ENEMY_IMAGES, BOSS_IMAGES } from './constants';
+import { guilds } from './data/guilds';
 
 // 不正解時に次の問題へ進むまでのウェイト時間（ms）
 // 適宜この値を変更して表示時間を調整できる
 export const INCORRECT_WAIT_MS = 2000;
 
 const App: React.FC = () => {
+  console.log(guilds);
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
