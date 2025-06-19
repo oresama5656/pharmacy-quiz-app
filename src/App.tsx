@@ -162,7 +162,7 @@ const App: React.FC = () => {
         }, 250);
       }
     } else {
-      // 敵がまだ生きている場合はより高速で更新（100ms → 50ms）
+      // 敵がまだ生きている場合は演出後に更新（0.6秒）
       setTimeout(() => {
         setGameState({
           playerHp: newPlayerHp,
@@ -179,7 +179,7 @@ const App: React.FC = () => {
         if (gameOver) {
           setTimeout(() => setCurrentScreen('result'), 500);
         }
-      }, 50);
+      }, 600);
     }
   };
 
