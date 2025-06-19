@@ -162,7 +162,8 @@ const App: React.FC = () => {
         }, 250);
       }
     } else {
-      // 敵がまだ生きている場合は演出後に更新（0.6秒）
+      // 敵がまだ生きている場合は演出後に更新（不正解時は1秒追加）
+      const delay = isCorrect ? 600 : 1600;
       setTimeout(() => {
         setGameState({
           playerHp: newPlayerHp,
@@ -179,7 +180,7 @@ const App: React.FC = () => {
         if (gameOver) {
           setTimeout(() => setCurrentScreen('result'), 500);
         }
-      }, 600);
+        }, delay);
     }
   };
 

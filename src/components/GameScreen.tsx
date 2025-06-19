@@ -218,9 +218,25 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
             <h2 className="text-white text-base sm:text-lg md:text-xl font-bold mb-2 leading-tight">
               {currentQuiz.question}
             </h2>
-            <p className="text-gray-300 text-xs sm:text-sm">
-              🎯 正解して敵にダメージを与えよう！
-            </p>
+            <div className="relative min-h-[1.5rem]">
+              <p
+                className={`text-gray-300 text-xs sm:text-sm transition-opacity duration-200 ${
+                  isAnswerCorrect !== null ? 'invisible' : 'visible'
+                }`}
+              >
+                🎯 正解して敵にダメージを与えよう！
+              </p>
+              {isAnswerCorrect === false && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1">
+                  <p className="text-red-500 text-xl sm:text-2xl md:text-3xl font-extrabold">
+                    不正解
+                  </p>
+                  <p className="text-white text-base sm:text-lg md:text-xl font-semibold">
+                    正解：{currentQuiz.correct}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* 選択肢エリア */}
