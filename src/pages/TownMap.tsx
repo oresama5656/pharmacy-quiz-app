@@ -2,6 +2,7 @@ import React from 'react';
 // 画像を静的インポート
 // アセットは相対パスで読み込む
 import townBg from '../assets/map-town.png';
+import { guilds } from '../data/guilds';
 
 const TownMap: React.FC = () => (
   <div
@@ -12,14 +13,19 @@ const TownMap: React.FC = () => (
       backgroundPosition: 'center'
     }}
   >
-    {/* 調剤ギルドボタン */}
-    <button
-      onClick={() => console.log('chouzai')}
-      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 text-white text-center"
-    >
-      <span className="text-5xl drop-shadow">💊</span>
-      <span className="text-sm bg-black/60 px-2 py-0.5 rounded">調剤ギルド</span>
-    </button>
+    {guilds.map(guild => (
+      <button
+        key={guild.id}
+        onClick={() => console.log(guild.id)}
+        className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 text-white text-center transition-transform hover:scale-105"
+        style={{ top: guild.position.top, left: guild.position.left }}
+      >
+        <span className="text-5xl drop-shadow">{guild.icon}</span>
+        <span className="text-sm bg-black/60 px-2 py-0.5 rounded">
+          {guild.name}
+        </span>
+      </button>
+    ))}
   </div>
 );
 
