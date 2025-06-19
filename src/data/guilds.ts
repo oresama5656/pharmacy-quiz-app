@@ -9,31 +9,36 @@ export const guilds = [
         id: 'brand2generic',
         name: '商品名→一般名',
         icon: '💊',
-        description: '商品名から一般名を導く'
+        description: '商品名から一般名を導く',
+        star: 1
       },
       {
         id: 'brand2effect',
         name: '商品名→効果',
         icon: '💊',
-        description: '商品名から効果を答える'
+        description: '商品名から効果を答える',
+        star: 2
       },
       {
         id: 'generic2effect',
         name: '一般名→効果',
         icon: '🧪',
-        description: '一般名から効果を答える'
+        description: '一般名から効果を答える',
+        star: 2
       },
       {
         id: 'brand2generic_diabetes',
         name: '糖尿病薬：商品名→一般名',
         icon: '🍬',
-        description: '糖尿病薬で商品名から一般名を導く'
+        description: '糖尿病薬で商品名から一般名を導く',
+        star: 3
       },
       {
         id: 'antibiotics',
         name: '抗生物質の分類',
         icon: '🦠',
-        description: '抗生物質の分類を答える'
+        description: '抗生物質の分類を答える',
+        star: 3
       }
     ]
   },
@@ -47,7 +52,8 @@ export const guilds = [
         id: 'simple_math',
         name: '足し算',
         icon: '📐',
-        description: '一桁の足し算'
+        description: '一桁の足し算',
+        star: 1
       }
     ]
   },
@@ -61,7 +67,8 @@ export const guilds = [
         id: 'text_length',
         name: '文章表示テスト',
         icon: '📖',
-        description: '長文表示テスト'
+        description: '長文表示テスト',
+        star: 1
       }
     ]
   },
