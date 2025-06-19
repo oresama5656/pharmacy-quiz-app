@@ -52,7 +52,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
     };
   }, [gameState.playerWon]);
 
-  const achievedFloor = gameState.score;
+  const achievedFloor = gameState.maxFloorReached;
 
   return (
     <div className="w-full h-screen overflow-hidden relative flex flex-col">
