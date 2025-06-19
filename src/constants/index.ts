@@ -5,31 +5,30 @@ export const CHARACTER_IMAGES = {
 
 // 敵キャラクターの画像URL（複数）
 export const ENEMY_IMAGES = [
-  "/src/assets/enemy/ghost_blue.png",
-  "/src/assets/enemy/ghost_white.png",
-  "/src/assets/enemy/wolf_blue.png",
-  "/src/assets/enemy/wolf_white.png",
-  "/src/assets/enemy/warwolf.png",
-  "/src/assets/enemy/minotor.png",
-  "/src/assets/enemy/kappa.png",
-  "/src/assets/enemy/gremrin.png",
-  "/src/assets/enemy/harpy.png",
-  "/src/assets/enemy/mimic.png",
-  "/src/assets/enemy/oak_warriar1.png",
-  "/src/assets/enemy/oak_warriar2.png",
-  "/src/assets/enemy/oak_warriar3.png",
-  "/src/assets/enemy/fukushi_madoushi.png",
-  "/src/assets/enemy/inp.png",
-  "/src/assets/enemy/minotor.png",  
+  "/enemy/ghost_blue.png",
+  "/enemy/ghost_white.png",
+  "/enemy/wolf_blue.png",
+  "/enemy/wolf_white.png",
+  "/enemy/warwolf.png",
+  "/enemy/minotor.png",
+  "/enemy/kappa.png",
+  "/enemy/gremrin.png",
+  "/enemy/harpy.png",
+  "/enemy/mimic.png",
+  "/enemy/oak_warriar1.png",
+  "/enemy/oak_warriar2.png",
+  "/enemy/oak_warriar3.png",
+  "/enemy/fukushi_madoushi.png",
+  "/enemy/inp.png"
 ];
 
 // ボスキャラクターの画像URL（複数定義可能）
 export const BOSS_IMAGES = [
-  "/src/assets/enemy/hosoya_knight.png",
-  "/src/assets/enemy/hosoya_murabito.png",
-  "/src/assets/enemy/hosoya_syonin.png",
-  "/src/assets/enemy/hosoya_king.png",
-  "/src/assets/enemy/fukushi_madoushi.png"
+  "/enemy/hosoya_knight.png",
+  "/enemy/hosoya_murabito.png",
+  "/enemy/hosoya_syonin.png",
+  "/enemy/hosoya_king.png",
+  "/enemy/fukushi_madoushi.png"
 ];
   
   // 背景画像のURL
