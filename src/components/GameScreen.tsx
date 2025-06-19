@@ -157,7 +157,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
             <div className="bg-black/90 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-red-400/50 shadow-xl">
               <div className="space-y-1">
                 <div className="flex justify-between text-xs text-gray-300">
-                  <span>感染モンスター</span>
+                  <span>モンスター</span>
                   <span>{gameState.enemyHp}/{enemyMaxHp}</span>
                 </div>
                 <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
