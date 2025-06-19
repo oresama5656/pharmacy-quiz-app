@@ -5,19 +5,31 @@ export const CHARACTER_IMAGES = {
 
 // 敵キャラクターの画像URL（複数）
 export const ENEMY_IMAGES = [
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/black_dragon_right.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/murasaki_devil.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/green_dragon.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/satan_right.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/asset_repo/v1/images/enemy_boss/angry_hosoya.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/Fukushi.png?raw=true"
+  "/src/assets/enemy/ghost_blue.png",
+  "/src/assets/enemy/ghost_white.png",
+  "/src/assets/enemy/wolf_blue.png",
+  "/src/assets/enemy/wolf_white.png",
+  "/src/assets/enemy/warwolf.png",
+  "/src/assets/enemy/minotor.png",
+  "/src/assets/enemy/kappa.png",
+  "/src/assets/enemy/gremrin.png",
+  "/src/assets/enemy/harpy.png",
+  "/src/assets/enemy/mimic.png",
+  "/src/assets/enemy/oak_warriar1.png",
+  "/src/assets/enemy/oak_warriar2.png",
+  "/src/assets/enemy/oak_warriar3.png",
+  "/src/assets/enemy/fukushi_madoushi.png",
+  "/src/assets/enemy/inp.png",
+  "/src/assets/enemy/minotor.png",  
 ];
 
 // ボスキャラクターの画像URL（複数定義可能）
 export const BOSS_IMAGES = [
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/engel.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/enemy/fflike/satan_right.png?raw=true",
-  "https://github.com/oresama5656/GameData_Public/blob/main/asset_repo/v1/images/enemy_boss/angry_hosoya.png?raw=true"
+  "/src/assets/enemy/hosoya_knight.png",
+  "/src/assets/enemy/hosoya_murabito.png",
+  "/src/assets/enemy/hosoya_syonin.png",
+  "/src/assets/enemy/hosoya_king.png",
+  "/src/assets/enemy/fukushi_madoushi.png"
 ];
   
   // 背景画像のURL
