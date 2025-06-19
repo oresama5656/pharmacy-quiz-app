@@ -25,20 +25,38 @@ export const BACKGROUND_IMAGES = {
   result: "https://github.com/oresama5656/GameData_Public/blob/main/background/orange_sougen_and_sourd.png?raw=true"
 };
 
+// // BGM ファイルのURL
+// export const BGM = {
+//   game: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/battle/Fallen%20Dreams.wav?raw=true",
+//   category: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/sleepy.mp3?raw=true",
+//   win: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Victory's%20Echo.wav?raw=true",
+//   lose: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Fallen%20Dreams.wav?raw=true"
+// };
+
+// // 効果音のURL
+// export const SOUND_EFFECTS = {
+//   // プレイヤーが敵を攻撃する音
+//   playerAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/slash.mp3?raw=true",
+//   // 敵がプレイヤーを攻撃する音
+//   enemyAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/blow.mp3?raw=true",
+//   // ボス警告音
+//   warning: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/warning.mp3?raw=true"
+// };
+
 // BGM ファイルのURL
 export const BGM = {
-  game: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/battle/Fallen%20Dreams.wav?raw=true",
-  category: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/sleepy.mp3?raw=true",
-  win: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Victory's%20Echo.wav?raw=true",
-  lose: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Fallen%20Dreams.wav?raw=true"
+  game: '/audio/bgm/ClashofShadows.mp3',
+  category: '/audio/bgm/sleepy.mp3',
+  win: '/audio/bgm/VictorysEcho.mp3',
+  lose: '/audio/bgm/FallenDreams.mp3'
 };
 
 // 効果音のURL
 export const SOUND_EFFECTS = {
   // プレイヤーが敵を攻撃する音
-  playerAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/slash.mp3?raw=true",
+  playerAttack: '/audio/se/slash.mp3',
   // 敵がプレイヤーを攻撃する音
-  enemyAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/blow.mp3?raw=true",
+  enemyAttack: '/audio/se/blow.mp3',
   // ボス警告音
-  warning: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/warning.mp3?raw=true"
+  warning: '/audio/se/warning.mp3'
 };
