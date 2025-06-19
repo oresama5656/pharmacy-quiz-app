@@ -1,7 +1,16 @@
 import React from 'react';
+// 画像を静的インポート
+import townBg from '/assets/map-town.png';
 
 const TownMap: React.FC = () => (
-  <div className="w-screen h-screen flex items-center justify-center text-2xl text-white bg-black">
+  <div
+    className="w-screen h-screen flex items-center justify-center text-2xl text-white"
+    style={{
+      backgroundImage: `url(${townBg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}
+  >
     TownMap Placeholder
   </div>
 );
