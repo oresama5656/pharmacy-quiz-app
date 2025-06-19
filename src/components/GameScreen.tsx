@@ -19,6 +19,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean | null>(null);
+  const [showAnswerEffects, setShowAnswerEffects] = useState(false);
 
   useEffect(() => {
     const audio = new Audio(BGM.game);
@@ -43,6 +44,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   useEffect(() => {
     setSelectedAnswer(null);
     setIsAnswerCorrect(null);
+    setShowAnswerEffects(false);
   }, [currentQuiz]);
 
   const handleChoiceClick = (choice: string) => {
@@ -51,6 +53,14 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
     setIsAnswerCorrect(choice === currentQuiz.correct);
     onAnswer(choice);
   };
+
+  // After enemy attack animation, show correct answer highlight and fade others
+  useEffect(() => {
+    if (selectedAnswer && isAnswerCorrect === false) {
+      const t = setTimeout(() => setShowAnswerEffects(true), 200);
+      return () => clearTimeout(t);
+    }
+  }, [selectedAnswer, isAnswerCorrect]);
 
   useEffect(() => {
     if (attackEffect) {
@@ -226,17 +236,27 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           {/* 選択肢エリア */}
           <div className="flex-1 min-h-0">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 h-full">
-              {currentQuiz.choices.map((choice, index) => (
-                <button
-                  key={index}
-                  onClick={() => onAnswer(choice)}
-                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-3 sm:p-4 transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center text-center"
-                >
-                  <span className="text-white font-medium text-sm sm:text-base md:text-lg leading-tight">
-                  {choice}
-                  </span>
-                </button>
-              ))}
+              {currentQuiz.choices.map((choice, index) => {
+                const isCorrectChoice = choice === currentQuiz.correct;
+                const effectActive = showAnswerEffects && selectedAnswer !== null && !isAnswerCorrect;
+                return (
+                  <button
+                    key={index}
+                    onClick={() => handleChoiceClick(choice)}
+                    disabled={!!selectedAnswer}
+                    className={`bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-3 sm:p-4 transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center text-center ${
+                      effectActive && !isCorrectChoice ? 'opacity-0' : ''
+                    } ${
+                      effectActive && isCorrectChoice ? 'ring-2 ring-yellow-400 shadow-yellow-400 animate-pulse' : ''
+                    }`}
+                    style={{ transitionProperty: 'opacity, box-shadow, transform' }}
+                  >
+                    <span className="text-white font-medium text-sm sm:text-base md:text-lg leading-tight">
+                      {choice}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
