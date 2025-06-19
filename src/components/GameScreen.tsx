@@ -218,11 +218,10 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
             <div className="flex items-center justify-between mb-2 sm:mb-3">
               <div className="flex items-center space-x-2 sm:space-x-3">
                 <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
-                  QUIZ {gameState.currentQuizIndex + 1}/{quizzes.length}
+                  FLOOR {gameState.currentFloor}/{gameState.clearFloor}
                 </span>
                 <span className="text-yellow-400 text-lg sm:text-xl">🧬</span>
               </div>
-              <span className="text-white text-xs sm:text-sm">Floor: {gameState.currentFloor}/{gameState.clearFloor}</span>
             </div>
             
             <h2 className="text-white text-base sm:text-lg md:text-xl font-bold mb-2 leading-tight">
