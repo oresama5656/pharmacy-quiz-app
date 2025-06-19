@@ -40,6 +40,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const enemyMaxHp = getEnemyHpForFloor(gameState.currentFloor);
   const enemyHpPercentage = (gameState.enemyHp / enemyMaxHp) * 100;
+  const isBoss = gameState.currentFloor % 10 === 0;
+  const BOSS_SIZE_MULTIPLIER = 2; // ボス画像の表示倍率（変更する場合はここを調整）
+  const enemyScale = isBoss ? BOSS_SIZE_MULTIPLIER : 1;
 
   useEffect(() => {
     setSelectedAnswer(null);
@@ -142,11 +145,11 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                     imageRendering: 'auto'
                   }}
                   // 敵が攻撃されたら右に移動（より高速化）
-                  animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0] } : { x: 0, opacity: 1 }}
-                  initial={{ x: -200, opacity: 0 }}
+                  animate={attackEffect === 'enemy-attack' ? { x: [0, 1000, 0], scale: enemyScale } : { x: 0, opacity: 1, scale: enemyScale }}
+                  initial={{ x: -200, opacity: 0, scale: enemyScale }}
                   // 退場エフェクトを高速化（scale, blurエフェクトを削除してシンプルに）
-                  exit={{ opacity: 0, x: 200 }}
-                  transition={{ 
+                  exit={{ opacity: 0, x: 200, scale: enemyScale }}
+                  transition={{
                     duration: attackEffect === 'enemy-attack' ? 0.15 : 0.2,  // より高速化
                     ease: "easeOut"
                   }}

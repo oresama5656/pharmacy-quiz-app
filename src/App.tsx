@@ -5,7 +5,7 @@ import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
-import { ENEMY_IMAGES, BOSS_IMAGE } from './constants';
+import { ENEMY_IMAGES, BOSS_IMAGES } from './constants';
 
 // 不正解時に次の問題へ進むまでのウェイト時間（ms）
 // 適宜この値を変更して表示時間を調整できる
@@ -35,6 +35,12 @@ const App: React.FC = () => {
   const selectRandomEnemyImage = () => {
     const randomIndex = Math.floor(Math.random() * ENEMY_IMAGES.length);
     return ENEMY_IMAGES[randomIndex];
+  };
+
+  // ランダムにボスの画像を選択する関数
+  const selectRandomBossImage = () => {
+    const randomIndex = Math.floor(Math.random() * BOSS_IMAGES.length);
+    return BOSS_IMAGES[randomIndex];
   };
 
   const handleCategorySelect = (categoryId: string) => {
@@ -122,7 +128,7 @@ const App: React.FC = () => {
       }
 
       const isBossFloor = nextFloor % 10 === 0;
-      const newEnemyImage = isBossFloor ? BOSS_IMAGE : selectRandomEnemyImage();
+      const newEnemyImage = isBossFloor ? selectRandomBossImage() : selectRandomEnemyImage();
 
       if (isBossFloor) {
         setShowWarning(true);
