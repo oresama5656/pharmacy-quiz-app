@@ -18,7 +18,6 @@ export const ENEMY_IMAGES = [
   "/enemy/oak_warriar1.png",
   "/enemy/oak_warriar2.png",
   "/enemy/oak_warriar3.png",
-  "/enemy/fukushi_madoushi.png",
   "/enemy/inp.png"
 ];
 
@@ -28,6 +27,8 @@ export const BOSS_IMAGES = [
   "/enemy/hosoya_murabito.png",
   "/enemy/hosoya_syonin.png",
   "/enemy/hosoya_king.png",
+  "/enemy/fukushi_madoushi.png",
+  "/enemy/fukushi_madoushi.png", // 確率3倍
   "/enemy/fukushi_madoushi.png"
 ];
   
