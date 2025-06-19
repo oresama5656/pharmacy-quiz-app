@@ -162,8 +162,9 @@ const App: React.FC = () => {
         }, 250);
       }
     } else {
-      // 敵がまだ生きている場合は演出後に更新（不正解時は1秒追加）
-      const delay = isCorrect ? 600 : 1600;
+      // 敵がまだ生きている場合は演出後に更新
+      // 不正解時もテンポを保つため短めにする
+      const delay = isCorrect ? 600 : 1000;
       setTimeout(() => {
         setGameState({
           playerHp: newPlayerHp,

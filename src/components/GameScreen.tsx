@@ -236,15 +236,19 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
           {/* 選択肢エリア */}
           <div className="flex-1 min-h-0">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 h-full">
-              {currentQuiz.choices.map((choice, index) => (
+              {currentQuiz.choices.map((choice, index) => {
+                const wrongPhase = selectedAnswer !== null && isAnswerCorrect === false;
+                const extraClass = wrongPhase
+                  ? choice === currentQuiz.correct
+                    ? 'ring-2 ring-yellow-300 correct-glow'
+                    : 'wrong-fade-out'
+                  : '';
+                return (
                 <button
                   key={index}
                   onClick={() => handleChoiceClick(choice)}
-                  className={`relative bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2 ${
-                    isAnswerCorrect === false && choice === currentQuiz.correct
-                      ? 'ring-2 ring-yellow-300 animate-pulse'
-                      : ''
-                  }`}
+                  className={`relative bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-2 sm:p-3 text-left transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex flex-col justify-center items-center space-y-1 sm:space-y-2 ${extraClass}`}
+                  disabled={!!selectedAnswer}
                 >
                   {selectedAnswer === choice && isAnswerCorrect === false && (
                     <span className="absolute inset-0 rounded-xl bg-red-600/70 animate-[ping_0.6s_ease-out] pointer-events-none" />
@@ -258,7 +262,8 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                     {choice}
                   </span>
                 </button>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes correct-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
+  50% { box-shadow: 0 0 12px 4px rgba(255, 255, 200, 0.9); }
+}
+
+.correct-glow {
+  animation: correct-glow 0.8s ease-in-out forwards;
+}
+
+@keyframes wrong-fade-out {
+  to { opacity: 0; }
+}
+
+.wrong-fade-out {
+  animation: wrong-fade-out 0.8s forwards;
+}
