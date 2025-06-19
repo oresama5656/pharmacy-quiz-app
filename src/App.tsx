@@ -9,7 +9,7 @@ import { ENEMY_IMAGES, BOSS_IMAGE } from './constants';
 
 // 不正解時に次の問題へ進むまでのウェイト時間（ms）
 // 適宜この値を変更して表示時間を調整できる
-export const INCORRECT_WAIT_MS = 1000;
+export const INCORRECT_WAIT_MS = 2000;
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
