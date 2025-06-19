@@ -17,13 +17,16 @@ const CategoryList: React.FC = () => {
         {guild.categories.map(cat => (
           <button
             key={cat.id}
-            onClick={() => nav(`/guild/${guildId}/category/${cat.id}`)}
-            className="flex items-start gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20"
+            onClick={() => nav(`/battle/${guildId}/${cat.id}/${cat.star}`)}
+            className="relative flex items-start gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20"
           >
             <span className="text-3xl">{cat.icon}</span>
             <div className="text-left">
               <h2 className="font-semibold">{cat.name}</h2>
               <p className="text-sm text-gray-300">{cat.description}</p>
+            </div>
+            <div className="absolute top-2 right-2 text-yellow-400 text-sm">
+              {'★'.repeat(cat.star).padEnd(5, '☆')}
             </div>
           </button>
         ))}
