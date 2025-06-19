@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz, GameState } from '../types';
-import { playAttackSound } from '../utils/sound';
+import { playAttackSound, playWarningSound } from '../utils/sound';
 
 
 interface GameScreenProps {
@@ -57,6 +57,12 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
       playAttackSound(attackEffect);
     }
   }, [attackEffect]);
+
+  useEffect(() => {
+    if (showWarning) {
+      playWarningSound();
+    }
+  }, [showWarning]);
 
   return (
     <div className="min-h-screen flex flex-col bg-black">
