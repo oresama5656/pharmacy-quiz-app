@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { guilds } from '../data/guilds';
-import { quizData } from '../data/quizManager';
+import { quizData } from '../data/quizData';
 
 const CategoryList: React.FC = () => {
   const { guildId } = useParams();
