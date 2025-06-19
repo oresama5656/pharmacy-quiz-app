@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { guilds } from '../data/guilds';
 
 const CategoryList: React.FC = () => {
   const { guildId } = useParams();
+  const nav = useNavigate();
   const guild = guilds.find(g => g.id === guildId);
 
   if (!guild) return <p className="text-red-500">Guild not found</p>;
@@ -16,7 +17,7 @@ const CategoryList: React.FC = () => {
         {guild.categories.map(cat => (
           <button
             key={cat.id}
-            onClick={() => console.log(cat.id)}
+            onClick={() => nav(`/guild/${guildId}/category/${cat.id}`)}
             className="flex items-start gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20"
           >
             <span className="text-3xl">{cat.icon}</span>
