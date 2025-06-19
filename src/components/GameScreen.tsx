@@ -3,18 +3,63 @@ import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz, GameState } from '../types';
 import { playAttackSound, playWarningSound } from '../utils/sound';
+import { useLocation, useParams, useNavigate } from 'react-router-dom';
+import { quizData } from '../data/quizData';
 
 
 interface GameScreenProps {
-  quizzes: Quiz[];
-  gameState: GameState;
-  onAnswer: (selectedAnswer: string) => void;
+  quizzes?: Quiz[];
+  gameState?: GameState;
+  onAnswer?: (selectedAnswer: string) => void;
   attackEffect?: 'player-attack' | 'enemy-attack' | null;
-  enemyImage: string;
+  enemyImage?: string;
   showWarning?: boolean;
 }
 
-const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, attackEffect, enemyImage, showWarning }) => {
+
+const GameScreen: React.FC<GameScreenProps> = ({ quizzes: propQuizzes, gameState: propGameState, onAnswer: propOnAnswer, attackEffect, enemyImage, showWarning }) => {
+  // --------------------------------------------
+  // Fallback to avoid crashes when location.state is undefined
+  // --------------------------------------------
+  const location = useLocation() as { state?: any };
+  const { guildId, catId, starLvl } = useParams();
+  const navigate = useNavigate();
+
+  const fallback = () => {
+    const star = Number(starLvl) || 1;
+    return {
+      quizzes: (quizData as any)[catId!] ?? [],
+      floors: star === 1 ? 10 : 20,
+      currentQuizIndex: 0,
+      starLevel: star,
+    };
+  };
+
+  const {
+    quizzes: fallbackQuizzes,
+    floors,
+    currentQuizIndex,
+    starLevel,
+    ...rest
+  } = location.state ?? fallback();
+
+  const quizzes = propQuizzes ?? fallbackQuizzes;
+
+  const defaultGameState: GameState = {
+    playerHp: 20,
+    enemyHp: floors % 10 === 0 ? 20 : 5,
+    currentQuizIndex,
+    score: 0,
+    isGameOver: false,
+    playerWon: false,
+    currentFloor: 1,
+    maxFloorReached: 1,
+    clearFloor: floors,
+  };
+
+  const gameState = propGameState ?? defaultGameState;
+  const onAnswer = propOnAnswer ?? (() => {});
+
   const currentQuiz = quizzes[gameState.currentQuizIndex];
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
