@@ -31,6 +31,18 @@ const App: React.FC = () => {
     clearFloor: 10
   });
 
+  const saveProgress = (floor: number) => {
+    if (!selectedCategory) return;
+    try {
+      localStorage.setItem(
+        `progress_${selectedCategory}`,
+        JSON.stringify({ currentFloor: floor })
+      );
+    } catch {
+      // ignore write errors
+    }
+  };
+
   // ランダムに敵の画像を選択する関数
   const selectRandomEnemyImage = () => {
     const randomIndex = Math.floor(Math.random() * ENEMY_IMAGES.length);
@@ -115,6 +127,7 @@ const App: React.FC = () => {
             isGameOver: true,
             playerWon: true
           });
+          saveProgress(newCurrentFloor);
           setTimeout(() => setCurrentScreen('result'), 500);
         }, 250);
         return;
@@ -146,6 +159,7 @@ const App: React.FC = () => {
             maxFloorReached: newMaxFloor,
             clearFloor: gameState.clearFloor
           });
+          saveProgress(newMaxFloor);
 
           if (gameOver) {
             setTimeout(() => setCurrentScreen('result'), 500);
@@ -165,6 +179,7 @@ const App: React.FC = () => {
             maxFloorReached: newMaxFloor,
             clearFloor: gameState.clearFloor
           });
+          saveProgress(newMaxFloor);
 
           if (gameOver) {
             setTimeout(() => setCurrentScreen('result'), 500);
@@ -187,6 +202,7 @@ const App: React.FC = () => {
           maxFloorReached: newMaxFloor,
           clearFloor: gameState.clearFloor
         });
+        saveProgress(newMaxFloor);
 
         if (gameOver) {
           setTimeout(() => setCurrentScreen('result'), 500);
@@ -201,6 +217,7 @@ const App: React.FC = () => {
     setShowWarning(false);
     
     setAttackEffect(null);
+    saveProgress(gameState.maxFloorReached);
     setGameState({
       playerHp: 20,
       enemyHp: getEnemyHpForFloor(1),
@@ -217,6 +234,7 @@ const App: React.FC = () => {
 
   const handleBackToCategory = () => {
     setAttackEffect(null);
+    saveProgress(gameState.maxFloorReached);
     setCurrentScreen('category');
     setSelectedCategory(null);
     setShuffledQuizzes([]);
