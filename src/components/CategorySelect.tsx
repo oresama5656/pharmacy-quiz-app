@@ -98,7 +98,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
     }
     const audio = new Audio(MUSIC.map);
     audio.loop = true;
-    audio.volume = 0.8;
+    audio.volume = 0.2;
     audioRef.current = audio;
     audio.play().catch(() => {});
   };
@@ -157,7 +157,13 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
   // START画面
   if (screen === 'start') {
     return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#000' }}>
+      <div className="min-h-screen flex items-center justify-center" 
+        style={{ 
+          backgroundImage: `url('${BACKGROUND_IMAGES.title}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <button
           onClick={handleStart}
           className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-12 rounded-lg text-xl shadow-2xl transform hover:scale-105 transition-all duration-300"
@@ -211,23 +217,36 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
     const guildCategories = getGuildCategories(activeGuild);
     
     return (
-      <>
-        {/* 背景クリックで戻る */}
+      <div 
+        className="fixed inset-0 z-10 flex items-center justify-center p-4"
+        onClick={handleBoardBackdrop}
+        style={{
+          backgroundImage: `url('${BACKGROUND_IMAGES.category}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backdropFilter: 'blur(5px)',
+          WebkitBackdropFilter: 'blur(5px)'
+        }}
+      >
+        {/* クエストボード */}
         <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-10"
-          onClick={handleBoardBackdrop}
-        />
-        
-        <div 
-          className="min-h-screen p-4 relative z-20"
+          className="bg-amber-50 rounded-lg shadow-2xl relative z-20 w-full max-w-4xl max-h-[90vh] overflow-hidden"
+          onClick={(e) => e.stopPropagation()} // ボード内クリックで閉じるのを防ぐ
           style={{
-            backgroundImage: "linear-gradient(rgba(139, 69, 19, 0.1), rgba(160, 82, 45, 0.2)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"%23DEB887\"/><path d=\"M0 0h100v100H0z\" fill=\"url(%23grain)\"/><defs><pattern id=\"grain\" width=\"4\" height=\"4\" patternUnits=\"userSpaceOnUse\"><circle cx=\"1\" cy=\"1\" r=\"0.5\" fill=\"%23CD853F\" opacity=\"0.3\"/><circle cx=\"3\" cy=\"3\" r=\"0.3\" fill=\"%23D2691E\" opacity=\"0.2\"/></pattern></defs></svg>')",
-            backgroundSize: 'cover'
+            backgroundImage: "linear-gradient(rgba(139, 69, 19, 0.1), rgba(160, 82, 45, 0.2)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"%23DEB887\"/><path d=\"M0 0h100v100H0z\" fill=\"url(%23grain)\"/><defs><pattern id=\"grain\" width=\"4\" height=\"4\" patternUnits=\"userSpaceOnUse\"><circle cx=\"1\" cy=\"1\" r=\"0.5\" fill=\"%23CD853F\" opacity=\"0.3\"/><circle cx=\"3\" cy=\"3\" r=\"0.3\" fill=\"%23D2691E\" opacity=\"0.2\"/></pattern></defs></svg>')"
           }}
         >
-          <div className="max-w-4xl mx-auto">
+          {/* 閉じるボタン */}
+          <button
+            onClick={handleBoardBackdrop}
+            className="absolute top-4 right-4 bg-amber-200 hover:bg-amber-300 text-amber-800 font-bold w-8 h-8 rounded-full flex items-center justify-center text-lg transition-colors z-30"
+          >
+            ×
+          </button>
+
+          <div className="p-6 h-full flex flex-col">
             {/* ヘッダー */}
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 flex-shrink-0">
               <h1 className="text-3xl font-bold text-amber-900 mb-2">
                 {activeGuild.icon} {activeGuild.name}
               </h1>
@@ -235,7 +254,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             </div>
 
             {/* カテゴリカード */}
-            <div className="grid gap-4 md:grid-cols-2 overflow-y-auto max-h-[calc(100vh-200px)]">
+            <div className="grid gap-4 md:grid-cols-2 overflow-y-auto flex-1">
               {guildCategories.map((category) => {
                 const progress = getProgress(category.id);
                 const current = progress.currentFloor ?? 0;
@@ -274,12 +293,12 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             </div>
 
             {/* フッター */}
-            <div className="text-center mt-6 text-amber-600 text-sm">
+            <div className="text-center mt-6 text-amber-600 text-sm flex-shrink-0">
               <p>タップしてクエストを開始</p>
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 
