@@ -240,7 +240,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
             <div className="grid grid-cols-2 gap-2 sm:gap-3 h-full">
               {currentQuiz.choices.map((choice, index) => {
                 const isCorrectChoice = choice === currentQuiz.correct;
-                const effectActive = showAnswerEffects && selectedAnswer !== null && !isAnswerCorrect;
+                const effectActive =
+                  showAnswerEffects && selectedAnswer !== null && !isAnswerCorrect;
+                const isLongChoice = choice.length > 10;
                 return (
                   <button
                     key={index}
@@ -249,11 +251,19 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                     className={`bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-3 sm:p-4 transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center text-center ${
                       effectActive && !isCorrectChoice ? 'opacity-0' : ''
                     } ${
-                      effectActive && isCorrectChoice ? 'ring-2 ring-yellow-400 shadow-yellow-400 animate-pulse' : ''
+                      effectActive && isCorrectChoice
+                        ? 'ring-2 ring-yellow-400 shadow-yellow-400 animate-pulse'
+                        : ''
                     }`}
                     style={{ transitionProperty: 'opacity, box-shadow, transform' }}
                   >
-                    <span className="text-white font-medium text-sm sm:text-base md:text-lg leading-tight">
+                    <span
+                      className={`text-white font-medium leading-tight ${
+                        isLongChoice
+                          ? 'text-xs sm:text-sm md:text-base'
+                          : 'text-sm sm:text-base md:text-lg'
+                      }`}
+                    >
                       {choice}
                     </span>
                   </button>
