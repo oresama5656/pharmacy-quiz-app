@@ -34,7 +34,7 @@ export const BOSS_IMAGES = [
   
 // 背景画像のURL
 export const BACKGROUND_IMAGES = {
-  title: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
+  title: "/background/yusha_overthetown.png",
   category: "/background/map-town.png",
   battle: "https://github.com/oresama5656/GameData_Public/blob/main/background/sougen.png?raw=true",
   result: "https://github.com/oresama5656/GameData_Public/blob/main/background/orange_sougen_and_sourd.png?raw=true"
