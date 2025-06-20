@@ -8,6 +8,11 @@ import brand2generic_diabetes from './brand2generic_diabetes.json';
 import antibiotics from './antibiotics.json';
 import simple_math from './simple_math.json';
 import text_length from './text_length.json';
+import p2d_best30_ayame from './p2d_best30_ayame.json';
+import p2d_best31to60_ayame from './p2d_best31to60_ayame.json';
+import p2d_best61to90_ayame from './p2d_best61to90_ayame.json';
+import p2d_best91to120_ayame from './p2d_best91to120_ayame.json';
+import p2d_best121to150_ayame from './p2d_best121to150_ayame.json';
 
 
 // クイズデータをエクスポート
@@ -22,7 +27,12 @@ export const quizData = {
     correct: String(quiz.correct),
     choices: quiz.choices.map(choice => String(choice))
   })) as Quiz[],
-  text_length: text_length as Quiz[]
+  text_length: text_length as Quiz[],
+  p2d_best30_ayame: p2d_best30_ayame as Quiz[],
+  p2d_best31to60_ayame: p2d_best31to60_ayame as Quiz[],
+  p2d_best61to90_ayame: p2d_best61to90_ayame as Quiz[],
+  p2d_best91to120_ayame: p2d_best91to120_ayame as Quiz[],
+  p2d_best121to150_ayame: p2d_best121to150_ayame as Quiz[]
 };
 
 // 新しいカテゴリを追加する場合は、JSONファイルを作成してここにインポートするだけでOK

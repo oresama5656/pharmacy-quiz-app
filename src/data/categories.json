@@ -31,28 +31,68 @@
     "difficulty": "応用",
     "clearFloor": 20
   },
-    {
-      "id": "antibiotics",
-      "name": "抗生物質の分類",
-      "description": "抗生物質の一般名から系統・分類を答える問題です",
-      "icon": "🦠",
-      "difficulty": "応用",
-      "clearFloor": 20
-    },
-    {
-      "id": "simple_math",
-      "name": "足し算",
-      "description": "一桁の足し算を答える問題です",
-      "icon": "🧮",
-      "difficulty": "基本",
-      "clearFloor": 30
-    },
-    {
-      "id": "text_length",
-      "name": "文章表示テスト",
-      "description": "長文や長い選択肢の表示確認用",
-      "icon": "📜",
-      "difficulty": "基本",
-      "clearFloor": 10
-    }
+  {
+    "id": "antibiotics",
+    "name": "抗生物質の分類",
+    "description": "抗生物質の一般名から系統・分類を答える問題です",
+    "icon": "🦠",
+    "difficulty": "応用",
+    "clearFloor": 20
+  },
+  {
+    "id": "simple_math",
+    "name": "足し算",
+    "description": "一桁の足し算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "基本",
+    "clearFloor": 30
+  },
+  {
+    "id": "text_length",
+    "name": "文章表示テスト",
+    "description": "長文や長い選択肢の表示確認用",
+    "icon": "📜",
+    "difficulty": "基本",
+    "clearFloor": 10
+  },
+  {
+    "id": "p2d_best30_ayame",
+    "name": "商品名→一般名 (使用頻度ベスト30)",
+    "description": "商品名から一般名を答える問題（1位～30位）",
+    "icon": "💯",
+    "difficulty": "応用",
+    "clearFloor": 30
+  },
+  {
+    "id": "p2d_best31to60_ayame",
+    "name": "商品名→一般名 (使用頻度ベスト60)",
+    "description": "商品名から一般名を答える問題（31位～60位）",
+    "icon": "💯",
+    "difficulty": "応用",
+    "clearFloor": 30
+  },
+  {
+    "id": "p2d_best61to90_ayame",
+    "name": "商品名→一般名 (使用頻度ベスト90)",
+    "description": "商品名から一般名を答える問題（61位～90位）",
+    "icon": "💯",
+    "difficulty": "応用",
+    "clearFloor": 30
+  },
+  {
+    "id": "p2d_best91to120_ayame",
+    "name": "商品名→一般名 (使用頻度ベスト120)",
+    "description": "商品名から一般名を答える問題（91位～120位）",
+    "icon": "💯",
+    "difficulty": "応用",
+    "clearFloor": 30
+  },
+  {
+    "id": "p2d_best121to150_ayame",
+    "name": "商品名→一般名 (使用頻度ベスト150)",
+    "description": "商品名から一般名を答える問題（121位～150位）",
+    "icon": "💯",
+    "difficulty": "応用",
+    "clearFloor": 30
+  }
 ] 
