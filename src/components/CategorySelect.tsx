@@ -254,7 +254,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
             </div>
 
             {/* カテゴリカード */}
-            <div className="grid gap-4 md:grid-cols-2 overflow-y-auto flex-1">
+            <div className="grid gap-4 md:grid-cols-2 overflow-y-auto flex-1 p-2" style={{ maxHeight: 'calc(90vh - 200px)' }}>
               {guildCategories.map((category) => {
                 const progress = getProgress(category.id);
                 const current = progress.currentFloor ?? 0;
