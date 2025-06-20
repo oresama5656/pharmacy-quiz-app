@@ -4,7 +4,7 @@
     "name": "商品名→一般名",
     "description": "薬の商品名から一般名を答える問題です",
     "icon": "🔄",
-    "difficulty": "基本",
+    "difficulty": "★",
     "clearFloor": 10
   },
   {
@@ -12,7 +12,7 @@
     "name": "商品名→効果",
     "description": "薬の商品名から効果・効能を答える問題です",
     "icon": "💊",
-    "difficulty": "基本",
+    "difficulty": "★",
     "clearFloor": 10
   },
   {
@@ -20,7 +20,7 @@
     "name": "一般名→効果",
     "description": "薬の一般名から効果・効能を答える問題です",
     "icon": "🧪",
-    "difficulty": "基本",
+    "difficulty": "★",
     "clearFloor": 10
   },
   {
@@ -28,7 +28,7 @@
     "name": "糖尿病薬：商品名→一般名",
     "description": "糖尿病治療薬の商品名から一般名を答える問題です",
     "icon": "🍬",
-    "difficulty": "応用",
+    "difficulty": "★★",
     "clearFloor": 20
   },
   {
@@ -36,7 +36,7 @@
     "name": "抗生物質の分類",
     "description": "抗生物質の一般名から系統・分類を答える問題です",
     "icon": "🦠",
-    "difficulty": "応用",
+    "difficulty": "★★",
     "clearFloor": 20
   },
   {
@@ -44,7 +44,7 @@
     "name": "足し算",
     "description": "一桁の足し算を答える問題です",
     "icon": "🧮",
-    "difficulty": "基本",
+    "difficulty": "★",
     "clearFloor": 30
   },
   {
@@ -52,7 +52,7 @@
     "name": "文章表示テスト",
     "description": "長文や長い選択肢の表示確認用",
     "icon": "📜",
-    "difficulty": "基本",
+    "difficulty": "★",
     "clearFloor": 10
   },
   {
@@ -60,7 +60,7 @@
     "name": "商品名→一般名 (使用頻度ベスト30)",
     "description": "商品名から一般名を答える問題（1位～30位）",
     "icon": "💯",
-    "difficulty": "応用",
+    "difficulty": "★",
     "clearFloor": 30
   },
   {
@@ -68,7 +68,7 @@
     "name": "商品名→一般名 (使用頻度ベスト60)",
     "description": "商品名から一般名を答える問題（31位～60位）",
     "icon": "💯",
-    "difficulty": "応用",
+    "difficulty": "★★",
     "clearFloor": 30
   },
   {
@@ -76,7 +76,7 @@
     "name": "商品名→一般名 (使用頻度ベスト90)",
     "description": "商品名から一般名を答える問題（61位～90位）",
     "icon": "💯",
-    "difficulty": "応用",
+    "difficulty": "★★★",
     "clearFloor": 30
   },
   {
@@ -84,7 +84,7 @@
     "name": "商品名→一般名 (使用頻度ベスト120)",
     "description": "商品名から一般名を答える問題（91位～120位）",
     "icon": "💯",
-    "difficulty": "応用",
+    "difficulty": "★★★★",
     "clearFloor": 30
   },
   {
@@ -92,7 +92,7 @@
     "name": "商品名→一般名 (使用頻度ベスト150)",
     "description": "商品名から一般名を答える問題（121位～150位）",
     "icon": "💯",
-    "difficulty": "応用",
+    "difficulty": "★★★★★",
     "clearFloor": 30
   }
 ] 

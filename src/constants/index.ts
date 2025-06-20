@@ -32,31 +32,13 @@ export const BOSS_IMAGES = [
   "/enemy/fukushi_madoushi.png"
 ];
   
-  // 背景画像のURL
+// 背景画像のURL
 export const BACKGROUND_IMAGES = {
   title: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
-  category: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80",
+  category: "/background/map-town.png",
   battle: "https://github.com/oresama5656/GameData_Public/blob/main/background/sougen.png?raw=true",
   result: "https://github.com/oresama5656/GameData_Public/blob/main/background/orange_sougen_and_sourd.png?raw=true"
 };
-
-// // BGM ファイルのURL
-// export const BGM = {
-//   game: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/battle/Fallen%20Dreams.wav?raw=true",
-//   category: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/sleepy.mp3?raw=true",
-//   win: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Victory's%20Echo.wav?raw=true",
-//   lose: "https://github.com/oresama5656/GameData_Public/blob/main/audio/bgm/other/Fallen%20Dreams.wav?raw=true"
-// };
-
-// // 効果音のURL
-// export const SOUND_EFFECTS = {
-//   // プレイヤーが敵を攻撃する音
-//   playerAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/slash.mp3?raw=true",
-//   // 敵がプレイヤーを攻撃する音
-//   enemyAttack: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/blow.mp3?raw=true",
-//   // ボス警告音
-//   warning: "https://github.com/oresama5656/GameData_Public/blob/main/audio/se/effect/warning.mp3?raw=true"
-// };
 
 // BGM ファイルのURL
 export const BGM = {
@@ -73,5 +55,9 @@ export const SOUND_EFFECTS = {
   // 敵がプレイヤーを攻撃する音
   enemyAttack: '/audio/se/blow.mp3',
   // ボス警告音
-  warning: '/audio/se/warning.mp3'
+  warning: '/audio/se/warning.mp3',
+  // UI効果音
+  uiStart: '/audio/se/slash.mp3',  // 代用
+  clickGuild: '/audio/se/blow.mp3', // 代用
+  clickCard: '/audio/se/warning.mp3' // 代用
 };
