@@ -2,27 +2,27 @@ import { Quiz } from '../types';
 import categoriesData from './categories.json';
 
 // 静的インポートですべてのクイズファイルを読み込み
-import brand2generic from './quizzes/brand2generic.json';
-import brand2effect from './quizzes/brand2effect.json';
-import generic2effect from './quizzes/generic2effect.json';
-import brand2generic_diabetes from './quizzes/brand2generic_diabetes.json';
-import antibiotics from './quizzes/antibiotics.json';
-import simple_math from './quizzes/simple_math.json';
-import single_digit_division from './quizzes/single_digit_division.json';
-import single_digit_mixed from './quizzes/single_digit_mixed.json';
-import single_digit_multiplication from './quizzes/single_digit_multiplication.json';
-import single_digit_subtraction from './quizzes/single_digit_subtraction.json';
-import double_digit_addition from './quizzes/double_digit_addition.json';
-import double_digit_division from './quizzes/double_digit_division.json';
-import double_digit_mixed from './quizzes/double_digit_mixed.json';
-import double_digit_multiplication from './quizzes/double_digit_multiplication.json';
-import double_digit_subtraction from './quizzes/double_digit_subtraction.json';
+import brand2generic from './quizzes/pharma/brand2generic.json';
+import brand2effect from './quizzes/pharma/brand2effect.json';
+import generic2effect from './quizzes/pharma/generic2effect.json';
+import brand2generic_diabetes from './quizzes/pharma/brand2generic_diabetes.json';
+import antibiotics from './quizzes/pharma/antibiotics.json';
+import simple_math from './quizzes/math_mix/simple_math.json';
+import single_digit_division from './quizzes/math_mix/single_digit_division.json';
+import single_digit_mixed from './quizzes/math_mix/single_digit_mixed.json';
+import single_digit_multiplication from './quizzes/math_mix/single_digit_multiplication.json';
+import single_digit_subtraction from './quizzes/math_mix/single_digit_subtraction.json';
+import double_digit_addition from './quizzes/math_mix/double_digit_addition.json';
+import double_digit_division from './quizzes/math_mix/double_digit_division.json';
+import double_digit_mixed from './quizzes/math_mix/double_digit_mixed.json';
+import double_digit_multiplication from './quizzes/math_mix/double_digit_multiplication.json';
+import double_digit_subtraction from './quizzes/math_mix/double_digit_subtraction.json';
 import text_length from './quizzes/text_length.json';
-import p2d_best30_ayame from './quizzes/p2d_best30_ayame.json';
-import p2d_best31to60_ayame from './quizzes/p2d_best31to60_ayame.json';
-import p2d_best61to90_ayame from './quizzes/p2d_best61to90_ayame.json';
-import p2d_best91to120_ayame from './quizzes/p2d_best91to120_ayame.json';
-import p2d_best121to150_ayame from './quizzes/p2d_best121to150_ayame.json';
+import p2d_best30_ayame from './quizzes/ayame/p2d_best30_ayame.json';
+import p2d_best31to60_ayame from './quizzes/ayame/p2d_best31to60_ayame.json';
+import p2d_best61to90_ayame from './quizzes/ayame/p2d_best61to90_ayame.json';
+import p2d_best91to120_ayame from './quizzes/ayame/p2d_best91to120_ayame.json';
+import p2d_best121to150_ayame from './quizzes/ayame/p2d_best121to150_ayame.json';
 
 // 数学クイズ
 import lv1_single_digit_multiplication_quiz from './quizzes/math/lv1_single_digit_multiplication_quiz.json';
@@ -66,30 +66,34 @@ interface CategoryWithFile extends Category {
 
 // 静的インポートマップ
 const quizImportMap: Record<string, any> = {
-  // 基本クイズ
-  'quizzes/brand2generic.json': brand2generic,
-  'quizzes/brand2effect.json': brand2effect,
-  'quizzes/generic2effect.json': generic2effect,
-  'quizzes/brand2generic_diabetes.json': brand2generic_diabetes,
-  'quizzes/antibiotics.json': antibiotics,
-  'quizzes/simple_math.json': simple_math,
-  'quizzes/single_digit_division.json': single_digit_division,
-  'quizzes/single_digit_mixed.json': single_digit_mixed,
-  'quizzes/single_digit_multiplication.json': single_digit_multiplication,
-  'quizzes/single_digit_subtraction.json': single_digit_subtraction,
-  'quizzes/double_digit_addition.json': double_digit_addition,
-  'quizzes/double_digit_division.json': double_digit_division,
-  'quizzes/double_digit_mixed.json': double_digit_mixed,
-  'quizzes/double_digit_multiplication.json': double_digit_multiplication,
-  'quizzes/double_digit_subtraction.json': double_digit_subtraction,
+  // 薬学クイズ
+  'quizzes/pharma/brand2generic.json': brand2generic,
+  'quizzes/pharma/brand2effect.json': brand2effect,
+  'quizzes/pharma/generic2effect.json': generic2effect,
+  'quizzes/pharma/brand2generic_diabetes.json': brand2generic_diabetes,
+  'quizzes/pharma/antibiotics.json': antibiotics,
+  
+  // 算数・数学ミックス
+  'quizzes/math_mix/simple_math.json': simple_math,
+  'quizzes/math_mix/single_digit_division.json': single_digit_division,
+  'quizzes/math_mix/single_digit_mixed.json': single_digit_mixed,
+  'quizzes/math_mix/single_digit_multiplication.json': single_digit_multiplication,
+  'quizzes/math_mix/single_digit_subtraction.json': single_digit_subtraction,
+  'quizzes/math_mix/double_digit_addition.json': double_digit_addition,
+  'quizzes/math_mix/double_digit_division.json': double_digit_division,
+  'quizzes/math_mix/double_digit_mixed.json': double_digit_mixed,
+  'quizzes/math_mix/double_digit_multiplication.json': double_digit_multiplication,
+  'quizzes/math_mix/double_digit_subtraction.json': double_digit_subtraction,
+  
+  // テスト系
   'quizzes/text_length.json': text_length,
   
-  // p2d系
-  'quizzes/p2d_best30_ayame.json': p2d_best30_ayame,
-  'quizzes/p2d_best31to60_ayame.json': p2d_best31to60_ayame,
-  'quizzes/p2d_best61to90_ayame.json': p2d_best61to90_ayame,
-  'quizzes/p2d_best91to120_ayame.json': p2d_best91to120_ayame,
-  'quizzes/p2d_best121to150_ayame.json': p2d_best121to150_ayame,
+  // あやめ（p2d）系
+  'quizzes/ayame/p2d_best30_ayame.json': p2d_best30_ayame,
+  'quizzes/ayame/p2d_best31to60_ayame.json': p2d_best31to60_ayame,
+  'quizzes/ayame/p2d_best61to90_ayame.json': p2d_best61to90_ayame,
+  'quizzes/ayame/p2d_best91to120_ayame.json': p2d_best91to120_ayame,
+  'quizzes/ayame/p2d_best121to150_ayame.json': p2d_best121to150_ayame,
   
   // 数学クイズ
   'quizzes/math/lv1_single_digit_multiplication_quiz.json': lv1_single_digit_multiplication_quiz,
@@ -137,8 +141,7 @@ const loadQuizFile = (filePath: string): Quiz[] => {
     let quizzes = rawQuizzes as Quiz[];
     
     // 数学系クイズの場合、数値を文字列に変換
-    if (filePath.includes('math/') || filePath.includes('simple_math') || 
-        filePath.includes('single_digit') || filePath.includes('double_digit')) {
+    if (filePath.includes('math/') || filePath.includes('math_mix/')) {
       quizzes = quizzes.map(quiz => ({
         question: quiz.question,
         correct: String(quiz.correct),

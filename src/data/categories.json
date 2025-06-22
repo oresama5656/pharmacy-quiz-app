@@ -6,7 +6,7 @@
     "icon": "🔄",
     "difficulty": "★",
     "clearFloor": 3,
-    "file": "quizzes/brand2generic.json"
+    "file": "quizzes/pharma/brand2generic.json"
   },
   {
     "id": "brand2effect",
@@ -15,7 +15,7 @@
     "icon": "💊",
     "difficulty": "★",
     "clearFloor": 10,
-    "file": "quizzes/brand2effect.json"
+    "file": "quizzes/pharma/brand2effect.json"
   },
   {
     "id": "generic2effect",
@@ -24,7 +24,7 @@
     "icon": "🧪",
     "difficulty": "★",
     "clearFloor": 10,
-    "file": "quizzes/generic2effect.json"
+    "file": "quizzes/pharma/generic2effect.json"
   },
   {
     "id": "brand2generic_diabetes",
@@ -33,7 +33,7 @@
     "icon": "🍬",
     "difficulty": "★★",
     "clearFloor": 20,
-    "file": "quizzes/brand2generic_diabetes.json"
+    "file": "quizzes/pharma/brand2generic_diabetes.json"
   },
   {
     "id": "antibiotics",
@@ -42,7 +42,7 @@
     "icon": "🦠",
     "difficulty": "★★",
     "clearFloor": 3,
-    "file": "quizzes/antibiotics.json"
+    "file": "quizzes/pharma/antibiotics.json"
   },
   {
     "id": "simple_math",
@@ -51,7 +51,7 @@
     "icon": "🧮",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/simple_math.json"
+    "file": "quizzes/math_mix/simple_math.json"
   },
   {
     "id": "single_digit_subtraction",
@@ -60,7 +60,7 @@
     "icon": "🧮",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/single_digit_subtraction.json"
+    "file": "quizzes/math_mix/single_digit_subtraction.json"
   },
   {
     "id": "single_digit_multiplication",
@@ -69,7 +69,7 @@
     "icon": "🧮",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/single_digit_multiplication.json"
+    "file": "quizzes/math_mix/single_digit_multiplication.json"
   },
   {
     "id": "single_digit_division",
@@ -78,7 +78,7 @@
     "icon": "🧮",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/single_digit_division.json"
+    "file": "quizzes/math_mix/single_digit_division.json"
   },
   {
     "id": "double_digit_addition",
@@ -87,7 +87,7 @@
     "icon": "🧮",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/double_digit_addition.json"
+    "file": "quizzes/math_mix/double_digit_addition.json"
   },
   {
     "id": "double_digit_subtraction",
@@ -96,7 +96,7 @@
     "icon": "🧮",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/double_digit_subtraction.json"
+    "file": "quizzes/math_mix/double_digit_subtraction.json"
   },
   {
     "id": "double_digit_multiplication",
@@ -105,7 +105,7 @@
     "icon": "🧮",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/double_digit_multiplication.json"
+    "file": "quizzes/math_mix/double_digit_multiplication.json"
   },
   {
     "id": "double_digit_division",
@@ -114,7 +114,7 @@
     "icon": "🧮",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/double_digit_division.json"
+    "file": "quizzes/math_mix/double_digit_division.json"
   },
   {
     "id": "single_digit_mixed",
@@ -123,7 +123,7 @@
     "icon": "🧮",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/single_digit_mixed.json"
+    "file": "quizzes/math_mix/single_digit_mixed.json"
   },
   {
     "id": "double_digit_mixed",
@@ -132,7 +132,7 @@
     "icon": "🧮",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/double_digit_mixed.json"
+    "file": "quizzes/math_mix/double_digit_mixed.json"
   },
   {
     "id": "lv1_single_digit_multiplication_quiz",
@@ -330,7 +330,7 @@
     "icon": "💯",
     "difficulty": "★",
     "clearFloor": 30,
-    "file": "quizzes/p2d_best30_ayame.json"
+    "file": "quizzes/ayame/p2d_best30_ayame.json"
   },
   {
     "id": "p2d_best31to60_ayame",
@@ -339,7 +339,7 @@
     "icon": "💯",
     "difficulty": "★★",
     "clearFloor": 30,
-    "file": "quizzes/p2d_best31to60_ayame.json"
+    "file": "quizzes/ayame/p2d_best31to60_ayame.json"
   },
   {
     "id": "p2d_best61to90_ayame",
@@ -348,7 +348,7 @@
     "icon": "💯",
     "difficulty": "★★★",
     "clearFloor": 30,
-    "file": "quizzes/p2d_best61to90_ayame.json"
+    "file": "quizzes/ayame/p2d_best61to90_ayame.json"
   },
   {
     "id": "p2d_best91to120_ayame",
@@ -357,7 +357,7 @@
     "icon": "💯",
     "difficulty": "★★★★",
     "clearFloor": 30,
-    "file": "quizzes/p2d_best91to120_ayame.json"
+    "file": "quizzes/ayame/p2d_best91to120_ayame.json"
   },
   {
     "id": "p2d_best121to150_ayame",
@@ -366,6 +366,6 @@
     "icon": "💯",
     "difficulty": "★★★★★",
     "clearFloor": 30,
-    "file": "quizzes/p2d_best121to150_ayame.json"
+    "file": "quizzes/ayame/p2d_best121to150_ayame.json"
   }
 ] 
