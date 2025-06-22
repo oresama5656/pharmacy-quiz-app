@@ -47,6 +47,18 @@ import english_lv8 from './english/english_lv8.json';
 import english_lv9 from './english/english_lv9.json';
 import english_lv10 from './english/english_lv10.json';
 
+// 基礎計算クイズをインポート
+import basic_math_lv1 from './basic_math/basic_math_lv1.json';
+import basic_math_lv2 from './basic_math/basic_math_lv2.json';
+import basic_math_lv3 from './basic_math/basic_math_lv3.json';
+import basic_math_lv4 from './basic_math/basic_math_lv4.json';
+import basic_math_lv5 from './basic_math/basic_math_lv5.json';
+import basic_math_lv6 from './basic_math/basic_math_lv6.json';
+import basic_math_lv7 from './basic_math/basic_math_lv7.json';
+import basic_math_lv8 from './basic_math/basic_math_lv8.json';
+import basic_math_lv9 from './basic_math/basic_math_lv9.json';
+import basic_math_lv10 from './basic_math/basic_math_lv10.json';
+
 
 // クイズデータをエクスポート
 export const quizData = {
@@ -163,6 +175,18 @@ export const quizData = {
     correct: String(quiz.correct),
     choices: quiz.choices.map(choice => String(choice))
   })) as Quiz[],
+
+  // 基礎計算クイズを追加
+  basic_math_lv1: basic_math_lv1 as Quiz[],
+  basic_math_lv2: basic_math_lv2 as Quiz[],
+  basic_math_lv3: basic_math_lv3 as Quiz[],
+  basic_math_lv4: basic_math_lv4 as Quiz[],
+  basic_math_lv5: basic_math_lv5 as Quiz[],
+  basic_math_lv6: basic_math_lv6 as Quiz[],
+  basic_math_lv7: basic_math_lv7 as Quiz[],
+  basic_math_lv8: basic_math_lv8 as Quiz[],
+  basic_math_lv9: basic_math_lv9 as Quiz[],
+  basic_math_lv10: basic_math_lv10 as Quiz[],
 
   // 英語ギルドの新しいクイズを追加
   english_lv1: english_lv1 as Quiz[],
