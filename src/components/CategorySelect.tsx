@@ -58,6 +58,24 @@ const guilds = [
     icon: '💯',
     position: { top: '70%', left: '35%' },
     categories: ['p2d_best30_ayame', 'p2d_best31to60_ayame', 'p2d_best61to90_ayame', 'p2d_best91to120_ayame', 'p2d_best121to150_ayame']
+  },
+  {
+    id: 'arithmetic',
+    name: '算数ギルド',
+    icon: '🧠',
+    position: { top: '20%', left: '65%' },
+    categories: [
+      'lv1_single_digit_multiplication_quiz',
+      'lv2_single_digit_division_quiz',
+      'lv3_single_digit_by_two_digit_multiplication',
+      'lv4_two_digit_division_quiz',
+      'lv5_multiplication_word_problems',
+      'lv6_division_word_problems',
+      'lv7_two_digit_times_one_digit_multiplication',
+      'lv8_two_digit_division_with_remainder',
+      'lv9_mixed_operations',
+      'lv10_advanced_word_problems'
+    ]
   }
 ] as const;
 

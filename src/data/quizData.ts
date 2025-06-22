@@ -23,6 +23,18 @@ import p2d_best61to90_ayame from './p2d_best61to90_ayame.json';
 import p2d_best91to120_ayame from './p2d_best91to120_ayame.json';
 import p2d_best121to150_ayame from './p2d_best121to150_ayame.json';
 
+// 算数ギルドの新しいクイズをインポート
+import lv1_single_digit_multiplication_quiz from './math/lv1_single_digit_multiplication_quiz.json';
+import lv2_single_digit_division_quiz from './math/lv2_single_digit_division_quiz.json';
+import lv3_single_digit_by_two_digit_multiplication from './math/lv3_single_digit_by_two_digit_multiplication.json';
+import lv4_two_digit_division_quiz from './math/lv4_two_digit_division_quiz.json';
+import lv5_multiplication_word_problems from './math/lv5_multiplication_word_problems.json';
+import lv6_division_word_problems from './math/lv6_division_word_problems.json';
+import lv7_two_digit_times_one_digit_multiplication from './math/lv7_two_digit_times_one_digit_multiplication.json';
+import lv8_two_digit_division_with_remainder from './math/lv8_two_digit_division_with_remainder.json';
+import lv9_mixed_operations from './math/lv9_mixed_operations.json';
+import lv10_advanced_word_problems from './math/lv10_advanced_word_problems.json';
+
 
 // クイズデータをエクスポート
 export const quizData = {
@@ -86,7 +98,59 @@ export const quizData = {
   p2d_best31to60_ayame: p2d_best31to60_ayame as Quiz[],
   p2d_best61to90_ayame: p2d_best61to90_ayame as Quiz[],
   p2d_best91to120_ayame: p2d_best91to120_ayame as Quiz[],
-  p2d_best121to150_ayame: p2d_best121to150_ayame as Quiz[]
+  p2d_best121to150_ayame: p2d_best121to150_ayame as Quiz[],
+  
+  // 算数ギルドの新しいクイズを追加
+  lv1_single_digit_multiplication_quiz: lv1_single_digit_multiplication_quiz.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv2_single_digit_division_quiz: lv2_single_digit_division_quiz.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv3_single_digit_by_two_digit_multiplication: lv3_single_digit_by_two_digit_multiplication.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv4_two_digit_division_quiz: lv4_two_digit_division_quiz.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv5_multiplication_word_problems: lv5_multiplication_word_problems.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv6_division_word_problems: lv6_division_word_problems.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv7_two_digit_times_one_digit_multiplication: lv7_two_digit_times_one_digit_multiplication.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv8_two_digit_division_with_remainder: lv8_two_digit_division_with_remainder.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv9_mixed_operations: lv9_mixed_operations.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[],
+  lv10_advanced_word_problems: lv10_advanced_word_problems.map(quiz => ({
+    question: quiz.question,
+    correct: String(quiz.correct),
+    choices: quiz.choices.map(choice => String(choice))
+  })) as Quiz[]
 };
 
 // 新しいカテゴリを追加する場合は、JSONファイルを作成してここにインポートするだけでOK

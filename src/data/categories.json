@@ -120,6 +120,86 @@
     "clearFloor": 30
   },
   {
+    "id": "lv1_single_digit_multiplication_quiz",
+    "name": "かけ算（レベル1）",
+    "description": "一桁同士のかけ算問題です",
+    "icon": "🔢",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv2_single_digit_division_quiz",
+    "name": "わり算（レベル2）",
+    "description": "一桁の割り算問題です",
+    "icon": "🔢",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv3_single_digit_by_two_digit_multiplication",
+    "name": "かけ算（レベル3）",
+    "description": "一桁と二桁のかけ算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv4_two_digit_division_quiz",
+    "name": "わり算（レベル4）",
+    "description": "二桁の割り算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv5_multiplication_word_problems",
+    "name": "かけ算文章題（レベル5）",
+    "description": "かけ算を使う文章問題です",
+    "icon": "📝",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv6_division_word_problems",
+    "name": "わり算文章題（レベル6）",
+    "description": "わり算を使う文章問題です",
+    "icon": "📝",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv7_two_digit_times_one_digit_multiplication",
+    "name": "かけ算（レベル7）",
+    "description": "二桁×一桁のかけ算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv8_two_digit_division_with_remainder",
+    "name": "あまりのあるわり算（レベル8）",
+    "description": "あまりのある二桁の割り算問題です",
+    "icon": "🔢",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv9_mixed_operations",
+    "name": "四則混合（レベル9）",
+    "description": "足し算・引き算・かけ算・わり算が混ざった問題です",
+    "icon": "🔣",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "lv10_advanced_word_problems",
+    "name": "応用文章題（レベル10）",
+    "description": "複数の演算を組み合わせた応用文章問題です",
+    "icon": "📚",
+    "difficulty": "★★★★",
+    "clearFloor": 10
+  },
+  {
     "id": "text_length",
     "name": "文章表示テスト",
     "description": "長文や長い選択肢の表示確認用",
