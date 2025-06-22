@@ -48,6 +48,9 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
     setSelectedAnswer(null);
     setIsAnswerCorrect(null);
     setShowAnswerEffects(false);
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
   }, [currentQuiz]);
 
   const handleChoiceClick = (choice: string) => {
@@ -245,7 +248,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
                 const isLongChoice = choice.length > 10;
                 return (
                   <button
-                    key={index}
+                    key={`${currentQuiz.question}-${index}`}
                     onClick={() => handleChoiceClick(choice)}
                     disabled={!!selectedAnswer}
                     className={`bg-gradient-to-r from-gray-700 to-gray-800 hover:from-blue-600 hover:to-purple-600 border-2 border-gray-600 hover:border-yellow-400 rounded-xl p-3 sm:p-4 transition-all duration-200 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center text-center ${
