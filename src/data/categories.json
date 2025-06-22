@@ -5,7 +5,8 @@
     "description": "薬の商品名から一般名を答える問題です",
     "icon": "🔄",
     "difficulty": "★",
-    "clearFloor": 3
+    "clearFloor": 3,
+    "file": "quizzes/brand2generic.json"
   },
   {
     "id": "brand2effect",
@@ -13,7 +14,8 @@
     "description": "薬の商品名から効果・効能を答える問題です",
     "icon": "💊",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/brand2effect.json"
   },
   {
     "id": "generic2effect",
@@ -21,7 +23,8 @@
     "description": "薬の一般名から効果・効能を答える問題です",
     "icon": "🧪",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/generic2effect.json"
   },
   {
     "id": "brand2generic_diabetes",
@@ -29,7 +32,8 @@
     "description": "糖尿病治療薬の商品名から一般名を答える問題です",
     "icon": "🍬",
     "difficulty": "★★",
-    "clearFloor": 20
+    "clearFloor": 20,
+    "file": "quizzes/brand2generic_diabetes.json"
   },
   {
     "id": "antibiotics",
@@ -37,7 +41,8 @@
     "description": "抗生物質の一般名から系統・分類を答える問題です",
     "icon": "🦠",
     "difficulty": "★★",
-    "clearFloor": 3
+    "clearFloor": 3,
+    "file": "quizzes/antibiotics.json"
   },
   {
     "id": "simple_math",
@@ -45,7 +50,8 @@
     "description": "一桁の足し算を答える問題です",
     "icon": "🧮",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/simple_math.json"
   },
   {
     "id": "single_digit_subtraction",
@@ -53,7 +59,8 @@
     "description": "一桁の引き算を答える問題です",
     "icon": "🧮",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/single_digit_subtraction.json"
   },
   {
     "id": "single_digit_multiplication",
@@ -61,7 +68,8 @@
     "description": "一桁の掛け算を答える問題です",
     "icon": "🧮",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/single_digit_multiplication.json"
   },
   {
     "id": "single_digit_division",
@@ -69,7 +77,8 @@
     "description": "一桁の割り算を答える問題です",
     "icon": "🧮",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/single_digit_division.json"
   },
   {
     "id": "double_digit_addition",
@@ -77,7 +86,8 @@
     "description": "二桁の足し算を答える問題です",
     "icon": "🧮",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/double_digit_addition.json"
   },
   {
     "id": "double_digit_subtraction",
@@ -85,7 +95,8 @@
     "description": "二桁の引き算を答える問題です",
     "icon": "🧮",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/double_digit_subtraction.json"
   },
   {
     "id": "double_digit_multiplication",
@@ -93,7 +104,8 @@
     "description": "二桁の掛け算を答える問題です",
     "icon": "🧮",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/double_digit_multiplication.json"
   },
   {
     "id": "double_digit_division",
@@ -101,7 +113,8 @@
     "description": "二桁の割り算を答える問題です",
     "icon": "🧮",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/double_digit_division.json"
   },
   {
     "id": "single_digit_mixed",
@@ -109,7 +122,8 @@
     "description": "一桁の四則演算が混ざった問題です",
     "icon": "🧮",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/single_digit_mixed.json"
   },
   {
     "id": "double_digit_mixed",
@@ -117,7 +131,8 @@
     "description": "二桁の四則演算が混ざった問題です",
     "icon": "🧮",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/double_digit_mixed.json"
   },
   {
     "id": "lv1_single_digit_multiplication_quiz",
@@ -125,7 +140,8 @@
     "description": "一桁同士のかけ算問題です",
     "icon": "🔢",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv1_single_digit_multiplication_quiz.json"
   },
   {
     "id": "lv2_single_digit_division_quiz",
@@ -133,7 +149,8 @@
     "description": "一桁の割り算問題です",
     "icon": "🔢",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv2_single_digit_division_quiz.json"
   },
   {
     "id": "lv3_single_digit_by_two_digit_multiplication",
@@ -141,7 +158,8 @@
     "description": "一桁と二桁のかけ算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv3_single_digit_by_two_digit_multiplication.json"
   },
   {
     "id": "lv4_two_digit_division_quiz",
@@ -149,7 +167,8 @@
     "description": "二桁の割り算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv4_two_digit_division_quiz.json"
   },
   {
     "id": "lv5_multiplication_word_problems",
@@ -157,7 +176,8 @@
     "description": "かけ算を使う文章問題です",
     "icon": "📝",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv5_multiplication_word_problems.json"
   },
   {
     "id": "lv6_division_word_problems",
@@ -165,7 +185,8 @@
     "description": "わり算を使う文章問題です",
     "icon": "📝",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv6_division_word_problems.json"
   },
   {
     "id": "lv7_two_digit_times_one_digit_multiplication",
@@ -173,7 +194,8 @@
     "description": "二桁×一桁のかけ算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv7_two_digit_times_one_digit_multiplication.json"
   },
   {
     "id": "lv8_two_digit_division_with_remainder",
@@ -181,7 +203,8 @@
     "description": "あまりのある二桁の割り算問題です",
     "icon": "🔢",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv8_two_digit_division_with_remainder.json"
   },
   {
     "id": "lv9_mixed_operations",
@@ -189,7 +212,8 @@
     "description": "足し算・引き算・かけ算・わり算が混ざった問題です",
     "icon": "🔣",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv9_mixed_operations.json"
   },
   {
     "id": "lv10_advanced_word_problems",
@@ -197,7 +221,8 @@
     "description": "複数の演算を組み合わせた応用文章問題です",
     "icon": "📚",
     "difficulty": "★★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/math/lv10_advanced_word_problems.json"
   },
   {
     "id": "english_lv1",
@@ -205,7 +230,8 @@
     "description": "基本的な英単語の意味を答える問題です",
     "icon": "🔤",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv1.json"
   },
   {
     "id": "english_lv2",
@@ -213,7 +239,8 @@
     "description": "動物や色に関する英単語の問題です",
     "icon": "🐾",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv2.json"
   },
   {
     "id": "english_lv3",
@@ -221,7 +248,8 @@
     "description": "日常生活で使う英単語の問題です",
     "icon": "🏠",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv3.json"
   },
   {
     "id": "english_lv4",
@@ -229,7 +257,8 @@
     "description": "数字や時間に関する英語の問題です",
     "icon": "⏰",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv4.json"
   },
   {
     "id": "english_lv5",
@@ -237,7 +266,8 @@
     "description": "基本的な英文法の問題です",
     "icon": "📝",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv5.json"
   },
   {
     "id": "english_lv6",
@@ -245,7 +275,8 @@
     "description": "日常会話でよく使う英語表現の問題です",
     "icon": "💬",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv6.json"
   },
   {
     "id": "english_lv7",
@@ -253,7 +284,8 @@
     "description": "前置詞の使い方に関する問題です",
     "icon": "🔗",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv7.json"
   },
   {
     "id": "english_lv8",
@@ -261,7 +293,8 @@
     "description": "動詞の活用形に関する問題です",
     "icon": "⚡",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv8.json"
   },
   {
     "id": "english_lv9",
@@ -269,7 +302,8 @@
     "description": "短い文章を読んで答える問題です",
     "icon": "📖",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv9.json"
   },
   {
     "id": "english_lv10",
@@ -277,7 +311,8 @@
     "description": "総合的な英語力を試す応用問題です",
     "icon": "🎓",
     "difficulty": "★★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/english/english_lv10.json"
   },
   {
     "id": "text_length",
@@ -285,7 +320,8 @@
     "description": "長文や長い選択肢の表示確認用",
     "icon": "📜",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/text_length.json"
   },
   {
     "id": "p2d_best30_ayame",
@@ -293,7 +329,8 @@
     "description": "商品名から一般名を答える問題（1位～30位）",
     "icon": "💯",
     "difficulty": "★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/p2d_best30_ayame.json"
   },
   {
     "id": "p2d_best31to60_ayame",
@@ -301,7 +338,8 @@
     "description": "商品名から一般名を答える問題（31位～60位）",
     "icon": "💯",
     "difficulty": "★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/p2d_best31to60_ayame.json"
   },
   {
     "id": "p2d_best61to90_ayame",
@@ -309,7 +347,8 @@
     "description": "商品名から一般名を答える問題（61位～90位）",
     "icon": "💯",
     "difficulty": "★★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/p2d_best61to90_ayame.json"
   },
   {
     "id": "p2d_best91to120_ayame",
@@ -317,7 +356,8 @@
     "description": "商品名から一般名を答える問題（91位～120位）",
     "icon": "💯",
     "difficulty": "★★★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/p2d_best91to120_ayame.json"
   },
   {
     "id": "p2d_best121to150_ayame",
@@ -325,6 +365,7 @@
     "description": "商品名から一般名を答える問題（121位～150位）",
     "icon": "💯",
     "difficulty": "★★★★★",
-    "clearFloor": 30
+    "clearFloor": 30,
+    "file": "quizzes/p2d_best121to150_ayame.json"
   }
 ] 

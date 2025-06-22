@@ -1,0 +1,77 @@
+[
+  {
+    "id": "pharmacy",
+    "name": "調剤ギルド",
+    "icon": "💊",
+    "position": { "top": "30%", "left": "25%" },
+    "categoryIds": ["brand2generic", "brand2effect", "generic2effect", "brand2generic_diabetes", "antibiotics"]
+  },
+  {
+    "id": "math",
+    "name": "数学ギルド",
+    "icon": "🔢",
+    "position": { "top": "60%", "left": "50%" },
+    "categoryIds": [
+      "simple_math",
+      "single_digit_subtraction",
+      "single_digit_multiplication",
+      "single_digit_division",
+      "double_digit_addition",
+      "double_digit_subtraction",
+      "double_digit_multiplication",
+      "double_digit_division",
+      "single_digit_mixed",
+      "double_digit_mixed"
+    ]
+  },
+  {
+    "id": "english",
+    "name": "英語ギルド",
+    "icon": "📚",
+    "position": { "top": "40%", "left": "80%" },
+    "categoryIds": [
+      "english_lv1",
+      "english_lv2",
+      "english_lv3",
+      "english_lv4",
+      "english_lv5",
+      "english_lv6",
+      "english_lv7",
+      "english_lv8",
+      "english_lv9",
+      "english_lv10"
+    ]
+  },
+  {
+    "id": "advanced",
+    "name": "熟練ギルド",
+    "icon": "💯",
+    "position": { "top": "70%", "left": "35%" },
+    "categoryIds": ["p2d_best30_ayame", "p2d_best31to60_ayame", "p2d_best61to90_ayame", "p2d_best91to120_ayame", "p2d_best121to150_ayame"]
+  },
+  {
+    "id": "arithmetic",
+    "name": "算数ギルド",
+    "icon": "🧠",
+    "position": { "top": "20%", "left": "65%" },
+    "categoryIds": [
+      "lv1_single_digit_multiplication_quiz",
+      "lv2_single_digit_division_quiz",
+      "lv3_single_digit_by_two_digit_multiplication",
+      "lv4_two_digit_division_quiz",
+      "lv5_multiplication_word_problems",
+      "lv6_division_word_problems",
+      "lv7_two_digit_times_one_digit_multiplication",
+      "lv8_two_digit_division_with_remainder",
+      "lv9_mixed_operations",
+      "lv10_advanced_word_problems"
+    ]
+  },
+  {
+    "id": "test",
+    "name": "テストギルド",
+    "icon": "📜",
+    "position": { "top": "50%", "left": "10%" },
+    "categoryIds": ["text_length"]
+  }
+] 

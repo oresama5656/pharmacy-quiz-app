@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { getCategories, Category } from '../data/quizManager';
 import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES } from '../constants';
+import guildsData from '../data/guilds.json';
 
 interface CategorySelectProps {
   onCategorySelect: (categoryId: string) => void;
@@ -18,84 +19,14 @@ interface CategorySelectProps {
 
 type Screen = 'start' | 'map' | 'board';
 
-// ギルド定義（CategorySelect内の定数）
-const guilds = [
-  {
-    id: 'pharmacy',
-    name: '調剤ギルド',
-    icon: '💊',
-    position: { top: '30%', left: '25%' },
-    categories: ['brand2generic', 'brand2effect', 'generic2effect', 'brand2generic_diabetes', 'antibiotics']
-  },
-  {
-    id: 'math',
-    name: '数学ギルド',
-    icon: '🔢',
-    position: { top: '60%', left: '50%' },
-    categories: [
-      'simple_math',
-      'single_digit_subtraction',
-      'single_digit_multiplication',
-      'single_digit_division',
-      'double_digit_addition',
-      'double_digit_subtraction',
-      'double_digit_multiplication',
-      'double_digit_division',
-      'single_digit_mixed',
-      'double_digit_mixed'
-    ]
-  },
-  {
-    id: 'english',
-    name: '英語ギルド',
-    icon: '📚',
-    position: { top: '40%', left: '80%' },
-    categories: [
-      'english_lv1',
-      'english_lv2',
-      'english_lv3',
-      'english_lv4',
-      'english_lv5',
-      'english_lv6',
-      'english_lv7',
-      'english_lv8',
-      'english_lv9',
-      'english_lv10'
-    ]
-  },
-  {
-    id: 'advanced',
-    name: '熟練ギルド',
-    icon: '💯',
-    position: { top: '70%', left: '35%' },
-    categories: ['p2d_best30_ayame', 'p2d_best31to60_ayame', 'p2d_best61to90_ayame', 'p2d_best91to120_ayame', 'p2d_best121to150_ayame']
-  },
-  {
-    id: 'arithmetic',
-    name: '数学ギルド',
-    icon: '🧠',
-    position: { top: '20%', left: '65%' },
-    categories: [
-      'lv1_single_digit_multiplication_quiz',
-      'lv2_single_digit_division_quiz',
-      'lv3_single_digit_by_two_digit_multiplication',
-      'lv4_two_digit_division_quiz',
-      'lv5_multiplication_word_problems',
-      'lv6_division_word_problems',
-      'lv7_two_digit_times_one_digit_multiplication',
-      'lv8_two_digit_division_with_remainder',
-      'lv9_mixed_operations',
-      'lv10_advanced_word_problems'
-    ]
-  },
-  {
-    id: 'test',
-    name: 'テストギルド',
-    icon: '📜',
-    position: { top: '50%', left: '10%' },
-    categories: ['text_length']
-  }
-] as const;
+// ギルド型定義
+interface Guild {
+  id: string;
+  name: string;
+  icon: string;
+  position: { top: string; left: string };
+  categoryIds: string[];
+}
 
 // 音源定数（index.tsから取得）
 const SE = {
@@ -116,7 +47,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   const [screen, setScreen] = useState<Screen>(() =>
     showStartScreen ? 'start' : 'map'
   );
-  const [activeGuild, setActiveGuild] = useState<typeof guilds[number] | null>(null);
+  const [activeGuild, setActiveGuild] = useState<Guild | null>(null);
   const [audioReady, setAudioReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -125,6 +56,9 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
     clickGuild: new Audio(SE.clickGuild),
     clickCard: new Audio(SE.clickCard)
   });
+
+  // ギルドデータを読み込み
+  const guilds = guildsData as Guild[];
 
   useEffect(() => {
     Object.values(seAudiosRef.current).forEach((audio) => {
@@ -155,8 +89,8 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   };
 
   // ギルドのカテゴリ情報を取得（存在するもののみ）
-  const getGuildCategories = (guild: typeof guilds[number]): Category[] => {
-    return guild.categories
+  const getGuildCategories = (guild: Guild): Category[] => {
+    return guild.categoryIds
       .map(catId => getCategoryInfo(catId))
       .filter((cat): cat is Category => cat !== undefined);
   };
@@ -212,7 +146,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   };
 
   // ギルド選択
-  const handleGuildSelect = (guild: typeof guilds[number]) => {
+  const handleGuildSelect = (guild: Guild) => {
     playSE('clickGuild');
     setActiveGuild(guild);
     setScreen('board');
