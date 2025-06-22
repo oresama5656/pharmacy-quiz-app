@@ -177,7 +177,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
     const guildId = getGuildIdByCategoryId(categoryId);
     if (!guildId) return;
 
-    const questStatus = getQuestStatus(guildId, categoryId);
+    const questStatus: QuestStatus = getQuestStatus(guildId, categoryId);
     
     // ロックされているクエストはクリックできない
     if (questStatus === 'locked') {
@@ -414,7 +414,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                 const current = progress.currentFloor ?? 0;
                 const total = category.clearFloor;
                 const stars = generateStars(category.difficulty);
-                const questStatus = getQuestStatus(activeGuild.id, category.id);
+                const questStatus: QuestStatus = getQuestStatus(activeGuild.id, category.id);
                 
                 // ステータスに応じたスタイル設定
                 const getCardStyles = () => {
