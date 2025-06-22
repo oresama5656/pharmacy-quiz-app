@@ -513,12 +513,14 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                       </motion.div>
                     )}
 
-                    {/* クリア済みバッジ */}
-                    {questStatus === 'cleared' && (
-                      <div className="absolute -top-1 -right-1 bg-yellow-500 text-white text-xs px-1.5 py-0.5 rounded-full font-bold z-20">
-                        ✅
-                      </div>
-                    )}
+                                         {/* クリア済みバッジ */}
+                     {questStatus === 'cleared' && (
+                       <img 
+                         src="/character/check.png" 
+                         alt="クリア済み" 
+                         className="absolute -top-1 -right-1 w-4 h-4 z-20"
+                       />
+                     )}
 
                     <div className={`p-1.5 h-full ${cardStyles.background} rounded-lg transition-all duration-300 ${
                       questStatus !== 'locked' ? 'hover:bg-opacity-85' : ''
