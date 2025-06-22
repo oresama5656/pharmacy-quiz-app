@@ -368,4 +368,85 @@
     "clearFloor": 30,
     "file": "quizzes/ayame/p2d_best121to150_ayame.json"
   }
+  ,
+  {
+    "id": "basic_math_lv1",
+    "name": "足し算・引き算（レベル1）",
+    "description": "一桁＋一桁の足し算問題です",
+    "icon": "🔢",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv2",
+    "name": "足し算・引き算（レベル2）",
+    "description": "一桁−一桁の引き算問題です",
+    "icon": "🔢",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv3",
+    "name": "足し算・引き算（レベル3）",
+    "description": "一桁＋二桁の足し算問題です",
+    "icon": "🔢",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv4",
+    "name": "足し算・引き算（レベル4）",
+    "description": "二桁−一桁の引き算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv5",
+    "name": "足し算・引き算（レベル5）",
+    "description": "二桁＋二桁の足し算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv6",
+    "name": "足し算・引き算（レベル6）",
+    "description": "二桁−二桁の引き算問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv7",
+    "name": "足し算・引き算（レベル7）",
+    "description": "足し算と引き算が混ざる問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv8",
+    "name": "足し算・引き算（レベル8）",
+    "description": "三つの数を計算する問題です",
+    "icon": "🔢",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv9",
+    "name": "足し算・引き算（レベル9）",
+    "description": "カッコを含む計算問題です",
+    "icon": "🔢",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "basic_math_lv10",
+    "name": "足し算・引き算（レベル10）",
+    "description": "文章で出題される計算問題です",
+    "icon": "📝",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  }
 ] 

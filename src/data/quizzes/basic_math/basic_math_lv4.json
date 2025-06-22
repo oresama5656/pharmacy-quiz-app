@@ -1,0 +1,12 @@
+[
+  {"question": "23 - 6 = ?", "correct": "17", "choices": ["17", "16", "18", "19"]},
+  {"question": "15 - 7 = ?", "correct": "8", "choices": ["9", "8", "7", "6"]},
+  {"question": "34 - 5 = ?", "correct": "29", "choices": ["30", "29", "28", "27"]},
+  {"question": "42 - 9 = ?", "correct": "33", "choices": ["32", "33", "34", "31"]},
+  {"question": "30 - 4 = ?", "correct": "26", "choices": ["25", "26", "27", "24"]},
+  {"question": "18 - 9 = ?", "correct": "9", "choices": ["8", "9", "10", "7"]},
+  {"question": "27 - 8 = ?", "correct": "19", "choices": ["19", "18", "20", "17"]},
+  {"question": "36 - 7 = ?", "correct": "29", "choices": ["29", "28", "30", "27"]},
+  {"question": "41 - 6 = ?", "correct": "35", "choices": ["36", "35", "34", "33"]},
+  {"question": "29 - 5 = ?", "correct": "24", "choices": ["23", "24", "25", "26"]}
+]
