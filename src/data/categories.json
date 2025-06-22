@@ -375,7 +375,8 @@
     "description": "一桁＋一桁の足し算問題です",
     "icon": "🔢",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv1.json"
   },
   {
     "id": "basic_math_lv2",
@@ -383,7 +384,8 @@
     "description": "一桁−一桁の引き算問題です",
     "icon": "🔢",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv2.json"
   },
   {
     "id": "basic_math_lv3",
@@ -391,7 +393,8 @@
     "description": "一桁＋二桁の足し算問題です",
     "icon": "🔢",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv3.json"
   },
   {
     "id": "basic_math_lv4",
@@ -399,7 +402,8 @@
     "description": "二桁−一桁の引き算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv4.json"
   },
   {
     "id": "basic_math_lv5",
@@ -407,7 +411,8 @@
     "description": "二桁＋二桁の足し算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv5.json"
   },
   {
     "id": "basic_math_lv6",
@@ -415,7 +420,8 @@
     "description": "二桁−二桁の引き算問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv6.json"
   },
   {
     "id": "basic_math_lv7",
@@ -423,7 +429,8 @@
     "description": "足し算と引き算が混ざる問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv7.json"
   },
   {
     "id": "basic_math_lv8",
@@ -431,7 +438,8 @@
     "description": "三つの数を計算する問題です",
     "icon": "🔢",
     "difficulty": "★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv8.json"
   },
   {
     "id": "basic_math_lv9",
@@ -439,7 +447,8 @@
     "description": "カッコを含む計算問題です",
     "icon": "🔢",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv9.json"
   },
   {
     "id": "basic_math_lv10",
@@ -447,6 +456,7 @@
     "description": "文章で出題される計算問題です",
     "icon": "📝",
     "difficulty": "★★★",
-    "clearFloor": 10
+    "clearFloor": 10,
+    "file": "quizzes/basic_math/basic_math_lv10.json"
   }
 ] 

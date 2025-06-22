@@ -8,7 +8,7 @@
   },
   {
     "id": "math",
-    "name": "数学ギルド",
+    "name": "算数ギルド★★★",
     "icon": "🔢",
     "position": { "top": "60%", "left": "50%" },
     "categoryIds": [
@@ -44,14 +44,14 @@
   },
   {
     "id": "advanced",
-    "name": "熟練ギルド",
+    "name": "あやめギルド",
     "icon": "💯",
     "position": { "top": "70%", "left": "35%" },
     "categoryIds": ["p2d_best30_ayame", "p2d_best31to60_ayame", "p2d_best61to90_ayame", "p2d_best91to120_ayame", "p2d_best121to150_ayame"]
   },
   {
     "id": "arithmetic",
-    "name": "算数ギルド",
+    "name": "算数ギルド★★",
     "icon": "🧠",
     "position": { "top": "20%", "left": "65%" },
     "categoryIds": [
@@ -73,5 +73,23 @@
     "icon": "📜",
     "position": { "top": "50%", "left": "10%" },
     "categoryIds": ["text_length"]
+  },
+  {
+    "id": "basic_math",
+    "name": "算数ギルド★",
+    "icon": "🧮",
+    "position": { "top": "40%", "left": "20%" },
+    "categoryIds": [
+      "basic_math_lv1",
+      "basic_math_lv2",
+      "basic_math_lv3",
+      "basic_math_lv4",
+      "basic_math_lv5",
+      "basic_math_lv6",
+      "basic_math_lv7",
+      "basic_math_lv8",
+      "basic_math_lv9",
+      "basic_math_lv10"
+    ]
   }
 ] 
