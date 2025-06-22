@@ -16,6 +16,10 @@ const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
   const [showWarning, setShowWarning] = useState(false);
+  // Controls whether the CategorySelect component should display the start screen.
+  // Once the start screen is shown and the user taps START, this becomes false
+  // so that returning from the result screen skips the start screen.
+  const [showStartScreen, setShowStartScreen] = useState(true);
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
@@ -243,7 +247,13 @@ const App: React.FC = () => {
 
   // 画面の表示制御
   if (currentScreen === 'category') {
-    return <CategorySelect onCategorySelect={handleCategorySelect} />;
+    return (
+      <CategorySelect
+        onCategorySelect={handleCategorySelect}
+        showStartScreen={showStartScreen}
+        onStart={() => setShowStartScreen(false)}
+      />
+    );
   }
 
   if (currentScreen === 'game' && selectedCategory) {

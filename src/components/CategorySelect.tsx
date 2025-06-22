@@ -4,6 +4,16 @@ import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES } from '../constants';
 
 interface CategorySelectProps {
   onCategorySelect: (categoryId: string) => void;
+  /**
+   * Whether the start screen should be displayed on mount.
+   */
+  showStartScreen: boolean;
+  /**
+   * Callback fired when the user taps the START button.
+   * Used by the parent component to mark the start screen as shown
+   * so it will not appear again during this session.
+   */
+  onStart: () => void;
 }
 
 type Screen = 'start' | 'map' | 'board';
@@ -62,8 +72,14 @@ const MUSIC = {
   map: BGM.category
 };
 
-const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => {
-  const [screen, setScreen] = useState<Screen>('start');
+const CategorySelect: React.FC<CategorySelectProps> = ({
+  onCategorySelect,
+  showStartScreen,
+  onStart
+}) => {
+  const [screen, setScreen] = useState<Screen>(() =>
+    showStartScreen ? 'start' : 'map'
+  );
   const [activeGuild, setActiveGuild] = useState<typeof guilds[number] | null>(null);
   const [audioReady, setAudioReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -143,6 +159,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
     playSE('uiStart');
     startBGM();
     setScreen('map');
+    onStart();
   };
 
   // ギルド選択
