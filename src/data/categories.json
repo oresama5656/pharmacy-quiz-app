@@ -200,6 +200,86 @@
     "clearFloor": 10
   },
   {
+    "id": "english_lv1",
+    "name": "基本単語（レベル1）",
+    "description": "基本的な英単語の意味を答える問題です",
+    "icon": "🔤",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv2",
+    "name": "動物・色（レベル2）",
+    "description": "動物や色に関する英単語の問題です",
+    "icon": "🐾",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv3",
+    "name": "日常生活（レベル3）",
+    "description": "日常生活で使う英単語の問題です",
+    "icon": "🏠",
+    "difficulty": "★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv4",
+    "name": "数字・時間（レベル4）",
+    "description": "数字や時間に関する英語の問題です",
+    "icon": "⏰",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv5",
+    "name": "文法基礎（レベル5）",
+    "description": "基本的な英文法の問題です",
+    "icon": "📝",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv6",
+    "name": "会話表現（レベル6）",
+    "description": "日常会話でよく使う英語表現の問題です",
+    "icon": "💬",
+    "difficulty": "★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv7",
+    "name": "前置詞（レベル7）",
+    "description": "前置詞の使い方に関する問題です",
+    "icon": "🔗",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv8",
+    "name": "動詞活用（レベル8）",
+    "description": "動詞の活用形に関する問題です",
+    "icon": "⚡",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv9",
+    "name": "読解問題（レベル9）",
+    "description": "短い文章を読んで答える問題です",
+    "icon": "📖",
+    "difficulty": "★★★",
+    "clearFloor": 10
+  },
+  {
+    "id": "english_lv10",
+    "name": "応用英語（レベル10）",
+    "description": "総合的な英語力を試す応用問題です",
+    "icon": "🎓",
+    "difficulty": "★★★★",
+    "clearFloor": 10
+  },
+  {
     "id": "text_length",
     "name": "文章表示テスト",
     "description": "長文や長い選択肢の表示確認用",

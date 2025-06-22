@@ -48,9 +48,20 @@ const guilds = [
   {
     id: 'english',
     name: '英語ギルド',
-    icon: '📜',
+    icon: '📚',
     position: { top: '40%', left: '80%' },
-    categories: ['text_length']
+    categories: [
+      'english_lv1',
+      'english_lv2',
+      'english_lv3',
+      'english_lv4',
+      'english_lv5',
+      'english_lv6',
+      'english_lv7',
+      'english_lv8',
+      'english_lv9',
+      'english_lv10'
+    ]
   },
   {
     id: 'advanced',
@@ -61,7 +72,7 @@ const guilds = [
   },
   {
     id: 'arithmetic',
-    name: '算数ギルド',
+    name: '数学ギルド',
     icon: '🧠',
     position: { top: '20%', left: '65%' },
     categories: [
@@ -76,6 +87,13 @@ const guilds = [
       'lv9_mixed_operations',
       'lv10_advanced_word_problems'
     ]
+  },
+  {
+    id: 'test',
+    name: 'テストギルド',
+    icon: '📜',
+    position: { top: '50%', left: '10%' },
+    categories: ['text_length']
   }
 ] as const;
 

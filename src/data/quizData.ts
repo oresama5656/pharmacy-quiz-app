@@ -23,7 +23,7 @@ import p2d_best61to90_ayame from './p2d_best61to90_ayame.json';
 import p2d_best91to120_ayame from './p2d_best91to120_ayame.json';
 import p2d_best121to150_ayame from './p2d_best121to150_ayame.json';
 
-// 算数ギルドの新しいクイズをインポート
+// 数学ギルドの新しいクイズをインポート
 import lv1_single_digit_multiplication_quiz from './math/lv1_single_digit_multiplication_quiz.json';
 import lv2_single_digit_division_quiz from './math/lv2_single_digit_division_quiz.json';
 import lv3_single_digit_by_two_digit_multiplication from './math/lv3_single_digit_by_two_digit_multiplication.json';
@@ -34,6 +34,18 @@ import lv7_two_digit_times_one_digit_multiplication from './math/lv7_two_digit_t
 import lv8_two_digit_division_with_remainder from './math/lv8_two_digit_division_with_remainder.json';
 import lv9_mixed_operations from './math/lv9_mixed_operations.json';
 import lv10_advanced_word_problems from './math/lv10_advanced_word_problems.json';
+
+// 英語ギルドの新しいクイズをインポート
+import english_lv1 from './english/english_lv1.json';
+import english_lv2 from './english/english_lv2.json';
+import english_lv3 from './english/english_lv3.json';
+import english_lv4 from './english/english_lv4.json';
+import english_lv5 from './english/english_lv5.json';
+import english_lv6 from './english/english_lv6.json';
+import english_lv7 from './english/english_lv7.json';
+import english_lv8 from './english/english_lv8.json';
+import english_lv9 from './english/english_lv9.json';
+import english_lv10 from './english/english_lv10.json';
 
 
 // クイズデータをエクスポート
@@ -100,7 +112,7 @@ export const quizData = {
   p2d_best91to120_ayame: p2d_best91to120_ayame as Quiz[],
   p2d_best121to150_ayame: p2d_best121to150_ayame as Quiz[],
   
-  // 算数ギルドの新しいクイズを追加
+  // 数学ギルドの新しいクイズを追加
   lv1_single_digit_multiplication_quiz: lv1_single_digit_multiplication_quiz.map(quiz => ({
     question: quiz.question,
     correct: String(quiz.correct),
@@ -150,7 +162,19 @@ export const quizData = {
     question: quiz.question,
     correct: String(quiz.correct),
     choices: quiz.choices.map(choice => String(choice))
-  })) as Quiz[]
+  })) as Quiz[],
+
+  // 英語ギルドの新しいクイズを追加
+  english_lv1: english_lv1 as Quiz[],
+  english_lv2: english_lv2 as Quiz[],
+  english_lv3: english_lv3 as Quiz[],
+  english_lv4: english_lv4 as Quiz[],
+  english_lv5: english_lv5 as Quiz[],
+  english_lv6: english_lv6 as Quiz[],
+  english_lv7: english_lv7 as Quiz[],
+  english_lv8: english_lv8 as Quiz[],
+  english_lv9: english_lv9 as Quiz[],
+  english_lv10: english_lv10 as Quiz[]
 };
 
 // 新しいカテゴリを追加する場合は、JSONファイルを作成してここにインポートするだけでOK
