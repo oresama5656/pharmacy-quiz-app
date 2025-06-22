@@ -10,7 +10,7 @@
     "id": "math",
     "name": "算数ギルド★★★",
     "icon": "🔢",
-    "position": { "top": "60%", "left": "50%" },
+    "position": { "top": "68%", "left": "58%" },
     "categoryIds": [
       "simple_math",
       "single_digit_subtraction",
@@ -28,7 +28,7 @@
     "id": "english",
     "name": "英語ギルド",
     "icon": "📚",
-    "position": { "top": "40%", "left": "80%" },
+    "position": { "top": "43%", "left": "70%" },
     "categoryIds": [
       "english_lv1",
       "english_lv2",
@@ -46,14 +46,14 @@
     "id": "advanced",
     "name": "あやめギルド",
     "icon": "💯",
-    "position": { "top": "70%", "left": "20%" },
+    "position": { "top": "78%", "left": "20%" },
     "categoryIds": ["p2d_best30_ayame", "p2d_best31to60_ayame", "p2d_best61to90_ayame", "p2d_best91to120_ayame", "p2d_best121to150_ayame"]
   },
   {
     "id": "arithmetic",
     "name": "算数ギルド★★",
     "icon": "🧠",
-    "position": { "top": "20%", "left": "65%" },
+    "position": { "top": "53%", "left": "30%" },
     "categoryIds": [
       "lv1_single_digit_multiplication_quiz",
       "lv2_single_digit_division_quiz",
@@ -71,14 +71,14 @@
     "id": "test",
     "name": "テストギルド",
     "icon": "📜",
-    "position": { "top": "50%", "left": "10%" },
+    "position": { "top": "93%", "left": "45%" },
     "categoryIds": ["text_length"]
   },
   {
     "id": "basic_math",
     "name": "算数ギルド★",
     "icon": "🧮",
-    "position": { "top": "40%", "left": "20%" },
+    "position": { "top": "43%", "left": "25%" },
     "categoryIds": [
       "basic_math_lv1",
       "basic_math_lv2",
