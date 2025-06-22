@@ -356,7 +356,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           className="relative z-20 w-full max-w-6xl max-h-[90vh] overflow-hidden bg-cover bg-center rounded-lg"
           onClick={(e) => e.stopPropagation()} // ボード内クリックで閉じるのを防ぐ
           style={{
-            backgroundImage: `url('/public/background/wood-bg.png')`,
+            backgroundImage: `url('/background/wood-bg.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             border: '8px solid #8B4513',
@@ -467,7 +467,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                       questStatus === 'locked' ? 'cursor-not-allowed' : 'cursor-pointer hover:scale-105'
                     }`}
                     style={{
-                      backgroundImage: `url('/public/background/paper-texture.png')`,
+                      backgroundImage: `url('/background/paper-texture.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       minHeight: '60px',
