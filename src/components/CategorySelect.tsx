@@ -216,22 +216,83 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           if (guildCategories.length === 0) return null;
           
           return (
-            <button
+            <div
               key={guild.id}
-              onClick={() => handleGuildSelect(guild)}
-              className="absolute bg-yellow-500 hover:bg-yellow-400 text-black font-bold rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 flex items-center justify-center text-2xl border-4 border-yellow-600"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 top: guild.position.top,
                 left: guild.position.left,
-                minWidth: '44px',
-                minHeight: '44px',
-                width: '60px',
-                height: '60px'
               }}
-              title={guild.name}
             >
-              {guild.icon}
-            </button>
+              {/* 木製看板風の吹き出し */}
+              <button
+                onClick={() => handleGuildSelect(guild)}
+                className="guild-signboard group relative"
+              >
+                {/* メインの看板部分 */}
+                <div className="relative px-4 py-2 min-w-[120px] text-center rounded-lg shadow-lg transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-amber-800"
+                  style={{
+                    backgroundColor: '#DEB887',
+                    background: `
+                      #DEB887,
+                      linear-gradient(145deg, #D2B48C 0%, #DEB887 25%, #F5DEB3 50%, #DEB887 75%, #D2B48C 100%),
+                      radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.3) 0%, rgba(139, 69, 19, 0.1) 50%, rgba(139, 69, 19, 0.05) 70%),
+                      radial-gradient(circle at 80% 70%, rgba(160, 82, 45, 0.25) 0%, rgba(160, 82, 45, 0.1) 50%, rgba(160, 82, 45, 0.05) 70%),
+                      radial-gradient(circle at 50% 20%, rgba(210, 180, 140, 0.5) 0%, rgba(210, 180, 140, 0.2) 30%, rgba(210, 180, 140, 0.1) 50%),
+                      linear-gradient(90deg, rgba(139, 69, 19, 0.1) 0%, rgba(139, 69, 19, 0.15) 50%, rgba(139, 69, 19, 0.1) 100%),
+                      repeating-linear-gradient(0deg, rgba(139, 69, 19, 0.05), rgba(139, 69, 19, 0.05) 1px, rgba(139, 69, 19, 0.08) 1px, rgba(139, 69, 19, 0.08) 2px)
+                    `,
+                    boxShadow: `
+                      inset 2px 2px 4px rgba(245, 222, 179, 0.9),
+                      inset -2px -2px 4px rgba(139, 69, 19, 0.4),
+                      0 4px 12px rgba(0, 0, 0, 0.3),
+                      0 2px 4px rgba(139, 69, 19, 0.2)
+                    `
+                  }}
+                >
+                  {/* ギルド名 */}
+                  <div 
+                    className="font-bold text-amber-900 text-sm leading-tight"
+                    style={{
+                      fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
+                      textShadow: '1px 1px 2px rgba(139, 69, 19, 0.3)',
+                      fontSize: '14px'
+                    }}
+                  >
+                    {guild.name}
+                  </div>
+                </div>
+
+                {/* 吹き出しの三角（下向き） */}
+                <div 
+                  className="absolute left-1/2 transform -translate-x-1/2"
+                  style={{
+                    top: '100%',
+                    width: 0,
+                    height: 0,
+                    borderLeft: '8px solid transparent',
+                    borderRight: '8px solid transparent',
+                    borderTop: '8px solid #DEB887',
+                    filter: 'drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2))'
+                  }}
+                />
+                
+                {/* 三角の影とボーダー */}
+                <div 
+                  className="absolute left-1/2 transform -translate-x-1/2"
+                  style={{
+                    top: 'calc(100% + 1px)',
+                    width: 0,
+                    height: 0,
+                    borderLeft: '7px solid transparent',
+                    borderRight: '7px solid transparent',
+                    borderTop: '7px solid #8B4513'
+                  }}
+                />
+              </button>
+
+
+            </div>
           );
         })}
       </div>
