@@ -1,0 +1,53 @@
+[
+  {
+    "question": "What does 'run' mean?",
+    "correct": "はしる",
+    "choices": ["たべる", "はしる", "ねる", "よむ"]
+  },
+  {
+    "question": "What does 'happy' mean?",
+    "correct": "しあわせな",
+    "choices": ["かなしい", "おそい", "しあわせな", "きれいな"]
+  },
+  {
+    "question": "What does 'eat' mean?",
+    "correct": "たべる",
+    "choices": ["はしる", "たべる", "みる", "きく"]
+  },
+  {
+    "question": "What does 'big' mean?",
+    "correct": "おおきい",
+    "choices": ["ちいさい", "おおきい", "あかるい", "はやい"]
+  },
+  {
+    "question": "What does 'sleep' mean?",
+    "correct": "ねる",
+    "choices": ["ねる", "はしる", "かう", "よむ"]
+  },
+  {
+    "question": "What does 'fast' mean?",
+    "correct": "はやい",
+    "choices": ["おそい", "しずかな", "はやい", "あたらしい"]
+  },
+  {
+    "question": "What does 'cold' mean?",
+    "correct": "さむい",
+    "choices": ["あつい", "ながい", "さむい", "たかい"]
+  },
+  {
+    "question": "What does 'read' mean?",
+    "correct": "よむ",
+    "choices": ["かく", "きく", "よむ", "およぐ"]
+  },
+  {
+    "question": "What does 'beautiful' mean?",
+    "correct": "うつくしい",
+    "choices": ["うつくしい", "つよい", "やさしい", "たのしい"]
+  },
+  {
+    "question": "What does 'buy' mean?",
+    "correct": "かう",
+    "choices": ["のむ", "たべる", "かう", "みる"]
+  }
+]
+
