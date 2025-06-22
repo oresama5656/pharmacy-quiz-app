@@ -1,0 +1,812 @@
+[
+  {
+    "question": "29 - 39 =",
+    "correct": -10,
+    "choices": [
+      1,
+      21,
+      -10,
+      -99
+    ]
+  },
+  {
+    "question": "93 - 44 =",
+    "correct": 49,
+    "choices": [
+      78,
+      49,
+      81,
+      8
+    ]
+  },
+  {
+    "question": "95 - 87 =",
+    "correct": 8,
+    "choices": [
+      17,
+      12,
+      8,
+      -58
+    ]
+  },
+  {
+    "question": "61 - 76 =",
+    "correct": -15,
+    "choices": [
+      64,
+      -15,
+      25,
+      4
+    ]
+  },
+  {
+    "question": "77 - 44 =",
+    "correct": 33,
+    "choices": [
+      33,
+      10,
+      -33,
+      -58
+    ]
+  },
+  {
+    "question": "51 - 82 =",
+    "correct": -31,
+    "choices": [
+      52,
+      34,
+      -77,
+      -31
+    ]
+  },
+  {
+    "question": "66 - 62 =",
+    "correct": 4,
+    "choices": [
+      4,
+      -94,
+      34,
+      68
+    ]
+  },
+  {
+    "question": "58 - 23 =",
+    "correct": 35,
+    "choices": [
+      35,
+      -37,
+      -25,
+      50
+    ]
+  },
+  {
+    "question": "81 - 30 =",
+    "correct": 51,
+    "choices": [
+      51,
+      43,
+      83,
+      72
+    ]
+  },
+  {
+    "question": "81 - 60 =",
+    "correct": 21,
+    "choices": [
+      21,
+      -50,
+      -39,
+      -73
+    ]
+  },
+  {
+    "question": "61 - 88 =",
+    "correct": -27,
+    "choices": [
+      -50,
+      -3,
+      -27,
+      -58
+    ]
+  },
+  {
+    "question": "53 - 72 =",
+    "correct": -19,
+    "choices": [
+      -45,
+      -19,
+      -56,
+      -6
+    ]
+  },
+  {
+    "question": "15 - 24 =",
+    "correct": -9,
+    "choices": [
+      17,
+      -9,
+      -41,
+      -90
+    ]
+  },
+  {
+    "question": "38 - 67 =",
+    "correct": -29,
+    "choices": [
+      -29,
+      -34,
+      -16,
+      -87
+    ]
+  },
+  {
+    "question": "66 - 35 =",
+    "correct": 31,
+    "choices": [
+      63,
+      31,
+      -42,
+      -51
+    ]
+  },
+  {
+    "question": "36 - 18 =",
+    "correct": 18,
+    "choices": [
+      -58,
+      -64,
+      18,
+      -22
+    ]
+  },
+  {
+    "question": "99 - 73 =",
+    "correct": 26,
+    "choices": [
+      -27,
+      -52,
+      38,
+      26
+    ]
+  },
+  {
+    "question": "17 - 58 =",
+    "correct": -41,
+    "choices": [
+      -54,
+      -84,
+      -41,
+      -69
+    ]
+  },
+  {
+    "question": "26 - 90 =",
+    "correct": -64,
+    "choices": [
+      -55,
+      -64,
+      -78,
+      41
+    ]
+  },
+  {
+    "question": "31 - 16 =",
+    "correct": 15,
+    "choices": [
+      15,
+      53,
+      -84,
+      -88
+    ]
+  },
+  {
+    "question": "12 - 45 =",
+    "correct": -33,
+    "choices": [
+      -56,
+      -79,
+      -84,
+      -33
+    ]
+  },
+  {
+    "question": "20 - 92 =",
+    "correct": -72,
+    "choices": [
+      -89,
+      -72,
+      77,
+      82
+    ]
+  },
+  {
+    "question": "27 - 20 =",
+    "correct": 7,
+    "choices": [
+      -86,
+      -19,
+      7,
+      37
+    ]
+  },
+  {
+    "question": "23 - 18 =",
+    "correct": 5,
+    "choices": [
+      5,
+      -79,
+      -99,
+      21
+    ]
+  },
+  {
+    "question": "47 - 35 =",
+    "correct": 12,
+    "choices": [
+      -87,
+      12,
+      50,
+      19
+    ]
+  },
+  {
+    "question": "21 - 94 =",
+    "correct": -73,
+    "choices": [
+      68,
+      27,
+      -73,
+      -57
+    ]
+  },
+  {
+    "question": "28 - 70 =",
+    "correct": -42,
+    "choices": [
+      -42,
+      75,
+      2,
+      -1
+    ]
+  },
+  {
+    "question": "83 - 48 =",
+    "correct": 35,
+    "choices": [
+      -17,
+      70,
+      35,
+      -43
+    ]
+  },
+  {
+    "question": "66 - 24 =",
+    "correct": 42,
+    "choices": [
+      76,
+      41,
+      42,
+      57
+    ]
+  },
+  {
+    "question": "13 - 68 =",
+    "correct": -55,
+    "choices": [
+      87,
+      -31,
+      61,
+      -55
+    ]
+  },
+  {
+    "question": "64 - 25 =",
+    "correct": 39,
+    "choices": [
+      17,
+      -62,
+      39,
+      -4
+    ]
+  },
+  {
+    "question": "88 - 44 =",
+    "correct": 44,
+    "choices": [
+      44,
+      -65,
+      -15,
+      35
+    ]
+  },
+  {
+    "question": "92 - 28 =",
+    "correct": 64,
+    "choices": [
+      -6,
+      -93,
+      45,
+      64
+    ]
+  },
+  {
+    "question": "35 - 27 =",
+    "correct": 8,
+    "choices": [
+      -27,
+      24,
+      87,
+      8
+    ]
+  },
+  {
+    "question": "43 - 18 =",
+    "correct": 25,
+    "choices": [
+      -41,
+      -99,
+      25,
+      -89
+    ]
+  },
+  {
+    "question": "60 - 20 =",
+    "correct": 40,
+    "choices": [
+      40,
+      -97,
+      45,
+      -68
+    ]
+  },
+  {
+    "question": "13 - 83 =",
+    "correct": -70,
+    "choices": [
+      -70,
+      -14,
+      72,
+      57
+    ]
+  },
+  {
+    "question": "58 - 59 =",
+    "correct": -1,
+    "choices": [
+      -15,
+      -1,
+      -73,
+      -46
+    ]
+  },
+  {
+    "question": "22 - 85 =",
+    "correct": -63,
+    "choices": [
+      45,
+      -63,
+      93,
+      -94
+    ]
+  },
+  {
+    "question": "80 - 38 =",
+    "correct": 42,
+    "choices": [
+      42,
+      -1,
+      -65,
+      24
+    ]
+  },
+  {
+    "question": "66 - 69 =",
+    "correct": -3,
+    "choices": [
+      -42,
+      -14,
+      -74,
+      -3
+    ]
+  },
+  {
+    "question": "89 - 30 =",
+    "correct": 59,
+    "choices": [
+      -56,
+      -44,
+      59,
+      49
+    ]
+  },
+  {
+    "question": "67 - 15 =",
+    "correct": 52,
+    "choices": [
+      -56,
+      97,
+      52,
+      6
+    ]
+  },
+  {
+    "question": "87 - 94 =",
+    "correct": -7,
+    "choices": [
+      1,
+      89,
+      -29,
+      -7
+    ]
+  },
+  {
+    "question": "80 - 48 =",
+    "correct": 32,
+    "choices": [
+      6,
+      75,
+      32,
+      -2
+    ]
+  },
+  {
+    "question": "79 - 78 =",
+    "correct": 1,
+    "choices": [
+      -62,
+      76,
+      81,
+      1
+    ]
+  },
+  {
+    "question": "52 - 37 =",
+    "correct": 15,
+    "choices": [
+      33,
+      15,
+      68,
+      5
+    ]
+  },
+  {
+    "question": "81 - 22 =",
+    "correct": 59,
+    "choices": [
+      48,
+      -58,
+      15,
+      59
+    ]
+  },
+  {
+    "question": "40 - 98 =",
+    "correct": -58,
+    "choices": [
+      -58,
+      -76,
+      84,
+      58
+    ]
+  },
+  {
+    "question": "37 - 71 =",
+    "correct": -34,
+    "choices": [
+      91,
+      63,
+      38,
+      -34
+    ]
+  },
+  {
+    "question": "15 - 46 =",
+    "correct": -31,
+    "choices": [
+      13,
+      96,
+      -31,
+      5
+    ]
+  },
+  {
+    "question": "67 - 32 =",
+    "correct": 35,
+    "choices": [
+      -8,
+      -77,
+      35,
+      -96
+    ]
+  },
+  {
+    "question": "46 - 53 =",
+    "correct": -7,
+    "choices": [
+      -7,
+      -46,
+      86,
+      27
+    ]
+  },
+  {
+    "question": "66 - 92 =",
+    "correct": -26,
+    "choices": [
+      57,
+      5,
+      -26,
+      -44
+    ]
+  },
+  {
+    "question": "50 - 32 =",
+    "correct": 18,
+    "choices": [
+      -96,
+      57,
+      -86,
+      18
+    ]
+  },
+  {
+    "question": "15 - 92 =",
+    "correct": -77,
+    "choices": [
+      16,
+      82,
+      -85,
+      -77
+    ]
+  },
+  {
+    "question": "96 - 70 =",
+    "correct": 26,
+    "choices": [
+      -42,
+      100,
+      10,
+      26
+    ]
+  },
+  {
+    "question": "91 - 32 =",
+    "correct": 59,
+    "choices": [
+      -82,
+      22,
+      -98,
+      59
+    ]
+  },
+  {
+    "question": "66 - 23 =",
+    "correct": 43,
+    "choices": [
+      -6,
+      43,
+      -11,
+      -9
+    ]
+  },
+  {
+    "question": "94 - 99 =",
+    "correct": -5,
+    "choices": [
+      -5,
+      -52,
+      35,
+      -30
+    ]
+  },
+  {
+    "question": "73 - 45 =",
+    "correct": 28,
+    "choices": [
+      28,
+      73,
+      41,
+      51
+    ]
+  },
+  {
+    "question": "93 - 53 =",
+    "correct": 40,
+    "choices": [
+      50,
+      -37,
+      24,
+      40
+    ]
+  },
+  {
+    "question": "19 - 60 =",
+    "correct": -41,
+    "choices": [
+      93,
+      -41,
+      -33,
+      -80
+    ]
+  },
+  {
+    "question": "80 - 95 =",
+    "correct": -15,
+    "choices": [
+      -69,
+      -51,
+      77,
+      -15
+    ]
+  },
+  {
+    "question": "89 - 20 =",
+    "correct": 69,
+    "choices": [
+      -77,
+      69,
+      1,
+      79
+    ]
+  },
+  {
+    "question": "68 - 21 =",
+    "correct": 47,
+    "choices": [
+      47,
+      83,
+      -45,
+      -14
+    ]
+  },
+  {
+    "question": "68 - 95 =",
+    "correct": -27,
+    "choices": [
+      -27,
+      65,
+      56,
+      -90
+    ]
+  },
+  {
+    "question": "13 - 78 =",
+    "correct": -65,
+    "choices": [
+      96,
+      95,
+      -65,
+      -56
+    ]
+  },
+  {
+    "question": "49 - 64 =",
+    "correct": -15,
+    "choices": [
+      -18,
+      -52,
+      -15,
+      68
+    ]
+  },
+  {
+    "question": "68 - 51 =",
+    "correct": 17,
+    "choices": [
+      17,
+      78,
+      -8,
+      -10
+    ]
+  },
+  {
+    "question": "54 - 87 =",
+    "correct": -33,
+    "choices": [
+      -69,
+      55,
+      -68,
+      -33
+    ]
+  },
+  {
+    "question": "80 - 72 =",
+    "correct": 8,
+    "choices": [
+      8,
+      -89,
+      -81,
+      -58
+    ]
+  },
+  {
+    "question": "59 - 59 =",
+    "correct": 0,
+    "choices": [
+      -92,
+      -45,
+      98,
+      0
+    ]
+  },
+  {
+    "question": "22 - 30 =",
+    "correct": -8,
+    "choices": [
+      -38,
+      30,
+      18,
+      -8
+    ]
+  },
+  {
+    "question": "12 - 43 =",
+    "correct": -31,
+    "choices": [
+      -31,
+      -16,
+      -74,
+      -91
+    ]
+  },
+  {
+    "question": "81 - 56 =",
+    "correct": 25,
+    "choices": [
+      -70,
+      21,
+      25,
+      -91
+    ]
+  },
+  {
+    "question": "96 - 53 =",
+    "correct": 43,
+    "choices": [
+      83,
+      43,
+      -26,
+      6
+    ]
+  },
+  {
+    "question": "86 - 83 =",
+    "correct": 3,
+    "choices": [
+      3,
+      94,
+      -20,
+      -39
+    ]
+  },
+  {
+    "question": "22 - 24 =",
+    "correct": -2,
+    "choices": [
+      -27,
+      47,
+      -2,
+      -68
+    ]
+  },
+  {
+    "question": "68 - 20 =",
+    "correct": 48,
+    "choices": [
+      48,
+      57,
+      79,
+      1
+    ]
+  },
+  {
+    "question": "59 - 98 =",
+    "correct": -39,
+    "choices": [
+      -39,
+      -7,
+      -1,
+      57
+    ]
+  }
+]

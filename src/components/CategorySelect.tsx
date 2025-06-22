@@ -22,7 +22,18 @@ const guilds = [
     name: '数学ギルド',
     icon: '🔢',
     position: { top: '60%', left: '50%' },
-    categories: ['simple_math']
+    categories: [
+      'simple_math',
+      'single_digit_subtraction',
+      'single_digit_multiplication',
+      'single_digit_division',
+      'double_digit_addition',
+      'double_digit_subtraction',
+      'double_digit_multiplication',
+      'double_digit_division',
+      'single_digit_mixed',
+      'double_digit_mixed'
+    ]
   },
   {
     id: 'english',

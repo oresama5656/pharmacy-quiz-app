@@ -48,6 +48,78 @@
     "clearFloor": 30
   },
   {
+    "id": "single_digit_subtraction",
+    "name": "引き算",
+    "description": "一桁の引き算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★",
+    "clearFloor": 30
+  },
+  {
+    "id": "single_digit_multiplication",
+    "name": "掛け算",
+    "description": "一桁の掛け算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★",
+    "clearFloor": 30
+  },
+  {
+    "id": "single_digit_division",
+    "name": "割り算",
+    "description": "一桁の割り算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★",
+    "clearFloor": 30
+  },
+  {
+    "id": "double_digit_addition",
+    "name": "二桁足し算",
+    "description": "二桁の足し算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★★",
+    "clearFloor": 30
+  },
+  {
+    "id": "double_digit_subtraction",
+    "name": "二桁引き算",
+    "description": "二桁の引き算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★★",
+    "clearFloor": 30
+  },
+  {
+    "id": "double_digit_multiplication",
+    "name": "二桁掛け算",
+    "description": "二桁の掛け算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★★",
+    "clearFloor": 30
+  },
+  {
+    "id": "double_digit_division",
+    "name": "二桁割り算",
+    "description": "二桁の割り算を答える問題です",
+    "icon": "🧮",
+    "difficulty": "★★",
+    "clearFloor": 30
+  },
+  {
+    "id": "single_digit_mixed",
+    "name": "一桁四則混合",
+    "description": "一桁の四則演算が混ざった問題です",
+    "icon": "🧮",
+    "difficulty": "★",
+    "clearFloor": 30
+  },
+  {
+    "id": "double_digit_mixed",
+    "name": "二桁四則混合",
+    "description": "二桁の四則演算が混ざった問題です",
+    "icon": "🧮",
+    "difficulty": "★★",
+    "clearFloor": 30
+  },
+  {
     "id": "text_length",
     "name": "文章表示テスト",
     "description": "長文や長い選択肢の表示確認用",
