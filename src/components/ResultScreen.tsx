@@ -30,26 +30,63 @@ const RESULT_ASSETS = {
 
 const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBackToCategory }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const adRef = useRef<HTMLDivElement>(null);
   const [showContent, setShowContent] = useState(false);
   const [animateFloor, setAnimateFloor] = useState(false);
   const [animateButtons, setAnimateButtons] = useState(false);
+  const [adLoaded, setAdLoaded] = useState(false);
+
+  // 広告スクリプトの読み込みと初期化
   useEffect(() => {
-    const scriptId = 'adsbygoogle-js';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.async = true;
-      script.src =
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508744207193174';
-      script.crossOrigin = 'anonymous';
-      document.body.appendChild(script);
-    }
-    try {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    } catch (e) {
-      console.error(e);
-    }
+    const loadAds = async () => {
+      try {
+        // スクリプトの読み込み
+        const scriptId = 'adsbygoogle-js';
+        if (!document.getElementById(scriptId)) {
+          const script = document.createElement('script');
+          script.id = scriptId;
+          script.async = true;
+          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508744207193174';
+          script.crossOrigin = 'anonymous';
+          document.head.appendChild(script);
+          
+          // スクリプトの読み込み完了を待つ
+          await new Promise((resolve, reject) => {
+            script.onload = resolve;
+            script.onerror = reject;
+          });
+        }
+
+        // DOM要素の準備完了を待つ
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        // 広告要素が存在し、サイズが確定してから実行
+        if (adRef.current) {
+          const rect = adRef.current.getBoundingClientRect();
+          if (rect.width > 0) {
+            try {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+              setAdLoaded(true);
+            } catch (e) {
+              console.error('AdSense initialization error:', e);
+            }
+          } else {
+            // 幅が0の場合は少し待ってから再試行
+            setTimeout(loadAds, 1000);
+          }
+        }
+      } catch (error) {
+        console.error('Failed to load AdSense script:', error);
+      }
+    };
+
+    // コンポーネントがマウントされて少し待ってから広告を読み込む
+    const timer = setTimeout(loadAds, 1000);
+    
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   useEffect(() => {
@@ -179,6 +216,32 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
           </div>
         </div>
 
+        {/* 広告エリア - 修正版 */}
+        <div 
+          ref={adRef}
+          className="w-full max-w-lg mx-auto my-6 bg-gray-800/20 rounded-lg overflow-hidden"
+          style={{ minHeight: '100px' }}
+        >
+          <ins
+            className="adsbygoogle"
+            style={{ 
+              display: 'block',
+              width: '100%',
+              minHeight: '100px',
+              textAlign: 'center'
+            }}
+            data-ad-client="ca-pub-6508744207193174"
+            data-ad-slot="5884881872"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+          {!adLoaded && (
+            <div className="flex items-center justify-center h-24 text-gray-400 text-sm">
+              広告を読み込んでいます...
+            </div>
+          )}
+        </div>
+
         {/* ボタン */}
         <div className={`space-y-3 w-full max-w-sm transition-all duration-800 delay-700 ${
           animateButtons ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'
@@ -203,21 +266,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
             </div>
           </button>
         </div>
-
-        {/* quiz_end_banner */}
-        <div className="my-4 w-full flex justify-center">
-          <ins
-            className="adsbygoogle"
-            style={{ display: 'block', minWidth: 320, minHeight: 50 }}
-            data-ad-client="ca-pub-6508744207193174"
-            data-ad-slot="5884881872"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
       </div>
-        </div>
 
-        {/* キャラクター画像表示エリア（後で追加用） */}
+      {/* キャラクター画像表示エリア（後で追加用） */}
       {(RESULT_ASSETS.characterImages.victory || RESULT_ASSETS.characterImages.defeat) && (
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
           {gameState.playerWon && RESULT_ASSETS.characterImages.victory && (
