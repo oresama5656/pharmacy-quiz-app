@@ -317,12 +317,19 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
       >
         {/* クエストボード */}
         <div 
-          className="relative z-20 w-full max-w-6xl max-h-[90vh] overflow-hidden bg-cover bg-center"
+          className="relative z-20 w-full max-w-6xl max-h-[90vh] overflow-hidden bg-cover bg-center rounded-lg"
           onClick={(e) => e.stopPropagation()} // ボード内クリックで閉じるのを防ぐ
           style={{
             backgroundImage: `url('/public/background/wood-bg.png')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            border: '8px solid #8B4513',
+            boxShadow: `
+              inset 0 0 0 4px #D2B48C,
+              inset 0 0 0 6px #8B4513,
+              0 8px 24px rgba(0, 0, 0, 0.4),
+              0 4px 12px rgba(0, 0, 0, 0.3)
+            `
           }}
         >
           {/* 閉じるボタン */}
