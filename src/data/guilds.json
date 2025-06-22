@@ -46,7 +46,7 @@
     "id": "advanced",
     "name": "あやめギルド",
     "icon": "💯",
-    "position": { "top": "70%", "left": "35%" },
+    "position": { "top": "70%", "left": "20%" },
     "categoryIds": ["p2d_best30_ayame", "p2d_best31to60_ayame", "p2d_best61to90_ayame", "p2d_best91to120_ayame", "p2d_best121to150_ayame"]
   },
   {
@@ -96,7 +96,7 @@
     "id": "kokugo",
     "name": "国語ギルド",
     "icon": "📖",
-    "position": { "top": "80%", "left": "70%" },
+    "position": { "top": "83%", "left": "80%" },
     "categoryIds": [
       "kokugo_lv1_kanji_yomikata",
       "kokugo_lv2_douon_igigo",
