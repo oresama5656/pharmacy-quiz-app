@@ -317,10 +317,12 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
       >
         {/* クエストボード */}
         <div 
-          className="bg-amber-50 rounded-lg shadow-2xl relative z-20 w-full max-w-4xl max-h-[90vh] overflow-hidden"
+          className="relative z-20 w-full max-w-6xl max-h-[90vh] overflow-hidden bg-cover bg-center"
           onClick={(e) => e.stopPropagation()} // ボード内クリックで閉じるのを防ぐ
           style={{
-            backgroundImage: "linear-gradient(rgba(139, 69, 19, 0.1), rgba(160, 82, 45, 0.2)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"%23DEB887\"/><path d=\"M0 0h100v100H0z\" fill=\"url(%23grain)\"/><defs><pattern id=\"grain\" width=\"4\" height=\"4\" patternUnits=\"userSpaceOnUse\"><circle cx=\"1\" cy=\"1\" r=\"0.5\" fill=\"%23CD853F\" opacity=\"0.3\"/><circle cx=\"3\" cy=\"3\" r=\"0.3\" fill=\"%23D2691E\" opacity=\"0.2\"/></pattern></defs></svg>')"
+            backgroundImage: `url('/public/background/wood-bg.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         >
           {/* 閉じるボタン */}
@@ -331,17 +333,39 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             ×
           </button>
 
-          <div className="p-6 h-full flex flex-col">
-            {/* ヘッダー */}
-            <div className="text-center mb-6 flex-shrink-0">
-              <h1 className="text-3xl font-bold text-amber-900 mb-2">
-                {activeGuild.icon} {activeGuild.name}
-              </h1>
-              <p className="text-amber-700">クエストを選択してください</p>
+          <div className="p-8 h-full flex flex-col">
+            {/* ヘッダー - 暗めの木板＋金枠装飾 */}
+            <div className="text-center mb-4 flex-shrink-0 relative">
+              <div 
+                className="bg-amber-900 rounded-lg p-3 mx-auto max-w-lg relative"
+                style={{
+                  backgroundImage: `
+                    linear-gradient(145deg, rgba(139, 69, 19, 0.9) 0%, rgba(101, 67, 33, 0.95) 50%, rgba(139, 69, 19, 0.9) 100%),
+                    repeating-linear-gradient(90deg, rgba(160, 82, 45, 0.1), rgba(160, 82, 45, 0.1) 2px, rgba(139, 69, 19, 0.1) 2px, rgba(139, 69, 19, 0.1) 4px)
+                  `,
+                  border: '2px solid #B8860B',
+                  boxShadow: `
+                    inset 0 1px 2px rgba(218, 165, 32, 0.3),
+                    inset 0 -1px 2px rgba(139, 69, 19, 0.5),
+                    0 2px 6px rgba(0, 0, 0, 0.4)
+                  `
+                }}
+              >
+                <h1 
+                  className="font-bold text-amber-100"
+                  style={{
+                    fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
+                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)',
+                    fontSize: '18px'
+                  }}
+                >
+                  {activeGuild.icon} {activeGuild.name}
+                </h1>
+              </div>
             </div>
 
-            {/* カテゴリカード */}
-            <div className="grid gap-4 md:grid-cols-2 overflow-y-auto flex-1 p-2" style={{ maxHeight: 'calc(90vh - 200px)' }}>
+            {/* カテゴリカード - 縦5×横2列のグリッド */}
+            <div className="grid grid-cols-2 gap-2 flex-1 overflow-y-auto p-2" style={{ maxHeight: 'calc(90vh - 250px)' }}>
               {guildCategories.map((category) => {
                 const progress = getProgress(category.id);
                 const current = progress.currentFloor ?? 0;
@@ -352,26 +376,51 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                   <div
                     key={category.id}
                     onClick={() => handleCategorySelect(category.id)}
-                    className="bg-amber-50 hover:bg-amber-100 border-2 border-amber-300 hover:border-amber-500 rounded-lg p-4 cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-                    style={{ maxWidth: '300px', margin: '0 auto' }}
+                    className="cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-lg shadow-inner bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url('/public/background/paper-texture.png')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      minHeight: '60px',
+                      maxHeight: '70px'
+                    }}
                   >
-                    <div className="flex items-start space-x-3">
-                      <span className="text-2xl">{category.icon}</span>
-                      <div className="flex-1">
-                        <h3 className="font-bold text-amber-900 mb-1">
-                          {category.name}
-                        </h3>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="text-orange-600 font-mono text-sm">
+                    <div className="p-1.5 h-full bg-amber-50 bg-opacity-70 rounded-lg hover:bg-opacity-85 transition-all duration-300">
+                      <div className="h-full flex flex-col justify-between">
+                        <div>
+                          <h3 
+                            className="font-bold text-amber-900 mb-0.5 leading-none"
+                            style={{
+                              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
+                              fontSize: window.innerWidth < 768 ? '10px' : '12px'
+                            }}
+                          >
+                            {category.name}
+                          </h3>
+                          <p 
+                            className="text-amber-700 leading-none mb-0.5"
+                            style={{
+                              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
+                              fontSize: window.innerWidth < 768 ? '7px' : '9px'
+                            }}
+                          >
+                            {category.description}
+                          </p>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span 
+                            className="text-orange-600 font-mono"
+                            style={{ fontSize: '8px' }}
+                          >
                             {stars}
                           </span>
-                          <span className="bg-amber-200 px-2 py-1 rounded-full text-amber-800 font-semibold text-xs">
+                          <span 
+                            className="bg-amber-200 px-1 py-0.5 rounded text-amber-800 font-semibold"
+                            style={{ fontSize: '8px' }}
+                          >
                             {current} / {total}F
                           </span>
                         </div>
-                        <p className="text-sm text-amber-700">
-                          {category.description}
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -380,7 +429,14 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
 
             {/* フッター */}
-            <div className="text-center mt-6 text-amber-600 text-sm flex-shrink-0">
+            <div 
+              className="text-center mt-2 text-amber-200 flex-shrink-0"
+              style={{
+                fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
+                textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)',
+                fontSize: '10px'
+              }}
+            >
               <p>タップしてクエストを開始</p>
             </div>
           </div>
