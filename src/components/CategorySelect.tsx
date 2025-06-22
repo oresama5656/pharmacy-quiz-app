@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { getCategories, Category } from '../data/quizManager';
 import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES } from '../constants';
 import { QuestStatus } from '../types';
 import { 
-  getGuildProgress, 
   getQuestStatus, 
   markQuestAsUnlocked,
   getGuildIdByCategoryId 
