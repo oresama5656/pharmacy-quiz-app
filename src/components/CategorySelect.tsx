@@ -97,6 +97,19 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
       audio.load();
     });
   }, []);
+
+  // カテゴリ画面に戻ってきた際の音楽再開処理
+  useEffect(() => {
+    // スタート画面をスキップしてカテゴリ画面に直接来た場合、音楽を開始
+    if (!showStartScreen && screen === 'map' && !audioReady) {
+      // AudioContextを初期化（ユーザー操作なしでは音は鳴らないが、準備だけする）
+      if (!audioContextRef.current) {
+        audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
+      }
+      setAudioReady(true);
+      startBGM();
+    }
+  }, [showStartScreen, screen, audioReady]);
   
   const allCategories = getCategories();
 
