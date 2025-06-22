@@ -110,7 +110,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
   const achievedFloor = gameState.maxFloorReached;
 
   return (
-    <div className="w-full h-screen overflow-hidden relative flex flex-col">
+    <div className="w-full h-screen overflow-auto relative flex flex-col">
       {/* 背景 */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -147,7 +147,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
       )}
 
       {/* メインコンテンツエリア */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
         
         {/* Congratulations ロゴ部分 */}
         <div className={`mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 ${
@@ -225,29 +225,30 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
           {/* 広告エリア - ボタンの下に移動 */}
           <div 
             ref={adRef}
-            className="w-full bg-gray-800/10 rounded-lg overflow-hidden mt-4"
-            style={{ minHeight: '10px' }}
+            className="w-full bg-gray-800/10 rounded-lg overflow-hidden mt-6"
           >
             <ins
               className="adsbygoogle"
               style={{ 
                 display: 'block',
                 width: '100%',
-                minHeight: '10px',
                 textAlign: 'center'
               }}
               data-ad-client="ca-pub-6508744207193174"
               data-ad-slot="5884881872"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
+              data-ad-format="rectangle"
+              data-full-width-responsive="false"
             />
             {!adLoaded && (
-              <div className="flex items-center justify-center h-20 text-gray-400 text-xs">
+              <div className="flex items-center justify-center h-16 text-gray-400 text-xs">
                 広告を読み込んでいます...
               </div>
             )}
           </div>
         </div>
+        
+        {/* 下部の余白 - 広告用スペース */}
+        <div className="h-32"></div>
       </div>
 
       {/* キャラクター画像表示エリア（後で追加用） */}
