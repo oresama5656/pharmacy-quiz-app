@@ -91,5 +91,23 @@
       "basic_math_lv9",
       "basic_math_lv10"
     ]
+  },
+  {
+    "id": "kokugo",
+    "name": "国語ギルド",
+    "icon": "📖",
+    "position": { "top": "80%", "left": "70%" },
+    "categoryIds": [
+      "kokugo_lv1_kanji_yomikata",
+      "kokugo_lv2_douon_igigo",
+      "kokugo_lv3_kotowaza",
+      "kokugo_lv4_keigo",
+      "kokugo_lv5_taigigo_ruigigo",
+      "kokugo_lv6_jukugo",
+      "kokugo_lv7_grammar",
+      "kokugo_lv8_short_reading",
+      "kokugo_lv9_sentence_structure",
+      "kokugo_lv10_long_reading"
+    ]
   }
 ] 

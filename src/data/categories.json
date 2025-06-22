@@ -458,5 +458,95 @@
     "difficulty": "★★★",
     "clearFloor": 10,
     "file": "quizzes/basic_math/basic_math_lv10.json"
+  },
+  {
+    "id": "kokugo_lv1_kanji_yomikata",
+    "name": "漢字の読み方（レベル1）",
+    "description": "基本的な漢字の読み方を答える問題です",
+    "icon": "📝",
+    "difficulty": "★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv1_kanji_yomikata.json"
+  },
+  {
+    "id": "kokugo_lv2_douon_igigo",
+    "name": "同音異義語（レベル2）",
+    "description": "同じ音で意味が異なる言葉の問題です",
+    "icon": "🎯",
+    "difficulty": "★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv2_douon_igigo.json"
+  },
+  {
+    "id": "kokugo_lv3_kotowaza",
+    "name": "ことわざ（レベル3）",
+    "description": "ことわざの意味や続きを答える問題です",
+    "icon": "🏮",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv3_kotowaza.json"
+  },
+  {
+    "id": "kokugo_lv4_keigo",
+    "name": "敬語（レベル4）",
+    "description": "正しい敬語の使い方を答える問題です",
+    "icon": "🙏",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv4_keigo.json"
+  },
+  {
+    "id": "kokugo_lv5_taigigo_ruigigo",
+    "name": "対義語・類義語（レベル5）",
+    "description": "反対の意味や似た意味の言葉を答える問題です",
+    "icon": "⚖️",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv5_taigigo_ruigigo.json"
+  },
+  {
+    "id": "kokugo_lv6_jukugo",
+    "name": "熟語（レベル6）",
+    "description": "四字熟語や慣用句を答える問題です",
+    "icon": "🏯",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv6_jukugo.json"
+  },
+  {
+    "id": "kokugo_lv7_grammar",
+    "name": "文法（レベル7）",
+    "description": "品詞や文の構造に関する問題です",
+    "icon": "📚",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv7_grammar.json"
+  },
+  {
+    "id": "kokugo_lv8_short_reading",
+    "name": "短文読解（レベル8）",
+    "description": "短い文章を読んで答える問題です",
+    "icon": "📖",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv8_short_reading.json"
+  },
+  {
+    "id": "kokugo_lv9_sentence_structure",
+    "name": "文章構成（レベル9）",
+    "description": "文章の構成や表現技法に関する問題です",
+    "icon": "🎨",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv9_sentence_structure.json"
+  },
+  {
+    "id": "kokugo_lv10_long_reading",
+    "name": "長文読解（レベル10）",
+    "description": "長い文章を読んで内容を理解する問題です",
+    "icon": "📜",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo/lv10_long_reading.json"
   }
 ] 

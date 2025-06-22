@@ -48,6 +48,30 @@ import english_lv8 from './quizzes/english/english_lv8.json';
 import english_lv9 from './quizzes/english/english_lv9.json';
 import english_lv10 from './quizzes/english/english_lv10.json';
 
+// 基本算数クイズ
+import basic_math_lv1 from './quizzes/basic_math/basic_math_lv1.json';
+import basic_math_lv2 from './quizzes/basic_math/basic_math_lv2.json';
+import basic_math_lv3 from './quizzes/basic_math/basic_math_lv3.json';
+import basic_math_lv4 from './quizzes/basic_math/basic_math_lv4.json';
+import basic_math_lv5 from './quizzes/basic_math/basic_math_lv5.json';
+import basic_math_lv6 from './quizzes/basic_math/basic_math_lv6.json';
+import basic_math_lv7 from './quizzes/basic_math/basic_math_lv7.json';
+import basic_math_lv8 from './quizzes/basic_math/basic_math_lv8.json';
+import basic_math_lv9 from './quizzes/basic_math/basic_math_lv9.json';
+import basic_math_lv10 from './quizzes/basic_math/basic_math_lv10.json';
+
+// 国語クイズ
+import lv1_kanji_yomikata from './quizzes/kokugo/lv1_kanji_yomikata.json';
+import lv2_douon_igigo from './quizzes/kokugo/lv2_douon_igigo.json';
+import lv3_kotowaza from './quizzes/kokugo/lv3_kotowaza.json';
+import lv4_keigo from './quizzes/kokugo/lv4_keigo.json';
+import lv5_taigigo_ruigigo from './quizzes/kokugo/lv5_taigigo_ruigigo.json';
+import lv6_jukugo from './quizzes/kokugo/lv6_jukugo.json';
+import lv7_grammar from './quizzes/kokugo/lv7_grammar.json';
+import lv8_short_reading from './quizzes/kokugo/lv8_short_reading.json';
+import lv9_sentence_structure from './quizzes/kokugo/lv9_sentence_structure.json';
+import lv10_long_reading from './quizzes/kokugo/lv10_long_reading.json';
+
 // カテゴリ情報の型定義
 export interface Category {
   id: string;
@@ -118,6 +142,30 @@ const quizImportMap: Record<string, any> = {
   'quizzes/english/english_lv8.json': english_lv8,
   'quizzes/english/english_lv9.json': english_lv9,
   'quizzes/english/english_lv10.json': english_lv10,
+  
+  // 基本算数クイズ
+  'quizzes/basic_math/basic_math_lv1.json': basic_math_lv1,
+  'quizzes/basic_math/basic_math_lv2.json': basic_math_lv2,
+  'quizzes/basic_math/basic_math_lv3.json': basic_math_lv3,
+  'quizzes/basic_math/basic_math_lv4.json': basic_math_lv4,
+  'quizzes/basic_math/basic_math_lv5.json': basic_math_lv5,
+  'quizzes/basic_math/basic_math_lv6.json': basic_math_lv6,
+  'quizzes/basic_math/basic_math_lv7.json': basic_math_lv7,
+  'quizzes/basic_math/basic_math_lv8.json': basic_math_lv8,
+  'quizzes/basic_math/basic_math_lv9.json': basic_math_lv9,
+  'quizzes/basic_math/basic_math_lv10.json': basic_math_lv10,
+  
+  // 国語クイズ
+  'quizzes/kokugo/lv1_kanji_yomikata.json': lv1_kanji_yomikata,
+  'quizzes/kokugo/lv2_douon_igigo.json': lv2_douon_igigo,
+  'quizzes/kokugo/lv3_kotowaza.json': lv3_kotowaza,
+  'quizzes/kokugo/lv4_keigo.json': lv4_keigo,
+  'quizzes/kokugo/lv5_taigigo_ruigigo.json': lv5_taigigo_ruigigo,
+  'quizzes/kokugo/lv6_jukugo.json': lv6_jukugo,
+  'quizzes/kokugo/lv7_grammar.json': lv7_grammar,
+  'quizzes/kokugo/lv8_short_reading.json': lv8_short_reading,
+  'quizzes/kokugo/lv9_sentence_structure.json': lv9_sentence_structure,
+  'quizzes/kokugo/lv10_long_reading.json': lv10_long_reading,
 };
 
 // クイズファイルのキャッシュ
@@ -141,7 +189,7 @@ const loadQuizFile = (filePath: string): Quiz[] => {
     let quizzes = rawQuizzes as Quiz[];
     
     // 数学系クイズの場合、数値を文字列に変換
-    if (filePath.includes('math/') || filePath.includes('math_mix/')) {
+    if (filePath.includes('math/') || filePath.includes('math_mix/') || filePath.includes('basic_math/')) {
       quizzes = quizzes.map(quiz => ({
         question: quiz.question,
         correct: String(quiz.correct),
