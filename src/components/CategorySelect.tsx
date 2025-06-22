@@ -1,6 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { getCategories, Category } from '../data/quizManager';
 import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES } from '../constants';
+import { QuestStatus } from '../types';
+import { 
+  getGuildProgress, 
+  getQuestStatus, 
+  markQuestAsUnlocked,
+  getGuildIdByCategoryId 
+} from '../utils/questStatus';
 import guildsData from '../data/guilds.json';
 
 interface CategorySelectProps {
@@ -15,6 +23,10 @@ interface CategorySelectProps {
    * so it will not appear again during this session.
    */
   onStart: () => void;
+  /**
+   * Key to force refresh of quest statuses
+   */
+  refreshKey?: number;
 }
 
 type Screen = 'start' | 'map' | 'board';
@@ -42,7 +54,8 @@ const MUSIC = {
 const CategorySelect: React.FC<CategorySelectProps> = ({
   onCategorySelect,
   showStartScreen,
-  onStart
+  onStart,
+  refreshKey
 }) => {
   const [screen, setScreen] = useState<Screen>(() =>
     showStartScreen ? 'start' : 'map'
@@ -80,6 +93,14 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
       startBGM();
     }
   }, [showStartScreen, screen, audioReady]);
+
+  // カテゴリ画面に戻ってきた時にクエストステータスを更新
+  useEffect(() => {
+    if (screen === 'map') {
+      // refreshKeyが変更された時に再レンダリングを促す
+      // 実際の更新処理は各カードのレンダリング時に行われる
+    }
+  }, [screen, refreshKey]);
   
   const allCategories = getCategories();
 
@@ -154,6 +175,22 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
 
   // カテゴリ選択
   const handleCategorySelect = (categoryId: string) => {
+    const guildId = getGuildIdByCategoryId(categoryId);
+    if (!guildId) return;
+
+    const questStatus = getQuestStatus(guildId, categoryId);
+    
+    // ロックされているクエストはクリックできない
+    if (questStatus === 'locked') {
+      return;
+    }
+
+    // justUnlockedの場合は演出を再生してからunlockedに変更
+    if (questStatus === 'justUnlocked') {
+      markQuestAsUnlocked(guildId, categoryId);
+      // 演出用の効果音を再生（今回は通常のクリック音を使用）
+    }
+
     playSE('clickCard');
     onCategorySelect(categoryId);
   };
@@ -378,25 +415,122 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                 const current = progress.currentFloor ?? 0;
                 const total = category.clearFloor;
                 const stars = generateStars(category.difficulty);
+                const questStatus = getQuestStatus(activeGuild.id, category.id);
+                
+                // ステータスに応じたスタイル設定
+                const getCardStyles = () => {
+                  switch (questStatus) {
+                    case 'locked':
+                      return {
+                        cursor: 'not-allowed',
+                        opacity: 0.4,
+                        filter: 'grayscale(100%)',
+                        background: 'bg-gray-400 bg-opacity-50'
+                      };
+                    case 'justUnlocked':
+                      return {
+                        cursor: 'pointer',
+                        opacity: 1,
+                        filter: 'none',
+                        background: 'bg-amber-50 bg-opacity-70'
+                      };
+                    case 'unlocked':
+                      return {
+                        cursor: 'pointer',
+                        opacity: 1,
+                        filter: 'none',
+                        background: 'bg-amber-50 bg-opacity-70'
+                      };
+                    case 'cleared':
+                      return {
+                        cursor: 'pointer',
+                        opacity: 1,
+                        filter: 'none',
+                        background: 'bg-yellow-100 bg-opacity-80'
+                      };
+                    default:
+                      return {
+                        cursor: 'pointer',
+                        opacity: 1,
+                        filter: 'none',
+                        background: 'bg-amber-50 bg-opacity-70'
+                      };
+                  }
+                };
+
+                const cardStyles = getCardStyles();
                 
                 return (
-                  <div
+                  <motion.div
                     key={category.id}
                     onClick={() => handleCategorySelect(category.id)}
-                    className="cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-lg shadow-inner bg-cover bg-center"
+                    className={`transition-all duration-300 transform rounded-lg shadow-inner bg-cover bg-center relative ${
+                      questStatus === 'locked' ? 'cursor-not-allowed' : 'cursor-pointer hover:scale-105'
+                    }`}
                     style={{
                       backgroundImage: `url('/public/background/paper-texture.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       minHeight: '60px',
-                      maxHeight: '70px'
+                      maxHeight: '70px',
+                      opacity: cardStyles.opacity,
+                      filter: cardStyles.filter
+                    }}
+                    // justUnlockedの場合のアニメーション
+                    animate={questStatus === 'justUnlocked' ? {
+                      boxShadow: [
+                        '0 0 0 0 rgba(255, 215, 0, 0.7)',
+                        '0 0 0 10px rgba(255, 215, 0, 0)',
+                        '0 0 0 0 rgba(255, 215, 0, 0)'
+                      ],
+                      scale: [1, 1.05, 1]
+                    } : {}}
+                    transition={{
+                      boxShadow: { duration: 2, repeat: Infinity },
+                      scale: { duration: 1, repeat: Infinity }
                     }}
                   >
-                    <div className="p-1.5 h-full bg-amber-50 bg-opacity-70 rounded-lg hover:bg-opacity-85 transition-all duration-300">
+                    {/* ロック状態のオーバーレイ */}
+                    {questStatus === 'locked' && (
+                      <div className="absolute inset-0 bg-gray-800 bg-opacity-60 rounded-lg flex items-center justify-center z-10">
+                        <span className="text-gray-300 text-2xl">🔒</span>
+                      </div>
+                    )}
+
+                    {/* New!バッジ */}
+                    {questStatus === 'justUnlocked' && (
+                      <motion.div
+                        className="absolute -top-1 -right-1 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full font-bold z-20"
+                        animate={{
+                          scale: [1, 1.1, 1],
+                          rotate: [0, 5, -5, 0]
+                        }}
+                        transition={{
+                          duration: 1.5,
+                          repeat: Infinity
+                        }}
+                      >
+                        New!
+                      </motion.div>
+                    )}
+
+                    {/* クリア済みバッジ */}
+                    {questStatus === 'cleared' && (
+                      <div className="absolute -top-1 -right-1 bg-yellow-500 text-white text-xs px-1.5 py-0.5 rounded-full font-bold z-20">
+                        ✅
+                      </div>
+                    )}
+
+                    <div className={`p-1.5 h-full ${cardStyles.background} rounded-lg transition-all duration-300 ${
+                      questStatus !== 'locked' ? 'hover:bg-opacity-85' : ''
+                    }`}>
                       <div className="h-full flex flex-col justify-between">
                         <div>
                           <h3 
-                            className="font-bold text-amber-900 mb-0.5 leading-none"
+                            className={`font-bold mb-0.5 leading-none ${
+                              questStatus === 'locked' ? 'text-gray-500' : 
+                              questStatus === 'cleared' ? 'text-yellow-800' : 'text-amber-900'
+                            }`}
                             style={{
                               fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
                               fontSize: window.innerWidth < 768 ? '10px' : '12px'
@@ -405,7 +539,10 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                             {category.name}
                           </h3>
                           <p 
-                            className="text-amber-700 leading-none mb-0.5"
+                            className={`leading-none mb-0.5 ${
+                              questStatus === 'locked' ? 'text-gray-400' : 
+                              questStatus === 'cleared' ? 'text-yellow-700' : 'text-amber-700'
+                            }`}
                             style={{
                               fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
                               fontSize: window.innerWidth < 768 ? '7px' : '9px'
@@ -416,13 +553,19 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                         </div>
                         <div className="flex justify-between items-center">
                           <span 
-                            className="text-orange-600 font-mono"
+                            className={`font-mono ${
+                              questStatus === 'locked' ? 'text-gray-400' : 'text-orange-600'
+                            }`}
                             style={{ fontSize: '8px' }}
                           >
                             {stars}
                           </span>
                           <span 
-                            className="bg-amber-200 px-1 py-0.5 rounded text-amber-800 font-semibold"
+                            className={`px-1 py-0.5 rounded font-semibold ${
+                              questStatus === 'locked' ? 'bg-gray-300 text-gray-600' :
+                              questStatus === 'cleared' ? 'bg-yellow-300 text-yellow-800' :
+                              'bg-amber-200 text-amber-800'
+                            }`}
                             style={{ fontSize: '8px' }}
                           >
                             {current} / {total}F
@@ -430,7 +573,25 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                         </div>
                       </div>
                     </div>
-                  </div>
+
+                    {/* justUnlockedの場合のキラキラエフェクト */}
+                    {questStatus === 'justUnlocked' && (
+                      <motion.div
+                        className="absolute inset-0 pointer-events-none"
+                        animate={{
+                          background: [
+                            'radial-gradient(circle, rgba(255,215,0,0.3) 0%, transparent 70%)',
+                            'radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%)',
+                            'radial-gradient(circle, rgba(255,215,0,0.3) 0%, transparent 70%)'
+                          ]
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity
+                        }}
+                      />
+                    )}
+                  </motion.div>
                 );
               })}
             </div>

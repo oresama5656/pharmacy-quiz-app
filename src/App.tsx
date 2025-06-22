@@ -6,6 +6,7 @@ import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
 import { ENEMY_IMAGES, BOSS_IMAGES } from './constants';
+import { handleQuestClear, getGuildIdByCategoryId } from './utils/questStatus';
 
 // 不正解時に次の問題へ進むまでのウェイト時間（ms）
 // 適宜この値を変更して表示時間を調整できる
@@ -20,6 +21,7 @@ const App: React.FC = () => {
   // Once the start screen is shown and the user taps START, this becomes false
   // so that returning from the result screen skips the start screen.
   const [showStartScreen, setShowStartScreen] = useState(true);
+  const [questRefreshKey, setQuestRefreshKey] = useState(0);
   const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
@@ -132,6 +134,15 @@ const App: React.FC = () => {
             playerWon: true
           });
           saveProgress(newCurrentFloor);
+          
+          // クエストクリア処理
+          if (selectedCategory) {
+            const guildId = getGuildIdByCategoryId(selectedCategory);
+            if (guildId) {
+              handleQuestClear(guildId, selectedCategory);
+            }
+          }
+          
           setTimeout(() => setCurrentScreen('result'), 500);
         }, 250);
         return;
@@ -243,6 +254,7 @@ const App: React.FC = () => {
     setSelectedCategory(null);
     setShuffledQuizzes([]);
     setShowWarning(false);
+    setQuestRefreshKey(prev => prev + 1); // クエストステータスを更新
   };
 
   // 画面の表示制御
@@ -252,6 +264,7 @@ const App: React.FC = () => {
         onCategorySelect={handleCategorySelect}
         showStartScreen={showStartScreen}
         onStart={() => setShowStartScreen(false)}
+        refreshKey={questRefreshKey}
       />
     );
   }
