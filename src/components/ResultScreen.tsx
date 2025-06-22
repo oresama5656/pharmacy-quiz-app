@@ -226,14 +226,14 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
           <div 
             ref={adRef}
             className="w-full bg-gray-800/10 rounded-lg overflow-hidden mt-4"
-            style={{ minHeight: '80px' }}
+            style={{ minHeight: '10px' }}
           >
             <ins
               className="adsbygoogle"
               style={{ 
                 display: 'block',
                 width: '100%',
-                minHeight: '80px',
+                minHeight: '10px',
                 textAlign: 'center'
               }}
               data-ad-client="ca-pub-6508744207193174"
@@ -251,7 +251,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
       </div>
 
       {/* キャラクター画像表示エリア（後で追加用） */}
-      {(RESULT_ASSETS.characterImages.victory || RESULT_ASSETS.characterImages.defeat) && (
+      {/* {(RESULT_ASSETS.characterImages.victory || RESULT_ASSETS.characterImages.defeat) && (
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
           {gameState.playerWon && RESULT_ASSETS.characterImages.victory && (
             <img 
@@ -268,7 +268,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
             />
           )}
         </div>
-      )}
+      )} */}
     </div>
   );
 };
