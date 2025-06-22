@@ -1,0 +1,53 @@
+[
+  {
+    "question": "The cat is ___ the box.",
+    "correct": "in",
+    "choices": ["on", "under", "in", "behind"]
+  },
+  {
+    "question": "The book is ___ the table.",
+    "correct": "on",
+    "choices": ["in", "on", "under", "next to"]
+  },
+  {
+    "question": "The ball is ___ the chair.",
+    "correct": "under",
+    "choices": ["on", "under", "in", "beside"]
+  },
+  {
+    "question": "The dog is ___ the tree.",
+    "correct": "behind",
+    "choices": ["behind", "in", "on", "under"]
+  },
+  {
+    "question": "She is standing ___ me.",
+    "correct": "next to",
+    "choices": ["under", "next to", "in", "behind"]
+  },
+  {
+    "question": "The picture is ___ the wall.",
+    "correct": "on",
+    "choices": ["in", "under", "on", "behind"]
+  },
+  {
+    "question": "The keys are ___ my bag.",
+    "correct": "in",
+    "choices": ["on", "in", "under", "behind"]
+  },
+  {
+    "question": "The school is ___ the park.",
+    "correct": "near",
+    "choices": ["under", "behind", "near", "in"]
+  },
+  {
+    "question": "The cat jumped ___ the table.",
+    "correct": "onto",
+    "choices": ["into", "onto", "under", "behind"]
+  },
+  {
+    "question": "He walked ___ the river.",
+    "correct": "along",
+    "choices": ["along", "in", "on", "under"]
+  }
+]
+
