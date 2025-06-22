@@ -214,8 +214,8 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
             data-ad-format="auto"
             data-full-width-responsive="true"
           />
+      </div>
         </div>
-
 
         {/* キャラクター画像表示エリア（後で追加用） */}
       {(RESULT_ASSETS.characterImages.victory || RESULT_ASSETS.characterImages.defeat) && (
