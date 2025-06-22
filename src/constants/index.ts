@@ -1,6 +1,6 @@
 // キャラクター画像のURL（簡単に差し替え可能）
 export const CHARACTER_IMAGES = {
-    player: "https://github.com/oresama5656/GameData_Public/blob/main/character/battle_unit/red_swordman.png?raw=true"
+    player: "/character/hero.png"
   };
 
 // 敵キャラクターの画像URL（複数）
