@@ -5,7 +5,7 @@
     "description": "薬の商品名から一般名を答える問題です",
     "icon": "🔄",
     "difficulty": "★",
-    "clearFloor": 10
+    "clearFloor": 3
   },
   {
     "id": "brand2effect",
@@ -37,7 +37,7 @@
     "description": "抗生物質の一般名から系統・分類を答える問題です",
     "icon": "🦠",
     "difficulty": "★★",
-    "clearFloor": 20
+    "clearFloor": 3
   },
   {
     "id": "simple_math",
