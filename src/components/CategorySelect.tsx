@@ -57,6 +57,19 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
   const [audioReady, setAudioReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
+  const seAudiosRef = useRef<Record<keyof typeof SE, HTMLAudioElement>>({
+    uiStart: new Audio(SE.uiStart),
+    clickGuild: new Audio(SE.clickGuild),
+    clickCard: new Audio(SE.clickCard)
+  });
+
+  useEffect(() => {
+    Object.values(seAudiosRef.current).forEach((audio) => {
+      audio.volume = 0.3;
+      audio.preload = 'auto';
+      audio.load();
+    });
+  }, []);
   
   const allCategories = getCategories();
 
@@ -83,11 +96,13 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
   };
 
   // 効果音再生
-  const playSE = (src: string) => {
+  const playSE = (key: keyof typeof SE) => {
     if (audioReady && audioContextRef.current?.state === 'running') {
-      const audio = new Audio(src);
-      audio.volume = 0.3;
-      audio.play().catch(() => {});
+      const audio = seAudiosRef.current[key];
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
+      }
     }
   };
 
@@ -114,21 +129,21 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ onCategorySelect }) => 
     }
     
     setAudioReady(true);
-    playSE(SE.uiStart);
+    playSE('uiStart');
     startBGM();
     setScreen('map');
   };
 
   // ギルド選択
   const handleGuildSelect = (guild: typeof guilds[number]) => {
-    playSE(SE.clickGuild);
+    playSE('clickGuild');
     setActiveGuild(guild);
     setScreen('board');
   };
 
   // カテゴリ選択
   const handleCategorySelect = (categoryId: string) => {
-    playSE(SE.clickCard);
+    playSE('clickCard');
     onCategorySelect(categoryId);
   };
 
