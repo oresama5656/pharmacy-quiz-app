@@ -33,6 +33,24 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
   const [showContent, setShowContent] = useState(false);
   const [animateFloor, setAnimateFloor] = useState(false);
   const [animateButtons, setAnimateButtons] = useState(false);
+  useEffect(() => {
+    const scriptId = 'adsbygoogle-js';
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.async = true;
+      script.src =
+        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508744207193174';
+      script.crossOrigin = 'anonymous';
+      document.body.appendChild(script);
+    }
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
 
   useEffect(() => {
     const src = gameState.playerWon ? BGM.win : BGM.lose;
@@ -185,9 +203,22 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
             </div>
           </button>
         </div>
-      </div>
 
-      {/* キャラクター画像表示エリア（後で追加用） */}
+        {/* quiz_end_banner */}
+        <div className="my-4 w-full flex justify-center">
+          <ins
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-6508744207193174"
+            data-ad-slot="5884881872"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+        </div>
+
+        </div>
+
+        {/* キャラクター画像表示エリア（後で追加用） */}
       {(RESULT_ASSETS.characterImages.victory || RESULT_ASSETS.characterImages.defeat) && (
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
           {gameState.playerWon && RESULT_ASSETS.characterImages.victory && (
