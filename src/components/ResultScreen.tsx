@@ -176,7 +176,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
         </div>
 
         {/* 到達フロア表示 */}
-        <div className={`text-center mb-6 sm:mb-8 md:mb-10 transition-all duration-1000 delay-300 ${
+        <div className={`text-center mb-8 sm:mb-10 md:mb-12 transition-all duration-1000 delay-300 ${
           animateFloor ? 'opacity-100 transform translate-y-0 scale-100' : 'opacity-0 transform translate-y-6 scale-90'
         }`}>
           {/* フロア数メイン表示 */}
@@ -196,50 +196,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
               </div>
             </div>
           </div>
-        </div>
-
-        {/* 詳細情報（コンパクト表示） */}
-        <div className={`grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8 w-full max-w-md transition-all duration-800 delay-500 ${
-          animateFloor ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'
-        }`}>
-          <div className="bg-blue-900/70 backdrop-blur-sm rounded-lg p-2 sm:p-3 text-center border border-blue-400/30">
-            <div className="text-blue-200 text-xs sm:text-sm font-semibold mb-1">HP</div>
-            <div className="text-white font-bold text-sm sm:text-base">{gameState.playerHp}</div>
-          </div>
-          <div className="bg-green-900/70 backdrop-blur-sm rounded-lg p-2 sm:p-3 text-center border border-green-400/30">
-            <div className="text-green-200 text-xs sm:text-sm font-semibold mb-1">正解</div>
-            <div className="text-white font-bold text-sm sm:text-base">{gameState.score}</div>
-          </div>
-          <div className="bg-red-900/70 backdrop-blur-sm rounded-lg p-2 sm:p-3 text-center border border-red-400/30">
-            <div className="text-red-200 text-xs sm:text-sm font-semibold mb-1">敵HP</div>
-            <div className="text-white font-bold text-sm sm:text-base">{gameState.enemyHp}</div>
-          </div>
-        </div>
-
-        {/* 広告エリア - 修正版 */}
-        <div 
-          ref={adRef}
-          className="w-full max-w-lg mx-auto my-6 bg-gray-800/20 rounded-lg overflow-hidden"
-          style={{ minHeight: '100px' }}
-        >
-          <ins
-            className="adsbygoogle"
-            style={{ 
-              display: 'block',
-              width: '100%',
-              minHeight: '100px',
-              textAlign: 'center'
-            }}
-            data-ad-client="ca-pub-6508744207193174"
-            data-ad-slot="5884881872"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-          {!adLoaded && (
-            <div className="flex items-center justify-center h-24 text-gray-400 text-sm">
-              広告を読み込んでいます...
-            </div>
-          )}
         </div>
 
         {/* ボタン */}
@@ -265,6 +221,32 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
               <span className="tracking-wide">カテゴリ選択</span>
             </div>
           </button>
+          
+          {/* 広告エリア - ボタンの下に移動 */}
+          <div 
+            ref={adRef}
+            className="w-full bg-gray-800/10 rounded-lg overflow-hidden mt-4"
+            style={{ minHeight: '80px' }}
+          >
+            <ins
+              className="adsbygoogle"
+              style={{ 
+                display: 'block',
+                width: '100%',
+                minHeight: '80px',
+                textAlign: 'center'
+              }}
+              data-ad-client="ca-pub-6508744207193174"
+              data-ad-slot="5884881872"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
+            {!adLoaded && (
+              <div className="flex items-center justify-center h-20 text-gray-400 text-xs">
+                広告を読み込んでいます...
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
