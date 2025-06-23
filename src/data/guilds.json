@@ -18,24 +18,6 @@
     ]
   },
   {
-    "id": "english2",
-    "name": "英語ギルドレベル2（応用）",
-    "icon": "🗺️",
-    "position": { "top": "33%", "left": "75%" },
-    "categoryIds": [
-      "english2_lv1",
-      "english2_lv2",
-      "english2_lv3",
-      "english2_lv4",
-      "english2_lv5",
-      "english2_lv6",
-      "english2_lv7",
-      "english2_lv8",
-      "english2_lv9",
-      "english2_lv10"
-    ]
-  },
-  {
     "id": "arithmetic",
     "name": "算数ギルド★★",
     "icon": "🧠",
