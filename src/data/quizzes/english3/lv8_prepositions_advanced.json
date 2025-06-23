@@ -1,0 +1,52 @@
+[
+  {
+    "question": "He waited ___ the bus stop for an hour.",
+    "correct": "at",
+    "choices": ["in", "on", "by", "at"]
+  },
+  {
+    "question": "The cat jumped ___ the table.",
+    "correct": "onto",
+    "choices": ["into", "onto", "in", "on"]
+  },
+  {
+    "question": "She arrived ___ the airport at noon.",
+    "correct": "at",
+    "choices": ["in", "on", "at", "by"]
+  },
+  {
+    "question": "We walked ___ the river for miles.",
+    "correct": "along",
+    "choices": ["across", "along", "through", "over"]
+  },
+  {
+    "question": "He sat ___ the shade of the tree.",
+    "correct": "in",
+    "choices": ["on", "at", "by", "in"]
+  },
+  {
+    "question": "The book fell ___ the shelf.",
+    "correct": "off",
+    "choices": ["off", "of", "from", "out"]
+  },
+  {
+    "question": "She divided the cake ___ four pieces.",
+    "correct": "into",
+    "choices": ["into", "onto", "in", "to"]
+  },
+  {
+    "question": "I will arrive ___ Tokyo on Monday.",
+    "correct": "in",
+    "choices": ["on", "at", "in", "by"]
+  },
+  {
+    "question": "We met ___ chance at the station.",
+    "correct": "by",
+    "choices": ["by", "at", "in", "on"]
+  },
+  {
+    "question": "He looked ___ the window to see the rain.",
+    "correct": "out of",
+    "choices": ["out", "out of", "from", "through"]
+  }
+]

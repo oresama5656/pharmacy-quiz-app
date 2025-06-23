@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Choose the correct pronoun: The boy ___ won is my friend.",
+    "correct": "who",
+    "choices": ["who", "which", "that", "where"]
+  },
+  {
+    "question": "This is the book ___ I like.",
+    "correct": "that",
+    "choices": ["who", "when", "that", "whose"]
+  },
+  {
+    "question": "Select the pronoun: She saw a dog ___ was hurt.",
+    "correct": "that",
+    "choices": ["who", "which", "that", "where"]
+  },
+  {
+    "question": "Which sentence uses 'who' correctly?",
+    "correct": "I met a girl who sings.",
+    "choices": [
+      "I met a girl who sings.",
+      "I met a girl which sings.",
+      "I met a girl where sings.",
+      "I met a girl when sings."
+    ]
+  },
+  {
+    "question": "Fill in the blank: The car ___ he bought is blue.",
+    "correct": "that",
+    "choices": ["who", "where", "that", "when"]
+  },
+  {
+    "question": "Choose the correct word: I like songs ___ are happy.",
+    "correct": "that",
+    "choices": ["who", "that", "where", "when"]
+  },
+  {
+    "question": "Select the sentence using 'which'.",
+    "correct": "This is the pen which writes well.",
+    "choices": [
+      "This is the pen which writes well.",
+      "This is the pen who writes well.",
+      "This is the pen where writes well.",
+      "This is the pen when writes well."
+    ]
+  },
+  {
+    "question": "Complete: The girl ___ father is a doctor is smart.",
+    "correct": "whose",
+    "choices": ["whose", "who", "where", "which"]
+  },
+  {
+    "question": "Choose the right pronoun: I know the man ___ you called.",
+    "correct": "whom",
+    "choices": ["whom", "who", "where", "which"]
+  },
+  {
+    "question": "Fill in: The house ___ Jack built is old.",
+    "correct": "that",
+    "choices": ["who", "that", "where", "whose"]
+  }
+]

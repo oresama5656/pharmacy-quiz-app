@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which is a passive voice sentence?",
+    "correct": "The cake was eaten.",
+    "choices": [
+      "The cake was eaten.",
+      "He eats cake.",
+      "She is eating cake.",
+      "Eat the cake!"
+    ]
+  },
+  {
+    "question": "Which sentence uses passive voice correctly?",
+    "correct": "The window was broken.",
+    "choices": [
+      "The window was broken.",
+      "She broke the window.",
+      "He is breaking the window.",
+      "Break the window."
+    ]
+  },
+  {
+    "question": "Identify the passive form.",
+    "correct": "The car is washed.",
+    "choices": [
+      "The car is washed.",
+      "Wash the car.",
+      "He washes the car.",
+      "She is washing."
+    ]
+  },
+  {
+    "question": "Choose the passive sentence.",
+    "correct": "The song was sung.",
+    "choices": [
+      "The song was sung.",
+      "She sings the song.",
+      "They are singing.",
+      "Sing the song!"
+    ]
+  },
+  {
+    "question": "Which one is passive?",
+    "correct": "The homework was done.",
+    "choices": [
+      "The homework was done.",
+      "He did the homework.",
+      "She is doing homework.",
+      "Do the homework."
+    ]
+  },
+  {
+    "question": "Find the passive voice.",
+    "correct": "The letter was written.",
+    "choices": [
+      "The letter was written.",
+      "Write the letter.",
+      "He writes letters.",
+      "She is writing."
+    ]
+  },
+  {
+    "question": "Which is passive?",
+    "correct": "The house was built.",
+    "choices": [
+      "The house was built.",
+      "They build the house.",
+      "They are building.",
+      "Build the house."
+    ]
+  },
+  {
+    "question": "Select the passive form.",
+    "correct": "The door was opened.",
+    "choices": [
+      "The door was opened.",
+      "He opens the door.",
+      "Open the door!",
+      "She is opening it."
+    ]
+  },
+  {
+    "question": "Choose the correct passive voice.",
+    "correct": "The movie was watched.",
+    "choices": [
+      "The movie was watched.",
+      "We watch movies.",
+      "Watch the movie.",
+      "He is watching."
+    ]
+  },
+  {
+    "question": "Which sentence shows passive voice?",
+    "correct": "The game is played.",
+    "choices": [
+      "The game is played.",
+      "They play the game.",
+      "Play the game.",
+      "She is playing it."
+    ]
+  }
+]
