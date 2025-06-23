@@ -1,7 +1,7 @@
 [
   {
     "id": "english",
-    "name": "英語ギルド",
+    "name": "英語ギルド★",
     "icon": "📚",
     "position": { "top": "43%", "left": "70%" },
     "categoryIds": [
@@ -73,7 +73,7 @@
   },
   {
     "id": "kokugo",
-    "name": "国語ギルド",
+    "name": "国語ギルド★",
     "icon": "📖",
     "position": { "top": "66%", "left": "60%" },
     "categoryIds": [
@@ -159,6 +159,24 @@
       "kokugo3_lv8",
       "kokugo3_lv9",
       "kokugo3_lv10"
+    ]
+  },
+  {
+    "id": "math3",
+    "name": "算数ギルド★★★",
+    "icon": "🧮",
+    "position": { "top": "35%", "left": "15%" },
+    "categoryIds": [
+      "math3_lv1",
+      "math3_lv2",
+      "math3_lv3",
+      "math3_lv4",
+      "math3_lv5",
+      "math3_lv6",
+      "math3_lv7",
+      "math3_lv8",
+      "math3_lv9",
+      "math3_lv10"
     ]
   }
 ] 

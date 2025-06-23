@@ -718,5 +718,95 @@
     "difficulty": "★★★★",
     "clearFloor": 10,
     "file": "quizzes/kokugo3/lv10_sakubun_kousou.json"
+  },
+  {
+    "id": "math3_lv1",
+    "name": "小数計算（レベル1）",
+    "description": "小数の四則演算を学ぶ問題です",
+    "icon": "🔢",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv1_decimal_calculations.json"
+  },
+  {
+    "id": "math3_lv2",
+    "name": "分数計算（レベル2）",
+    "description": "分数の基本的な計算を学ぶ問題です",
+    "icon": "🔢",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv2_fraction_calculations.json"
+  },
+  {
+    "id": "math3_lv3",
+    "name": "パーセント計算（レベル3）",
+    "description": "百分率の計算を学ぶ問題です",
+    "icon": "📊",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv3_percent_calculations.json"
+  },
+  {
+    "id": "math3_lv4",
+    "name": "単位変換（レベル4）",
+    "description": "長さや重さの単位変換を学ぶ問題です",
+    "icon": "📏",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv4_unit_conversion.json"
+  },
+  {
+    "id": "math3_lv5",
+    "name": "速度計算（レベル5）",
+    "description": "速さ・時間・距離の関係を学ぶ問題です",
+    "icon": "🏃",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv5_speed_calculations.json"
+  },
+  {
+    "id": "math3_lv6",
+    "name": "倍数と約数（レベル6）",
+    "description": "倍数と約数の概念を学ぶ問題です",
+    "icon": "🔗",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv6_multiples_and_factors.json"
+  },
+  {
+    "id": "math3_lv7",
+    "name": "偶数・奇数の性質（レベル7）",
+    "description": "偶数と奇数の性質を学ぶ問題です",
+    "icon": "🎯",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv7_even_odd_properties.json"
+  },
+  {
+    "id": "math3_lv8",
+    "name": "数列（レベル8）",
+    "description": "数の並びの規則性を学ぶ問題です",
+    "icon": "🔢",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv8_number_sequences.json"
+  },
+  {
+    "id": "math3_lv9",
+    "name": "四則混合文章題（レベル9）",
+    "description": "複数の演算を含む文章問題です",
+    "icon": "📝",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv9_mixed_operations_text.json"
+  },
+  {
+    "id": "math3_lv10",
+    "name": "応用・発展問題（レベル10）",
+    "description": "演算の順序や複雑な計算を学ぶ問題です",
+    "icon": "🧠",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/math3/lv10_applied_and_tricky.json"
   }
 ]

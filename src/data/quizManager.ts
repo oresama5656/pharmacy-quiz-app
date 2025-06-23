@@ -95,6 +95,18 @@ import kokugo3_lv8 from './quizzes/kokugo3/lv8_setsuzokushi_tsukaikata.json';
 import kokugo3_lv9 from './quizzes/kokugo3/lv9_bungaku_jiten.json';
 import kokugo3_lv10 from './quizzes/kokugo3/lv10_sakubun_kousou.json';
 
+// 算数3クイズ
+import math3_lv1 from './quizzes/math3/lv1_decimal_calculations.json';
+import math3_lv2 from './quizzes/math3/lv2_fraction_calculations.json';
+import math3_lv3 from './quizzes/math3/lv3_percent_calculations.json';
+import math3_lv4 from './quizzes/math3/lv4_unit_conversion.json';
+import math3_lv5 from './quizzes/math3/lv5_speed_calculations.json';
+import math3_lv6 from './quizzes/math3/lv6_multiples_and_factors.json';
+import math3_lv7 from './quizzes/math3/lv7_even_odd_properties.json';
+import math3_lv8 from './quizzes/math3/lv8_number_sequences.json';
+import math3_lv9 from './quizzes/math3/lv9_mixed_operations_text.json';
+import math3_lv10 from './quizzes/math3/lv10_applied_and_tricky.json';
+
 // カテゴリ情報の型定義
 export interface Category {
   id: string;
@@ -206,6 +218,18 @@ const quizImportMap: Record<string, any> = {
   'quizzes/kokugo3/lv8_setsuzokushi_tsukaikata.json': kokugo3_lv8,
   'quizzes/kokugo3/lv9_bungaku_jiten.json': kokugo3_lv9,
   'quizzes/kokugo3/lv10_sakubun_kousou.json': kokugo3_lv10,
+  
+  // 算数3クイズ
+  'quizzes/math3/lv1_decimal_calculations.json': math3_lv1,
+  'quizzes/math3/lv2_fraction_calculations.json': math3_lv2,
+  'quizzes/math3/lv3_percent_calculations.json': math3_lv3,
+  'quizzes/math3/lv4_unit_conversion.json': math3_lv4,
+  'quizzes/math3/lv5_speed_calculations.json': math3_lv5,
+  'quizzes/math3/lv6_multiples_and_factors.json': math3_lv6,
+  'quizzes/math3/lv7_even_odd_properties.json': math3_lv7,
+  'quizzes/math3/lv8_number_sequences.json': math3_lv8,
+  'quizzes/math3/lv9_mixed_operations_text.json': math3_lv9,
+  'quizzes/math3/lv10_applied_and_tricky.json': math3_lv10,
 };
 
 // クイズファイルのキャッシュ
