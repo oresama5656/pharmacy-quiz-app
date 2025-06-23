@@ -23,13 +23,12 @@ export const ENEMY_IMAGES = [
 
 // ボスキャラクターの画像URL（複数定義可能）
 export const BOSS_IMAGES = [
-  "/enemy/hosoya_knight.png",
-  "/enemy/hosoya_murabito.png",
-  "/enemy/hosoya_syonin.png",
-  "/enemy/hosoya_king.png",
-  "/enemy/fukushi_madoushi.png",
-  "/enemy/fukushi_madoushi.png", // 確率3倍
-  "/enemy/fukushi_madoushi.png"
+  "/boss_enemy/oakking.png",
+  "/boss_enemy/robot.png",
+  "/boss_enemy/warm.png",
+  "/boss_enemy/engel.png",
+  "/boss_enemy/black_dragon_right.png",
+  "/boss_enemy/satan_right.png"
 ];
   
 // 背景画像のURL
