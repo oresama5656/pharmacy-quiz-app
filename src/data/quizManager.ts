@@ -59,6 +59,42 @@ import lv8_short_reading from './quizzes/kokugo/lv8_short_reading.json';
 import lv9_sentence_structure from './quizzes/kokugo/lv9_sentence_structure.json';
 import lv10_long_reading from './quizzes/kokugo/lv10_long_reading.json';
 
+// 英語3クイズ
+import english3_lv1 from './quizzes/english3/lv1_passive_voice.json';
+import english3_lv2 from './quizzes/english3/lv2_relative_pronouns.json';
+import english3_lv3 from './quizzes/english3/lv3_verb_tenses.json';
+import english3_lv4 from './quizzes/english3/lv4_comparison.json';
+import english3_lv5 from './quizzes/english3/lv5_if_clauses.json';
+import english3_lv6 from './quizzes/english3/lv6_reading_comprehension.json';
+import english3_lv7 from './quizzes/english3/lv7_word_usage.json';
+import english3_lv8 from './quizzes/english3/lv8_prepositions_advanced.json';
+import english3_lv9 from './quizzes/english3/lv9_conversation_selection.json';
+import english3_lv10 from './quizzes/english3/lv10_error_correction.json';
+
+// 国語2クイズ
+import kokugo2_lv1 from './quizzes/kokugo2/lv1_kanji_yomikata.json';
+import kokugo2_lv2 from './quizzes/kokugo2/lv2_jukugo_meaning.json';
+import kokugo2_lv3 from './quizzes/kokugo2/lv3_hyougen_gihou.json';
+import kokugo2_lv4 from './quizzes/kokugo2/lv4_kango_wago_gairaigo.json';
+import kokugo2_lv5 from './quizzes/kokugo2/lv5_sakka_sakuhin.json';
+import kokugo2_lv6 from './quizzes/kokugo2/lv6_bunpou_ouyou.json';
+import kokugo2_lv7 from './quizzes/kokugo2/lv7_keigo_tsukaikata.json';
+import kokugo2_lv8 from './quizzes/kokugo2/lv8_kaki_hanashi_kotoba.json';
+import kokugo2_lv9 from './quizzes/kokugo2/lv9_shugo_jutsugo.json';
+import kokugo2_lv10 from './quizzes/kokugo2/lv10_gojun_narabekae.json';
+
+// 国語3クイズ
+import kokugo3_lv1 from './quizzes/kokugo3/lv1_kanji_kun_on.json';
+import kokugo3_lv2 from './quizzes/kokugo3/lv2_jukugo_structure.json';
+import kokugo3_lv3 from './quizzes/kokugo3/lv3_yojijukugo_meaning.json';
+import kokugo3_lv4 from './quizzes/kokugo3/lv4_keigo_misuse.json';
+import kokugo3_lv5 from './quizzes/kokugo3/lv5_bunshou_hyougen.json';
+import kokugo3_lv6 from './quizzes/kokugo3/lv6_bunpou_keitai.json';
+import kokugo3_lv7 from './quizzes/kokugo3/lv7_bundokai_tenkai.json';
+import kokugo3_lv8 from './quizzes/kokugo3/lv8_setsuzokushi_tsukaikata.json';
+import kokugo3_lv9 from './quizzes/kokugo3/lv9_bungaku_jiten.json';
+import kokugo3_lv10 from './quizzes/kokugo3/lv10_sakubun_kousou.json';
+
 // カテゴリ情報の型定義
 export interface Category {
   id: string;
@@ -134,6 +170,42 @@ const quizImportMap: Record<string, any> = {
   'quizzes/kokugo/lv8_short_reading.json': lv8_short_reading,
   'quizzes/kokugo/lv9_sentence_structure.json': lv9_sentence_structure,
   'quizzes/kokugo/lv10_long_reading.json': lv10_long_reading,
+  
+  // 英語3クイズ
+  'quizzes/english3/lv1_passive_voice.json': english3_lv1,
+  'quizzes/english3/lv2_relative_pronouns.json': english3_lv2,
+  'quizzes/english3/lv3_verb_tenses.json': english3_lv3,
+  'quizzes/english3/lv4_comparison.json': english3_lv4,
+  'quizzes/english3/lv5_if_clauses.json': english3_lv5,
+  'quizzes/english3/lv6_reading_comprehension.json': english3_lv6,
+  'quizzes/english3/lv7_word_usage.json': english3_lv7,
+  'quizzes/english3/lv8_prepositions_advanced.json': english3_lv8,
+  'quizzes/english3/lv9_conversation_selection.json': english3_lv9,
+  'quizzes/english3/lv10_error_correction.json': english3_lv10,
+  
+  // 国語2クイズ
+  'quizzes/kokugo2/lv1_kanji_yomikata.json': kokugo2_lv1,
+  'quizzes/kokugo2/lv2_jukugo_meaning.json': kokugo2_lv2,
+  'quizzes/kokugo2/lv3_hyougen_gihou.json': kokugo2_lv3,
+  'quizzes/kokugo2/lv4_kango_wago_gairaigo.json': kokugo2_lv4,
+  'quizzes/kokugo2/lv5_sakka_sakuhin.json': kokugo2_lv5,
+  'quizzes/kokugo2/lv6_bunpou_ouyou.json': kokugo2_lv6,
+  'quizzes/kokugo2/lv7_keigo_tsukaikata.json': kokugo2_lv7,
+  'quizzes/kokugo2/lv8_kaki_hanashi_kotoba.json': kokugo2_lv8,
+  'quizzes/kokugo2/lv9_shugo_jutsugo.json': kokugo2_lv9,
+  'quizzes/kokugo2/lv10_gojun_narabekae.json': kokugo2_lv10,
+  
+  // 国語3クイズ
+  'quizzes/kokugo3/lv1_kanji_kun_on.json': kokugo3_lv1,
+  'quizzes/kokugo3/lv2_jukugo_structure.json': kokugo3_lv2,
+  'quizzes/kokugo3/lv3_yojijukugo_meaning.json': kokugo3_lv3,
+  'quizzes/kokugo3/lv4_keigo_misuse.json': kokugo3_lv4,
+  'quizzes/kokugo3/lv5_bunshou_hyougen.json': kokugo3_lv5,
+  'quizzes/kokugo3/lv6_bunpou_keitai.json': kokugo3_lv6,
+  'quizzes/kokugo3/lv7_bundokai_tenkai.json': kokugo3_lv7,
+  'quizzes/kokugo3/lv8_setsuzokushi_tsukaikata.json': kokugo3_lv8,
+  'quizzes/kokugo3/lv9_bungaku_jiten.json': kokugo3_lv9,
+  'quizzes/kokugo3/lv10_sakubun_kousou.json': kokugo3_lv10,
 };
 
 // クイズファイルのキャッシュ

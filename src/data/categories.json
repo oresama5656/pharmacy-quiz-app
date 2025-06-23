@@ -448,5 +448,275 @@
     "difficulty": "★★★★",
     "clearFloor": 10,
     "file": "quizzes/kokugo/lv10_long_reading.json"
+  },
+  {
+    "id": "english3_lv1",
+    "name": "受動態（レベル1）",
+    "description": "受動態の基本的な形と使い方を学ぶ問題です",
+    "icon": "🔄",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv1_passive_voice.json"
+  },
+  {
+    "id": "english3_lv2",
+    "name": "関係代名詞（レベル2）",
+    "description": "関係代名詞の使い方を学ぶ問題です",
+    "icon": "🔗",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv2_relative_pronouns.json"
+  },
+  {
+    "id": "english3_lv3",
+    "name": "動詞の時制（レベル3）",
+    "description": "複雑な時制の使い分けを学ぶ問題です",
+    "icon": "⏰",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv3_verb_tenses.json"
+  },
+  {
+    "id": "english3_lv4",
+    "name": "比較級・最上級（レベル4）",
+    "description": "比較級と最上級の使い方を学ぶ問題です",
+    "icon": "📊",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv4_comparison.json"
+  },
+  {
+    "id": "english3_lv5",
+    "name": "仮定法（レベル5）",
+    "description": "仮定法の基本的な使い方を学ぶ問題です",
+    "icon": "🤔",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv5_if_clauses.json"
+  },
+  {
+    "id": "english3_lv6",
+    "name": "読解問題（レベル6）",
+    "description": "長文を読んで内容を理解する問題です",
+    "icon": "📖",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv6_reading_comprehension.json"
+  },
+  {
+    "id": "english3_lv7",
+    "name": "語彙の使い分け（レベル7）",
+    "description": "似た意味の単語の使い分けを学ぶ問題です",
+    "icon": "📝",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv7_word_usage.json"
+  },
+  {
+    "id": "english3_lv8",
+    "name": "前置詞応用（レベル8）",
+    "description": "複雑な前置詞の使い方を学ぶ問題です",
+    "icon": "🎯",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv8_prepositions_advanced.json"
+  },
+  {
+    "id": "english3_lv9",
+    "name": "会話選択（レベル9）",
+    "description": "適切な会話表現を選ぶ問題です",
+    "icon": "💬",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv9_conversation_selection.json"
+  },
+  {
+    "id": "english3_lv10",
+    "name": "文法誤り訂正（レベル10）",
+    "description": "英文の誤りを見つけて訂正する問題です",
+    "icon": "✏️",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english3/lv10_error_correction.json"
+  },
+  {
+    "id": "kokugo2_lv1",
+    "name": "漢字の読み方（レベル1）",
+    "description": "応用的な漢字の読み方を答える問題です",
+    "icon": "📝",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv1_kanji_yomikata.json"
+  },
+  {
+    "id": "kokugo2_lv2",
+    "name": "熟語の意味（レベル2）",
+    "description": "熟語の意味や使い方を学ぶ問題です",
+    "icon": "🏯",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv2_jukugo_meaning.json"
+  },
+  {
+    "id": "kokugo2_lv3",
+    "name": "表現技法（レベル3）",
+    "description": "文学作品の表現技法を学ぶ問題です",
+    "icon": "🎨",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv3_hyougen_gihou.json"
+  },
+  {
+    "id": "kokugo2_lv4",
+    "name": "語種分類（レベル4）",
+    "description": "漢語・和語・外来語の分類問題です",
+    "icon": "🔤",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv4_kango_wago_gairaigo.json"
+  },
+  {
+    "id": "kokugo2_lv5",
+    "name": "作家と作品（レベル5）",
+    "description": "著名な作家と代表作品を学ぶ問題です",
+    "icon": "📚",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv5_sakka_sakuhin.json"
+  },
+  {
+    "id": "kokugo2_lv6",
+    "name": "文法応用（レベル6）",
+    "description": "応用的な文法問題です",
+    "icon": "⚙️",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv6_bunpou_ouyou.json"
+  },
+  {
+    "id": "kokugo2_lv7",
+    "name": "敬語の使い方（レベル7）",
+    "description": "実践的な敬語の使い方を学ぶ問題です",
+    "icon": "🙏",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv7_keigo_tsukaikata.json"
+  },
+  {
+    "id": "kokugo2_lv8",
+    "name": "書き言葉と話し言葉（レベル8）",
+    "description": "書き言葉と話し言葉の使い分けを学ぶ問題です",
+    "icon": "✍️",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv8_kaki_hanashi_kotoba.json"
+  },
+  {
+    "id": "kokugo2_lv9",
+    "name": "主語と述語（レベル9）",
+    "description": "文の主語と述語の関係を学ぶ問題です",
+    "icon": "🎯",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv9_shugo_jutsugo.json"
+  },
+  {
+    "id": "kokugo2_lv10",
+    "name": "語順並べ替え（レベル10）",
+    "description": "正しい語順に並べ替える問題です",
+    "icon": "🔄",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo2/lv10_gojun_narabekae.json"
+  },
+  {
+    "id": "kokugo3_lv1",
+    "name": "漢字の音読み・訓読み（レベル1）",
+    "description": "漢字の音読みと訓読みを学ぶ問題です",
+    "icon": "📝",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv1_kanji_kun_on.json"
+  },
+  {
+    "id": "kokugo3_lv2",
+    "name": "熟語の構造（レベル2）",
+    "description": "熟語の構造や成り立ちを学ぶ問題です",
+    "icon": "🏗️",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv2_jukugo_structure.json"
+  },
+  {
+    "id": "kokugo3_lv3",
+    "name": "四字熟語の意味（レベル3）",
+    "description": "四字熟語の意味や使い方を学ぶ問題です",
+    "icon": "🏯",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv3_yojijukugo_meaning.json"
+  },
+  {
+    "id": "kokugo3_lv4",
+    "name": "敬語の誤用（レベル4）",
+    "description": "敬語の間違った使い方を見つける問題です",
+    "icon": "❌",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv4_keigo_misuse.json"
+  },
+  {
+    "id": "kokugo3_lv5",
+    "name": "文章表現（レベル5）",
+    "description": "効果的な文章表現を学ぶ問題です",
+    "icon": "✨",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv5_bunshou_hyougen.json"
+  },
+  {
+    "id": "kokugo3_lv6",
+    "name": "文法と形態（レベル6）",
+    "description": "語の活用や品詞の詳細を学ぶ問題です",
+    "icon": "🧩",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv6_bunpou_keitai.json"
+  },
+  {
+    "id": "kokugo3_lv7",
+    "name": "文章の展開（レベル7）",
+    "description": "文章の論理的な展開を学ぶ問題です",
+    "icon": "📈",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv7_bundokai_tenkai.json"
+  },
+  {
+    "id": "kokugo3_lv8",
+    "name": "接続詞の使い方（レベル8）",
+    "description": "接続詞の適切な使い方を学ぶ問題です",
+    "icon": "🔗",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv8_setsuzokushi_tsukaikata.json"
+  },
+  {
+    "id": "kokugo3_lv9",
+    "name": "文学事典（レベル9）",
+    "description": "文学史や文学用語を学ぶ問題です",
+    "icon": "📚",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv9_bungaku_jiten.json"
+  },
+  {
+    "id": "kokugo3_lv10",
+    "name": "作文構想（レベル10）",
+    "description": "作文の構想や組み立てを学ぶ問題です",
+    "icon": "📝",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/kokugo3/lv10_sakubun_kousou.json"
   }
 ]

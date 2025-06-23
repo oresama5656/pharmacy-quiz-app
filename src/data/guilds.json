@@ -88,5 +88,77 @@
       "kokugo_lv9_sentence_structure",
       "kokugo_lv10_long_reading"
     ]
+  },
+  {
+    "id": "english2",
+    "name": "英語ギルド★★",
+    "icon": "📚",
+    "position": { "top": "25%", "left": "70%" },
+    "categoryIds": [
+      "english2_lv1",
+      "english2_lv2",
+      "english2_lv3",
+      "english2_lv4",
+      "english2_lv5",
+      "english2_lv6",
+      "english2_lv7",
+      "english2_lv8",
+      "english2_lv9",
+      "english2_lv10"
+    ]
+  },
+  {
+    "id": "english3",
+    "name": "英語ギルド★★★",
+    "icon": "🎓",
+    "position": { "top": "15%", "left": "50%" },
+    "categoryIds": [
+      "english3_lv1",
+      "english3_lv2",
+      "english3_lv3",
+      "english3_lv4",
+      "english3_lv5",
+      "english3_lv6",
+      "english3_lv7",
+      "english3_lv8",
+      "english3_lv9",
+      "english3_lv10"
+    ]
+  },
+  {
+    "id": "kokugo2",
+    "name": "国語ギルド★★",
+    "icon": "📚",
+    "position": { "top": "75%", "left": "70%" },
+    "categoryIds": [
+      "kokugo2_lv1",
+      "kokugo2_lv2",
+      "kokugo2_lv3",
+      "kokugo2_lv4",
+      "kokugo2_lv5",
+      "kokugo2_lv6",
+      "kokugo2_lv7",
+      "kokugo2_lv8",
+      "kokugo2_lv9",
+      "kokugo2_lv10"
+    ]
+  },
+  {
+    "id": "kokugo3",
+    "name": "国語ギルド★★★",
+    "icon": "🎯",
+    "position": { "top": "85%", "left": "50%" },
+    "categoryIds": [
+      "kokugo3_lv1",
+      "kokugo3_lv2",
+      "kokugo3_lv3",
+      "kokugo3_lv4",
+      "kokugo3_lv5",
+      "kokugo3_lv6",
+      "kokugo3_lv7",
+      "kokugo3_lv8",
+      "kokugo3_lv9",
+      "kokugo3_lv10"
+    ]
   }
 ] 
