@@ -1,0 +1,52 @@
+[
+  {
+    "question": "3mは何cm？",
+    "correct": "300cm",
+    "choices": ["300cm", "30cm", "3cm", "3000cm"]
+  },
+  {
+    "question": "1500gは何kg？",
+    "correct": "1.5kg",
+    "choices": ["1.5kg", "15kg", "0.15kg", "150kg"]
+  },
+  {
+    "question": "2時間は何分？",
+    "correct": "120分",
+    "choices": ["120分", "60分", "180分", "90分"]
+  },
+  {
+    "question": "5kmは何m？",
+    "correct": "5000m",
+    "choices": ["5000m", "500m", "50m", "50000m"]
+  },
+  {
+    "question": "90分は何時間？",
+    "correct": "1.5時間",
+    "choices": ["1.5時間", "0.9時間", "2時間", "1時間"]
+  },
+  {
+    "question": "2500mlは何l？",
+    "correct": "2.5l",
+    "choices": ["2.5l", "25l", "0.25l", "250l"]
+  },
+  {
+    "question": "3600秒は何分？",
+    "correct": "60分",
+    "choices": ["60分", "36分", "6分", "120分"]
+  },
+  {
+    "question": "0.7kgは何g？",
+    "correct": "700g",
+    "choices": ["700g", "70g", "7g", "7000g"]
+  },
+  {
+    "question": "120cmは何m？",
+    "correct": "1.2m",
+    "choices": ["1.2m", "12m", "0.12m", "120m"]
+  },
+  {
+    "question": "3日間は何時間？",
+    "correct": "72時間",
+    "choices": ["72時間", "36時間", "48時間", "96時間"]
+  }
+]
