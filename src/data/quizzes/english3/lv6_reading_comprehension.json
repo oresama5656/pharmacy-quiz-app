@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Tom went to the zoo yesterday. What did he visit?",
+    "correct": "the zoo",
+    "choices": ["the zoo", "the park", "the museum", "the store"]
+  },
+  {
+    "question": "Mary bought apples and bananas. What did she buy besides apples?",
+    "correct": "bananas",
+    "choices": ["oranges", "grapes", "bananas", "pears"]
+  },
+  {
+    "question": "Ken read a book before bed. When did he read?",
+    "correct": "before bed",
+    "choices": ["before bed", "at lunch", "in class", "after school"]
+  },
+  {
+    "question": "Sara likes dogs, but she has a cat. What pet does she have?",
+    "correct": "a cat",
+    "choices": ["a dog", "a bird", "a cat", "a fish"]
+  },
+  {
+    "question": "The movie starts at seven. When does it start?",
+    "correct": "at seven",
+    "choices": ["at six", "at seven", "at eight", "at nine"]
+  },
+  {
+    "question": "John plays soccer every weekend. What sport does he play?",
+    "correct": "soccer",
+    "choices": ["baseball", "tennis", "soccer", "basketball"]
+  },
+  {
+    "question": "They went hiking on Sunday. What did they do?",
+    "correct": "went hiking",
+    "choices": ["went swimming", "went hiking", "played games", "watched TV"]
+  },
+  {
+    "question": "Alice studied math for two hours. What subject did she study?",
+    "correct": "math",
+    "choices": ["science", "math", "history", "English"]
+  },
+  {
+    "question": "My father cooked dinner last night. Who cooked dinner?",
+    "correct": "my father",
+    "choices": ["my mother", "my father", "my sister", "my friend"]
+  },
+  {
+    "question": "The train arrived late. How did it arrive?",
+    "correct": "late",
+    "choices": ["early", "on time", "late", "quickly"]
+  }
+]

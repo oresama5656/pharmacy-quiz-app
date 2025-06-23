@@ -1,0 +1,52 @@
+[
+  {
+    "question": "He will ___ you a story tonight.",
+    "correct": "tell",
+    "choices": ["say", "tell", "speak", "talk"]
+  },
+  {
+    "question": "Please ___ clearly during the meeting.",
+    "correct": "speak",
+    "choices": ["say", "tell", "speak", "talk"]
+  },
+  {
+    "question": "She ___ she was tired.",
+    "correct": "said",
+    "choices": ["told", "said", "spoke", "talked"]
+  },
+  {
+    "question": "Can I ___ with you for a moment?",
+    "correct": "talk",
+    "choices": ["say", "tell", "speak", "talk"]
+  },
+  {
+    "question": "He ___ to the class yesterday.",
+    "correct": "spoke",
+    "choices": ["spoke", "told", "talked", "said"]
+  },
+  {
+    "question": "She ___ me to be careful.",
+    "correct": "told",
+    "choices": ["said", "told", "spoke", "talked"]
+  },
+  {
+    "question": "I want to ___ thanks to everyone.",
+    "correct": "say",
+    "choices": ["tell", "speak", "say", "talk"]
+  },
+  {
+    "question": "Let's ___ about your plan tomorrow.",
+    "correct": "talk",
+    "choices": ["speak", "tell", "talk", "say"]
+  },
+  {
+    "question": "She often ___ French at home.",
+    "correct": "speaks",
+    "choices": ["says", "tells", "speaks", "talks"]
+  },
+  {
+    "question": "He ___ he would come soon.",
+    "correct": "said",
+    "choices": ["spoke", "said", "told", "talked"]
+  }
+]

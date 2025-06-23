@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Tom is ___ than Ken.",
+    "correct": "taller",
+    "choices": ["taller", "tall", "tallest", "more tall"]
+  },
+  {
+    "question": "This book is the ___ of the three.",
+    "correct": "longest",
+    "choices": ["long", "longer", "longest", "more long"]
+  },
+  {
+    "question": "My bag is ___ than yours.",
+    "correct": "heavier",
+    "choices": ["heavy", "heavier", "heaviest", "more heavy"]
+  },
+  {
+    "question": "She is the ___ student in class.",
+    "correct": "smartest",
+    "choices": ["smart", "smarter", "smartest", "more smart"]
+  },
+  {
+    "question": "This puzzle is ___ than that one.",
+    "correct": "easier",
+    "choices": ["easy", "easier", "easiest", "more easy"]
+  },
+  {
+    "question": "Mount Everest is the ___ mountain.",
+    "correct": "highest",
+    "choices": ["high", "higher", "highest", "most high"]
+  },
+  {
+    "question": "My car is ___ than his car.",
+    "correct": "faster",
+    "choices": ["fast", "faster", "fastest", "more fast"]
+  },
+  {
+    "question": "This is the ___ movie I have seen.",
+    "correct": "best",
+    "choices": ["good", "better", "best", "most good"]
+  },
+  {
+    "question": "Winter is ___ than autumn here.",
+    "correct": "colder",
+    "choices": ["cold", "colder", "coldest", "more cold"]
+  },
+  {
+    "question": "She sings ___ than anyone else.",
+    "correct": "better",
+    "choices": ["good", "better", "best", "well"]
+  }
+]

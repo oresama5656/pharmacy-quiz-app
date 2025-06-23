@@ -1,0 +1,52 @@
+[
+  {
+    "question": "A: How are you? B: ___",
+    "correct": "I'm fine, thanks.",
+    "choices": ["I'm fine, thanks.", "See you later.", "Good night.", "I like pizza."]
+  },
+  {
+    "question": "A: What's your name? B: ___",
+    "correct": "My name is Ken.",
+    "choices": ["I'm ten years old.", "My name is Ken.", "I live in Tokyo.", "Yes, please."]
+  },
+  {
+    "question": "A: Do you like soccer? B: ___",
+    "correct": "Yes, I do.",
+    "choices": ["Yes, I do.", "No, I can't.", "It's five o'clock.", "Nice to meet you."]
+  },
+  {
+    "question": "A: Where are you from? B: ___",
+    "correct": "I'm from Osaka.",
+    "choices": ["I'm from Osaka.", "I'm fine, thanks.", "See you tomorrow.", "I like music."]
+  },
+  {
+    "question": "A: What time is it? B: ___",
+    "correct": "It's three o'clock.",
+    "choices": ["It's three o'clock.", "I'm twelve years old.", "I like apples.", "Good morning."]
+  },
+  {
+    "question": "A: Can you help me? B: ___",
+    "correct": "Sure, what's wrong?",
+    "choices": ["Sure, what's wrong?", "I don't know.", "See you later.", "Yes, I am."]
+  },
+  {
+    "question": "A: Let's go to the park. B: ___",
+    "correct": "Sounds good!",
+    "choices": ["Sounds good!", "No, I don't.", "It's Monday.", "I'm from Tokyo."]
+  },
+  {
+    "question": "A: Thank you very much. B: ___",
+    "correct": "You're welcome.",
+    "choices": ["You're welcome.", "Yes, please.", "Good evening.", "I like games."]
+  },
+  {
+    "question": "A: See you tomorrow. B: ___",
+    "correct": "See you!",
+    "choices": ["See you!", "I'm hungry.", "That's mine.", "No problem."]
+  },
+  {
+    "question": "A: I'm hungry. B: ___",
+    "correct": "Let's eat something.",
+    "choices": ["Let's eat something.", "I live in Kyoto.", "It's sunny.", "Yes, I do."]
+  }
+]

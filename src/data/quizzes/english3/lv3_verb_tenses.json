@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Yesterday she ___ to the store.",
+    "correct": "went",
+    "choices": ["goes", "went", "will go", "going"]
+  },
+  {
+    "question": "I ___ dinner now.",
+    "correct": "am cooking",
+    "choices": ["cook", "am cooking", "cooked", "will cook"]
+  },
+  {
+    "question": "Tomorrow they ___ a movie.",
+    "correct": "will watch",
+    "choices": ["watch", "watched", "will watch", "watching"]
+  },
+  {
+    "question": "He usually ___ to school by bike.",
+    "correct": "goes",
+    "choices": ["go", "goes", "went", "going"]
+  },
+  {
+    "question": "She ___ her homework every day.",
+    "correct": "does",
+    "choices": ["did", "does", "doing", "will do"]
+  },
+  {
+    "question": "We ___ in this town since 2010.",
+    "correct": "have lived",
+    "choices": ["live", "lived", "have lived", "will live"]
+  },
+  {
+    "question": "They ___ lunch when I called.",
+    "correct": "were eating",
+    "choices": ["eat", "ate", "were eating", "will eat"]
+  },
+  {
+    "question": "By next year, I ___ here for five years.",
+    "correct": "will have worked",
+    "choices": ["work", "worked", "will work", "will have worked"]
+  },
+  {
+    "question": "If it rains, we ___ inside.",
+    "correct": "will stay",
+    "choices": ["stay", "stayed", "will stay", "staying"]
+  },
+  {
+    "question": "He ___ already finished his project.",
+    "correct": "has",
+    "choices": ["has", "have", "had", "will have"]
+  }
+]

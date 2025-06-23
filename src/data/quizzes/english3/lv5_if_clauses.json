@@ -1,0 +1,52 @@
+[
+  {
+    "question": "If it rains, I ___ at home.",
+    "correct": "will stay",
+    "choices": ["stay", "stayed", "will stay", "staying"]
+  },
+  {
+    "question": "If I were you, I ___ the job.",
+    "correct": "would take",
+    "choices": ["take", "took", "would take", "taking"]
+  },
+  {
+    "question": "I get sleepy if I ___ too much.",
+    "correct": "study",
+    "choices": ["study", "studied", "studies", "studying"]
+  },
+  {
+    "question": "If she calls, ___ her I am busy.",
+    "correct": "tell",
+    "choices": ["told", "tell", "telling", "tells"]
+  },
+  {
+    "question": "We would go out if it ___ sunny.",
+    "correct": "were",
+    "choices": ["are", "was", "were", "be"]
+  },
+  {
+    "question": "If he had money, he ___ a car.",
+    "correct": "would buy",
+    "choices": ["buys", "bought", "would buy", "buying"]
+  },
+  {
+    "question": "If you mix red and blue, you ___ purple.",
+    "correct": "get",
+    "choices": ["got", "get", "will get", "getting"]
+  },
+  {
+    "question": "I will help you if I ___ time.",
+    "correct": "have",
+    "choices": ["had", "have", "has", "having"]
+  },
+  {
+    "question": "If they had left earlier, they ___ the bus.",
+    "correct": "would have caught",
+    "choices": ["catch", "caught", "would have caught", "will catch"]
+  },
+  {
+    "question": "If it ___ tomorrow, the event will stop.",
+    "correct": "rains",
+    "choices": ["rain", "rained", "rains", "raining"]
+  }
+]
