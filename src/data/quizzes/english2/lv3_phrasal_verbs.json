@@ -1,51 +1,51 @@
 [
   {
-    "question": "What does 'look after' mean?",
+    "question": "「look after」はどういう意味ですか？",
     "correct": "take care of",
     "choices": ["ignore", "take care of", "leave", "forget"]
   },
   {
-    "question": "What does 'give up' mean?",
+    "question": "「give up」はどういう意味ですか？",
     "correct": "stop trying",
     "choices": ["start", "keep", "stop trying", "finish"]
   },
   {
-    "question": "What does 'turn on' mean?",
+    "question": "「turn on」はどういう意味ですか？",
     "correct": "start",
     "choices": ["start", "stop", "move", "break"]
   },
   {
-    "question": "What does 'pick up' mean?",
+    "question": "「pick up」はどういう意味ですか？",
     "correct": "collect",
     "choices": ["drop", "collect", "push", "hide"]
   },
   {
-    "question": "What does 'find out' mean?",
+    "question": "「find out」はどういう意味ですか？",
     "correct": "discover",
     "choices": ["discover", "lose", "cover", "close"]
   },
   {
-    "question": "What does 'put off' mean?",
+    "question": "「put off」はどういう意味ですか？",
     "correct": "delay",
     "choices": ["delay", "hurry", "start", "finish"]
   },
   {
-    "question": "What does 'run out of' mean?",
+    "question": "「run out of」はどういう意味ですか？",
     "correct": "have no more",
     "choices": ["have no more", "add more", "give away", "find more"]
   },
   {
-    "question": "What does 'take off' mean?",
+    "question": "「take off」はどういう意味ですか？",
     "correct": "remove",
     "choices": ["remove", "put on", "repair", "carry"]
   },
   {
-    "question": "What does 'call back' mean?",
+    "question": "「call back」はどういう意味ですか？",
     "correct": "return a call",
     "choices": ["forget", "answer", "return a call", "hang up"]
   },
   {
-    "question": "What does 'set up' mean?",
+    "question": "「set up」はどういう意味ですか？",
     "correct": "arrange",
     "choices": ["arrange", "destroy", "delay", "cancel"]
   }

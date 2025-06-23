@@ -1,51 +1,51 @@
 [
   {
-    "question": "Which word is the opposite of 'cold'?",
+    "question": "「cold」の反対の意味の単語はどれ？",
     "correct": "hot",
     "choices": ["warm", "hot", "cool", "ice"]
   },
   {
-    "question": "Which word means the same as 'big'?",
+    "question": "「big」と同じ意味の単語はどれ？",
     "correct": "large",
     "choices": ["small", "tiny", "large", "narrow"]
   },
   {
-    "question": "Which word is the opposite of 'early'?",
+    "question": "「early」の反対の意味の単語はどれ？",
     "correct": "late",
     "choices": ["late", "soon", "fast", "quick"]
   },
   {
-    "question": "Which word means the same as 'happy'?",
+    "question": "「happy」と同じ意味の単語はどれ？",
     "correct": "glad",
     "choices": ["sad", "glad", "angry", "mad"]
   },
   {
-    "question": "Which word is the opposite of 'up'?",
+    "question": "「up」の反対の意味の単語はどれ？",
     "correct": "down",
     "choices": ["down", "over", "near", "above"]
   },
   {
-    "question": "Which word means the same as 'begin'?",
+    "question": "「begin」と同じ意味の単語はどれ？",
     "correct": "start",
     "choices": ["finish", "start", "stop", "end"]
   },
   {
-    "question": "Which word is the opposite of 'heavy'?",
+    "question": "「heavy」の反対の意味の単語はどれ？",
     "correct": "light",
     "choices": ["light", "big", "large", "hard"]
   },
   {
-    "question": "Which word means the same as 'fast'?",
+    "question": "「fast」と同じ意味の単語はどれ？",
     "correct": "quick",
     "choices": ["slow", "quick", "late", "lazy"]
   },
   {
-    "question": "Which word is the opposite of 'old'?",
+    "question": "「old」の反対の意味の単語はどれ？",
     "correct": "young",
     "choices": ["new", "young", "ancient", "used"]
   },
   {
-    "question": "Which word means the same as 'smart'?",
+    "question": "「smart」と同じ意味の単語はどれ？",
     "correct": "clever",
     "choices": ["clever", "dull", "slow", "tired"]
   }

@@ -1,51 +1,51 @@
 [
   {
-    "question": "Which word sounds like 'see' but means a large body of water?",
+    "question": "「see」と同じ音で『海』を意味する単語はどれ？",
     "correct": "sea",
     "choices": ["sea", "see", "sew", "say"]
   },
   {
-    "question": "Which word sounds like 'flower' but is used in baking?",
+    "question": "「flower」と同じ音で、パン作りに使う単語はどれ？",
     "correct": "flour",
     "choices": ["flour", "flower", "floor", "flow"]
   },
   {
-    "question": "Which word sounds like 'two' and means the number 2?",
+    "question": "「two」と同じ音で数字の2を表す単語はどれ？",
     "correct": "two",
     "choices": ["to", "too", "two", "tow"]
   },
   {
-    "question": "Which word sounds like 'night' but means a brave fighter?",
+    "question": "「night」と同じ音で『騎士』を意味する単語はどれ？",
     "correct": "knight",
     "choices": ["night", "knight", "kite", "right"]
   },
   {
-    "question": "Which word sounds like 'sun' but means a male child?",
+    "question": "「sun」と同じ音で『息子』を意味する単語はどれ？",
     "correct": "son",
     "choices": ["son", "sun", "soon", "swan"]
   },
   {
-    "question": "Which word sounds like 'plane' and means ordinary?",
+    "question": "「plane」と同じ音で『普通の』を意味する単語はどれ？",
     "correct": "plain",
     "choices": ["plane", "plain", "plan", "play"]
   },
   {
-    "question": "Which word sounds like 'write' but means correct?",
+    "question": "「write」と同じ音で『正しい』を意味する単語はどれ？",
     "correct": "right",
     "choices": ["rite", "right", "write", "riot"]
   },
   {
-    "question": "Which word sounds like 'won' and is the number one?",
+    "question": "「won」と同じ音で数字の1を表す単語はどれ？",
     "correct": "one",
     "choices": ["won", "one", "on", "wan"]
   },
   {
-    "question": "Which word sounds like 'sail' and means to sell something?",
+    "question": "「sail」と同じ音で『売る』を意味する単語はどれ？",
     "correct": "sale",
     "choices": ["sail", "sale", "seal", "same"]
   },
   {
-    "question": "Which word sounds like 'meet' but is food from animals?",
+    "question": "「meet」と同じ音で効用の肉を意味する単語はどれ？",
     "correct": "meat",
     "choices": ["meat", "meet", "met", "mate"]
   }
