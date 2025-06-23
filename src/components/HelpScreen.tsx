@@ -66,7 +66,7 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
               <h4 className="font-bold text-red-800 mb-2">💚 HP（体力）システム</h4>
               <ul className="text-red-700 text-sm space-y-1">
-                <li>• プレイヤーHP：最大100（正解で維持、不正解で6減少）</li>
+                <li>• プレイヤーHP：正解で維持、不正解で減少</li>
                 <li>• 敵HP：階層が上がるほど増加</li>
                 <li>• HPが0になるとゲームオーバー</li>
               </ul>
@@ -77,8 +77,8 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
               <ol className="text-purple-700 text-sm space-y-1">
                 <li>1. クイズが出題される</li>
                 <li>2. 4つの選択肢から正解を選ぶ</li>
-                <li>3. <strong>正解</strong>：敵にダメージ（10）</li>
-                <li>4. <strong>不正解</strong>：プレイヤーがダメージを受ける（6）</li>
+                <li>3. <strong>正解</strong>：敵にダメージ</li>
+                <li>4. <strong>不正解</strong>：プレイヤーがダメージを受ける</li>
                 <li>5. 敵のHPが0になると次の階層へ</li>
               </ol>
             </div>
@@ -91,13 +91,13 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
               </p>
             </div>
 
-            <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+            {/* <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
               <h4 className="font-bold text-indigo-800 mb-2">📊 スコアシステム</h4>
               <p className="text-indigo-700 text-sm">
                 正解するたびにスコアが1ポイント増加します。<br/>
                 高スコアを目指して頑張りましょう！
               </p>
-            </div>
+            </div> */}
           </div>
         );
 

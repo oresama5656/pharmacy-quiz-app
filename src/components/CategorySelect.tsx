@@ -285,23 +285,19 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           {/* ヘルプボタン */}
           <button
             onClick={() => setShowHelp(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
-            style={{
-              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
-            }}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl"
+            title="ヘルプ"
           >
-            ❓ ヘルプ
+            ❓
           </button>
           
           {/* セーブデータ管理ボタン */}
           <button
             onClick={() => setShowSaveManager(true)}
-            className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
-            style={{
-              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
-            }}
+            className="bg-amber-600 hover:bg-amber-700 text-white font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl"
+            title="セーブデータ管理"
           >
-            💾 セーブデータ管理
+            💾
           </button>
         </div>
 
