@@ -1,51 +1,51 @@
 [
   {
-    "question": "What does 'dog' mean?",
+    "question": "『dog』は日本語でどんな意味？",
     "correct": "いぬ",
     "choices": ["いぬ", "ねこ", "うま", "さる"]
   },
   {
-    "question": "What does 'cat' mean?",
+    "question": "『cat』は日本語でどんな意味？",
     "correct": "ねこ",
     "choices": ["いぬ", "ねこ", "とり", "さる"]
   },
   {
-    "question": "What does 'book' mean?",
+    "question": "『book』は日本語でどんな意味？",
     "correct": "ほん",
     "choices": ["くるま", "ほん", "いえ", "みず"]
   },
   {
-    "question": "What does 'tree' mean?",
+    "question": "『tree』は日本語でどんな意味？",
     "correct": "き",
     "choices": ["はな", "き", "いす", "つくえ"]
   },
   {
-    "question": "What does 'car' mean?",
+    "question": "『car』は日本語でどんな意味？",
     "correct": "くるま",
     "choices": ["みず", "くるま", "ともだち", "ねこ"]
   },
   {
-    "question": "What does 'house' mean?",
+    "question": "『house』は日本語でどんな意味？",
     "correct": "いえ",
     "choices": ["いえ", "くるま", "き", "ほん"]
   },
   {
-    "question": "What does 'water' mean?",
+    "question": "『water』は日本語でどんな意味？",
     "correct": "みず",
     "choices": ["みず", "たべもの", "いぬ", "そら"]
   },
   {
-    "question": "What does 'food' mean?",
+    "question": "『food』は日本語でどんな意味？",
     "correct": "たべもの",
     "choices": ["ねこ", "みず", "たべもの", "いえ"]
   },
   {
-    "question": "What does 'school' mean?",
+    "question": "『school』は日本語でどんな意味？",
     "correct": "がっこう",
     "choices": ["き", "がっこう", "やま", "みず"]
   },
   {
-    "question": "What does 'friend' mean?",
+    "question": "『friend』は日本語でどんな意味？",
     "correct": "ともだち",
     "choices": ["くるま", "ともだち", "ほん", "いぬ"]
   }

@@ -1,51 +1,51 @@
 [
   {
-    "question": "Choose the correct order: like / I / apples",
+    "question": "『like / I / apples』を並べ替えて正しい英文にすると？",
     "correct": "I like apples",
     "choices": ["like I apples", "I like apples", "apples like I", "I apples like"]
   },
   {
-    "question": "Choose the correct order: is / this / my / bag",
+    "question": "『is / this / my / bag』を並べ替えて正しい英文にすると？",
     "correct": "this is my bag",
     "choices": ["is this bag my", "this is my bag", "bag this is my", "my is this bag"]
   },
   {
-    "question": "Choose the correct order: study / we / English",
+    "question": "『study / we / English』を並べ替えて正しい英文にすると？",
     "correct": "we study English",
     "choices": ["English study we", "we study English", "study English we", "we English study"]
   },
   {
-    "question": "Choose the correct order: at / starts / school / eight",
+    "question": "『at / starts / school / eight』を並べ替えて正しい英文にすると？",
     "correct": "school starts at eight",
     "choices": ["eight at starts school", "school starts at eight", "starts school at eight", "at school starts eight"]
   },
   {
-    "question": "Choose the correct order: are / friends / they",
+    "question": "『are / friends / they』を並べ替えて正しい英文にすると？",
     "correct": "they are friends",
     "choices": ["are they friends", "friends they are", "they friends are", "they are friends"]
   },
   {
-    "question": "Choose the correct order: have / I / a / bike",
+    "question": "『have / I / a / bike』を並べ替えて正しい英文にすると？",
     "correct": "I have a bike",
     "choices": ["bike a I have", "I a have bike", "I have a bike", "have I bike a"]
   },
   {
-    "question": "Choose the correct order: likes / she / music",
+    "question": "『likes / she / music』を並べ替えて正しい英文にすると？",
     "correct": "she likes music",
     "choices": ["she likes music", "music likes she", "likes music she", "she music likes"]
   },
   {
-    "question": "Choose the correct order: plays / he / soccer",
+    "question": "『plays / he / soccer』を並べ替えて正しい英文にすると？",
     "correct": "he plays soccer",
     "choices": ["soccer plays he", "plays he soccer", "he soccer plays", "he plays soccer"]
   },
   {
-    "question": "Choose the correct order: book / this / interesting / is",
+    "question": "『book / this / interesting / is』を並べ替えて正しい英文にすると？",
     "correct": "this book is interesting",
     "choices": ["book this interesting is", "this book is interesting", "interesting this book is", "this interesting book is"]
   },
   {
-    "question": "Choose the correct order: go / we / will / home",
+    "question": "『go / we / will / home』を並べ替えて正しい英文にすると？",
     "correct": "we will go home",
     "choices": ["home will go we", "we go will home", "we will go home", "go we will home"]
   }

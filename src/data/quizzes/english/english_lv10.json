@@ -1,51 +1,51 @@
 [
   {
-    "question": "Tom has a red ball. It is new. What color is Tom's ball?",
+    "question": "Tom has a red ball. It is new.トムのボールは何色？",
     "correct": "red",
     "choices": ["blue", "green", "red", "yellow"]
   },
   {
-    "question": "Mary lives in Tokyo. She loves the city. Where does Mary live?",
+    "question": "Mary lives in Tokyo. She loves the city.Mary はどこに住んでいる？",
     "correct": "Tokyo",
     "choices": ["Osaka", "Tokyo", "Kyoto", "Nagoya"]
   },
   {
-    "question": "This book is very interesting. I read it every day. What do I think of the book?",
+    "question": "This book is very interesting. I read it every day.私はこの本をどう思っている？",
     "correct": "It is interesting",
     "choices": ["It is difficult", "It is boring", "It is interesting", "It is short"]
   },
   {
-    "question": "Ken went to the park and played soccer. What did Ken play?",
+    "question": "Ken went to the park and played soccer.Ken は何をプレーした？",
     "correct": "soccer",
     "choices": ["tennis", "basketball", "soccer", "baseball"]
   },
   {
-    "question": "The cat is on the roof. It cannot come down. Where is the cat?",
+    "question": "The cat is on the roof. It cannot come down.猫はどこにいる？",
     "correct": "on the roof",
     "choices": ["under the car", "in the house", "on the roof", "in the tree"]
   },
   {
-    "question": "I have two brothers and one sister. How many brothers do I have?",
+    "question": "I have two brothers and one sister.兄弟は何人いる？",
     "correct": "two",
     "choices": ["one", "two", "three", "none"]
   },
   {
-    "question": "The teacher gave us homework yesterday. When did we get homework?",
+    "question": "The teacher gave us homework yesterday.私たちはいつ宿題をもらった？",
     "correct": "yesterday",
     "choices": ["tomorrow", "yesterday", "today", "last week"]
   },
   {
-    "question": "Sara likes apples but not bananas. Which fruit does Sara like?",
+    "question": "Sara likes apples but not bananas.Sara が好きな果物はどれ？",
     "correct": "apples",
     "choices": ["oranges", "grapes", "apples", "bananas"]
   },
   {
-    "question": "It was raining, so I took an umbrella. Why did I take an umbrella?",
+    "question": "It was raining, so I took an umbrella.なぜ傘を持って行った？",
     "correct": "Because it was raining",
     "choices": ["Because it was sunny", "Because it was raining", "Because it was windy", "Because it was hot"]
   },
   {
-    "question": "John studied hard and passed the test. What happened to John?",
+    "question": "John studied hard and passed the test.John はどうなりましたか？",
     "correct": "He passed the test",
     "choices": ["He failed the test", "He passed the test", "He lost his book", "He went home early"]
   }

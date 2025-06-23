@@ -1,51 +1,51 @@
 [
   {
-    "question": "What does 'run' mean?",
+    "question": "『run』は日本語でどんな意味？",
     "correct": "はしる",
     "choices": ["たべる", "はしる", "ねる", "よむ"]
   },
   {
-    "question": "What does 'happy' mean?",
+    "question": "『happy』は日本語でどんな意味？",
     "correct": "しあわせな",
     "choices": ["かなしい", "おそい", "しあわせな", "きれいな"]
   },
   {
-    "question": "What does 'eat' mean?",
+    "question": "『eat』は日本語でどんな意味？",
     "correct": "たべる",
     "choices": ["はしる", "たべる", "みる", "きく"]
   },
   {
-    "question": "What does 'big' mean?",
+    "question": "『big』は日本語でどんな意味？",
     "correct": "おおきい",
     "choices": ["ちいさい", "おおきい", "あかるい", "はやい"]
   },
   {
-    "question": "What does 'sleep' mean?",
+    "question": "『sleep』は日本語でどんな意味？",
     "correct": "ねる",
     "choices": ["ねる", "はしる", "かう", "よむ"]
   },
   {
-    "question": "What does 'fast' mean?",
+    "question": "『fast』は日本語でどんな意味？",
     "correct": "はやい",
     "choices": ["おそい", "しずかな", "はやい", "あたらしい"]
   },
   {
-    "question": "What does 'cold' mean?",
+    "question": "『cold』は日本語でどんな意味？",
     "correct": "さむい",
     "choices": ["あつい", "ながい", "さむい", "たかい"]
   },
   {
-    "question": "What does 'read' mean?",
+    "question": "『read』は日本語でどんな意味？",
     "correct": "よむ",
     "choices": ["かく", "きく", "よむ", "およぐ"]
   },
   {
-    "question": "What does 'beautiful' mean?",
+    "question": "『beautiful』は日本語でどんな意味？",
     "correct": "うつくしい",
     "choices": ["うつくしい", "つよい", "やさしい", "たのしい"]
   },
   {
-    "question": "What does 'buy' mean?",
+    "question": "『buy』は日本語でどんな意味？",
     "correct": "かう",
     "choices": ["のむ", "たべる", "かう", "みる"]
   }

@@ -1,51 +1,51 @@
 [
   {
-    "question": "The cat is ___ the box.",
+    "question": "The cat is ___ the box. の空欄に入る語は？",
     "correct": "in",
     "choices": ["on", "under", "in", "behind"]
   },
   {
-    "question": "The book is ___ the table.",
+    "question": "The book is ___ the table. の空欄に入る語は？",
     "correct": "on",
     "choices": ["in", "on", "under", "next to"]
   },
   {
-    "question": "The ball is ___ the chair.",
+    "question": "The ball is ___ the chair. の空欄に入る語は？",
     "correct": "under",
     "choices": ["on", "under", "in", "beside"]
   },
   {
-    "question": "The dog is ___ the tree.",
+    "question": "The dog is ___ the tree. の空欄に入る語は？",
     "correct": "behind",
     "choices": ["behind", "in", "on", "under"]
   },
   {
-    "question": "She is standing ___ me.",
+    "question": "She is standing ___ me. の空欄に入る語は？",
     "correct": "next to",
     "choices": ["under", "next to", "in", "behind"]
   },
   {
-    "question": "The picture is ___ the wall.",
+    "question": "The picture is ___ the wall. の空欄に入る語は？",
     "correct": "on",
     "choices": ["in", "under", "on", "behind"]
   },
   {
-    "question": "The keys are ___ my bag.",
+    "question": "The keys are ___ my bag. の空欄に入る語は？",
     "correct": "in",
     "choices": ["on", "in", "under", "behind"]
   },
   {
-    "question": "The school is ___ the park.",
+    "question": "The school is ___ the park. の空欄に入る語は？",
     "correct": "near",
     "choices": ["under", "behind", "near", "in"]
   },
   {
-    "question": "The cat jumped ___ the table.",
+    "question": "The cat jumped ___ the table. の空欄に入る語は？",
     "correct": "onto",
     "choices": ["into", "onto", "under", "behind"]
   },
   {
-    "question": "He walked ___ the river.",
+    "question": "He walked ___ the river. の空欄に入る語は？",
     "correct": "along",
     "choices": ["along", "in", "on", "under"]
   }

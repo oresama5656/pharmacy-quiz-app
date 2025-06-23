@@ -1,51 +1,51 @@
 [
   {
-    "question": "I ___ a student.",
+    "question": "I ___ a student. の空欄に入る語は？",
     "correct": "am",
     "choices": ["am", "is", "are", "be"]
   },
   {
-    "question": "He ___ my brother.",
+    "question": "He ___ my brother. の空欄に入る語は？",
     "correct": "is",
     "choices": ["are", "am", "is", "be"]
   },
   {
-    "question": "You ___ very kind.",
+    "question": "You ___ very kind. の空欄に入る語は？",
     "correct": "are",
     "choices": ["is", "are", "am", "be"]
   },
   {
-    "question": "She ___ from Canada.",
+    "question": "She ___ from Canada. の空欄に入る語は？",
     "correct": "is",
     "choices": ["am", "are", "is", "be"]
   },
   {
-    "question": "We ___ friends.",
+    "question": "We ___ friends. の空欄に入る語は？",
     "correct": "are",
     "choices": ["is", "am", "be", "are"]
   },
   {
-    "question": "They ___ at home.",
+    "question": "They ___ at home. の空欄に入る語は？",
     "correct": "are",
     "choices": ["are", "is", "am", "be"]
   },
   {
-    "question": "She and I ___ classmates.",
+    "question": "She and I ___ classmates. の空欄に入る語は？",
     "correct": "are",
     "choices": ["is", "am", "be", "are"]
   },
   {
-    "question": "It ___ a sunny day.",
+    "question": "It ___ a sunny day. の空欄に入る語は？",
     "correct": "is",
     "choices": ["are", "am", "is", "be"]
   },
   {
-    "question": "You and he ___ good friends.",
+    "question": "You and he ___ good friends. の空欄に入る語は？",
     "correct": "are",
     "choices": ["am", "is", "be", "are"]
   },
   {
-    "question": "I ___ not tired.",
+    "question": "I ___ not tired. の空欄に入る語は？",
     "correct": "am",
     "choices": ["are", "is", "be", "am"]
   }
