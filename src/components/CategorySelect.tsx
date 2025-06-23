@@ -9,6 +9,9 @@ import {
   getGuildIdByCategoryId 
 } from '../utils/questStatus';
 import guildsData from '../data/guilds.json';
+import SaveDataManager from './SaveDataManager';
+import DataLossWarning from './DataLossWarning';
+import HelpScreen from './HelpScreen';
 
 interface CategorySelectProps {
   onCategorySelect: (categoryId: string) => void;
@@ -61,6 +64,9 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   );
   const [activeGuild, setActiveGuild] = useState<Guild | null>(null);
   const [audioReady, setAudioReady] = useState(false);
+  const [showSaveManager, setShowSaveManager] = useState(false);
+  const [showDataWarning, setShowDataWarning] = useState(true);
+  const [showHelp, setShowHelp] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const seAudiosRef = useRef<Record<keyof typeof SE, HTMLAudioElement>>({
@@ -200,6 +206,14 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
     setActiveGuild(null);
   };
 
+  // セーブデータ変更時の処理
+  const handleSaveDataChanged = () => {
+    // 画面を再レンダリングして進行状況を更新
+    setScreen('map');
+    setActiveGuild(null);
+    setShowSaveManager(false);
+  };
+
   // 星表示を生成
   const generateStars = (difficulty: string): string => {
     const starCount = difficulty.length; // "★★" → 2個
@@ -219,21 +233,41 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   // START画面
   if (screen === 'start') {
     return (
-      <div className="min-h-screen flex items-center justify-center" 
-        style={{ 
-          backgroundImage: `url('${BACKGROUND_IMAGES.title}')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        <button
-          onClick={handleStart}
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-12 rounded-lg text-xl shadow-2xl transform hover:scale-105 transition-all duration-300"
-          style={{ minWidth: '200px', minHeight: '60px' }}
+      <>
+        <div className="min-h-screen flex items-center justify-center" 
+          style={{ 
+            backgroundImage: `url('${BACKGROUND_IMAGES.title}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
         >
-          START
-        </button>
-      </div>
+          <button
+            onClick={handleStart}
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-12 rounded-lg text-xl shadow-2xl transform hover:scale-105 transition-all duration-300"
+            style={{ minWidth: '200px', minHeight: '60px' }}
+          >
+            START
+          </button>
+        </div>
+        
+        {/* モーダルコンポーネント */}
+        <SaveDataManager
+          isOpen={showSaveManager}
+          onClose={() => setShowSaveManager(false)}
+          onDataChanged={handleSaveDataChanged}
+        />
+        
+        {showDataWarning && (
+          <DataLossWarning
+            onClose={() => setShowDataWarning(false)}
+          />
+        )}
+        
+        <HelpScreen
+          isOpen={showHelp}
+          onClose={() => setShowHelp(false)}
+        />
+      </>
     );
   }
 
@@ -246,6 +280,31 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           backgroundImage: `url('${BACKGROUND_IMAGES.category}')`
         }}
       >
+        {/* 上部ボタン群 */}
+        <div className="fixed top-4 right-4 flex gap-2 z-50">
+          {/* ヘルプボタン */}
+          <button
+            onClick={() => setShowHelp(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
+            style={{
+              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
+            }}
+          >
+            ❓ ヘルプ
+          </button>
+          
+          {/* セーブデータ管理ボタン */}
+          <button
+            onClick={() => setShowSaveManager(true)}
+            className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-4 py-2 rounded-lg shadow-lg transition-all duration-300"
+            style={{
+              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
+            }}
+          >
+            💾 セーブデータ管理
+          </button>
+        </div>
+
         {guilds.map((guild) => {
           const guildCategories = getGuildCategories(guild);
           // カテゴリが存在するギルドのみ表示
@@ -318,6 +377,24 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
           );
         })}
+        
+        {/* モーダルコンポーネント */}
+        <SaveDataManager
+          isOpen={showSaveManager}
+          onClose={() => setShowSaveManager(false)}
+          onDataChanged={handleSaveDataChanged}
+        />
+        
+        {showDataWarning && (
+          <DataLossWarning
+            onClose={() => setShowDataWarning(false)}
+          />
+        )}
+        
+        <HelpScreen
+          isOpen={showHelp}
+          onClose={() => setShowHelp(false)}
+        />
       </div>
     );
   }
@@ -597,10 +674,29 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
           </div>
         </div>
+        
+        {/* モーダルコンポーネント */}
+        <SaveDataManager
+          isOpen={showSaveManager}
+          onClose={() => setShowSaveManager(false)}
+          onDataChanged={handleSaveDataChanged}
+        />
+        
+        {showDataWarning && (
+          <DataLossWarning
+            onClose={() => setShowDataWarning(false)}
+          />
+        )}
+        
+        <HelpScreen
+          isOpen={showHelp}
+          onClose={() => setShowHelp(false)}
+        />
       </div>
     );
   }
 
+  // この時点で何も返さない（上記の条件分岐で全てカバー）
   return null;
 };
 
