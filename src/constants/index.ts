@@ -35,8 +35,8 @@ export const BOSS_IMAGES = [
 export const BACKGROUND_IMAGES = {
   title: "/background/yusha_overthetown.png",
   category: "/background/map-town.png",
-  battle: "https://github.com/oresama5656/GameData_Public/blob/main/background/sougen.png?raw=true",
-  result: "https://github.com/oresama5656/GameData_Public/blob/main/background/orange_sougen_and_sourd.png?raw=true"
+  battle: "/background/sougen.png",
+  result: "/background/orange_sougen_and_sourd.png"
 };
 
 // BGM ファイルのURL

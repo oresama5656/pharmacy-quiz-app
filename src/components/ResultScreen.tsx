@@ -13,7 +13,7 @@ const RESULT_ASSETS = {
   // 背景画像
   backgroundImage: BACKGROUND_IMAGES.result,
   // ロゴ・テキスト画像（後で差し替え用）
-  congratulationsLogo: "https://github.com/oresama5656/GameData_Public/blob/main/logo/congrratulations.png?raw=true", // 画像URL or null（nullの場合はテキスト表示）
+  congratulationsLogo: "/logo/congrratulations.png", // 画像URL or null（nullの場合はテキスト表示）
   defeatLogo: null,          // 敗北時ロゴ画像URL ← ここを追加
   // キャラクター画像（後で差し替え用）
   characterImages: {
