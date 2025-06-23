@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM } from '../constants';
+import { CHARACTER_IMAGES, BACKGROUND_IMAGES, BGM, getEnemyHpForFloor, GAME_CONFIG } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz, GameState } from '../types';
 import { playAttackSound, playWarningSound } from '../utils/sound';
@@ -36,8 +36,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
     return <div>クイズデータがありません</div>;
   }
 
-  const playerHpPercentage = (gameState.playerHp / 20) * 100;
-  const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
+  const playerHpPercentage = (gameState.playerHp / GAME_CONFIG.PLAYER_MAX_HP) * 100;
   const enemyMaxHp = getEnemyHpForFloor(gameState.currentFloor);
   const enemyHpPercentage = (gameState.enemyHp / enemyMaxHp) * 100;
   const isBoss = gameState.currentFloor % 10 === 0;
@@ -200,7 +199,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ quizzes, gameState, onAnswer, a
               <div className="space-y-1">
                 <div className="flex justify-between text-xs text-gray-300">
                   <span>プレイヤー</span>
-                  <span>{gameState.playerHp}/20</span>
+                  <span>{gameState.playerHp}/{GAME_CONFIG.PLAYER_MAX_HP}</span>
                 </div>
                 <div className="w-32 sm:w-40 h-2 sm:h-3 bg-gray-800 rounded-full border border-gray-600 overflow-hidden">
                   <div 

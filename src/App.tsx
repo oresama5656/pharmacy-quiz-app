@@ -5,7 +5,7 @@ import CategorySelect from './components/CategorySelect';
 import GameScreen from './components/GameScreen';
 import ResultScreen from './components/ResultScreen';
 import { Quiz } from './types';
-import { ENEMY_IMAGES, BOSS_IMAGES } from './constants';
+import { ENEMY_IMAGES, BOSS_IMAGES, getEnemyHpForFloor, GAME_CONFIG } from './constants';
 import { handleQuestClear, getGuildIdByCategoryId } from './utils/questStatus';
 
 // 不正解時に次の問題へ進むまでのウェイト時間（ms）
@@ -22,11 +22,10 @@ const App: React.FC = () => {
   // so that returning from the result screen skips the start screen.
   const [showStartScreen, setShowStartScreen] = useState(true);
   const [questRefreshKey, setQuestRefreshKey] = useState(0);
-  const getEnemyHpForFloor = (floor: number) => (floor % 10 === 0 ? 20 : 5);
   const [shuffledQuizzes, setShuffledQuizzes] = useState<Quiz[]>([]);
   const [selectedEnemyImage, setSelectedEnemyImage] = useState<string>("");
   const [gameState, setGameState] = useState<GameState>({
-    playerHp: 20,
+    playerHp: GAME_CONFIG.PLAYER_MAX_HP,
     enemyHp: getEnemyHpForFloor(1),
     currentQuizIndex: 0,
     score: 0,
@@ -76,7 +75,7 @@ const App: React.FC = () => {
 
     setSelectedCategory(categoryId);
     setGameState({
-      playerHp: 20,
+      playerHp: GAME_CONFIG.PLAYER_MAX_HP,
       enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,
@@ -234,7 +233,7 @@ const App: React.FC = () => {
     setAttackEffect(null);
     saveProgress(gameState.maxFloorReached);
     setGameState({
-      playerHp: 20,
+      playerHp: GAME_CONFIG.PLAYER_MAX_HP,
       enemyHp: getEnemyHpForFloor(1),
       currentQuizIndex: 0,
       score: 0,

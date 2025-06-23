@@ -60,3 +60,18 @@ export const SOUND_EFFECTS = {
   clickGuild: '/audio/se/blow.mp3', // 代用
   clickCard: '/audio/se/warning.mp3' // 代用
 };
+
+// ゲーム設定
+export const GAME_CONFIG = {
+  // プレイヤーの最大HP
+  PLAYER_MAX_HP: 20,
+  // 通常敵のHP
+  NORMAL_ENEMY_HP: 5,
+  // ボス敵のHP
+  BOSS_ENEMY_HP: 40
+};
+
+// 敵のHPを階層に応じて取得する関数
+export const getEnemyHpForFloor = (floor: number): number => {
+  return floor % 10 === 0 ? GAME_CONFIG.BOSS_ENEMY_HP : GAME_CONFIG.NORMAL_ENEMY_HP;
+};
