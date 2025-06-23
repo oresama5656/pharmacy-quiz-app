@@ -1,51 +1,51 @@
 [
   {
-    "question": "Choose the correct order: (A) I wake up. (B) I eat breakfast. (C) I go to school.",
+    "question": "「(A) I wake up. (B) I eat breakfast. (C) I go to school.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["A C B", "A B C", "B A C", "C A B"]
   },
   {
-    "question": "Choose the correct order: (A) She opened the book. (B) She read it. (C) She closed it.",
+    "question": "「(A) She opened the book. (B) She read it. (C) She closed it.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["B A C", "A B C", "A C B", "C B A"]
   },
   {
-    "question": "Choose the correct order: (A) It started to rain. (B) We took out umbrellas. (C) We went home.",
+    "question": "「(A) It started to rain. (B) We took out umbrellas. (C) We went home.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["C B A", "A C B", "A B C", "B A C"]
   },
   {
-    "question": "Choose the correct order: (A) Tom cooked dinner. (B) We ate together. (C) We washed dishes.",
+    "question": "「(A) Tom cooked dinner. (B) We ate together. (C) We washed dishes.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["B A C", "A B C", "C B A", "A C B"]
   },
   {
-    "question": "Choose the correct order: (A) She bought a ticket. (B) She got on the bus. (C) She arrived at work.",
+    "question": "「(A) She bought a ticket. (B) She got on the bus. (C) She arrived at work.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["A B C", "B A C", "C A B", "B C A"]
   },
   {
-    "question": "Choose the correct order: (A) I turned on the TV. (B) I watched the news. (C) I turned it off.",
+    "question": "「(A) I turned on the TV. (B) I watched the news. (C) I turned it off.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["A C B", "B A C", "A B C", "C A B"]
   },
   {
-    "question": "Choose the correct order: (A) They met at the cafe. (B) They talked for an hour. (C) They said goodbye.",
+    "question": "「(A) They met at the cafe. (B) They talked for an hour. (C) They said goodbye.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["B C A", "A B C", "A C B", "C A B"]
   },
   {
-    "question": "Choose the correct order: (A) I did my homework. (B) I played video games. (C) I went to bed.",
+    "question": "「(A) I did my homework. (B) I played video games. (C) I went to bed.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["A C B", "B A C", "A B C", "C B A"]
   },
   {
-    "question": "Choose the correct order: (A) She put on her coat. (B) She opened the door. (C) She went outside.",
+    "question": "「(A) She put on her coat. (B) She opened the door. (C) She went outside.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["C B A", "A B C", "B C A", "A C B"]
   },
   {
-    "question": "Choose the correct order: (A) He studied hard. (B) He took the test. (C) He passed.",
+    "question": "「(A) He studied hard. (B) He took the test. (C) He passed.」を正しい順番に並べると？",
     "correct": "A B C",
     "choices": ["A C B", "B A C", "A B C", "C B A"]
   }

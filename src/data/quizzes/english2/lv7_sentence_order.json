@@ -1,51 +1,51 @@
 [
   {
-    "question": "Choose the correct order: like / I / pizza",
+    "question": "「like / I / pizza」を正しい語順にすると？",
     "correct": "I like pizza",
     "choices": ["like I pizza", "I pizza like", "I like pizza", "pizza I like"]
   },
   {
-    "question": "Choose the correct order: is / my / this / pen",
+    "question": "「is / my / this / pen」を正しい語順にすると？",
     "correct": "this is my pen",
     "choices": ["is pen my this", "this is my pen", "pen my this is", "my pen is this"]
   },
   {
-    "question": "Choose the correct order: you / do / homework",
+    "question": "「you / do / homework」を正しい語順にすると？",
     "correct": "you do homework",
     "choices": ["do homework you", "homework you do", "you do homework", "you homework do"]
   },
   {
-    "question": "Choose the correct order: play / we / soccer / today",
+    "question": "「play / we / soccer / today」を正しい語順にすると？",
     "correct": "we play soccer today",
     "choices": ["play we soccer today", "we play soccer today", "soccer today we play", "today play we soccer"]
   },
   {
-    "question": "Choose the correct order: has / she / a / bike",
+    "question": "「has / she / a / bike」を正しい語順にすると？",
     "correct": "she has a bike",
     "choices": ["she has a bike", "has she a bike", "a bike she has", "bike a she has"]
   },
   {
-    "question": "Choose the correct order: is / where / the / station",
+    "question": "「is / where / the / station」を正しい語順にすると？",
     "correct": "where is the station",
     "choices": ["station where is the", "where is the station", "is where the station", "the station where is"]
   },
   {
-    "question": "Choose the correct order: read / I / books",
+    "question": "「read / I / books」を正しい語順にすると？",
     "correct": "I read books",
     "choices": ["read books I", "books I read", "I read books", "books read I"]
   },
   {
-    "question": "Choose the correct order: wants / he / to / study",
+    "question": "「wants / he / to / study」を正しい語順にすると？",
     "correct": "he wants to study",
     "choices": ["he wants to study", "wants he to study", "to study he wants", "study he wants to"]
   },
   {
-    "question": "Choose the correct order: dinner / make / let's",
+    "question": "「dinner / make / let's」を正しい語順にすると？",
     "correct": "let's make dinner",
     "choices": ["make dinner let's", "dinner make let's", "let's make dinner", "dinner let's make"]
   },
   {
-    "question": "Choose the correct order: was / rainy / it / yesterday",
+    "question": "「was / rainy / it / yesterday」を正しい語順にすると？",
     "correct": "it was rainy yesterday",
     "choices": ["rainy it was yesterday", "it rainy was yesterday", "it was rainy yesterday", "yesterday rainy it was"]
   }

@@ -1,51 +1,51 @@
 [
   {
-    "question": "A fruit that is red and round",
+    "question": "赤くて丸い果物を表す英単語",
     "correct": "apple",
     "choices": ["banana", "apple", "grape", "pear"]
   },
   {
-    "question": "An animal that barks",
+    "question": "吼える動物を指す英単語",
     "correct": "dog",
     "choices": ["cat", "bird", "dog", "cow"]
   },
   {
-    "question": "A place where you sleep at night",
+    "question": "夜に寝る場所を表す英単語",
     "correct": "bed",
     "choices": ["desk", "bed", "car", "chair"]
   },
   {
-    "question": "A thing you use to write",
+    "question": "書くときに使うものを指す英単語",
     "correct": "pen",
     "choices": ["cup", "pen", "spoon", "plate"]
   },
   {
-    "question": "A large vehicle that flies",
+    "question": "空を飛ぶ大きな乗り物を表す英単語",
     "correct": "airplane",
     "choices": ["bicycle", "airplane", "car", "ship"]
   },
   {
-    "question": "Something you drink in the morning, made from beans",
+    "question": "豆から作る朝に飲むものを表す英単語",
     "correct": "coffee",
     "choices": ["water", "coffee", "juice", "milk"]
   },
   {
-    "question": "A person who teaches students",
+    "question": "生徒を教える人を表す英単語",
     "correct": "teacher",
     "choices": ["doctor", "teacher", "driver", "singer"]
   },
   {
-    "question": "A device to call people",
+    "question": "人に電話をかける道具を表す英単語",
     "correct": "phone",
     "choices": ["book", "phone", "table", "paper"]
   },
   {
-    "question": "A building where you can read many books",
+    "question": "たくさんの本を読める建物を指す英単語",
     "correct": "library",
     "choices": ["hospital", "library", "school", "station"]
   },
   {
-    "question": "A season when leaves fall",
+    "question": "葉が落ちる季節を表す英単語",
     "correct": "autumn",
     "choices": ["spring", "summer", "autumn", "winter"]
   }
