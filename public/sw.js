@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-rpg-v2';
+const CACHE_NAME = 'quiz-rpg-v3';
 const urlsToCache = [
   '/',
   '/index.html',

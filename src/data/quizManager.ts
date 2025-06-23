@@ -1,29 +1,6 @@
 import { Quiz } from '../types';
 import categoriesData from './categories.json';
 
-// 静的インポートですべてのクイズファイルを読み込み
-import brand2generic from './quizzes/pharma/brand2generic.json';
-import brand2effect from './quizzes/pharma/brand2effect.json';
-import generic2effect from './quizzes/pharma/generic2effect.json';
-import brand2generic_diabetes from './quizzes/pharma/brand2generic_diabetes.json';
-import antibiotics from './quizzes/pharma/antibiotics.json';
-import simple_math from './quizzes/math_mix/simple_math.json';
-import single_digit_division from './quizzes/math_mix/single_digit_division.json';
-import single_digit_mixed from './quizzes/math_mix/single_digit_mixed.json';
-import single_digit_multiplication from './quizzes/math_mix/single_digit_multiplication.json';
-import single_digit_subtraction from './quizzes/math_mix/single_digit_subtraction.json';
-import double_digit_addition from './quizzes/math_mix/double_digit_addition.json';
-import double_digit_division from './quizzes/math_mix/double_digit_division.json';
-import double_digit_mixed from './quizzes/math_mix/double_digit_mixed.json';
-import double_digit_multiplication from './quizzes/math_mix/double_digit_multiplication.json';
-import double_digit_subtraction from './quizzes/math_mix/double_digit_subtraction.json';
-import text_length from './quizzes/text_length.json';
-import p2d_best30_ayame from './quizzes/ayame/p2d_best30_ayame.json';
-import p2d_best31to60_ayame from './quizzes/ayame/p2d_best31to60_ayame.json';
-import p2d_best61to90_ayame from './quizzes/ayame/p2d_best61to90_ayame.json';
-import p2d_best91to120_ayame from './quizzes/ayame/p2d_best91to120_ayame.json';
-import p2d_best121to150_ayame from './quizzes/ayame/p2d_best121to150_ayame.json';
-
 // 数学クイズ
 import lv1_single_digit_multiplication_quiz from './quizzes/math/lv1_single_digit_multiplication_quiz.json';
 import lv2_single_digit_division_quiz from './quizzes/math/lv2_single_digit_division_quiz.json';
@@ -90,35 +67,6 @@ interface CategoryWithFile extends Category {
 
 // 静的インポートマップ
 const quizImportMap: Record<string, any> = {
-  // 薬学クイズ
-  'quizzes/pharma/brand2generic.json': brand2generic,
-  'quizzes/pharma/brand2effect.json': brand2effect,
-  'quizzes/pharma/generic2effect.json': generic2effect,
-  'quizzes/pharma/brand2generic_diabetes.json': brand2generic_diabetes,
-  'quizzes/pharma/antibiotics.json': antibiotics,
-  
-  // 算数・数学ミックス
-  'quizzes/math_mix/simple_math.json': simple_math,
-  'quizzes/math_mix/single_digit_division.json': single_digit_division,
-  'quizzes/math_mix/single_digit_mixed.json': single_digit_mixed,
-  'quizzes/math_mix/single_digit_multiplication.json': single_digit_multiplication,
-  'quizzes/math_mix/single_digit_subtraction.json': single_digit_subtraction,
-  'quizzes/math_mix/double_digit_addition.json': double_digit_addition,
-  'quizzes/math_mix/double_digit_division.json': double_digit_division,
-  'quizzes/math_mix/double_digit_mixed.json': double_digit_mixed,
-  'quizzes/math_mix/double_digit_multiplication.json': double_digit_multiplication,
-  'quizzes/math_mix/double_digit_subtraction.json': double_digit_subtraction,
-  
-  // テスト系
-  'quizzes/text_length.json': text_length,
-  
-  // あやめ（p2d）系
-  'quizzes/ayame/p2d_best30_ayame.json': p2d_best30_ayame,
-  'quizzes/ayame/p2d_best31to60_ayame.json': p2d_best31to60_ayame,
-  'quizzes/ayame/p2d_best61to90_ayame.json': p2d_best61to90_ayame,
-  'quizzes/ayame/p2d_best91to120_ayame.json': p2d_best91to120_ayame,
-  'quizzes/ayame/p2d_best121to150_ayame.json': p2d_best121to150_ayame,
-  
   // 数学クイズ
   'quizzes/math/lv1_single_digit_multiplication_quiz.json': lv1_single_digit_multiplication_quiz,
   'quizzes/math/lv2_single_digit_division_quiz.json': lv2_single_digit_division_quiz,
@@ -189,7 +137,7 @@ const loadQuizFile = (filePath: string): Quiz[] => {
     let quizzes = rawQuizzes as Quiz[];
     
     // 数学系クイズの場合、数値を文字列に変換
-    if (filePath.includes('math/') || filePath.includes('math_mix/') || filePath.includes('basic_math/')) {
+    if (filePath.includes('math/') || filePath.includes('basic_math/')) {
       quizzes = quizzes.map(quiz => ({
         question: quiz.question,
         correct: String(quiz.correct),
@@ -208,50 +156,50 @@ const loadQuizFile = (filePath: string): Quiz[] => {
 
 // カテゴリ一覧を取得
 export const getCategories = (): Category[] => {
-  return (categoriesData as CategoryWithFile[]).map(cat => ({
-    id: cat.id,
-    name: cat.name,
-    description: cat.description,
-    icon: cat.icon,
-    difficulty: cat.difficulty,
-    clearFloor: cat.clearFloor
-  }));
+  const categories = categoriesData as CategoryWithFile[];
+  return categories.map(({ file, ...category }) => category);
 };
 
-// 特定のカテゴリのクイズを取得（同期版に変更）
+// カテゴリIDからクイズ一覧を取得
 export const getQuizzesByCategory = (categoryId: string): Quiz[] => {
-  const category = (categoriesData as CategoryWithFile[]).find(cat => cat.id === categoryId);
-  if (!category) {
-    console.warn(`Category not found: ${categoryId}`);
+  const categories = categoriesData as CategoryWithFile[];
+  const category = categories.find(cat => cat.id === categoryId);
+  
+  if (!category || !category.file) {
+    console.error(`Category not found or file not specified: ${categoryId}`);
     return [];
   }
   
   return loadQuizFile(category.file);
 };
 
-// 特定のカテゴリ情報を取得
+// カテゴリIDからカテゴリ情報を取得
 export const getCategoryById = (categoryId: string): Category | undefined => {
-  const category = (categoriesData as CategoryWithFile[]).find(cat => cat.id === categoryId);
-  if (!category) return undefined;
+  const categories = categoriesData as CategoryWithFile[];
+  const category = categories.find(cat => cat.id === categoryId);
   
-  return {
-    id: category.id,
-    name: category.name,
-    description: category.description,
-    icon: category.icon,
-    difficulty: category.difficulty,
-    clearFloor: category.clearFloor
-  };
+  if (!category) {
+    return undefined;
+  }
+  
+  // fileプロパティを除いて返す
+  const { file, ...categoryWithoutFile } = category;
+  return categoryWithoutFile;
 };
 
-// 新しいクイズを追加する関数（将来的にAPIを使う場合に備えて）
+// クイズを追加（開発用）
 export const addQuiz = (categoryId: string, quiz: Quiz): void => {
-  // この関数は現在はローカルでのみ動作します
-  // 将来的にはAPIを呼び出してデータベースに保存する処理を実装できます
-  console.log(`クイズを追加: ${categoryId}`, quiz);
+  const category = getCategoryById(categoryId);
+  if (!category) {
+    console.error(`Category not found: ${categoryId}`);
+    return;
+  }
+  
+  // 開発環境でのみ実行可能
+  console.log(`Adding quiz to category ${categoryId}:`, quiz);
 };
 
-// クイズをシャッフルする関数
+// 配列をシャッフル
 export const shuffleQuizzes = <T>(items: T[]): T[] => {
   const shuffled = [...items];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -261,11 +209,14 @@ export const shuffleQuizzes = <T>(items: T[]): T[] => {
   return shuffled;
 };
 
-// 選択肢をシャッフルする関数
+// クイズの選択肢をシャッフル
 export const shuffleChoices = (quiz: Quiz): Quiz => {
+  const correctAnswer = quiz.correct;
   const shuffledChoices = shuffleQuizzes(quiz.choices);
+  
   return {
     ...quiz,
-    choices: shuffledChoices
+    choices: shuffledChoices,
+    correct: correctAnswer // 正解は変更しない
   };
 }; 
