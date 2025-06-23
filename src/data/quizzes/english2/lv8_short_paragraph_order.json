@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Choose the correct order: (A) I wake up. (B) I eat breakfast. (C) I go to school.",
+    "correct": "A B C",
+    "choices": ["A C B", "A B C", "B A C", "C A B"]
+  },
+  {
+    "question": "Choose the correct order: (A) She opened the book. (B) She read it. (C) She closed it.",
+    "correct": "A B C",
+    "choices": ["B A C", "A B C", "A C B", "C B A"]
+  },
+  {
+    "question": "Choose the correct order: (A) It started to rain. (B) We took out umbrellas. (C) We went home.",
+    "correct": "A B C",
+    "choices": ["C B A", "A C B", "A B C", "B A C"]
+  },
+  {
+    "question": "Choose the correct order: (A) Tom cooked dinner. (B) We ate together. (C) We washed dishes.",
+    "correct": "A B C",
+    "choices": ["B A C", "A B C", "C B A", "A C B"]
+  },
+  {
+    "question": "Choose the correct order: (A) She bought a ticket. (B) She got on the bus. (C) She arrived at work.",
+    "correct": "A B C",
+    "choices": ["A B C", "B A C", "C A B", "B C A"]
+  },
+  {
+    "question": "Choose the correct order: (A) I turned on the TV. (B) I watched the news. (C) I turned it off.",
+    "correct": "A B C",
+    "choices": ["A C B", "B A C", "A B C", "C A B"]
+  },
+  {
+    "question": "Choose the correct order: (A) They met at the cafe. (B) They talked for an hour. (C) They said goodbye.",
+    "correct": "A B C",
+    "choices": ["B C A", "A B C", "A C B", "C A B"]
+  },
+  {
+    "question": "Choose the correct order: (A) I did my homework. (B) I played video games. (C) I went to bed.",
+    "correct": "A B C",
+    "choices": ["A C B", "B A C", "A B C", "C B A"]
+  },
+  {
+    "question": "Choose the correct order: (A) She put on her coat. (B) She opened the door. (C) She went outside.",
+    "correct": "A B C",
+    "choices": ["C B A", "A B C", "B C A", "A C B"]
+  },
+  {
+    "question": "Choose the correct order: (A) He studied hard. (B) He took the test. (C) He passed.",
+    "correct": "A B C",
+    "choices": ["A C B", "B A C", "A B C", "C B A"]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which word is the opposite of 'cold'?",
+    "correct": "hot",
+    "choices": ["warm", "hot", "cool", "ice"]
+  },
+  {
+    "question": "Which word means the same as 'big'?",
+    "correct": "large",
+    "choices": ["small", "tiny", "large", "narrow"]
+  },
+  {
+    "question": "Which word is the opposite of 'early'?",
+    "correct": "late",
+    "choices": ["late", "soon", "fast", "quick"]
+  },
+  {
+    "question": "Which word means the same as 'happy'?",
+    "correct": "glad",
+    "choices": ["sad", "glad", "angry", "mad"]
+  },
+  {
+    "question": "Which word is the opposite of 'up'?",
+    "correct": "down",
+    "choices": ["down", "over", "near", "above"]
+  },
+  {
+    "question": "Which word means the same as 'begin'?",
+    "correct": "start",
+    "choices": ["finish", "start", "stop", "end"]
+  },
+  {
+    "question": "Which word is the opposite of 'heavy'?",
+    "correct": "light",
+    "choices": ["light", "big", "large", "hard"]
+  },
+  {
+    "question": "Which word means the same as 'fast'?",
+    "correct": "quick",
+    "choices": ["slow", "quick", "late", "lazy"]
+  },
+  {
+    "question": "Which word is the opposite of 'old'?",
+    "correct": "young",
+    "choices": ["new", "young", "ancient", "used"]
+  },
+  {
+    "question": "Which word means the same as 'smart'?",
+    "correct": "clever",
+    "choices": ["clever", "dull", "slow", "tired"]
+  }
+]

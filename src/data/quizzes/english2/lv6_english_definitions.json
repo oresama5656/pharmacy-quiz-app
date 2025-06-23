@@ -1,0 +1,52 @@
+[
+  {
+    "question": "A fruit that is red and round",
+    "correct": "apple",
+    "choices": ["banana", "apple", "grape", "pear"]
+  },
+  {
+    "question": "An animal that barks",
+    "correct": "dog",
+    "choices": ["cat", "bird", "dog", "cow"]
+  },
+  {
+    "question": "A place where you sleep at night",
+    "correct": "bed",
+    "choices": ["desk", "bed", "car", "chair"]
+  },
+  {
+    "question": "A thing you use to write",
+    "correct": "pen",
+    "choices": ["cup", "pen", "spoon", "plate"]
+  },
+  {
+    "question": "A large vehicle that flies",
+    "correct": "airplane",
+    "choices": ["bicycle", "airplane", "car", "ship"]
+  },
+  {
+    "question": "Something you drink in the morning, made from beans",
+    "correct": "coffee",
+    "choices": ["water", "coffee", "juice", "milk"]
+  },
+  {
+    "question": "A person who teaches students",
+    "correct": "teacher",
+    "choices": ["doctor", "teacher", "driver", "singer"]
+  },
+  {
+    "question": "A device to call people",
+    "correct": "phone",
+    "choices": ["book", "phone", "table", "paper"]
+  },
+  {
+    "question": "A building where you can read many books",
+    "correct": "library",
+    "choices": ["hospital", "library", "school", "station"]
+  },
+  {
+    "question": "A season when leaves fall",
+    "correct": "autumn",
+    "choices": ["spring", "summer", "autumn", "winter"]
+  }
+]

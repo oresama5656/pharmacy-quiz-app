@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which word sounds like 'see' but means a large body of water?",
+    "correct": "sea",
+    "choices": ["sea", "see", "sew", "say"]
+  },
+  {
+    "question": "Which word sounds like 'flower' but is used in baking?",
+    "correct": "flour",
+    "choices": ["flour", "flower", "floor", "flow"]
+  },
+  {
+    "question": "Which word sounds like 'two' and means the number 2?",
+    "correct": "two",
+    "choices": ["to", "too", "two", "tow"]
+  },
+  {
+    "question": "Which word sounds like 'night' but means a brave fighter?",
+    "correct": "knight",
+    "choices": ["night", "knight", "kite", "right"]
+  },
+  {
+    "question": "Which word sounds like 'sun' but means a male child?",
+    "correct": "son",
+    "choices": ["son", "sun", "soon", "swan"]
+  },
+  {
+    "question": "Which word sounds like 'plane' and means ordinary?",
+    "correct": "plain",
+    "choices": ["plane", "plain", "plan", "play"]
+  },
+  {
+    "question": "Which word sounds like 'write' but means correct?",
+    "correct": "right",
+    "choices": ["rite", "right", "write", "riot"]
+  },
+  {
+    "question": "Which word sounds like 'won' and is the number one?",
+    "correct": "one",
+    "choices": ["won", "one", "on", "wan"]
+  },
+  {
+    "question": "Which word sounds like 'sail' and means to sell something?",
+    "correct": "sale",
+    "choices": ["sail", "sale", "seal", "same"]
+  },
+  {
+    "question": "Which word sounds like 'meet' but is food from animals?",
+    "correct": "meat",
+    "choices": ["meat", "meet", "met", "mate"]
+  }
+]

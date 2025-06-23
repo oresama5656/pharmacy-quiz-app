@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which holiday is in December?",
+    "correct": "Christmas",
+    "choices": ["Easter", "Halloween", "Christmas", "Thanksgiving"]
+  },
+  {
+    "question": "What drink is popular at British tea time?",
+    "correct": "tea",
+    "choices": ["coffee", "milk", "tea", "juice"]
+  },
+  {
+    "question": "Which sport is famous in the U.S. in fall?",
+    "correct": "American football",
+    "choices": ["American football", "cricket", "rugby", "tennis"]
+  },
+  {
+    "question": "Which country celebrates Thanksgiving?",
+    "correct": "United States",
+    "choices": ["France", "United States", "Japan", "Spain"]
+  },
+  {
+    "question": "What food is common at an English breakfast?",
+    "correct": "eggs",
+    "choices": ["eggs", "sushi", "tacos", "dumplings"]
+  },
+  {
+    "question": "Which city has the Statue of Liberty?",
+    "correct": "New York",
+    "choices": ["London", "New York", "Sydney", "Toronto"]
+  },
+  {
+    "question": "Which holiday uses pumpkins?",
+    "correct": "Halloween",
+    "choices": ["Christmas", "Halloween", "Easter", "New Year"]
+  },
+  {
+    "question": "In which month is Valentine's Day?",
+    "correct": "February",
+    "choices": ["February", "June", "October", "December"]
+  },
+  {
+    "question": "Which country is famous for the maple leaf?",
+    "correct": "Canada",
+    "choices": ["Canada", "Australia", "Mexico", "India"]
+  },
+  {
+    "question": "What is the traditional color for St. Patrick's Day?",
+    "correct": "green",
+    "choices": ["blue", "red", "green", "yellow"]
+  }
+]

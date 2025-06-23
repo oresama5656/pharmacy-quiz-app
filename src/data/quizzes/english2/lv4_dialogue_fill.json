@@ -1,0 +1,52 @@
+[
+  {
+    "question": "A: Hi, how are you? B: I'm ___, thanks.",
+    "correct": "fine",
+    "choices": ["fine", "open", "late", "past"]
+  },
+  {
+    "question": "A: Do you like cake? B: Yes, I ___.",
+    "correct": "do",
+    "choices": ["am", "do", "did", "does"]
+  },
+  {
+    "question": "A: What time is it? B: It's ___ o'clock.",
+    "correct": "five",
+    "choices": ["five", "day", "eat", "run"]
+  },
+  {
+    "question": "A: Let's play soccer. B: ___, let's go!",
+    "correct": "Sure",
+    "choices": ["No", "Sure", "Later", "Never"]
+  },
+  {
+    "question": "A: I'm hungry. B: Have some ___.",
+    "correct": "bread",
+    "choices": ["bread", "read", "broad", "break"]
+  },
+  {
+    "question": "A: Where is my phone? B: It's over ___.",
+    "correct": "there",
+    "choices": ["their", "they're", "there", "them"]
+  },
+  {
+    "question": "A: I can't do this homework. B: Let me ___ you.",
+    "correct": "help",
+    "choices": ["help", "hop", "hope", "heap"]
+  },
+  {
+    "question": "A: See you tomorrow. B: ___!",
+    "correct": "Bye",
+    "choices": ["Bye", "Why", "Buy", "Shy"]
+  },
+  {
+    "question": "A: What's your name? B: My name ___ Ken.",
+    "correct": "is",
+    "choices": ["are", "is", "am", "be"]
+  },
+  {
+    "question": "A: Is this your book? B: Yes, it's ___.",
+    "correct": "mine",
+    "choices": ["mine", "mind", "mime", "mean"]
+  }
+]

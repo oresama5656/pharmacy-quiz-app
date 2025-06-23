@@ -180,6 +180,96 @@
     "file": "quizzes/english/english_lv10.json"
   },
   {
+    "id": "english2_lv1",
+    "name": "同音異義語（レベル1）",
+    "description": "発音が同じで意味が異なる語を選ぶ問題です",
+    "icon": "🔊",
+    "difficulty": "★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv1_homophones.json"
+  },
+  {
+    "id": "english2_lv2",
+    "name": "反対語・類義語（レベル2）",
+    "description": "単語の反対語や類義語を選ぶ問題です",
+    "icon": "🔁",
+    "difficulty": "★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv2_antonyms_synonyms.json"
+  },
+  {
+    "id": "english2_lv3",
+    "name": "熟語・句動詞（レベル3）",
+    "description": "基本的な熟語や句動詞の意味を問う問題です",
+    "icon": "📘",
+    "difficulty": "★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv3_phrasal_verbs.json"
+  },
+  {
+    "id": "english2_lv4",
+    "name": "会話穴埋め（レベル4）",
+    "description": "会話文の空欄に入る語を選ぶ問題です",
+    "icon": "💭",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv4_dialogue_fill.json"
+  },
+  {
+    "id": "english2_lv5",
+    "name": "品詞の見分け（レベル5）",
+    "description": "単語の品詞を判断する問題です",
+    "icon": "✏️",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv5_parts_of_speech.json"
+  },
+  {
+    "id": "english2_lv6",
+    "name": "英語の説明（レベル6）",
+    "description": "簡単な英語の説明から語を選ぶ問題です",
+    "icon": "📚",
+    "difficulty": "★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv6_english_definitions.json"
+  },
+  {
+    "id": "english2_lv7",
+    "name": "語順並び替え（レベル7）",
+    "description": "語の正しい並び順を選ぶ問題です",
+    "icon": "📝",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv7_sentence_order.json"
+  },
+  {
+    "id": "english2_lv8",
+    "name": "短文整序（レベル8）",
+    "description": "短い文章の順序を選ぶ問題です",
+    "icon": "📑",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv8_short_paragraph_order.json"
+  },
+  {
+    "id": "english2_lv9",
+    "name": "文化と習慣（レベル9）",
+    "description": "英語圏の文化や習慣に関する問題です",
+    "icon": "🌍",
+    "difficulty": "★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv9_culture_customs.json"
+  },
+  {
+    "id": "english2_lv10",
+    "name": "文法訂正（レベル10）",
+    "description": "誤った英文から正しい形を選ぶ問題です",
+    "icon": "✅",
+    "difficulty": "★★★★",
+    "clearFloor": 10,
+    "file": "quizzes/english2/lv10_sentence_correction.json"
+  },
+  {
     "id": "basic_math_lv1",
     "name": "足し算・引き算（レベル1）",
     "description": "一桁＋一桁の足し算問題です",

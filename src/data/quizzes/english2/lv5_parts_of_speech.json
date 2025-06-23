@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What part of speech is 'happy'?",
+    "correct": "adjective",
+    "choices": ["noun", "adjective", "verb", "adverb"]
+  },
+  {
+    "question": "What part of speech is 'run' in 'I run fast'?",
+    "correct": "verb",
+    "choices": ["noun", "adjective", "verb", "adverb"]
+  },
+  {
+    "question": "What part of speech is 'slowly'?",
+    "correct": "adverb",
+    "choices": ["noun", "verb", "adverb", "adjective"]
+  },
+  {
+    "question": "What part of speech is 'teacher'?",
+    "correct": "noun",
+    "choices": ["verb", "adjective", "adverb", "noun"]
+  },
+  {
+    "question": "What part of speech is 'beautiful'?",
+    "correct": "adjective",
+    "choices": ["adjective", "verb", "noun", "adverb"]
+  },
+  {
+    "question": "What part of speech is 'quickly'?",
+    "correct": "adverb",
+    "choices": ["adverb", "verb", "adjective", "noun"]
+  },
+  {
+    "question": "What part of speech is 'eat'?",
+    "correct": "verb",
+    "choices": ["noun", "verb", "adjective", "adverb"]
+  },
+  {
+    "question": "What part of speech is 'desk'?",
+    "correct": "noun",
+    "choices": ["noun", "verb", "adjective", "adverb"]
+  },
+  {
+    "question": "What part of speech is 'interesting'?",
+    "correct": "adjective",
+    "choices": ["verb", "adverb", "adjective", "noun"]
+  },
+  {
+    "question": "What part of speech is 'sing'?",
+    "correct": "verb",
+    "choices": ["adjective", "verb", "noun", "adverb"]
+  }
+]
