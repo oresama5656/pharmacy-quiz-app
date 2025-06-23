@@ -1,51 +1,51 @@
 [
   {
-    "question": "How do you say 'おはよう' in English?",
+    "question": "『おはよう』は英語で何と言う？",
     "correct": "Good morning",
     "choices": ["Good night", "Good morning", "Goodbye", "Hello"]
   },
   {
-    "question": "What is the meaning of 'Good evening'?",
+    "question": "『Good evening』は日本語でどんな意味？",
     "correct": "こんばんは",
     "choices": ["おやすみ", "こんにちは", "こんばんは", "さようなら"]
   },
   {
-    "question": "Which phrase means 'ありがとう'?",
+    "question": "『ありがとう』を表す英語のフレーズはどれ？",
     "correct": "Thank you",
     "choices": ["Sorry", "Good luck", "Thank you", "See you"]
   },
   {
-    "question": "How do you greet someone at night?",
+    "question": "夜にあいさつするとき何て言う？",
     "correct": "Good night",
     "choices": ["Good evening", "Good night", "Good morning", "Hello"]
   },
   {
-    "question": "What do you say when you meet someone?",
+    "question": "人に会ったとき、何て言う？",
     "correct": "Hello",
     "choices": ["Hello", "Goodbye", "Thank you", "Please"]
   },
   {
-    "question": "Which is a polite way to leave?",
+    "question": "別れるときの丁寧なあいさつはどれ？",
     "correct": "Goodbye",
     "choices": ["Hello", "Goodbye", "Good morning", "Thank you"]
   },
   {
-    "question": "What is the reply to 'Thank you'?",
+    "question": "『Thank you』と言われたら何て返す？",
     "correct": "You're welcome",
     "choices": ["Good night", "See you", "You're welcome", "Goodbye"]
   },
   {
-    "question": "How do you say 'すみません' in English?",
+    "question": "『すみません』は英語で何と言う？",
     "correct": "Excuse me",
     "choices": ["Excuse me", "See you", "Good morning", "Good luck"]
   },
   {
-    "question": "Which phrase means 'はじめまして'?",
+    "question": "『はじめまして』を英語で言うとどれ？",
     "correct": "Nice to meet you",
     "choices": ["Nice to meet you", "How are you?", "Goodbye", "Thank you"]
   },
   {
-    "question": "What is the meaning of 'See you'?",
+    "question": "『See you』は日本語でどういう意味？",
     "correct": "またね",
     "choices": ["こんにちは", "またね", "ありがとう", "おやすみ"]
   }

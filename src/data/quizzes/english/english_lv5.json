@@ -1,51 +1,51 @@
 [
   {
-    "question": "She ___ tennis on Sundays.",
+    "question": "She ___ tennis on Sundays. の空欄に入る語は？",
     "correct": "plays",
     "choices": ["play", "plays", "played", "playing"]
   },
   {
-    "question": "I ___ breakfast at seven.",
+    "question": "I ___ breakfast at seven. の空欄に入る語は？",
     "correct": "eat",
     "choices": ["eats", "ate", "eat", "eating"]
   },
   {
-    "question": "He ___ to school by bike.",
+    "question": "He ___ to school by bike. の空欄に入る語は？",
     "correct": "goes",
     "choices": ["go", "went", "goes", "going"]
   },
   {
-    "question": "They ___ English every day.",
+    "question": "They ___ English every day. の空欄に入る語は？",
     "correct": "study",
     "choices": ["studies", "studying", "study", "studied"]
   },
   {
-    "question": "My father ___ coffee.",
+    "question": "My father ___ coffee. の空欄に入る語は？",
     "correct": "likes",
     "choices": ["like", "liked", "likes", "liking"]
   },
   {
-    "question": "We ___ our homework now.",
+    "question": "We ___ our homework now. の空欄に入る語は？",
     "correct": "are doing",
     "choices": ["did", "are doing", "do", "does"]
   },
   {
-    "question": "Tom ___ TV last night.",
+    "question": "Tom ___ TV last night. の空欄に入る語は？",
     "correct": "watched",
     "choices": ["watch", "watching", "watches", "watched"]
   },
   {
-    "question": "I ___ the piano well.",
+    "question": "I ___ the piano well. の空欄に入る語は？",
     "correct": "can play",
     "choices": ["playing", "can play", "played", "plays"]
   },
   {
-    "question": "She ___ not like math.",
+    "question": "She ___ not like math. の空欄に入る語は？",
     "correct": "does",
     "choices": ["do", "did", "does", "doing"]
   },
   {
-    "question": "We ___ to the park tomorrow.",
+    "question": "We ___ to the park tomorrow. の空欄に入る語は？",
     "correct": "will go",
     "choices": ["go", "going", "will go", "went"]
   }

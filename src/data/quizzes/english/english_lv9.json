@@ -1,51 +1,51 @@
 [
   {
-    "question": "A: How are you? B: ___",
+    "question": "A: How are you? B: ___ に入る返答は？",
     "correct": "I'm fine, thank you.",
     "choices": ["See you", "I'm fine, thank you.", "Good night", "No problem"]
   },
   {
-    "question": "A: What's your name? B: ___",
+    "question": "A: What's your name? B: ___ に入る答えは？",
     "correct": "I'm Tom.",
     "choices": ["I'm Tom.", "I'm twelve.", "It's sunny.", "I'm fine."]
   },
   {
-    "question": "A: Thank you very much. B: ___",
+    "question": "A: Thank you very much. B: ___ に入る返事は？",
     "correct": "You're welcome.",
     "choices": ["Good morning.", "You're welcome.", "See you.", "I'm sorry."]
   },
   {
-    "question": "A: Do you like music? B: ___",
+    "question": "A: Do you like music? B: ___ に入る返答は？",
     "correct": "Yes, I do.",
     "choices": ["Yes, I do.", "No, I'm not.", "I'm fine.", "See you."]
   },
   {
-    "question": "A: What time is it? B: ___",
+    "question": "A: What time is it? B: ___ に入る答えは？",
     "correct": "It's three o'clock.",
     "choices": ["I'm ten years old.", "It's three o'clock.", "I'm Tom.", "See you later."]
   },
   {
-    "question": "A: I'm sorry I'm late. B: ___",
+    "question": "A: I'm sorry I'm late. B: ___ に入る返答は？",
     "correct": "That's okay.",
     "choices": ["That's okay.", "Good night.", "I'm good.", "Yes, please."]
   },
   {
-    "question": "A: Let's play soccer! B: ___",
+    "question": "A: Let's play soccer! B: ___ に入る返事は？",
     "correct": "Sounds good!",
     "choices": ["I'm hungry.", "Sounds good!", "See you tomorrow.", "I'm tired."]
   },
   {
-    "question": "A: Can you help me? B: ___",
+    "question": "A: Can you help me? B: ___ に入る返事は？",
     "correct": "Sure, here you are.",
     "choices": ["Sure, here you are.", "Good morning.", "I'm fine, thanks.", "See you."]
   },
   {
-    "question": "A: Where is the station? B: ___",
+    "question": "A: Where is the station? B: ___ に入る答えは？",
     "correct": "It's over there.",
     "choices": ["I'm twelve.", "It's over there.", "Nice to meet you.", "I like apples."]
   },
   {
-    "question": "A: See you tomorrow. B: ___",
+    "question": "A: See you tomorrow. B: ___ に入る返事は？",
     "correct": "See you tomorrow.",
     "choices": ["Good evening.", "I'm fine.", "See you tomorrow.", "That's mine."]
   }
