@@ -1,51 +1,51 @@
 [
   {
-    "question": "Tom is ___ than Ken.",
+    "question": "空欄に入る比較級は？: Tom is ___ than Ken.",
     "correct": "taller",
     "choices": ["taller", "tall", "tallest", "more tall"]
   },
   {
-    "question": "This book is the ___ of the three.",
+    "question": "3つの中で一番を表す形は？: This book is the ___ of the three.",
     "correct": "longest",
     "choices": ["long", "longer", "longest", "more long"]
   },
   {
-    "question": "My bag is ___ than yours.",
+    "question": "空欄に入る比較級を選んで: My bag is ___ than yours.",
     "correct": "heavier",
     "choices": ["heavy", "heavier", "heaviest", "more heavy"]
   },
   {
-    "question": "She is the ___ student in class.",
+    "question": "クラスで一番を表す形は？: She is the ___ student in class.",
     "correct": "smartest",
     "choices": ["smart", "smarter", "smartest", "more smart"]
   },
   {
-    "question": "This puzzle is ___ than that one.",
+    "question": "空欄に入る比較級は？: This puzzle is ___ than that one.",
     "correct": "easier",
     "choices": ["easy", "easier", "easiest", "more easy"]
   },
   {
-    "question": "Mount Everest is the ___ mountain.",
+    "question": "世界で一番高いことを表す語を選ぼう: Mount Everest is the ___ mountain.",
     "correct": "highest",
     "choices": ["high", "higher", "highest", "most high"]
   },
   {
-    "question": "My car is ___ than his car.",
+    "question": "空欄に入る比較級を選んで: My car is ___ than his car.",
     "correct": "faster",
     "choices": ["fast", "faster", "fastest", "more fast"]
   },
   {
-    "question": "This is the ___ movie I have seen.",
+    "question": "これまでで一番を表す形は？: This is the ___ movie I have seen.",
     "correct": "best",
     "choices": ["good", "better", "best", "most good"]
   },
   {
-    "question": "Winter is ___ than autumn here.",
+    "question": "ここでは冬の方が寒いことを表す語は？: Winter is ___ than autumn here.",
     "correct": "colder",
     "choices": ["cold", "colder", "coldest", "more cold"]
   },
   {
-    "question": "She sings ___ than anyone else.",
+    "question": "ほかの誰より上手いことを表す語は？: She sings ___ than anyone else.",
     "correct": "better",
     "choices": ["good", "better", "best", "well"]
   }

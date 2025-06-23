@@ -1,51 +1,51 @@
 [
   {
-    "question": "Choose the correct sentence.",
+    "question": "正しい文を選んで。",
     "correct": "She doesn't like milk.",
     "choices": ["She don't like milk.", "She doesn't like milk.", "She isn't like milk.", "She not like milk."]
   },
   {
-    "question": "Select the correct form.",
+    "question": "正しい形を選んで。",
     "correct": "They were happy yesterday.",
     "choices": ["They was happy yesterday.", "They were happy yesterday.", "They are happy yesterday.", "They be happy yesterday."]
   },
   {
-    "question": "Which is right?",
+    "question": "正しい文はどれ？",
     "correct": "I have seen that movie.",
     "choices": ["I saw that movie yet.", "I have saw that movie.", "I have seen that movie.", "I seen that movie."]
   },
   {
-    "question": "Find the correct sentence.",
+    "question": "正しい文を見つけて。",
     "correct": "There are many books.",
     "choices": ["There is many books.", "There are many books.", "There many books.", "There be many books."]
   },
   {
-    "question": "Choose the right sentence.",
+    "question": "正しい文を選ぼう。",
     "correct": "He speaks English well.",
     "choices": ["He speak English well.", "He speaks English well.", "He speaking English well.", "He spoke English well."]
   },
   {
-    "question": "Select the correct wording.",
+    "question": "正しい言い回しを選んで。",
     "correct": "My sister and I were late.",
     "choices": ["My sister and me were late.", "My sister and I were late.", "Me and my sister was late.", "I and my sister were late."]
   },
   {
-    "question": "Which sentence is correct?",
+    "question": "正しい文はどれ？",
     "correct": "Does she play tennis?",
     "choices": ["Do she play tennis?", "Does she play tennis?", "Is she play tennis?", "She does play tennis?"]
   },
   {
-    "question": "Find the correct form.",
+    "question": "正しい形を見つけよう。",
     "correct": "We enjoyed ourselves at the party.",
     "choices": ["We enjoyed us at the party.", "We enjoyed ourselves at the party.", "We enjoy ourselves at the party.", "We enjoyed ourself at the party."]
   },
   {
-    "question": "Choose the correct sentence.",
+    "question": "正しい文を選んで。",
     "correct": "There were two dogs outside.",
     "choices": ["There was two dogs outside.", "There were two dogs outside.", "There were two dog outside.", "There was two dog outside."]
   },
   {
-    "question": "Select the right sentence.",
+    "question": "正しい文を選択して。",
     "correct": "I'm interested in music.",
     "choices": ["I'm interest in music.", "I'm interesting in music.", "I'm interested in music.", "I interested in music."]
   }

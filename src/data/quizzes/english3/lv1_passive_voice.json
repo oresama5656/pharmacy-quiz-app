@@ -1,6 +1,6 @@
 [
   {
-    "question": "Which is a passive voice sentence?",
+    "question": "受け身の文はどれ？",
     "correct": "The cake was eaten.",
     "choices": [
       "The cake was eaten.",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "question": "Which sentence uses passive voice correctly?",
+    "question": "受け身を正しく使っている文はどれ？",
     "correct": "The window was broken.",
     "choices": [
       "The window was broken.",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "question": "Identify the passive form.",
+    "question": "受け身の形を選んで。",
     "correct": "The car is washed.",
     "choices": [
       "The car is washed.",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "question": "Choose the passive sentence.",
+    "question": "受け身の文を選んで。",
     "correct": "The song was sung.",
     "choices": [
       "The song was sung.",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "question": "Which one is passive?",
+    "question": "受け身になっているのはどれ？",
     "correct": "The homework was done.",
     "choices": [
       "The homework was done.",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "question": "Find the passive voice.",
+    "question": "受け身の文を探して。",
     "correct": "The letter was written.",
     "choices": [
       "The letter was written.",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "question": "Which is passive?",
+    "question": "受け身なのはどれ？",
     "correct": "The house was built.",
     "choices": [
       "The house was built.",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "question": "Select the passive form.",
+    "question": "受け身の形を選んで。",
     "correct": "The door was opened.",
     "choices": [
       "The door was opened.",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "question": "Choose the correct passive voice.",
+    "question": "正しい受け身を選んで。",
     "correct": "The movie was watched.",
     "choices": [
       "The movie was watched.",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "question": "Which sentence shows passive voice?",
+    "question": "受け身が使われている文はどれ？",
     "correct": "The game is played.",
     "choices": [
       "The game is played.",
