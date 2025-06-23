@@ -299,7 +299,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                   </div>
                 </div>
 
-                {/* 吹き出しの三角（下向き） */}
+                {/* 吹き出し矢印 - シンプルな単一要素 */}
                 <div 
                   className="absolute left-1/2 transform -translate-x-1/2"
                   style={{
@@ -309,20 +309,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                     borderLeft: '8px solid transparent',
                     borderRight: '8px solid transparent',
                     borderTop: '8px solid #DEB887',
-                    filter: 'drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2))'
-                  }}
-                />
-                
-                {/* 三角の影とボーダー */}
-                <div 
-                  className="absolute left-1/2 transform -translate-x-1/2"
-                  style={{
-                    top: 'calc(100% + 1px)',
-                    width: 0,
-                    height: 0,
-                    borderLeft: '7px solid transparent',
-                    borderRight: '7px solid transparent',
-                    borderTop: '7px solid #8B4513'
+                    filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2))'
                   }}
                 />
               </button>

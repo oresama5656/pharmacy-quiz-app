@@ -1,30 +1,5 @@
 [
   {
-    "id": "pharmacy",
-    "name": "調剤ギルド",
-    "icon": "💊",
-    "position": { "top": "30%", "left": "25%" },
-    "categoryIds": ["brand2generic", "brand2effect", "generic2effect", "brand2generic_diabetes", "antibiotics"]
-  },
-  {
-    "id": "math",
-    "name": "算数ギルド★★★",
-    "icon": "🔢",
-    "position": { "top": "68%", "left": "58%" },
-    "categoryIds": [
-      "simple_math",
-      "single_digit_subtraction",
-      "single_digit_multiplication",
-      "single_digit_division",
-      "double_digit_addition",
-      "double_digit_subtraction",
-      "double_digit_multiplication",
-      "double_digit_division",
-      "single_digit_mixed",
-      "double_digit_mixed"
-    ]
-  },
-  {
     "id": "english",
     "name": "英語ギルド",
     "icon": "📚",
@@ -43,13 +18,6 @@
     ]
   },
   {
-    "id": "advanced",
-    "name": "あやめギルド",
-    "icon": "💯",
-    "position": { "top": "78%", "left": "20%" },
-    "categoryIds": ["p2d_best30_ayame", "p2d_best31to60_ayame", "p2d_best61to90_ayame", "p2d_best91to120_ayame", "p2d_best121to150_ayame"]
-  },
-  {
     "id": "arithmetic",
     "name": "算数ギルド★★",
     "icon": "🧠",
@@ -66,13 +34,6 @@
       "lv9_mixed_operations",
       "lv10_advanced_word_problems"
     ]
-  },
-  {
-    "id": "test",
-    "name": "テストギルド",
-    "icon": "📜",
-    "position": { "top": "93%", "left": "45%" },
-    "categoryIds": ["text_length"]
   },
   {
     "id": "basic_math",
@@ -96,7 +57,7 @@
     "id": "kokugo",
     "name": "国語ギルド",
     "icon": "📖",
-    "position": { "top": "83%", "left": "80%" },
+    "position": { "top": "66%", "left": "60%" },
     "categoryIds": [
       "kokugo_lv1_kanji_yomikata",
       "kokugo_lv2_douon_igigo",
