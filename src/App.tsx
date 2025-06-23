@@ -106,7 +106,7 @@ const App: React.FC = () => {
       newScore = gameState.score + 1;
     } else {
       setAttackEffect('enemy-attack');
-      newPlayerHp = Math.max(0, gameState.playerHp - 10);
+      newPlayerHp = Math.max(0, gameState.playerHp - 6);
     }
 
     // 攻撃エフェクトを短時間で消す（300ms → 200ms）
