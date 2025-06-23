@@ -1,51 +1,51 @@
 [
   {
-    "question": "What part of speech is 'happy'?",
+    "question": "「happy」はどんな品詞ですか？",
     "correct": "adjective",
     "choices": ["noun", "adjective", "verb", "adverb"]
   },
   {
-    "question": "What part of speech is 'run' in 'I run fast'?",
+    "question": "「I run fast」の 'run' はどの品詞ですか？",
     "correct": "verb",
     "choices": ["noun", "adjective", "verb", "adverb"]
   },
   {
-    "question": "What part of speech is 'slowly'?",
+    "question": "「slowly」はどんな品詞ですか？",
     "correct": "adverb",
     "choices": ["noun", "verb", "adverb", "adjective"]
   },
   {
-    "question": "What part of speech is 'teacher'?",
+    "question": "「teacher」はどんな品詞ですか？",
     "correct": "noun",
     "choices": ["verb", "adjective", "adverb", "noun"]
   },
   {
-    "question": "What part of speech is 'beautiful'?",
+    "question": "「beautiful」はどんな品詞ですか？",
     "correct": "adjective",
     "choices": ["adjective", "verb", "noun", "adverb"]
   },
   {
-    "question": "What part of speech is 'quickly'?",
+    "question": "「quickly」はどんな品詞ですか？",
     "correct": "adverb",
     "choices": ["adverb", "verb", "adjective", "noun"]
   },
   {
-    "question": "What part of speech is 'eat'?",
+    "question": "「eat」はどんな品詞ですか？",
     "correct": "verb",
     "choices": ["noun", "verb", "adjective", "adverb"]
   },
   {
-    "question": "What part of speech is 'desk'?",
+    "question": "「desk」はどんな品詞ですか？",
     "correct": "noun",
     "choices": ["noun", "verb", "adjective", "adverb"]
   },
   {
-    "question": "What part of speech is 'interesting'?",
+    "question": "「interesting」はどんな品詞ですか？",
     "correct": "adjective",
     "choices": ["verb", "adverb", "adjective", "noun"]
   },
   {
-    "question": "What part of speech is 'sing'?",
+    "question": "「sing」はどんな品詞ですか？",
     "correct": "verb",
     "choices": ["adjective", "verb", "noun", "adverb"]
   }

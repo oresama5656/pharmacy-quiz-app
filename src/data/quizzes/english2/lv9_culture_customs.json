@@ -1,51 +1,51 @@
 [
   {
-    "question": "Which holiday is in December?",
+    "question": "12月にあるホリデーはどれ？",
     "correct": "Christmas",
     "choices": ["Easter", "Halloween", "Christmas", "Thanksgiving"]
   },
   {
-    "question": "What drink is popular at British tea time?",
+    "question": "イギリスのティータイムで人気の飲み物は？",
     "correct": "tea",
     "choices": ["coffee", "milk", "tea", "juice"]
   },
   {
-    "question": "Which sport is famous in the U.S. in fall?",
+    "question": "秋にアメリカで名なスポーツは？",
     "correct": "American football",
     "choices": ["American football", "cricket", "rugby", "tennis"]
   },
   {
-    "question": "Which country celebrates Thanksgiving?",
+    "question": "感謝祭をお祝いする国はどこ？",
     "correct": "United States",
     "choices": ["France", "United States", "Japan", "Spain"]
   },
   {
-    "question": "What food is common at an English breakfast?",
+    "question": "イギリスの朝食によく出てくる食べ物は？",
     "correct": "eggs",
     "choices": ["eggs", "sushi", "tacos", "dumplings"]
   },
   {
-    "question": "Which city has the Statue of Liberty?",
+    "question": "自由の女神像がある市は？",
     "correct": "New York",
     "choices": ["London", "New York", "Sydney", "Toronto"]
   },
   {
-    "question": "Which holiday uses pumpkins?",
+    "question": "かぼちゃを使うホリデーはどれ？",
     "correct": "Halloween",
     "choices": ["Christmas", "Halloween", "Easter", "New Year"]
   },
   {
-    "question": "In which month is Valentine's Day?",
+    "question": "バレンタインデーはなん月？",
     "correct": "February",
     "choices": ["February", "June", "October", "December"]
   },
   {
-    "question": "Which country is famous for the maple leaf?",
+    "question": "カエデの葉で有名な国はどこ？",
     "correct": "Canada",
     "choices": ["Canada", "Australia", "Mexico", "India"]
   },
   {
-    "question": "What is the traditional color for St. Patrick's Day?",
+    "question": "シント・パトリックデーの伝統的な色は？",
     "correct": "green",
     "choices": ["blue", "red", "green", "yellow"]
   }
