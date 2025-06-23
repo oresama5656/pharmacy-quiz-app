@@ -1,0 +1,52 @@
+[
+  {
+    "question": "時速5kmで3時間歩くと何km？",
+    "correct": "15km",
+    "choices": ["15km", "10km", "12km", "20km"]
+  },
+  {
+    "question": "10m/sで30秒進むと何m？",
+    "correct": "300m",
+    "choices": ["300m", "200m", "250m", "400m"]
+  },
+  {
+    "question": "60kmを2時間で走ると時速は？",
+    "correct": "30km/h",
+    "choices": ["30km/h", "20km/h", "40km/h", "25km/h"]
+  },
+  {
+    "question": "100kmを4時間で走ると時速は？",
+    "correct": "25km/h",
+    "choices": ["25km/h", "20km/h", "30km/h", "40km/h"]
+  },
+  {
+    "question": "時速8kmで40km進むには何時間？",
+    "correct": "5時間",
+    "choices": ["5時間", "4時間", "6時間", "8時間"]
+  },
+  {
+    "question": "50mを10秒で走る速さは？",
+    "correct": "5m/s",
+    "choices": ["5m/s", "4m/s", "6m/s", "7m/s"]
+  },
+  {
+    "question": "2時間で90km進む速さは？",
+    "correct": "45km/h",
+    "choices": ["45km/h", "40km/h", "50km/h", "35km/h"]
+  },
+  {
+    "question": "時速12kmで1.5時間走ると何km？",
+    "correct": "18km",
+    "choices": ["18km", "12km", "15km", "20km"]
+  },
+  {
+    "question": "240kmを時速80kmで走ると何時間？",
+    "correct": "3時間",
+    "choices": ["3時間", "2時間", "4時間", "5時間"]
+  },
+  {
+    "question": "100mを20秒で走る速さは？",
+    "correct": "5m/s",
+    "choices": ["5m/s", "4m/s", "6m/s", "3m/s"]
+  }
+]
