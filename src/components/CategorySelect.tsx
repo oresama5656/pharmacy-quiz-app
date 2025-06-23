@@ -285,17 +285,53 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           {/* ヘルプボタン */}
           <button
             onClick={() => setShowHelp(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl"
+            className="font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl border-2 border-amber-800 hover:scale-105 hover:-translate-y-1"
             title="ヘルプ"
+            style={{
+              backgroundColor: '#DEB887',
+              background: `
+                #DEB887,
+                linear-gradient(145deg, #D2B48C 0%, #DEB887 25%, #F5DEB3 50%, #DEB887 75%, #D2B48C 100%),
+                radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.3) 0%, rgba(139, 69, 19, 0.1) 50%, rgba(139, 69, 19, 0.05) 70%),
+                radial-gradient(circle at 80% 70%, rgba(160, 82, 45, 0.25) 0%, rgba(160, 82, 45, 0.1) 50%, rgba(160, 82, 45, 0.05) 70%)
+              `,
+              boxShadow: `
+                inset 2px 2px 4px rgba(245, 222, 179, 0.9),
+                inset -2px -2px 4px rgba(139, 69, 19, 0.4),
+                0 4px 12px rgba(0, 0, 0, 0.3),
+                0 2px 4px rgba(139, 69, 19, 0.2)
+              `,
+              color: '#8B4513',
+              textShadow: '1px 1px 2px rgba(245, 222, 179, 0.5)',
+              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
+            }}
           >
-            ❓
+            ？
           </button>
           
           {/* セーブデータ管理ボタン */}
           <button
             onClick={() => setShowSaveManager(true)}
-            className="bg-amber-600 hover:bg-amber-700 text-white font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl"
+            className="font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl border-2 border-amber-800 hover:scale-105 hover:-translate-y-1"
             title="セーブデータ管理"
+            style={{
+              backgroundColor: '#DEB887',
+              background: `
+                #DEB887,
+                linear-gradient(145deg, #D2B48C 0%, #DEB887 25%, #F5DEB3 50%, #DEB887 75%, #D2B48C 100%),
+                radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.3) 0%, rgba(139, 69, 19, 0.1) 50%, rgba(139, 69, 19, 0.05) 70%),
+                radial-gradient(circle at 80% 70%, rgba(160, 82, 45, 0.25) 0%, rgba(160, 82, 45, 0.1) 50%, rgba(160, 82, 45, 0.05) 70%)
+              `,
+              boxShadow: `
+                inset 2px 2px 4px rgba(245, 222, 179, 0.9),
+                inset -2px -2px 4px rgba(139, 69, 19, 0.4),
+                0 4px 12px rgba(0, 0, 0, 0.3),
+                0 2px 4px rgba(139, 69, 19, 0.2)
+              `,
+              color: '#8B4513',
+              textShadow: '1px 1px 2px rgba(245, 222, 179, 0.5)',
+              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
+            }}
           >
             💾
           </button>
