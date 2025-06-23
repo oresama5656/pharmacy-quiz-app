@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "He goes to school every day.",
+    "choices": ["He go to school every day.", "He goes to school every day.", "He going to school every day.", "He gone to school every day."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "She doesn't like carrots.",
+    "choices": ["She don't like carrots.", "She doesn't like carrots.", "She not like carrots.", "She isn't like carrots."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "We were watching a movie.",
+    "choices": ["We was watching a movie.", "We were watching a movie.", "We watching a movie.", "We were watch a movie."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "They have finished their work.",
+    "choices": ["They has finished their work.", "They have finish their work.", "They have finished their work.", "They had finish their work."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "I am going to study tonight.",
+    "choices": ["I going to study tonight.", "I am going to study tonight.", "I am go to study tonight.", "I am going study tonight."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "Does he play the guitar?",
+    "choices": ["Do he play the guitar?", "Does he play the guitar?", "Does he plays the guitar?", "He does play the guitar?"]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "There are many books on the shelf.",
+    "choices": ["There is many books on the shelf.", "There are many books on the shelf.", "There be many books on the shelf.", "There many books on the shelf."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "My brother and I were happy.",
+    "choices": ["My brother and I was happy.", "My brother and I were happy.", "Me and my brother was happy.", "Me and my brother were happy."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "She has lived here for five years.",
+    "choices": ["She have lived here for five years.", "She has lived here for five years.", "She has live here for five years.", "She had lived here for five years."]
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "correct": "We will meet at three o'clock.",
+    "choices": ["We will meets at three o'clock.", "We will meet at three o'clock.", "We will met at three o'clock.", "We meet will at three o'clock."]
+  }
+]

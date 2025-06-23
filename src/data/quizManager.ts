@@ -24,6 +24,16 @@ import english_lv7 from './quizzes/english/english_lv7.json';
 import english_lv8 from './quizzes/english/english_lv8.json';
 import english_lv9 from './quizzes/english/english_lv9.json';
 import english_lv10 from './quizzes/english/english_lv10.json';
+import english2_lv1 from './quizzes/english2/lv1_homophones.json';
+import english2_lv2 from './quizzes/english2/lv2_antonyms_synonyms.json';
+import english2_lv3 from './quizzes/english2/lv3_phrasal_verbs.json';
+import english2_lv4 from './quizzes/english2/lv4_dialogue_fill.json';
+import english2_lv5 from './quizzes/english2/lv5_parts_of_speech.json';
+import english2_lv6 from './quizzes/english2/lv6_english_definitions.json';
+import english2_lv7 from './quizzes/english2/lv7_sentence_order.json';
+import english2_lv8 from './quizzes/english2/lv8_short_paragraph_order.json';
+import english2_lv9 from './quizzes/english2/lv9_culture_customs.json';
+import english2_lv10 from './quizzes/english2/lv10_sentence_correction.json';
 
 // 基本算数クイズ
 import basic_math_lv1 from './quizzes/basic_math/basic_math_lv1.json';
@@ -90,6 +100,16 @@ const quizImportMap: Record<string, any> = {
   'quizzes/english/english_lv8.json': english_lv8,
   'quizzes/english/english_lv9.json': english_lv9,
   'quizzes/english/english_lv10.json': english_lv10,
+  'quizzes/english2/lv1_homophones.json': english2_lv1,
+  'quizzes/english2/lv2_antonyms_synonyms.json': english2_lv2,
+  'quizzes/english2/lv3_phrasal_verbs.json': english2_lv3,
+  'quizzes/english2/lv4_dialogue_fill.json': english2_lv4,
+  'quizzes/english2/lv5_parts_of_speech.json': english2_lv5,
+  'quizzes/english2/lv6_english_definitions.json': english2_lv6,
+  'quizzes/english2/lv7_sentence_order.json': english2_lv7,
+  'quizzes/english2/lv8_short_paragraph_order.json': english2_lv8,
+  'quizzes/english2/lv9_culture_customs.json': english2_lv9,
+  'quizzes/english2/lv10_sentence_correction.json': english2_lv10,
   
   // 基本算数クイズ
   'quizzes/basic_math/basic_math_lv1.json': basic_math_lv1,

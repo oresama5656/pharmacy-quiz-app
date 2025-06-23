@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does 'look after' mean?",
+    "correct": "take care of",
+    "choices": ["ignore", "take care of", "leave", "forget"]
+  },
+  {
+    "question": "What does 'give up' mean?",
+    "correct": "stop trying",
+    "choices": ["start", "keep", "stop trying", "finish"]
+  },
+  {
+    "question": "What does 'turn on' mean?",
+    "correct": "start",
+    "choices": ["start", "stop", "move", "break"]
+  },
+  {
+    "question": "What does 'pick up' mean?",
+    "correct": "collect",
+    "choices": ["drop", "collect", "push", "hide"]
+  },
+  {
+    "question": "What does 'find out' mean?",
+    "correct": "discover",
+    "choices": ["discover", "lose", "cover", "close"]
+  },
+  {
+    "question": "What does 'put off' mean?",
+    "correct": "delay",
+    "choices": ["delay", "hurry", "start", "finish"]
+  },
+  {
+    "question": "What does 'run out of' mean?",
+    "correct": "have no more",
+    "choices": ["have no more", "add more", "give away", "find more"]
+  },
+  {
+    "question": "What does 'take off' mean?",
+    "correct": "remove",
+    "choices": ["remove", "put on", "repair", "carry"]
+  },
+  {
+    "question": "What does 'call back' mean?",
+    "correct": "return a call",
+    "choices": ["forget", "answer", "return a call", "hang up"]
+  },
+  {
+    "question": "What does 'set up' mean?",
+    "correct": "arrange",
+    "choices": ["arrange", "destroy", "delay", "cancel"]
+  }
+]
