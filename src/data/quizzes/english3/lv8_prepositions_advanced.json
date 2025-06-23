@@ -1,51 +1,51 @@
 [
   {
-    "question": "He waited ___ the bus stop for an hour.",
+    "question": "He waited ___ the bus stop for an hour. 空欄に入る前置詞は？",
     "correct": "at",
     "choices": ["in", "on", "by", "at"]
   },
   {
-    "question": "The cat jumped ___ the table.",
+    "question": "The cat jumped ___ the table. 空欄に入る前置詞は？",
     "correct": "onto",
     "choices": ["into", "onto", "in", "on"]
   },
   {
-    "question": "She arrived ___ the airport at noon.",
+    "question": "She arrived ___ the airport at noon. 空欄に適する前置詞は？",
     "correct": "at",
     "choices": ["in", "on", "at", "by"]
   },
   {
-    "question": "We walked ___ the river for miles.",
+    "question": "We walked ___ the river for miles. 空欄に入る前置詞を選んで。",
     "correct": "along",
     "choices": ["across", "along", "through", "over"]
   },
   {
-    "question": "He sat ___ the shade of the tree.",
+    "question": "He sat ___ the shade of the tree. 空欄はどの前置詞？",
     "correct": "in",
     "choices": ["on", "at", "by", "in"]
   },
   {
-    "question": "The book fell ___ the shelf.",
+    "question": "The book fell ___ the shelf. 空欄に入る前置詞は？",
     "correct": "off",
     "choices": ["off", "of", "from", "out"]
   },
   {
-    "question": "She divided the cake ___ four pieces.",
+    "question": "She divided the cake ___ four pieces. 空欄に合う前置詞を選んで。",
     "correct": "into",
     "choices": ["into", "onto", "in", "to"]
   },
   {
-    "question": "I will arrive ___ Tokyo on Monday.",
+    "question": "I will arrive ___ Tokyo on Monday. 空欄は？",
     "correct": "in",
     "choices": ["on", "at", "in", "by"]
   },
   {
-    "question": "We met ___ chance at the station.",
+    "question": "We met ___ chance at the station. 空欄に入る前置詞は？",
     "correct": "by",
     "choices": ["by", "at", "in", "on"]
   },
   {
-    "question": "He looked ___ the window to see the rain.",
+    "question": "He looked ___ the window to see the rain. 空欄に入る前置詞は？",
     "correct": "out of",
     "choices": ["out", "out of", "from", "through"]
   }

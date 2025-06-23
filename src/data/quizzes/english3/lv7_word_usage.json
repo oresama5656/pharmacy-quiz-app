@@ -1,51 +1,51 @@
 [
   {
-    "question": "He will ___ you a story tonight.",
+    "question": "空欄に入る語を選んで: He will ___ you a story tonight.",
     "correct": "tell",
     "choices": ["say", "tell", "speak", "talk"]
   },
   {
-    "question": "Please ___ clearly during the meeting.",
+    "question": "会議中ははっきり話してね。空欄は？: Please ___ clearly during the meeting.",
     "correct": "speak",
     "choices": ["say", "tell", "speak", "talk"]
   },
   {
-    "question": "She ___ she was tired.",
+    "question": "彼女は疲れたと___。空欄は？: She ___ she was tired.",
     "correct": "said",
     "choices": ["told", "said", "spoke", "talked"]
   },
   {
-    "question": "Can I ___ with you for a moment?",
+    "question": "少しあなたと___いいですか？: Can I ___ with you for a moment?",
     "correct": "talk",
     "choices": ["say", "tell", "speak", "talk"]
   },
   {
-    "question": "He ___ to the class yesterday.",
+    "question": "彼は昨日クラスで___。空欄は？: He ___ to the class yesterday.",
     "correct": "spoke",
     "choices": ["spoke", "told", "talked", "said"]
   },
   {
-    "question": "She ___ me to be careful.",
+    "question": "彼女は私に気を付けるように___。空欄は？: She ___ me to be careful.",
     "correct": "told",
     "choices": ["said", "told", "spoke", "talked"]
   },
   {
-    "question": "I want to ___ thanks to everyone.",
+    "question": "みんなにお礼を___たい。空欄は？: I want to ___ thanks to everyone.",
     "correct": "say",
     "choices": ["tell", "speak", "say", "talk"]
   },
   {
-    "question": "Let's ___ about your plan tomorrow.",
+    "question": "明日あなたの計画について___。空欄は？: Let's ___ about your plan tomorrow.",
     "correct": "talk",
     "choices": ["speak", "tell", "talk", "say"]
   },
   {
-    "question": "She often ___ French at home.",
+    "question": "彼女は家でよくフランス語を___。空欄は？: She often ___ French at home.",
     "correct": "speaks",
     "choices": ["says", "tells", "speaks", "talks"]
   },
   {
-    "question": "He ___ he would come soon.",
+    "question": "彼はすぐ来ると___。空欄は？: He ___ he would come soon.",
     "correct": "said",
     "choices": ["spoke", "said", "told", "talked"]
   }
