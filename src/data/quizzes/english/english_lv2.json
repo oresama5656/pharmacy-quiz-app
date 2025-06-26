@@ -48,6 +48,56 @@
     "question": "『See you』は日本語でどういう意味？",
     "correct": "またね",
     "choices": ["こんにちは", "またね", "ありがとう", "おやすみ"]
+  },
+  {
+    "question": "『お願いします』は英語で何と言う？",
+    "correct": "Please",
+    "choices": ["Please", "Sorry", "Goodbye", "Thanks"]
+  },
+  {
+    "question": "'I'm sorry' は日本語でどんな意味？",
+    "correct": "ごめんなさい",
+    "choices": ["こんにちは", "ごめんなさい", "ありがとう", "さようなら"]
+  },
+  {
+    "question": "『Good luck』は日本語でどんな意味？",
+    "correct": "がんばって",
+    "choices": ["さようなら", "おはよう", "がんばって", "ありがとう"]
+  },
+  {
+    "question": "『How are you?』に対する一般的な返事はどれ？",
+    "correct": "I'm fine, thanks",
+    "choices": ["I'm fine, thanks", "Good night", "See you", "Help me"]
+  },
+  {
+    "question": "別れ際に使う『Take care』の日本語意味は？",
+    "correct": "気をつけて",
+    "choices": ["またね", "気をつけて", "お大事に", "こんにちは"]
+  },
+  {
+    "question": "『See you later』は日本語でどういう意味？",
+    "correct": "またあとで",
+    "choices": ["さようなら", "おやすみ", "またあとで", "おはよう"]
+  },
+  {
+    "question": "お祝いするときの英語フレーズ『Congratulations』の意味は？",
+    "correct": "おめでとう",
+    "choices": ["さようなら", "おめでとう", "こんにちは", "ありがとう"]
+  },
+  {
+    "question": "『What's up?』は日本語でどういう意味？",
+    "correct": "どうしたの？",
+    "choices": ["さようなら", "どうしたの？", "おはよう", "ありがとう"]
+  },
+  {
+    "question": "誕生日を祝うときの表現『Happy birthday』は日本語で？",
+    "correct": "誕生日おめでとう",
+    "choices": ["こんにちは", "誕生日おめでとう", "ありがとう", "さようなら"]
+  },
+  {
+    "question": "『Good job』は日本語でどんな意味？",
+    "correct": "よくやった",
+    "choices": ["よくやった", "こんにちは", "さようなら", "おやすみ"]
   }
 ]
 

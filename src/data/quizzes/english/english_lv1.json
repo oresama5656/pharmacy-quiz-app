@@ -48,6 +48,56 @@
     "question": "『friend』は日本語でどんな意味？",
     "correct": "ともだち",
     "choices": ["くるま", "ともだち", "ほん", "いぬ"]
+  },
+  {
+    "question": "『sun』は日本語でどんな意味？",
+    "correct": "たいよう",
+    "choices": ["つき", "たいよう", "ほし", "そら"]
+  },
+  {
+    "question": "『moon』は日本語でどんな意味？",
+    "correct": "つき",
+    "choices": ["みず", "つき", "たいよう", "やま"]
+  },
+  {
+    "question": "『flower』は日本語でどんな意味？",
+    "correct": "はな",
+    "choices": ["き", "かわ", "はな", "くるま"]
+  },
+  {
+    "question": "『river』は日本語でどんな意味？",
+    "correct": "かわ",
+    "choices": ["いえ", "かわ", "みず", "みち"]
+  },
+  {
+    "question": "『mountain』は日本語でどんな意味？",
+    "correct": "やま",
+    "choices": ["うみ", "そら", "やま", "はな"]
+  },
+  {
+    "question": "『bird』は日本語でどんな意味？",
+    "correct": "とり",
+    "choices": ["とり", "いぬ", "ねこ", "さかな"]
+  },
+  {
+    "question": "『chair』は日本語でどんな意味？",
+    "correct": "いす",
+    "choices": ["つくえ", "いす", "まど", "ドア"]
+  },
+  {
+    "question": "『table』は日本語でどんな意味？",
+    "correct": "つくえ",
+    "choices": ["いす", "つくえ", "まど", "ドア"]
+  },
+  {
+    "question": "『window』は日本語でどんな意味？",
+    "correct": "まど",
+    "choices": ["ドア", "ねこ", "まど", "いえ"]
+  },
+  {
+    "question": "『door』は日本語でどんな意味？",
+    "correct": "ドア",
+    "choices": ["テーブル", "くるま", "ドア", "ほん"]
   }
 ]
 

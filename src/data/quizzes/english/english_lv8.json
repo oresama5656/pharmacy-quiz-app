@@ -48,6 +48,56 @@
     "question": "理由を聞くときに使う疑問詞はどれ？",
     "correct": "Why",
     "choices": ["Where", "When", "Who", "Why"]
+  },
+  {
+    "question": "『How much』は何をたずねるときに使う？",
+    "correct": "値段",
+    "choices": ["値段", "時間", "理由", "場所"]
+  },
+  {
+    "question": "『Whose』は何を聞きたいときに使う？",
+    "correct": "誰のものか",
+    "choices": ["いつ", "誰のものか", "どこ", "なに"]
+  },
+  {
+    "question": "『Which』の日本語訳は？",
+    "correct": "どちら",
+    "choices": ["いつ", "どこ", "どちら", "だれ"]
+  },
+  {
+    "question": "『How long』はどんな情報を求める？",
+    "correct": "期間",
+    "choices": ["期間", "場所", "理由", "人数"]
+  },
+  {
+    "question": "『What time』は何をたずねる表現？",
+    "correct": "時間",
+    "choices": ["場所", "時間", "数量", "理由"]
+  },
+  {
+    "question": "『How old』は何をたずねる表現？",
+    "correct": "年齢",
+    "choices": ["年齢", "場所", "時間", "距離"]
+  },
+  {
+    "question": "『Why』を使った質問に対する返答でよく使う語は？",
+    "correct": "Because",
+    "choices": ["Although", "Because", "If", "When"]
+  },
+  {
+    "question": "『How far』は何をたずねるときに使う？",
+    "correct": "距離",
+    "choices": ["人数", "理由", "距離", "時間"]
+  },
+  {
+    "question": "『How often』は何をたずねる表現？",
+    "correct": "頻度",
+    "choices": ["頻度", "理由", "場所", "時間"]
+  },
+  {
+    "question": "『Whom』はどんな意味？",
+    "correct": "誰を",
+    "choices": ["誰を", "どこで", "何を", "いつ"]
   }
 ]
 
