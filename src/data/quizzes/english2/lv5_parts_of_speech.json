@@ -2,51 +2,201 @@
   {
     "question": "「happy」はどんな品詞ですか？",
     "correct": "adjective",
-    "choices": ["noun", "adjective", "verb", "adverb"]
+    "choices": [
+      "noun",
+      "adjective",
+      "verb",
+      "adverb"
+    ]
   },
   {
     "question": "「I run fast」の 'run' はどの品詞ですか？",
     "correct": "verb",
-    "choices": ["noun", "adjective", "verb", "adverb"]
+    "choices": [
+      "noun",
+      "adjective",
+      "verb",
+      "adverb"
+    ]
   },
   {
     "question": "「slowly」はどんな品詞ですか？",
     "correct": "adverb",
-    "choices": ["noun", "verb", "adverb", "adjective"]
+    "choices": [
+      "noun",
+      "verb",
+      "adverb",
+      "adjective"
+    ]
   },
   {
     "question": "「teacher」はどんな品詞ですか？",
     "correct": "noun",
-    "choices": ["verb", "adjective", "adverb", "noun"]
+    "choices": [
+      "verb",
+      "adjective",
+      "adverb",
+      "noun"
+    ]
   },
   {
     "question": "「beautiful」はどんな品詞ですか？",
     "correct": "adjective",
-    "choices": ["adjective", "verb", "noun", "adverb"]
+    "choices": [
+      "adjective",
+      "verb",
+      "noun",
+      "adverb"
+    ]
   },
   {
     "question": "「quickly」はどんな品詞ですか？",
     "correct": "adverb",
-    "choices": ["adverb", "verb", "adjective", "noun"]
+    "choices": [
+      "adverb",
+      "verb",
+      "adjective",
+      "noun"
+    ]
   },
   {
     "question": "「eat」はどんな品詞ですか？",
     "correct": "verb",
-    "choices": ["noun", "verb", "adjective", "adverb"]
+    "choices": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ]
   },
   {
     "question": "「desk」はどんな品詞ですか？",
     "correct": "noun",
-    "choices": ["noun", "verb", "adjective", "adverb"]
+    "choices": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ]
   },
   {
     "question": "「interesting」はどんな品詞ですか？",
     "correct": "adjective",
-    "choices": ["verb", "adverb", "adjective", "noun"]
+    "choices": [
+      "verb",
+      "adverb",
+      "adjective",
+      "noun"
+    ]
   },
   {
     "question": "「sing」はどんな品詞ですか？",
     "correct": "verb",
-    "choices": ["adjective", "verb", "noun", "adverb"]
+    "choices": [
+      "adjective",
+      "verb",
+      "noun",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「quick」はどんな品詞ですか？",
+    "correct": "adjective",
+    "choices": [
+      "adjective",
+      "noun",
+      "verb",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「carefully」はどんな品詞ですか？",
+    "correct": "adverb",
+    "choices": [
+      "adverb",
+      "verb",
+      "noun",
+      "adjective"
+    ]
+  },
+  {
+    "question": "「book」はどんな品詞ですか？",
+    "correct": "noun",
+    "choices": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「jump」はどんな品詞ですか？",
+    "correct": "verb",
+    "choices": [
+      "verb",
+      "noun",
+      "adjective",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「green」はどんな品詞ですか？",
+    "correct": "adjective",
+    "choices": [
+      "adjective",
+      "adverb",
+      "noun",
+      "verb"
+    ]
+  },
+  {
+    "question": "「slow」はどんな品詞ですか？",
+    "correct": "adjective",
+    "choices": [
+      "adjective",
+      "adverb",
+      "verb",
+      "noun"
+    ]
+  },
+  {
+    "question": "「quickness」はどんな品詞ですか？",
+    "correct": "noun",
+    "choices": [
+      "noun",
+      "adjective",
+      "verb",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「write」はどんな品詞ですか？",
+    "correct": "verb",
+    "choices": [
+      "verb",
+      "noun",
+      "adjective",
+      "adverb"
+    ]
+  },
+  {
+    "question": "「quietly」はどんな品詞ですか？",
+    "correct": "adverb",
+    "choices": [
+      "adverb",
+      "adjective",
+      "verb",
+      "noun"
+    ]
+  },
+  {
+    "question": "「friend」はどんな品詞ですか?",
+    "correct": "noun",
+    "choices": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+    ]
   }
 ]
