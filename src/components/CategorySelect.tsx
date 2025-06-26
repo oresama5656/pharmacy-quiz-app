@@ -316,7 +316,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                 className="guild-signboard group relative"
               >
                 {/* メインの看板部分 */}
-                <div className="relative px-3 py-3 min-w-[120px] max-w-[160px] text-center rounded-lg shadow-lg transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-amber-800"
+                <div className="relative px-2 py-1 min-w-[120px] max-w-[160px] text-center rounded-lg shadow-lg transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-amber-800"
                   style={{
                     backgroundColor: '#DEB887',
                     background: `
@@ -343,11 +343,24 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                       fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
                       textShadow: '1px 1px 2px rgba(139, 69, 19, 0.3)',
                       fontSize: '13px',
-                      lineHeight: '1.2',
-                      wordBreak: 'break-all'
+                      lineHeight: '1.2'
                     }}
                   >
-                    {guild.name}
+                    {/* ギルド名と★マークを分離して表示 */}
+                    {(() => {
+                      const starMatch = guild.name.match(/^(.+?)(★+)$/);
+                      if (starMatch) {
+                        const [, baseName, stars] = starMatch;
+                        return (
+                          <>
+                            <span>{baseName}</span>
+                            <br />
+                            <span>{stars}</span>
+                          </>
+                        );
+                      }
+                      return guild.name;
+                    })()}
                   </div>
                 </div>
 

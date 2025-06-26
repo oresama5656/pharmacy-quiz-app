@@ -17,23 +17,29 @@ const App: React.FC = () => {
   
   // Pull to Refresh（スワイプ更新）を無効化
   useEffect(() => {
-    const preventPullToRefresh = (e: TouchEvent) => {
-      // 画面の上端でのスワイプダウンを防ぐ
-      if (e.touches.length === 1 && e.touches[0].clientY > 0) {
-        const touch = e.touches[0];
-        if (touch.clientY > 0 && window.scrollY === 0) {
-          e.preventDefault();
-        }
+    let startY = 0;
+    
+    const handleTouchStart = (e: TouchEvent) => {
+      startY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const currentY = e.touches[0].clientY;
+      const deltaY = currentY - startY;
+      
+      // 画面最上部で下向きスワイプの場合のみpreventDefault
+      if (window.scrollY === 0 && deltaY > 0) {
+        e.preventDefault();
       }
     };
 
-    // タッチイベントでPull to Refreshを防ぐ
-    document.addEventListener('touchstart', preventPullToRefresh, { passive: false });
-    document.addEventListener('touchmove', preventPullToRefresh, { passive: false });
+    // Pull to Refreshのみを防ぐ（通常のタッチは許可）
+    document.addEventListener('touchstart', handleTouchStart, { passive: true });
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
 
     return () => {
-      document.removeEventListener('touchstart', preventPullToRefresh);
-      document.removeEventListener('touchmove', preventPullToRefresh);
+      document.removeEventListener('touchstart', handleTouchStart);
+      document.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
