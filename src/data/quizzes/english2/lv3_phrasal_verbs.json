@@ -2,51 +2,201 @@
   {
     "question": "「look after」はどういう意味ですか？",
     "correct": "take care of",
-    "choices": ["ignore", "take care of", "leave", "forget"]
+    "choices": [
+      "ignore",
+      "take care of",
+      "leave",
+      "forget"
+    ]
   },
   {
     "question": "「give up」はどういう意味ですか？",
     "correct": "stop trying",
-    "choices": ["start", "keep", "stop trying", "finish"]
+    "choices": [
+      "start",
+      "keep",
+      "stop trying",
+      "finish"
+    ]
   },
   {
     "question": "「turn on」はどういう意味ですか？",
     "correct": "start",
-    "choices": ["start", "stop", "move", "break"]
+    "choices": [
+      "start",
+      "stop",
+      "move",
+      "break"
+    ]
   },
   {
     "question": "「pick up」はどういう意味ですか？",
     "correct": "collect",
-    "choices": ["drop", "collect", "push", "hide"]
+    "choices": [
+      "drop",
+      "collect",
+      "push",
+      "hide"
+    ]
   },
   {
     "question": "「find out」はどういう意味ですか？",
     "correct": "discover",
-    "choices": ["discover", "lose", "cover", "close"]
+    "choices": [
+      "discover",
+      "lose",
+      "cover",
+      "close"
+    ]
   },
   {
     "question": "「put off」はどういう意味ですか？",
     "correct": "delay",
-    "choices": ["delay", "hurry", "start", "finish"]
+    "choices": [
+      "delay",
+      "hurry",
+      "start",
+      "finish"
+    ]
   },
   {
     "question": "「run out of」はどういう意味ですか？",
     "correct": "have no more",
-    "choices": ["have no more", "add more", "give away", "find more"]
+    "choices": [
+      "have no more",
+      "add more",
+      "give away",
+      "find more"
+    ]
   },
   {
     "question": "「take off」はどういう意味ですか？",
     "correct": "remove",
-    "choices": ["remove", "put on", "repair", "carry"]
+    "choices": [
+      "remove",
+      "put on",
+      "repair",
+      "carry"
+    ]
   },
   {
     "question": "「call back」はどういう意味ですか？",
     "correct": "return a call",
-    "choices": ["forget", "answer", "return a call", "hang up"]
+    "choices": [
+      "forget",
+      "answer",
+      "return a call",
+      "hang up"
+    ]
   },
   {
     "question": "「set up」はどういう意味ですか？",
     "correct": "arrange",
-    "choices": ["arrange", "destroy", "delay", "cancel"]
+    "choices": [
+      "arrange",
+      "destroy",
+      "delay",
+      "cancel"
+    ]
+  },
+  {
+    "question": "「wake up」はどういう意味ですか？",
+    "correct": "stop sleeping",
+    "choices": [
+      "stop sleeping",
+      "go to bed",
+      "stay away",
+      "leave"
+    ]
+  },
+  {
+    "question": "「check in」はどういう意味ですか？",
+    "correct": "register",
+    "choices": [
+      "register",
+      "leave",
+      "cancel",
+      "wait"
+    ]
+  },
+  {
+    "question": "「put on」はどういう意味ですか？",
+    "correct": "wear",
+    "choices": [
+      "wear",
+      "remove",
+      "wash",
+      "drop"
+    ]
+  },
+  {
+    "question": "「turn off」はどういう意味ですか？",
+    "correct": "stop",
+    "choices": [
+      "stop",
+      "start",
+      "fix",
+      "open"
+    ]
+  },
+  {
+    "question": "「carry on」はどういう意味ですか？",
+    "correct": "continue",
+    "choices": [
+      "continue",
+      "stop",
+      "carry",
+      "push"
+    ]
+  },
+  {
+    "question": "「give back」はどういう意味ですか？",
+    "correct": "return",
+    "choices": [
+      "return",
+      "take",
+      "keep",
+      "start"
+    ]
+  },
+  {
+    "question": "「look for」はどういう意味ですか？",
+    "correct": "search",
+    "choices": [
+      "search",
+      "look",
+      "lose",
+      "hide"
+    ]
+  },
+  {
+    "question": "「make up」はどういう意味ですか？",
+    "correct": "invent",
+    "choices": [
+      "invent",
+      "break",
+      "forget",
+      "cover"
+    ]
+  },
+  {
+    "question": "「come across」はどういう意味ですか？",
+    "correct": "find by chance",
+    "choices": [
+      "find by chance",
+      "miss",
+      "pass",
+      "drop"
+    ]
+  },
+  {
+    "question": "「hang out」はどういう意味ですか？",
+    "correct": "spend time relaxing",
+    "choices": [
+      "spend time relaxing",
+      "hang up",
+      "wait outside",
+      "clean up"
+    ]
   }
 ]
