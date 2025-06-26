@@ -1,3 +1,8 @@
+// アプリバージョン（package.jsonから自動取得）
+// @ts-ignore
+import packageInfo from '../../package.json';
+export const APP_VERSION = `v${packageInfo.version}`;
+
 // キャラクター画像のURL（簡単に差し替え可能）
 export const CHARACTER_IMAGES = {
     player: "/character/hero.png"

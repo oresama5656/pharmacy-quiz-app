@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { getCategories, Category } from '../data/quizManager';
-import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES } from '../constants';
+import { BGM, SOUND_EFFECTS, BACKGROUND_IMAGES, APP_VERSION } from '../constants';
 import { QuestStatus } from '../types';
 import { 
   getQuestStatus, 
@@ -674,6 +674,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
               }}
             >
               <p>タップしてクエストを開始</p>
+              <p className="text-amber-300 opacity-60 text-xs mt-1">{APP_VERSION}</p>
             </div>
           </div>
         </div>
