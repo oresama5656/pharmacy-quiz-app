@@ -48,6 +48,56 @@
     "question": "『go / we / will / home』を並べ替えて正しい英文にすると？",
     "correct": "we will go home",
     "choices": ["home will go we", "we go will home", "we will go home", "go we will home"]
+  },
+  {
+    "question": "『How / do / you / do』を並べ替えて正しい英文にすると？",
+    "correct": "How do you do",
+    "choices": ["do you how do", "How do you do", "you do how do", "How you do do"]
+  },
+  {
+    "question": "『the / read / I / newspaper』を並べ替えて正しい英文にすると？",
+    "correct": "I read the newspaper",
+    "choices": ["read I newspaper the", "I read the newspaper", "the newspaper read I", "I the read newspaper"]
+  },
+  {
+    "question": "『is / beautiful / this / flower』を並べ替えて正しい英文にすると？",
+    "correct": "this flower is beautiful",
+    "choices": ["is this beautiful flower", "this flower is beautiful", "flower this is beautiful", "beautiful is this flower"]
+  },
+  {
+    "question": "『go / to / I / school』を並べ替えて正しい英文にすると？",
+    "correct": "I go to school",
+    "choices": ["go I school to", "I go to school", "to school I go", "I school go to"]
+  },
+  {
+    "question": "『coffee / likes / she』を並べ替えて正しい英文にすると？",
+    "correct": "she likes coffee",
+    "choices": ["coffee likes she", "likes coffee she", "she likes coffee", "she coffee likes"]
+  },
+  {
+    "question": "『playing / are / we / soccer』を並べ替えて正しい英文にすると？",
+    "correct": "we are playing soccer",
+    "choices": ["playing soccer are we", "we are playing soccer", "soccer we are playing", "are we playing soccer"]
+  },
+  {
+    "question": "『came / he / yesterday / here』を並べ替えて正しい英文にすると？",
+    "correct": "he came here yesterday",
+    "choices": ["came he yesterday here", "he came here yesterday", "yesterday came he here", "here yesterday he came"]
+  },
+  {
+    "question": "『watch / they / movies / often』を並べ替えて正しい英文にすると？",
+    "correct": "they often watch movies",
+    "choices": ["they watch often movies", "watch movies they often", "they often watch movies", "movies watch they often"]
+  },
+  {
+    "question": "『my / is / name / Ken』を並べ替えて正しい英文にすると？",
+    "correct": "my name is Ken",
+    "choices": ["is my name Ken", "name Ken my is", "my name is Ken", "Ken my name is"]
+  },
+  {
+    "question": "『do / homework / your / please』を並べ替えて正しい英文にすると？",
+    "correct": "please do your homework",
+    "choices": ["homework do your please", "do please your homework", "please do your homework", "your homework please do"]
   }
 ]
 

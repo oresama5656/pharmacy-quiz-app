@@ -48,6 +48,56 @@
     "question": "We ___ to the park tomorrow. の空欄に入る語は？",
     "correct": "will go",
     "choices": ["go", "going", "will go", "went"]
+  },
+  {
+    "question": "He ___ a lot of books. の空欄に入る語は？",
+    "correct": "reads",
+    "choices": ["read", "reads", "reading", "wrote"]
+  },
+  {
+    "question": "I ___ to music every evening. の空欄に入る語は？",
+    "correct": "listen",
+    "choices": ["listening", "listen", "listened", "listens"]
+  },
+  {
+    "question": "They ___ a new car last year. の空欄に入る語は？",
+    "correct": "bought",
+    "choices": ["buy", "bought", "buying", "buys"]
+  },
+  {
+    "question": "We ___ dinner now. の空欄に入る語は？",
+    "correct": "are cooking",
+    "choices": ["cook", "cooked", "are cooking", "cooking"]
+  },
+  {
+    "question": "She ___ to Osaka next week. の空欄に入る語は？",
+    "correct": "will travel",
+    "choices": ["travel", "will travel", "travels", "traveled"]
+  },
+  {
+    "question": "I ___ my homework yesterday. の空欄に入る語は？",
+    "correct": "finished",
+    "choices": ["finish", "finished", "finishing", "finishes"]
+  },
+  {
+    "question": "My friends ___ soccer every weekend. の空欄に入る語は？",
+    "correct": "play",
+    "choices": ["plays", "playing", "played", "play"]
+  },
+  {
+    "question": "She ___ breakfast when I called her. の空欄に入る語は？",
+    "correct": "was eating",
+    "choices": ["eats", "was eating", "ate", "is eating"]
+  },
+  {
+    "question": "We ___ to the museum last Sunday. の空欄に入る語は？",
+    "correct": "went",
+    "choices": ["go", "went", "going", "gone"]
+  },
+  {
+    "question": "He ___ not have a car. の空欄に入る語は？",
+    "correct": "does",
+    "choices": ["do", "did", "does", "done"]
   }
 ]
 

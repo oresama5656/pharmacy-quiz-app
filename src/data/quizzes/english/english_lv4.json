@@ -48,6 +48,56 @@
     "question": "I ___ not tired. の空欄に入る語は？",
     "correct": "am",
     "choices": ["are", "is", "be", "am"]
+  },
+  {
+    "question": "My mother ___ a teacher. の空欄に入る語は？",
+    "correct": "is",
+    "choices": ["am", "are", "is", "be"]
+  },
+  {
+    "question": "They ___ happy today. の空欄に入る語は？",
+    "correct": "are",
+    "choices": ["is", "are", "am", "be"]
+  },
+  {
+    "question": "We ___ in the same class. の空欄に入る語は？",
+    "correct": "are",
+    "choices": ["am", "is", "are", "be"]
+  },
+  {
+    "question": "I ___ from Japan. の空欄に入る語は？",
+    "correct": "am",
+    "choices": ["is", "am", "are", "be"]
+  },
+  {
+    "question": "He and I ___ good at math. の空欄に入る語は？",
+    "correct": "are",
+    "choices": ["are", "is", "am", "be"]
+  },
+  {
+    "question": "It ___ not cold today. の空欄に入る語は？",
+    "correct": "is",
+    "choices": ["are", "is", "am", "be"]
+  },
+  {
+    "question": "She ___ my sister. の空欄に入る語は？",
+    "correct": "is",
+    "choices": ["are", "am", "is", "be"]
+  },
+  {
+    "question": "You ___ my best friend. の空欄に入る語は？",
+    "correct": "are",
+    "choices": ["is", "are", "am", "be"]
+  },
+  {
+    "question": "They ___ students. の空欄に入る語は？",
+    "correct": "are",
+    "choices": ["am", "is", "are", "be"]
+  },
+  {
+    "question": "I ___ very busy. の空欄に入る語は？",
+    "correct": "am",
+    "choices": ["am", "is", "are", "be"]
   }
 ]
 

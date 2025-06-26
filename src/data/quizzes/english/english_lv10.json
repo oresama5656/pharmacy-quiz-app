@@ -48,6 +48,56 @@
     "question": "John studied hard and passed the test.John はどうなりましたか？",
     "correct": "He passed the test",
     "choices": ["He failed the test", "He passed the test", "He lost his book", "He went home early"]
+  },
+  {
+    "question": "Alice found a small kitten. She decided to keep it.誰が子猫を飼うことにした？",
+    "correct": "Alice",
+    "choices": ["Alice", "Tom", "Mary", "Ken"]
+  },
+  {
+    "question": "Bob went to the store and bought milk and bread.ボブは何を買った？",
+    "correct": "milk and bread",
+    "choices": ["eggs", "milk and bread", "juice", "nothing"]
+  },
+  {
+    "question": "The movie was long, but it was very exciting.映画はどうだった？",
+    "correct": "It was exciting",
+    "choices": ["It was boring", "It was exciting", "It was short", "It was scary"]
+  },
+  {
+    "question": "Lisa finished her homework before dinner.いつ宿題を終えた？",
+    "correct": "before dinner",
+    "choices": ["after dinner", "before dinner", "at school", "this morning"]
+  },
+  {
+    "question": "Mike's dog is very big and friendly.マイクの犬はどんな犬？",
+    "correct": "big and friendly",
+    "choices": ["small and shy", "big and friendly", "angry", "quiet"]
+  },
+  {
+    "question": "They traveled to Kyoto last summer.彼らはいつ京都に行った？",
+    "correct": "last summer",
+    "choices": ["last summer", "next year", "in winter", "yesterday"]
+  },
+  {
+    "question": "My mother cooked curry for dinner last night.昨晩の夕食は何？",
+    "correct": "curry",
+    "choices": ["sushi", "curry", "pizza", "ramen"]
+  },
+  {
+    "question": "There are five apples on the table.いくつリンゴがある？",
+    "correct": "five",
+    "choices": ["three", "five", "two", "one"]
+  },
+  {
+    "question": "Jane loves swimming, so she goes to the pool every weekend.ジェーンは週末どこに行く？",
+    "correct": "the pool",
+    "choices": ["the park", "the pool", "the library", "the store"]
+  },
+  {
+    "question": "The train was delayed because of the heavy rain.列車が遅れた理由は？",
+    "correct": "heavy rain",
+    "choices": ["an accident", "heavy rain", "snow", "a festival"]
   }
 ]
 

@@ -48,6 +48,56 @@
     "question": "He walked ___ the river. の空欄に入る語は？",
     "correct": "along",
     "choices": ["along", "in", "on", "under"]
+  },
+  {
+    "question": "The lamp is ___ the desk. の空欄に入る語は？",
+    "correct": "on",
+    "choices": ["on", "under", "in", "behind"]
+  },
+  {
+    "question": "He sat ___ the tree to read. の空欄に入る語は？",
+    "correct": "under",
+    "choices": ["under", "on", "next to", "in"]
+  },
+  {
+    "question": "She walked ___ the bridge. の空欄に入る語は？",
+    "correct": "across",
+    "choices": ["along", "across", "in", "between"]
+  },
+  {
+    "question": "The store is ___ the bank and the post office. の空欄に入る語は？",
+    "correct": "between",
+    "choices": ["under", "between", "on", "over"]
+  },
+  {
+    "question": "Please put the dishes ___ the sink. の空欄に入る語は？",
+    "correct": "in",
+    "choices": ["on", "under", "in", "behind"]
+  },
+  {
+    "question": "The children ran ___ the park. の空欄に入る語は？",
+    "correct": "around",
+    "choices": ["through", "around", "over", "under"]
+  },
+  {
+    "question": "He looked ___ the window. の空欄に入る語は？",
+    "correct": "through",
+    "choices": ["over", "across", "through", "around"]
+  },
+  {
+    "question": "My house is ___ the river. の空欄に入る語は？",
+    "correct": "by",
+    "choices": ["on", "by", "in", "under"]
+  },
+  {
+    "question": "The airplane flew ___ the clouds. の空欄に入る語は？",
+    "correct": "above",
+    "choices": ["below", "above", "under", "beside"]
+  },
+  {
+    "question": "She stood ___ her friends in the photo. の空欄に入る語は？",
+    "correct": "among",
+    "choices": ["between", "among", "on", "in"]
   }
 ]
 
