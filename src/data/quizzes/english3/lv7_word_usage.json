@@ -48,5 +48,55 @@
     "question": "彼はすぐ来ると___。空欄は？: He ___ he would come soon.",
     "correct": "said",
     "choices": ["spoke", "said", "told", "talked"]
+  },
+  {
+    "question": "彼に秘密を___ないで。空欄は？: Don't ___ him the secret.",
+    "correct": "tell",
+    "choices": ["tell", "say", "speak", "talk"]
+  },
+  {
+    "question": "式で一言___ください。空欄は？: Please ___ a few words at the ceremony.",
+    "correct": "say",
+    "choices": ["tell", "speak", "say", "talk"]
+  },
+  {
+    "question": "そのトピックについて___しましょうか。: Shall we ___ about that topic?",
+    "correct": "talk",
+    "choices": ["say", "tell", "talk", "speak"]
+  },
+  {
+    "question": "彼は英語を___のが上手です。: He can ___ English well.",
+    "correct": "speak",
+    "choices": ["speak", "say", "tell", "talk"]
+  },
+  {
+    "question": "彼女は『こんにちは』と___。: She ___ \"hello.\"",
+    "correct": "said",
+    "choices": ["said", "told", "spoke", "talked"]
+  },
+  {
+    "question": "彼女に真実を___べきだ。: You should ___ her the truth.",
+    "correct": "tell",
+    "choices": ["say", "tell", "talk", "speak"]
+  },
+  {
+    "question": "彼らは電話で___ことが好きだ。: They like to ___ on the phone.",
+    "correct": "talk",
+    "choices": ["talk", "say", "tell", "speak"]
+  },
+  {
+    "question": "発表で___ことがありますか？: Do you want to ___ at the presentation?",
+    "correct": "speak",
+    "choices": ["speak", "tell", "say", "talk"]
+  },
+  {
+    "question": "先生は生徒に静かにするよう___。: The teacher ___ the students to be quiet.",
+    "correct": "told",
+    "choices": ["said", "told", "spoke", "saying"]
+  },
+  {
+    "question": "彼にありがとうと___。: ___ thank you to him.",
+    "correct": "Say",
+    "choices": ["Say", "Tell", "Speak", "Talk"]
   }
 ]

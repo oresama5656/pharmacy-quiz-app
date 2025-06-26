@@ -48,5 +48,55 @@
     "question": "明日雨が降ったら？: If it ___ tomorrow, the event will stop.",
     "correct": "rains",
     "choices": ["rain", "rained", "rains", "raining"]
+  },
+  {
+    "question": "もし鍵をなくしたら？: If you lose your key, you ___ enter the house.",
+    "correct": "can't",
+    "choices": ["can", "can't", "could", "will"]
+  },
+  {
+    "question": "もし彼女が来たら、___ me know.",
+    "correct": "let",
+    "choices": ["lets", "letting", "let", "to let"]
+  },
+  {
+    "question": "もし時間があったら旅行したい: If I had time, I ___ travel.",
+    "correct": "would travel",
+    "choices": ["travel", "traveled", "would travel", "travels"]
+  },
+  {
+    "question": "もし車を持っていたら？: If he had a car, he ___ drive to work.",
+    "correct": "would drive",
+    "choices": ["drive", "drove", "would drive", "driving"]
+  },
+  {
+    "question": "もし試験に合格したら？: If you pass the exam, I ___ you a gift.",
+    "correct": "will give",
+    "choices": ["give", "gave", "will give", "giving"]
+  },
+  {
+    "question": "もし雨が止んだら？: If the rain stops, we ___ out.",
+    "correct": "will go",
+    "choices": ["go", "went", "will go", "going"]
+  },
+  {
+    "question": "もし昨日それを知っていたら？: If I had known, I ___ you.",
+    "correct": "would have told",
+    "choices": ["tell", "told", "would tell", "would have told"]
+  },
+  {
+    "question": "もし明日早く起きたら？: If she gets up early, she ___ the train.",
+    "correct": "will catch",
+    "choices": ["catch", "will catch", "catches", "catching"]
+  },
+  {
+    "question": "もし私が彼を見かけたら？: If I see him, I ___ hello.",
+    "correct": "will say",
+    "choices": ["say", "said", "will say", "saying"]
+  },
+  {
+    "question": "もしあなたがここにいたらどうする？: What ___ if you were here?",
+    "correct": "would you do",
+    "choices": ["do you do", "will you do", "would you do", "are you doing"]
   }
 ]

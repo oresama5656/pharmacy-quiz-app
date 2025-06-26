@@ -48,5 +48,55 @@
     "question": "すでに終わっていることを表す形は？: He ___ already finished his project.",
     "correct": "has",
     "choices": ["has", "have", "had", "will have"]
+  },
+  {
+    "question": "昨日の時点ですでに終えていた？: She ___ her homework before dinner.",
+    "correct": "had finished",
+    "choices": ["finished", "had finished", "has finished", "finishes"]
+  },
+  {
+    "question": "この時間明日は何をしている？: This time tomorrow, I ___ on the beach.",
+    "correct": "will be lying",
+    "choices": ["lie", "will lie", "will be lying", "lying"]
+  },
+  {
+    "question": "過去進行形を選んで: They ___ TV when I arrived.",
+    "correct": "were watching",
+    "choices": ["watched", "were watching", "watch", "watching"]
+  },
+  {
+    "question": "現在完了形を選んで: We ___ in this city for ten years.",
+    "correct": "have lived",
+    "choices": ["live", "lived", "have lived", "will live"]
+  },
+  {
+    "question": "未来形を選んで: I ___ you later.",
+    "correct": "will call",
+    "choices": ["call", "called", "will call", "calling"]
+  },
+  {
+    "question": "現在形に合うものは？: He ___ coffee every morning.",
+    "correct": "drinks",
+    "choices": ["drinks", "drink", "drank", "drinking"]
+  },
+  {
+    "question": "過去形を選んで: They ___ to the concert last night.",
+    "correct": "went",
+    "choices": ["go", "goes", "went", "going"]
+  },
+  {
+    "question": "過去完了形を選ぼう: By the time we arrived, the movie ___.",
+    "correct": "had started",
+    "choices": ["started", "had started", "has started", "starts"]
+  },
+  {
+    "question": "現在進行形はどれ？: She ___ for her test right now.",
+    "correct": "is studying",
+    "choices": ["studies", "studied", "is studying", "will study"]
+  },
+  {
+    "question": "未来完了進行形を選んで: Next year he ___ for five years.",
+    "correct": "will have been working",
+    "choices": ["will work", "has worked", "will have been working", "works"]
   }
 ]
