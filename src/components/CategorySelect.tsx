@@ -10,7 +10,6 @@ import {
 } from '../utils/questStatus';
 import guildsData from '../data/guilds.json';
 
-import DataLossWarning from './DataLossWarning';
 import HelpScreen from './HelpScreen';
 
 interface CategorySelectProps {
@@ -65,7 +64,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   const [activeGuild, setActiveGuild] = useState<Guild | null>(null);
   const [audioReady, setAudioReady] = useState(false);
 
-  const [showDataWarning, setShowDataWarning] = useState(true);
   const [showHelp, setShowHelp] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -243,12 +241,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
           </button>
         </div>
         
-        {showDataWarning && (
-          <DataLossWarning
-            onClose={() => setShowDataWarning(false)}
-          />
-        )}
-        
         <HelpScreen
           isOpen={showHelp}
           onClose={() => setShowHelp(false)}
@@ -381,12 +373,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
           );
         })}
-        
-        {showDataWarning && (
-          <DataLossWarning
-            onClose={() => setShowDataWarning(false)}
-          />
-        )}
         
         <HelpScreen
           isOpen={showHelp}
@@ -678,12 +664,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
           </div>
         </div>
-        
-        {showDataWarning && (
-          <DataLossWarning
-            onClose={() => setShowDataWarning(false)}
-          />
-        )}
         
         <HelpScreen
           isOpen={showHelp}

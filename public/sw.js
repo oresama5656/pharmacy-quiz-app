@@ -8,10 +8,8 @@ const urlsToCache = [
   '/background/eyecatch.png',
   '/background/paper-texture.png',
   '/background/wood-bg.png',
-  '/character/hero.png',
-  '/audio/bgm/sleepy.mp3',
-  '/audio/se/slash.mp3',
-  '/audio/se/warning.mp3'
+  '/character/hero.png'
+  // 音声ファイルはキャッシュリストから除外（Range Request対応のため）
 ];
 
 // Service Workerのインストール
@@ -59,6 +57,12 @@ self.addEventListener('activate', (event) => {
 
 // リクエストの処理
 self.addEventListener('fetch', (event) => {
+  // 音声ファイルはキャッシュしない（Range Request対応）
+  if (event.request.url.includes('/audio/')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
   // HTMLファイルは常にネットワークから取得（キャッシュを無視）
   if (event.request.destination === 'document' || 
       event.request.url.includes('.html') ||
@@ -66,12 +70,14 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          // 新しいレスポンスをキャッシュに保存
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME)
-            .then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
+          // 成功レスポンス（200）のみキャッシュ
+          if (response.status === 200) {
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME)
+              .then((cache) => {
+                cache.put(event.request, responseToCache);
+              });
+          }
           return response;
         })
         .catch(() => {
@@ -86,12 +92,14 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(event.request)
       .then((response) => {
-        // ネットワークから取得できた場合、キャッシュを更新
-        const responseToCache = response.clone();
-        caches.open(CACHE_NAME)
-          .then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
+        // 成功レスポンス（200）のみキャッシュ
+        if (response.status === 200) {
+          const responseToCache = response.clone();
+          caches.open(CACHE_NAME)
+            .then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+        }
         return response;
       })
       .catch(() => {
