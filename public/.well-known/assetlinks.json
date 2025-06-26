@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.coommu.quiz.twa",
+    "sha256_cert_fingerprints": ["89:D7:4F:10:51:0F:D4:77:18:B0:AE:43:EA:A5:DD:AC:29:FB:05:C7:11:1F:12:EA:E7:A3:DB:73:DD:E0:FD:D8"]
+  }
+}] 
