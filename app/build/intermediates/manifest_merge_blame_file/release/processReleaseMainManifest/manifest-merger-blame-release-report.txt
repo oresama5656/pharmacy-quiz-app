@@ -23,8 +23,8 @@
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 25    package="com.coommu.quiz.twa"
-26    android:versionCode="2"
-27    android:versionName="2" >
+26    android:versionCode="8"
+27    android:versionName="8" >
 28
 29    <uses-sdk
 30        android:minSdkVersion="21"
@@ -34,339 +34,334 @@
 33-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:26:9-80
 33-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:26:26-78
 34
-35    <!-- 広告ID権限を追加 -->
-36    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-36-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:30:5-79
-36-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:30:22-76
-37
-38    <queries>
-38-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:22:5-30:15
-39        <intent>
-39-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:23:9-29:18
-40            <action android:name="android.intent.action.VIEW" />
-40-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:17-68
-40-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:25-66
-41
-42            <category android:name="android.intent.category.BROWSABLE" />
-42-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:17-77
-42-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:27-75
-43
-44            <data android:scheme="https" />
-44-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:143:17-146:19
-44-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:143:23-45
-45        </intent>
-46    </queries>
-47
-48    <permission
-48-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-49        android:name="com.coommu.quiz.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-49-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-50        android:protectionLevel="signature" />
-50-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
-51
-52    <uses-permission android:name="com.coommu.quiz.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-52-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-52-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
-53
-54    <application
-54-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:36:5-191:19
-55        android:name="com.coommu.quiz.twa.Application"
-55-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:37:9-35
-56        android:allowBackup="true"
-56-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:38:9-35
-57        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-57-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
-58        android:extractNativeLibs="true"
-59        android:icon="@mipmap/ic_launcher"
-59-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:39:9-43
-60        android:label="@string/appName"
-60-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:40:9-40
-61        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
-61-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:42:9-105
-62        android:supportsRtl="true"
-62-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:44:9-35
-63        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-63-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:45:9-68
+35    <queries>
+35-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:22:5-30:15
+36        <intent>
+36-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:23:9-29:18
+37            <action android:name="android.intent.action.VIEW" />
+37-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:17-68
+37-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:25-66
+38
+39            <category android:name="android.intent.category.BROWSABLE" />
+39-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:17-77
+39-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:27-75
+40
+41            <data android:scheme="https" />
+41-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:17-145:19
+41-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:23-45
+42        </intent>
+43    </queries>
+44
+45    <permission
+45-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+46        android:name="com.coommu.quiz.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.coommu.quiz.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:35:5-190:19
+52        android:name="com.coommu.quiz.twa.Application"
+52-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:36:9-35
+53        android:allowBackup="true"
+53-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:37:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.13.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+55        android:extractNativeLibs="true"
+56        android:icon="@mipmap/ic_launcher"
+56-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:38:9-43
+57        android:label="@string/appName"
+57-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:39:9-40
+58        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+58-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:41:9-105
+59        android:supportsRtl="true"
+59-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:43:9-35
+60        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+60-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:44:9-68
+61        <meta-data
+61-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:46:9-48:58
+62            android:name="asset_statements"
+62-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:47:13-44
+63            android:resource="@string/assetStatements" />
+63-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:48:13-55
 64        <meta-data
-64-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:47:9-49:58
-65            android:name="asset_statements"
-65-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:48:13-44
-66            android:resource="@string/assetStatements" />
-66-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:49:13-55
+64-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:51:13-53:58
+65            android:name="web_manifest_url"
+65-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:52:17-48
+66            android:value="@string/webManifestUrl" />
+66-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:53:17-55
 67        <meta-data
-67-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:52:13-54:58
-68            android:name="web_manifest_url"
-68-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:53:17-48
-69            android:value="@string/webManifestUrl" />
-69-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:54:17-55
-70        <meta-data
-70-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:57:9-59:52
-71            android:name="twa_generator"
-71-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:58:13-41
-72            android:value="@string/generatorApp" />
-72-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:59:13-49
-73
-74        <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" >
-74-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:66:13-70:24
-74-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:66:23-104
-75            <meta-data
-75-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:67:13-69:53
-76                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
-76-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:68:17-83
-77                android:value="@string/launchUrl" />
-77-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:69:17-50
-78        </activity>
-79        <activity
-79-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:73:9-152:20
-80            android:name="com.coommu.quiz.twa.LauncherActivity"
-80-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:73:19-50
-81            android:alwaysRetainTaskState="true"
-81-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:74:13-49
-82            android:exported="true"
-82-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:76:13-36
-83            android:label="@string/launcherName" >
-83-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:75:13-49
+67-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:56:9-58:52
+68            android:name="twa_generator"
+68-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:57:13-41
+69            android:value="@string/generatorApp" />
+69-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:58:13-49
+70
+71        <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" >
+71-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:65:13-69:24
+71-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:65:23-104
+72            <meta-data
+72-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:66:13-68:53
+73                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
+73-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:67:17-83
+74                android:value="@string/launchUrl" />
+74-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:68:17-50
+75        </activity>
+76        <activity
+76-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:72:9-151:20
+77            android:name="com.coommu.quiz.twa.LauncherActivity"
+77-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:72:19-50
+78            android:alwaysRetainTaskState="true"
+78-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:73:13-49
+79            android:exported="true"
+79-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:75:13-36
+80            android:label="@string/launcherName" >
+80-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:74:13-49
+81            <meta-data
+81-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:76:13-77:53
+82                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+82-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:76:24-85
+83                android:value="@string/launchUrl" />
+83-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:77:17-50
 84            <meta-data
-84-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:77:13-78:53
-85                android:name="android.support.customtabs.trusted.DEFAULT_URL"
-85-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:77:24-85
-86                android:value="@string/launchUrl" />
-86-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:78:17-50
+84-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:79:13-81:58
+85                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+85-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:80:17-83
+86                android:resource="@color/colorPrimary" />
+86-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:81:17-55
 87            <meta-data
-87-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:80:13-82:58
-88                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
-88-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:81:17-83
-89                android:resource="@color/colorPrimary" />
-89-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:82:17-55
+87-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:85:13-87:62
+88                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR_DARK"
+88-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:86:17-88
+89                android:resource="@color/colorPrimaryDark" />
+89-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:87:17-59
 90            <meta-data
-90-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:86:13-88:62
-91                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR_DARK"
-91-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:87:17-88
-92                android:resource="@color/colorPrimaryDark" />
-92-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:88:17-59
+90-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:89:13-91:61
+91                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+91-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:90:17-87
+92                android:resource="@color/navigationColor" />
+92-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:91:17-58
 93            <meta-data
-93-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:90:13-92:61
-94                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
-94-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:91:17-87
-95                android:resource="@color/navigationColor" />
-95-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:92:17-58
+93-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:93:13-95:65
+94                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
+94-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:94:17-92
+95                android:resource="@color/navigationColorDark" />
+95-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:95:17-62
 96            <meta-data
-96-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:94:13-96:65
-97                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
-97-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:95:17-92
-98                android:resource="@color/navigationColorDark" />
-98-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:96:17-62
+96-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:97:13-99:68
+97                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
+97-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:98:17-84
+98                android:resource="@color/navigationDividerColor" />
+98-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:99:17-65
 99            <meta-data
-99-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:98:13-100:68
-100                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
-100-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:99:17-84
-101                android:resource="@color/navigationDividerColor" />
-101-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:100:17-65
+99-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:101:13-103:72
+100                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
+100-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:102:17-89
+101                android:resource="@color/navigationDividerColorDark" />
+101-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:103:17-69
 102            <meta-data
-102-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:102:13-104:72
-103                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
-103-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:103:17-89
-104                android:resource="@color/navigationDividerColorDark" />
-104-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:104:17-69
+102-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:105:13-106:54
+103                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+103-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:105:24-95
+104                android:resource="@drawable/splash" />
+104-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:106:17-52
 105            <meta-data
-105-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:106:13-107:54
-106                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
-106-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:106:24-95
-107                android:resource="@drawable/splash" />
-107-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:107:17-52
+105-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:108:13-109:60
+106                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+106-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:108:24-104
+107                android:resource="@color/backgroundColor" />
+107-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:109:17-58
 108            <meta-data
-108-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:109:13-110:60
-109                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
-109-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:109:24-104
-110                android:resource="@color/backgroundColor" />
-110-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:110:17-58
+108-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:111:13-112:71
+109                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+109-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:111:24-105
+110                android:value="@integer/splashScreenFadeOutDuration" />
+110-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:112:17-69
 111            <meta-data
-111-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:112:13-113:71
-112                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
-112-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:112:24-105
-113                android:value="@integer/splashScreenFadeOutDuration" />
-113-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:113:17-69
+111-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:114:13-115:60
+112                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+112-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:114:24-97
+113                android:value="@string/providerAuthority" />
+113-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:115:17-58
 114            <meta-data
-114-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:115:13-116:60
-115                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
-115-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:115:24-97
-116                android:value="@string/providerAuthority" />
-116-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:116:17-58
+114-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:117:13-97
+115                android:name="android.app.shortcuts"
+115-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:117:24-60
+116                android:resource="@xml/shortcuts" />
+116-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:117:61-94
 117            <meta-data
-117-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:118:13-97
-118                android:name="android.app.shortcuts"
-118-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:118:24-60
-119                android:resource="@xml/shortcuts" />
-119-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:118:61-94
+117-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:119:13-120:56
+118                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+118-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:119:24-91
+119                android:value="@string/fallbackType" />
+119-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:120:17-53
 120            <meta-data
-120-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:120:13-121:56
-121                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
-121-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:120:24-91
-122                android:value="@string/fallbackType" />
-122-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:121:17-53
-123            <meta-data
-123-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:127:13-128:54
-124                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
-124-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:127:24-92
-125                android:value="@string/orientation" />
-125-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:128:17-52
+120-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:126:13-127:54
+121                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+121-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:126:24-92
+122                android:value="@string/orientation" />
+122-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:127:17-52
+123
+124            <intent-filter>
+124-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:133:13-136:29
+125                <action android:name="android.intent.action.MAIN" />
+125-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:134:17-69
+125-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:134:25-66
 126
-127            <intent-filter>
-127-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:134:13-137:29
-128                <action android:name="android.intent.action.MAIN" />
-128-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:135:17-69
-128-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:135:25-66
-129
-130                <category android:name="android.intent.category.LAUNCHER" />
-130-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:136:17-77
-130-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:136:27-74
-131            </intent-filter>
-132            <intent-filter android:autoVerify="true" >
-132-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:13-147:29
-132-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:28-53
-133                <action android:name="android.intent.action.VIEW" />
-133-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:17-68
-133-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:25-66
+127                <category android:name="android.intent.category.LAUNCHER" />
+127-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:135:17-77
+127-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:135:27-74
+128            </intent-filter>
+129            <intent-filter android:autoVerify="true" >
+129-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:138:13-146:29
+129-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:138:28-53
+130                <action android:name="android.intent.action.VIEW" />
+130-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:17-68
+130-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:139:25-66
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:17-76
+132-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:27-73
+133                <category android:name="android.intent.category.BROWSABLE" />
+133-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:17-77
+133-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:27-75
 134
-135                <category android:name="android.intent.category.DEFAULT" />
-135-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:17-76
-135-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:27-73
-136                <category android:name="android.intent.category.BROWSABLE" />
-136-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:17-77
-136-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:27-75
-137
-138                <data
-138-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:143:17-146:19
-139                    android:host="@string/hostName"
-139-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:144:21-52
-140                    android:scheme="https" />
-140-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:143:23-45
-141            </intent-filter>
-142        </activity>
-143        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
-143-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:154:9-90
-143-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:154:19-87
-144        <activity
-144-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:156:9-157:62
-145            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
-145-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:156:19-97
-146            android:configChanges="orientation|screenSize" />
-146-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:157:13-59
-147
-148        <provider
-148-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:159:9-167:20
-149            android:name="androidx.core.content.FileProvider"
-149-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:160:13-62
-150            android:authorities="@string/providerAuthority"
-150-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:161:13-60
-151            android:exported="false"
-151-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:163:13-37
-152            android:grantUriPermissions="true" >
-152-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:162:13-47
-153            <meta-data
-153-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:164:13-166:53
-154                android:name="android.support.FILE_PROVIDER_PATHS"
-154-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:165:17-67
-155                android:resource="@xml/filepaths" />
-155-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:166:17-50
-156        </provider>
-157
-158        <service
-158-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:169:9-184:19
-159            android:name="com.coommu.quiz.twa.DelegationService"
-159-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:170:13-46
-160            android:enabled="@bool/enableNotification"
-160-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:171:13-55
-161            android:exported="@bool/enableNotification" >
-161-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:172:13-56
-162            <meta-data
-162-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:175:17-177:73
-163                android:name="android.support.customtabs.trusted.SMALL_ICON"
-163-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:176:21-81
-164                android:resource="@drawable/ic_notification_icon" />
-164-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:177:21-70
+135                <data
+135-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:17-145:19
+136                    android:host="@string/hostName"
+136-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:143:21-52
+137                    android:scheme="https" />
+137-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:142:23-45
+138            </intent-filter>
+139        </activity>
+140        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+140-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:153:9-90
+140-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:153:19-87
+141        <activity
+141-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:155:9-156:62
+142            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+142-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:155:19-97
+143            android:configChanges="orientation|screenSize" />
+143-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:156:13-59
+144
+145        <provider
+145-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:158:9-166:20
+146            android:name="androidx.core.content.FileProvider"
+146-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:159:13-62
+147            android:authorities="@string/providerAuthority"
+147-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:160:13-60
+148            android:exported="false"
+148-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:162:13-37
+149            android:grantUriPermissions="true" >
+149-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:161:13-47
+150            <meta-data
+150-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:163:13-165:53
+151                android:name="android.support.FILE_PROVIDER_PATHS"
+151-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:164:17-67
+152                android:resource="@xml/filepaths" />
+152-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:165:17-50
+153        </provider>
+154
+155        <service
+155-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:168:9-183:19
+156            android:name="com.coommu.quiz.twa.DelegationService"
+156-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:169:13-46
+157            android:enabled="@bool/enableNotification"
+157-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:170:13-55
+158            android:exported="@bool/enableNotification" >
+158-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:171:13-56
+159            <meta-data
+159-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:174:17-176:73
+160                android:name="android.support.customtabs.trusted.SMALL_ICON"
+160-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:175:21-81
+161                android:resource="@drawable/ic_notification_icon" />
+161-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:176:21-70
+162
+163            <intent-filter>
+163-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:179:13-182:29
+164                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+164-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:180:17-105
+164-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:180:25-103
 165
-166            <intent-filter>
-166-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:180:13-183:29
-167                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
-167-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:181:17-105
-167-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:181:25-103
-168
-169                <category android:name="android.intent.category.DEFAULT" />
-169-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:17-76
-169-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:141:27-73
-170            </intent-filter>
-171        </service>
-172
-173        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
-173-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:187:13-118
-173-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:187:23-115
-174
-175        <provider
-175-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-176            android:name="androidx.startup.InitializationProvider"
-176-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-177            android:authorities="com.coommu.quiz.twa.androidx-startup"
-177-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-178            android:exported="false" >
-178-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+166                <category android:name="android.intent.category.DEFAULT" />
+166-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:17-76
+166-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:140:27-73
+167            </intent-filter>
+168        </service>
+169
+170        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+170-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:186:13-118
+170-->C:\Users\oresa_0v05u91\Desktop\Program\pharmacy-quiz-app\app\src\main\AndroidManifest.xml:186:23-115
+171
+172        <provider
+172-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+173            android:name="androidx.startup.InitializationProvider"
+173-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+174            android:authorities="com.coommu.quiz.twa.androidx-startup"
+174-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+175            android:exported="false" >
+175-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+176            <meta-data
+176-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+177                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+177-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+178                android:value="androidx.startup" />
+178-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 179            <meta-data
-179-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-180                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-180-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+179-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+180-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 181                android:value="androidx.startup" />
-181-->[androidx.emoji2:emoji2:1.3.0] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+181-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 182            <meta-data
-182-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-183-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+183                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 184                android:value="androidx.startup" />
-184-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-185            <meta-data
-185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-186                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-186-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-187                android:value="androidx.startup" />
-187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-188        </provider>
-189
-190        <receiver
-190-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-191            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-192            android:directBootAware="false"
-192-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-193            android:enabled="true"
-193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-194            android:exported="true"
-194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-195            android:permission="android.permission.DUMP" >
-195-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+185        </provider>
+186
+187        <receiver
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+188            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+189            android:directBootAware="false"
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+190            android:enabled="true"
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+191            android:exported="true"
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+192            android:permission="android.permission.DUMP" >
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+193            <intent-filter>
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+194                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+195            </intent-filter>
 196            <intent-filter>
-196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-197                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+197                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 198            </intent-filter>
 199            <intent-filter>
-199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-200                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+200                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 201            </intent-filter>
 202            <intent-filter>
-202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-203                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+203                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 204            </intent-filter>
-205            <intent-filter>
-205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-206                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\oresa_0v05u91\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-207            </intent-filter>
-208        </receiver>
-209    </application>
-210
-211</manifest>
+205        </receiver>
+206    </application>
+207
+208</manifest>

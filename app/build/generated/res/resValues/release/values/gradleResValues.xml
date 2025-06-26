@@ -24,9 +24,9 @@
     <!-- Value from default config. -->
     <integer name="splashScreenFadeOutDuration">300</integer>
     <!-- Value from default config. -->
-    <string name="appName" translatable="false">(クイストラ - 知識で挑むファンタジーRPG)</string>
+    <string name="appName" translatable="false">クイストラ - 知識で挑むファンタジーRPG</string>
     <!-- Value from default config. -->
-    <string name="fallbackType" translatable="false">customtabs</string>
+    <string name="fallbackType" translatable="false">webapp</string>
     <!-- Value from default config. -->
     <string name="fullScopeUrl" translatable="false">https://quiz.coommu.com/</string>
     <!-- Value from default config. -->
@@ -36,7 +36,7 @@
     <!-- Value from default config. -->
     <string name="launchUrl" translatable="false">https://quiz.coommu.com/</string>
     <!-- Value from default config. -->
-    <string name="launcherName" translatable="false">(クイストラ)</string>
+    <string name="launcherName" translatable="false">クイストラ</string>
     <!-- Value from default config. -->
     <string name="orientation" translatable="false">portrait</string>
     <!-- Value from default config. -->

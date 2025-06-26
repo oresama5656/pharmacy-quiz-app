@@ -11,7 +11,7 @@
     <color name="navigationDividerColorDark">#000000</color>
     <color name="shortcut_background">#F5F5F5</color>
     <integer name="splashScreenFadeOutDuration">300</integer>
-    <string name="appName" translatable="false">(クイストラ - 知識で挑むファンタジーRPG)</string>
+    <string name="appName" translatable="false">クイストラ - 知識で挑むファンタジーRPG</string>
     <string name="assetStatements">
     [{
         \"relation\": [\"delegate_permission/common.handle_all_urls\"],
@@ -22,12 +22,12 @@
     }]
     
   </string>
-    <string name="fallbackType" translatable="false">customtabs</string>
+    <string name="fallbackType" translatable="false">webapp</string>
     <string name="fullScopeUrl" translatable="false">https://quiz.coommu.com/</string>
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <string name="hostName" translatable="false">quiz.coommu.com</string>
     <string name="launchUrl" translatable="false">https://quiz.coommu.com/</string>
-    <string name="launcherName" translatable="false">(クイストラ)</string>
+    <string name="launcherName" translatable="false">クイストラ</string>
     <string name="orientation" translatable="false">portrait</string>
     <string name="providerAuthority" translatable="false">com.coommu.quiz.twa.fileprovider</string>
     <string name="webManifestUrl" translatable="false">https://quiz.coommu.com/manifest.json</string>
