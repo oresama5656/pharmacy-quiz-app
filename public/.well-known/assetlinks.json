@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.coommu.quiz.twa",
-    "sha256_cert_fingerprints": ["89:D7:4F:10:51:0F:D4:77:18:B0:AE:43:EA:A5:DD:AC:29:FB:05:C7:11:1F:12:EA:E7:A3:DB:73:DD:E0:FD:D8"]
+    "sha256_cert_fingerprints": ["49:A0:B8:27:07:BC:3A:58:57:71:E6:A5:D8:12:1F:C4:2C:98:A8:A5:30:96:3F:62:0F:A0:C1:79:B2:FB:2E:46"]
   }
 }] 
