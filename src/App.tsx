@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GameState } from './types';
 import { getQuizzesByCategory, shuffleQuizzes, shuffleChoices, getCategoryById } from './data/quizManager';
 import CategorySelect from './components/CategorySelect';
@@ -14,6 +14,28 @@ export const INCORRECT_WAIT_MS = 2000;
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
+  
+  // Pull to Refresh（スワイプ更新）を無効化
+  useEffect(() => {
+    const preventPullToRefresh = (e: TouchEvent) => {
+      // 画面の上端でのスワイプダウンを防ぐ
+      if (e.touches.length === 1 && e.touches[0].clientY > 0) {
+        const touch = e.touches[0];
+        if (touch.clientY > 0 && window.scrollY === 0) {
+          e.preventDefault();
+        }
+      }
+    };
+
+    // タッチイベントでPull to Refreshを防ぐ
+    document.addEventListener('touchstart', preventPullToRefresh, { passive: false });
+    document.addEventListener('touchmove', preventPullToRefresh, { passive: false });
+
+    return () => {
+      document.removeEventListener('touchstart', preventPullToRefresh);
+      document.removeEventListener('touchmove', preventPullToRefresh);
+    };
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
   const [showWarning, setShowWarning] = useState(false);

@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Pull to Refresh（上から下へのスワイプ更新）を無効化 */
+html, body {
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  /* iOS Safariでの引っ張り更新を無効化 */
+  -webkit-overscroll-behavior-y: contain;
+}
+
+/* 全体のコンテナでもPull to Refreshを無効化 */
+#root {
+  overscroll-behavior-y: contain;
+  -webkit-overscroll-behavior-y: contain;
+}
+
+/* 追加の保険：タッチイベントでの更新を防ぐ */
+body {
+  touch-action: pan-x pan-y;
+}
