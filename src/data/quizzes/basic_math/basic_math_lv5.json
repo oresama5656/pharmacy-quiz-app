@@ -8,5 +8,15 @@
   {"question": "55 + 37 = ?", "correct": "92", "choices": ["92", "93", "91", "94"]},
   {"question": "68 + 25 = ?", "correct": "93", "choices": ["92", "93", "94", "95"]},
   {"question": "49 + 36 = ?", "correct": "85", "choices": ["84", "85", "86", "83"]},
-  {"question": "31 + 58 = ?", "correct": "89", "choices": ["88", "89", "90", "87"]}
+  {"question": "31 + 58 = ?", "correct": "89", "choices": ["88", "89", "90", "87"]},
+  {"question": "46 + 29 = ?", "correct": "75", "choices": ["74", "75", "76", "73"]},
+  {"question": "53 + 34 = ?", "correct": "87", "choices": ["86", "87", "88", "85"]},
+  {"question": "37 + 48 = ?", "correct": "85", "choices": ["84", "85", "86", "83"]},
+  {"question": "62 + 29 = ?", "correct": "91", "choices": ["90", "91", "92", "89"]},
+  {"question": "45 + 39 = ?", "correct": "84", "choices": ["83", "84", "85", "82"]},
+  {"question": "59 + 26 = ?", "correct": "85", "choices": ["84", "85", "86", "87"]},
+  {"question": "34 + 47 = ?", "correct": "81", "choices": ["80", "81", "82", "79"]},
+  {"question": "67 + 28 = ?", "correct": "95", "choices": ["94", "95", "96", "93"]},
+  {"question": "42 + 39 = ?", "correct": "81", "choices": ["80", "81", "82", "83"]},
+  {"question": "56 + 35 = ?", "correct": "91", "choices": ["90", "91", "92", "89"]}
 ]

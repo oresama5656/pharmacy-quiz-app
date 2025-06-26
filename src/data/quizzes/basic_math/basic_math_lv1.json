@@ -8,5 +8,15 @@
   {"question": "5 + 2 = ?", "correct": "7", "choices": ["6", "7", "8", "9"]},
   {"question": "8 + 1 = ?", "correct": "9", "choices": ["10", "9", "8", "7"]},
   {"question": "7 + 2 = ?", "correct": "9", "choices": ["8", "9", "10", "11"]},
-  {"question": "0 + 6 = ?", "correct": "6", "choices": ["5", "6", "7", "8"]}
+  {"question": "0 + 6 = ?", "correct": "6", "choices": ["5", "6", "7", "8"]},
+  {"question": "3 + 2 = ?", "correct": "5", "choices": ["4", "5", "6", "3"]},
+  {"question": "4 + 3 = ?", "correct": "7", "choices": ["6", "7", "8", "5"]},
+  {"question": "2 + 6 = ?", "correct": "8", "choices": ["7", "8", "9", "6"]},
+  {"question": "5 + 4 = ?", "correct": "9", "choices": ["8", "9", "10", "7"]},
+  {"question": "1 + 6 = ?", "correct": "7", "choices": ["6", "7", "8", "5"]},
+  {"question": "3 + 4 = ?", "correct": "7", "choices": ["6", "7", "8", "9"]},
+  {"question": "2 + 5 = ?", "correct": "7", "choices": ["6", "7", "8", "5"]},
+  {"question": "4 + 5 = ?", "correct": "9", "choices": ["8", "9", "10", "7"]},
+  {"question": "6 + 3 = ?", "correct": "9", "choices": ["8", "9", "10", "11"]},
+  {"question": "1 + 8 = ?", "correct": "9", "choices": ["8", "9", "10", "7"]}
 ]
