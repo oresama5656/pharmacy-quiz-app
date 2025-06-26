@@ -64,7 +64,7 @@ export const SOUND_EFFECTS = {
 // ゲーム設定
 export const GAME_CONFIG = {
   // プレイヤーの最大HP
-  PLAYER_MAX_HP: 20,
+  PLAYER_MAX_HP: 30,
   // 通常敵のHP
   NORMAL_ENEMY_HP: 5,
   // ボス敵のHP
