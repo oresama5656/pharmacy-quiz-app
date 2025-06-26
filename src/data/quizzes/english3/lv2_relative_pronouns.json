@@ -58,5 +58,55 @@
     "question": "空欄を埋める関係代名詞はどれ？: The house ___ Jack built is old.",
     "correct": "that",
     "choices": ["who", "that", "where", "whose"]
+  },
+  {
+    "question": "空欄に入る関係代名詞は？: The boy ___ I met yesterday was kind.",
+    "correct": "whom",
+    "choices": ["who", "whom", "whose", "where"]
+  },
+  {
+    "question": "関係代名詞を選んで: This is the place ___ we first met.",
+    "correct": "where",
+    "choices": ["who", "which", "where", "that"]
+  },
+  {
+    "question": "空欄に入る関係代名詞は？: I remember the day ___ we graduated.",
+    "correct": "when",
+    "choices": ["when", "where", "who", "which"]
+  },
+  {
+    "question": "どの関係代名詞？: The man ___ car was stolen reported it.",
+    "correct": "whose",
+    "choices": ["whose", "who", "which", "whom"]
+  },
+  {
+    "question": "正しい関係代名詞を選ぼう: She likes people ___ are honest.",
+    "correct": "who",
+    "choices": ["who", "whose", "which", "whom"]
+  },
+  {
+    "question": "空欄に入るのは？: This is the book ___ covers grammar well.",
+    "correct": "that",
+    "choices": ["who", "where", "that", "when"]
+  },
+  {
+    "question": "正しい関係代名詞はどれ？: The movie ___ we watched was exciting.",
+    "correct": "which",
+    "choices": ["who", "which", "where", "whose"]
+  },
+  {
+    "question": "空欄に入れる関係代名詞: I have a friend ___ speaks three languages.",
+    "correct": "who",
+    "choices": ["who", "where", "which", "whom"]
+  },
+  {
+    "question": "空欄に入る関係代名詞を選んで: The town ___ I was born is small.",
+    "correct": "where",
+    "choices": ["who", "which", "where", "whose"]
+  },
+  {
+    "question": "適切な関係代名詞は？: The teacher ___ class I took is strict.",
+    "correct": "whose",
+    "choices": ["whom", "whose", "who", "where"]
   }
 ]

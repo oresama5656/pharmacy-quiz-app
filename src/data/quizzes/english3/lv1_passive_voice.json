@@ -98,5 +98,105 @@
       "Play the game.",
       "She is playing it."
     ]
+  },
+  {
+    "question": "受け身の文を選んで: The picture ___ by Tom.",
+    "correct": "was painted",
+    "choices": [
+      "painted",
+      "was painted",
+      "is painting",
+      "paints"
+    ]
+  },
+  {
+    "question": "受け身を正しく使っているのはどれ？",
+    "correct": "The ball was kicked by him.",
+    "choices": [
+      "He kicks the ball.",
+      "The ball was kicked by him.",
+      "Kick the ball.",
+      "He is kicking the ball."
+    ]
+  },
+  {
+    "question": "受け身の文はどれ？: The car ___ tomorrow.",
+    "correct": "will be repaired",
+    "choices": [
+      "repairs",
+      "will be repaired",
+      "is repairing",
+      "repaired"
+    ]
+  },
+  {
+    "question": "受け身の形が使われている文を選んで。",
+    "correct": "The food is cooked.",
+    "choices": [
+      "Cook the food.",
+      "The food is cooked.",
+      "He cooks the food.",
+      "Cooking the food."
+    ]
+  },
+  {
+    "question": "受け身の文はどれ？: The laptop was fixed by the technician.",
+    "correct": "The laptop was fixed by the technician.",
+    "choices": [
+      "The technician fixes the laptop.",
+      "Fix the laptop.",
+      "The laptop was fixed by the technician.",
+      "He fixing the laptop."
+    ]
+  },
+  {
+    "question": "受け身の形を使っているのはどれ？",
+    "correct": "The story will be told.",
+    "choices": [
+      "The story will be told.",
+      "Tell the story.",
+      "He tells the story.",
+      "He is telling the story."
+    ]
+  },
+  {
+    "question": "受け身の文を探して。",
+    "correct": "The email was sent yesterday.",
+    "choices": [
+      "Send the email yesterday.",
+      "He sends the email yesterday.",
+      "The email was sent yesterday.",
+      "He is sending the email."
+    ]
+  },
+  {
+    "question": "正しい受け身を選んで。",
+    "correct": "The cake is being baked.",
+    "choices": [
+      "The cake is being baked.",
+      "Bake the cake.",
+      "He baked the cake.",
+      "He is baking the cake."
+    ]
+  },
+  {
+    "question": "どれが受け身？",
+    "correct": "The dog was saved.",
+    "choices": [
+      "Save the dog.",
+      "He saves the dog.",
+      "The dog was saved.",
+      "He is saving the dog."
+    ]
+  },
+  {
+    "question": "受け身を使う文はどれ？",
+    "correct": "The homework will be done.",
+    "choices": [
+      "Do the homework.",
+      "He does the homework.",
+      "The homework will be done.",
+      "He is doing the homework."
+    ]
   }
 ]

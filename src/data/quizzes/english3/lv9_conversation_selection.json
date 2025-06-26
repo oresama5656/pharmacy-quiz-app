@@ -48,5 +48,55 @@
     "question": "A: I'm hungry. B: ___ に入る返事はどれ？",
     "correct": "Let's eat something.",
     "choices": ["Let's eat something.", "I live in Kyoto.", "It's sunny.", "Yes, I do."]
+  },
+  {
+    "question": "A: Where is the station? B: ___ に入る答えは？",
+    "correct": "It's over there.",
+    "choices": ["It's over there.", "I don't know.", "See you later.", "I'm fine."]
+  },
+  {
+    "question": "A: Do you want coffee? B: ___ に入る返事は？",
+    "correct": "Yes, please.",
+    "choices": ["Yes, please.", "I like tea.", "Good afternoon.", "No, I can't."]
+  },
+  {
+    "question": "A: Good night. B: ___ に入る言葉は？",
+    "correct": "Good night.",
+    "choices": ["Good night.", "Good morning.", "I'm good.", "See you!"]
+  },
+  {
+    "question": "A: How old are you? B: ___ に入る答えは？",
+    "correct": "I'm fifteen.",
+    "choices": ["I'm fifteen.", "I'm fine.", "See you tomorrow.", "I don't know."]
+  },
+  {
+    "question": "A: What's the matter? B: ___ に入る返事は？",
+    "correct": "I have a headache.",
+    "choices": ["I have a headache.", "Nice to meet you.", "I'm Ken.", "It's nine o'clock."]
+  },
+  {
+    "question": "A: Can I help you? B: ___ に入る返事は？",
+    "correct": "No, thank you.",
+    "choices": ["No, thank you.", "Yes, I can.", "I'm happy.", "That's great."]
+  },
+  {
+    "question": "A: Do you play tennis? B: ___ に入る答えは？",
+    "correct": "Not really.",
+    "choices": ["Not really.", "I'm fine.", "It's sunny.", "See you later."]
+  },
+  {
+    "question": "A: What do you do? B: ___ に入る返事は？",
+    "correct": "I'm a student.",
+    "choices": ["I'm a student.", "I like dogs.", "See you soon.", "Yes, please."]
+  },
+  {
+    "question": "A: See you next week. B: ___ に入る言葉は？",
+    "correct": "See you then!",
+    "choices": ["See you then!", "I'm tired.", "That's too bad.", "No, thanks."]
+  },
+  {
+    "question": "A: Is this seat taken? B: ___ に入る返事は？",
+    "correct": "No, it's free.",
+    "choices": ["No, it's free.", "Yes, you can.", "I don't think so.", "See you."]
   }
 ]
