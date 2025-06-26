@@ -2,51 +2,201 @@
   {
     "question": "12月にあるホリデーはどれ？",
     "correct": "Christmas",
-    "choices": ["Easter", "Halloween", "Christmas", "Thanksgiving"]
+    "choices": [
+      "Easter",
+      "Halloween",
+      "Christmas",
+      "Thanksgiving"
+    ]
   },
   {
     "question": "イギリスのティータイムで人気の飲み物は？",
     "correct": "tea",
-    "choices": ["coffee", "milk", "tea", "juice"]
+    "choices": [
+      "coffee",
+      "milk",
+      "tea",
+      "juice"
+    ]
   },
   {
     "question": "秋にアメリカで名なスポーツは？",
     "correct": "American football",
-    "choices": ["American football", "cricket", "rugby", "tennis"]
+    "choices": [
+      "American football",
+      "cricket",
+      "rugby",
+      "tennis"
+    ]
   },
   {
     "question": "感謝祭をお祝いする国はどこ？",
     "correct": "United States",
-    "choices": ["France", "United States", "Japan", "Spain"]
+    "choices": [
+      "France",
+      "United States",
+      "Japan",
+      "Spain"
+    ]
   },
   {
     "question": "イギリスの朝食によく出てくる食べ物は？",
     "correct": "eggs",
-    "choices": ["eggs", "sushi", "tacos", "dumplings"]
+    "choices": [
+      "eggs",
+      "sushi",
+      "tacos",
+      "dumplings"
+    ]
   },
   {
     "question": "自由の女神像がある市は？",
     "correct": "New York",
-    "choices": ["London", "New York", "Sydney", "Toronto"]
+    "choices": [
+      "London",
+      "New York",
+      "Sydney",
+      "Toronto"
+    ]
   },
   {
     "question": "かぼちゃを使うホリデーはどれ？",
     "correct": "Halloween",
-    "choices": ["Christmas", "Halloween", "Easter", "New Year"]
+    "choices": [
+      "Christmas",
+      "Halloween",
+      "Easter",
+      "New Year"
+    ]
   },
   {
     "question": "バレンタインデーはなん月？",
     "correct": "February",
-    "choices": ["February", "June", "October", "December"]
+    "choices": [
+      "February",
+      "June",
+      "October",
+      "December"
+    ]
   },
   {
     "question": "カエデの葉で有名な国はどこ？",
     "correct": "Canada",
-    "choices": ["Canada", "Australia", "Mexico", "India"]
+    "choices": [
+      "Canada",
+      "Australia",
+      "Mexico",
+      "India"
+    ]
   },
   {
     "question": "シント・パトリックデーの伝統的な色は？",
     "correct": "green",
-    "choices": ["blue", "red", "green", "yellow"]
+    "choices": [
+      "blue",
+      "red",
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "question": "日本で春に花見をする花は何？",
+    "correct": "cherry blossoms",
+    "choices": [
+      "cherry blossoms",
+      "roses",
+      "tulips",
+      "sunflowers"
+    ]
+  },
+  {
+    "question": "メキシコで11月に祝われる死者の日のスペイン語名は？",
+    "correct": "Día de Muertos",
+    "choices": [
+      "Día de Muertos",
+      "Carnival",
+      "Oktoberfest",
+      "Holi"
+    ]
+  },
+  {
+    "question": "アメリカ独立記念日は何月何日？",
+    "correct": "July 4th",
+    "choices": [
+      "July 4th",
+      "June 1st",
+      "May 5th",
+      "August 15th"
+    ]
+  },
+  {
+    "question": "中国の旧正月に使われる色は？",
+    "correct": "red",
+    "choices": [
+      "red",
+      "blue",
+      "white",
+      "green"
+    ]
+  },
+  {
+    "question": "オーストラリアの国の動物は？",
+    "correct": "kangaroo",
+    "choices": [
+      "kangaroo",
+      "eagle",
+      "lion",
+      "bear"
+    ]
+  },
+  {
+    "question": "ブラジルの有名な2月のお祭りは？",
+    "correct": "Carnival",
+    "choices": [
+      "Carnival",
+      "Diwali",
+      "Eid",
+      "Thanksgiving"
+    ]
+  },
+  {
+    "question": "ドイツのビール祭りとして知られる行事は？",
+    "correct": "Oktoberfest",
+    "choices": [
+      "Oktoberfest",
+      "Ramadan",
+      "Hanukkah",
+      "Guy Fawkes Day"
+    ]
+  },
+  {
+    "question": "中東でラマダン明けに祝われる祭りは？",
+    "correct": "Eid",
+    "choices": [
+      "Eid",
+      "Christmas",
+      "Bastille Day",
+      "New Year"
+    ]
+  },
+  {
+    "question": "インドで色の粉を掛け合う春の祭りは？",
+    "correct": "Holi",
+    "choices": [
+      "Holi",
+      "Carnival",
+      "Easter",
+      "Songkran"
+    ]
+  },
+  {
+    "question": "アメリカで感謝祭の食卓によく出る鳥は？",
+    "correct": "turkey",
+    "choices": [
+      "turkey",
+      "chicken",
+      "duck",
+      "goose"
+    ]
   }
 ]

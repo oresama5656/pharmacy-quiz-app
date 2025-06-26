@@ -2,51 +2,201 @@
   {
     "question": "正しい英文を選ぼう！",
     "correct": "He goes to school every day.",
-    "choices": ["He go to school every day.", "He goes to school every day.", "He going to school every day.", "He gone to school every day."]
+    "choices": [
+      "He go to school every day.",
+      "He goes to school every day.",
+      "He going to school every day.",
+      "He gone to school every day."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "She doesn't like carrots.",
-    "choices": ["She don't like carrots.", "She doesn't like carrots.", "She not like carrots.", "She isn't like carrots."]
+    "choices": [
+      "She don't like carrots.",
+      "She doesn't like carrots.",
+      "She not like carrots.",
+      "She isn't like carrots."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "We were watching a movie.",
-    "choices": ["We was watching a movie.", "We were watching a movie.", "We watching a movie.", "We were watch a movie."]
+    "choices": [
+      "We was watching a movie.",
+      "We were watching a movie.",
+      "We watching a movie.",
+      "We were watch a movie."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "They have finished their work.",
-    "choices": ["They has finished their work.", "They have finish their work.", "They have finished their work.", "They had finish their work."]
+    "choices": [
+      "They has finished their work.",
+      "They have finish their work.",
+      "They have finished their work.",
+      "They had finish their work."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "I am going to study tonight.",
-    "choices": ["I going to study tonight.", "I am going to study tonight.", "I am go to study tonight.", "I am going study tonight."]
+    "choices": [
+      "I going to study tonight.",
+      "I am going to study tonight.",
+      "I am go to study tonight.",
+      "I am going study tonight."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "Does he play the guitar?",
-    "choices": ["Do he play the guitar?", "Does he play the guitar?", "Does he plays the guitar?", "He does play the guitar?"]
+    "choices": [
+      "Do he play the guitar?",
+      "Does he play the guitar?",
+      "Does he plays the guitar?",
+      "He does play the guitar?"
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "There are many books on the shelf.",
-    "choices": ["There is many books on the shelf.", "There are many books on the shelf.", "There be many books on the shelf.", "There many books on the shelf."]
+    "choices": [
+      "There is many books on the shelf.",
+      "There are many books on the shelf.",
+      "There be many books on the shelf.",
+      "There many books on the shelf."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "My brother and I were happy.",
-    "choices": ["My brother and I was happy.", "My brother and I were happy.", "Me and my brother was happy.", "Me and my brother were happy."]
+    "choices": [
+      "My brother and I was happy.",
+      "My brother and I were happy.",
+      "Me and my brother was happy.",
+      "Me and my brother were happy."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "She has lived here for five years.",
-    "choices": ["She have lived here for five years.", "She has lived here for five years.", "She has live here for five years.", "She had lived here for five years."]
+    "choices": [
+      "She have lived here for five years.",
+      "She has lived here for five years.",
+      "She has live here for five years.",
+      "She had lived here for five years."
+    ]
   },
   {
     "question": "正しい英文を選ぼう！",
     "correct": "We will meet at three o'clock.",
-    "choices": ["We will meets at three o'clock.", "We will meet at three o'clock.", "We will met at three o'clock.", "We meet will at three o'clock."]
+    "choices": [
+      "We will meets at three o'clock.",
+      "We will meet at three o'clock.",
+      "We will met at three o'clock.",
+      "We meet will at three o'clock."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "He doesn't have any pets.",
+    "choices": [
+      "He don't have any pets.",
+      "He doesn't have any pets.",
+      "He doesn't has any pets.",
+      "He not have any pets."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "Are you coming with us?",
+    "choices": [
+      "Are you coming with us?",
+      "You are coming with us?",
+      "Are coming you with us?",
+      "Are you come with us?"
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "My mother cooks very well.",
+    "choices": [
+      "My mother cook very well.",
+      "My mother cooks very well.",
+      "My mother cooking very well.",
+      "My mother cooked very well."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "They were at home last night.",
+    "choices": [
+      "They was at home last night.",
+      "They were at home last night.",
+      "They are at home last night.",
+      "They at home were last night."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "Does she know the answer?",
+    "choices": [
+      "Does she know the answer?",
+      "Does she knows the answer?",
+      "Do she know the answer?",
+      "She does know the answer?"
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "We have been friends for years.",
+    "choices": [
+      "We has been friends for years.",
+      "We have been friends for years.",
+      "We have been friend for years.",
+      "We been friends for years."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "It's time to go.",
+    "choices": [
+      "Its time to go.",
+      "It's time to go.",
+      "It's time go.",
+      "Its time go."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "I bought some bread yesterday.",
+    "choices": [
+      "I buy some bread yesterday.",
+      "I bought some bread yesterday.",
+      "I bought some breads yesterday.",
+      "I have bought some bread yesterday."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "The store opens at nine o'clock.",
+    "choices": [
+      "The store open at nine o'clock.",
+      "The store opens at nine o'clock.",
+      "The store opening at nine o'clock.",
+      "The store open at nine."
+    ]
+  },
+  {
+    "question": "正しい英文を選ぼう！",
+    "correct": "He was reading when I called.",
+    "choices": [
+      "He was reading when I called.",
+      "He were reading when I called.",
+      "He was reading when I call.",
+      "He reading when I called."
+    ]
   }
 ]

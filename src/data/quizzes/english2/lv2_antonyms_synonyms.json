@@ -2,51 +2,201 @@
   {
     "question": "「cold」の反対の意味の単語はどれ？",
     "correct": "hot",
-    "choices": ["warm", "hot", "cool", "ice"]
+    "choices": [
+      "warm",
+      "hot",
+      "cool",
+      "ice"
+    ]
   },
   {
     "question": "「big」と同じ意味の単語はどれ？",
     "correct": "large",
-    "choices": ["small", "tiny", "large", "narrow"]
+    "choices": [
+      "small",
+      "tiny",
+      "large",
+      "narrow"
+    ]
   },
   {
     "question": "「early」の反対の意味の単語はどれ？",
     "correct": "late",
-    "choices": ["late", "soon", "fast", "quick"]
+    "choices": [
+      "late",
+      "soon",
+      "fast",
+      "quick"
+    ]
   },
   {
     "question": "「happy」と同じ意味の単語はどれ？",
     "correct": "glad",
-    "choices": ["sad", "glad", "angry", "mad"]
+    "choices": [
+      "sad",
+      "glad",
+      "angry",
+      "mad"
+    ]
   },
   {
     "question": "「up」の反対の意味の単語はどれ？",
     "correct": "down",
-    "choices": ["down", "over", "near", "above"]
+    "choices": [
+      "down",
+      "over",
+      "near",
+      "above"
+    ]
   },
   {
     "question": "「begin」と同じ意味の単語はどれ？",
     "correct": "start",
-    "choices": ["finish", "start", "stop", "end"]
+    "choices": [
+      "finish",
+      "start",
+      "stop",
+      "end"
+    ]
   },
   {
     "question": "「heavy」の反対の意味の単語はどれ？",
     "correct": "light",
-    "choices": ["light", "big", "large", "hard"]
+    "choices": [
+      "light",
+      "big",
+      "large",
+      "hard"
+    ]
   },
   {
     "question": "「fast」と同じ意味の単語はどれ？",
     "correct": "quick",
-    "choices": ["slow", "quick", "late", "lazy"]
+    "choices": [
+      "slow",
+      "quick",
+      "late",
+      "lazy"
+    ]
   },
   {
     "question": "「old」の反対の意味の単語はどれ？",
     "correct": "young",
-    "choices": ["new", "young", "ancient", "used"]
+    "choices": [
+      "new",
+      "young",
+      "ancient",
+      "used"
+    ]
   },
   {
     "question": "「smart」と同じ意味の単語はどれ？",
     "correct": "clever",
-    "choices": ["clever", "dull", "slow", "tired"]
+    "choices": [
+      "clever",
+      "dull",
+      "slow",
+      "tired"
+    ]
+  },
+  {
+    "question": "「day」の反対の意味の単語はどれ？",
+    "correct": "night",
+    "choices": [
+      "night",
+      "sun",
+      "light",
+      "sky"
+    ]
+  },
+  {
+    "question": "「small」と同じ意味の単語はどれ？",
+    "correct": "little",
+    "choices": [
+      "large",
+      "little",
+      "big",
+      "tall"
+    ]
+  },
+  {
+    "question": "「hard」の反対の意味の単語はどれ？",
+    "correct": "easy",
+    "choices": [
+      "difficult",
+      "easy",
+      "tough",
+      "strong"
+    ]
+  },
+  {
+    "question": "「quiet」と同じ意味の単語はどれ？",
+    "correct": "silent",
+    "choices": [
+      "loud",
+      "silent",
+      "noisy",
+      "sound"
+    ]
+  },
+  {
+    "question": "「young」の反対の意味の単語はどれ？",
+    "correct": "old",
+    "choices": [
+      "old",
+      "new",
+      "small",
+      "fast"
+    ]
+  },
+  {
+    "question": "「quick」の同じ意味の単語はどれ？",
+    "correct": "rapid",
+    "choices": [
+      "rapid",
+      "slow",
+      "late",
+      "lazy"
+    ]
+  },
+  {
+    "question": "「open」の反対の意味の単語はどれ？",
+    "correct": "closed",
+    "choices": [
+      "closed",
+      "wide",
+      "large",
+      "high"
+    ]
+  },
+  {
+    "question": "「purchase」と同じ意味の単語はどれ？",
+    "correct": "buy",
+    "choices": [
+      "buy",
+      "sell",
+      "bring",
+      "take"
+    ]
+  },
+  {
+    "question": "「light」の反対の意味の単語はどれ？",
+    "correct": "dark",
+    "choices": [
+      "bright",
+      "dark",
+      "clear",
+      "high"
+    ]
+  },
+  {
+    "question": "「difficult」と同じ意味の単語はどれ？",
+    "correct": "hard",
+    "choices": [
+      "easy",
+      "light",
+      "hard",
+      "simple"
+    ]
   }
 ]

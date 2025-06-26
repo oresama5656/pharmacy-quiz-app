@@ -2,51 +2,201 @@
   {
     "question": "A: こんにちは、調子は？ B: ___だよ、ありがとう。",
     "correct": "fine",
-    "choices": ["fine", "open", "late", "past"]
+    "choices": [
+      "fine",
+      "open",
+      "late",
+      "past"
+    ]
   },
   {
     "question": "A: ケーキは好き？ B: はい、I ___.",
     "correct": "do",
-    "choices": ["am", "do", "did", "does"]
+    "choices": [
+      "am",
+      "do",
+      "did",
+      "does"
+    ]
   },
   {
     "question": "A: 今何時？ B: ___時だよ。",
     "correct": "five",
-    "choices": ["five", "day", "eat", "run"]
+    "choices": [
+      "five",
+      "day",
+      "eat",
+      "run"
+    ]
   },
   {
     "question": "A: サッカーしよう。 B: ___、行こう！",
     "correct": "Sure",
-    "choices": ["No", "Sure", "Later", "Never"]
+    "choices": [
+      "No",
+      "Sure",
+      "Later",
+      "Never"
+    ]
   },
   {
     "question": "A: お腹すいた。 B: ___を食べて。",
     "correct": "bread",
-    "choices": ["bread", "read", "broad", "break"]
+    "choices": [
+      "bread",
+      "read",
+      "broad",
+      "break"
+    ]
   },
   {
     "question": "A: 私の電話はどこ？ B: あそこに___だよ。",
     "correct": "there",
-    "choices": ["their", "they're", "there", "them"]
+    "choices": [
+      "their",
+      "they're",
+      "there",
+      "them"
+    ]
   },
   {
     "question": "A: この宿題ができないよ。 B: 私に___させて。",
     "correct": "help",
-    "choices": ["help", "hop", "hope", "heap"]
+    "choices": [
+      "help",
+      "hop",
+      "hope",
+      "heap"
+    ]
   },
   {
     "question": "A: また明日ね。 B: ___!",
     "correct": "Bye",
-    "choices": ["Bye", "Why", "Buy", "Shy"]
+    "choices": [
+      "Bye",
+      "Why",
+      "Buy",
+      "Shy"
+    ]
   },
   {
     "question": "A: 名前は？ B: My name ___ Ken.",
     "correct": "is",
-    "choices": ["are", "is", "am", "be"]
+    "choices": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ]
   },
   {
     "question": "A: これはあなたの本？ B: はい、it's ___。",
     "correct": "mine",
-    "choices": ["mine", "mind", "mime", "mean"]
+    "choices": [
+      "mine",
+      "mind",
+      "mime",
+      "mean"
+    ]
+  },
+  {
+    "question": "A: 今日は暑いね。 B: 本当に___ね。",
+    "correct": "hot",
+    "choices": [
+      "hot",
+      "cold",
+      "wet",
+      "dark"
+    ]
+  },
+  {
+    "question": "A: どこ出身？ B: I'm from ___.",
+    "correct": "Japan",
+    "choices": [
+      "Japan",
+      "desk",
+      "run",
+      "swim"
+    ]
+  },
+  {
+    "question": "A: コーヒーいる？ B: ___, please.",
+    "correct": "Yes",
+    "choices": [
+      "Yes",
+      "No",
+      "Maybe",
+      "Later"
+    ]
+  },
+  {
+    "question": "A: 誕生日おめでとう！ B: ありがとう___。",
+    "correct": "thanks",
+    "choices": [
+      "thanks",
+      "hello",
+      "sorry",
+      "bye"
+    ]
+  },
+  {
+    "question": "A: この席いい？ B: ___。",
+    "correct": "Sure",
+    "choices": [
+      "Sure",
+      "Never",
+      "Later",
+      "Stop"
+    ]
+  },
+  {
+    "question": "A: 助けてくれる？ B: ___。",
+    "correct": "OK",
+    "choices": [
+      "OK",
+      "No",
+      "Busy",
+      "Why"
+    ]
+  },
+  {
+    "question": "A: 何歳？ B: I'm ___ years old.",
+    "correct": "ten",
+    "choices": [
+      "ten",
+      "time",
+      "thin",
+      "turn"
+    ]
+  },
+  {
+    "question": "A: 昨日映画見た？ B: うん、I ___。",
+    "correct": "did",
+    "choices": [
+      "did",
+      "do",
+      "done",
+      "don't"
+    ]
+  },
+  {
+    "question": "A: 彼はどこ？ B: ___ there.",
+    "correct": "over",
+    "choices": [
+      "over",
+      "under",
+      "here",
+      "way"
+    ]
+  },
+  {
+    "question": "A: これ買った？ B: いいえ、I ___。",
+    "correct": "didn't",
+    "choices": [
+      "didn't",
+      "don't",
+      "won't",
+      "can't"
+    ]
   }
 ]

@@ -2,51 +2,201 @@
   {
     "question": "赤くて丸い果物を表す英単語",
     "correct": "apple",
-    "choices": ["banana", "apple", "grape", "pear"]
+    "choices": [
+      "banana",
+      "apple",
+      "grape",
+      "pear"
+    ]
   },
   {
     "question": "吼える動物を指す英単語",
     "correct": "dog",
-    "choices": ["cat", "bird", "dog", "cow"]
+    "choices": [
+      "cat",
+      "bird",
+      "dog",
+      "cow"
+    ]
   },
   {
     "question": "夜に寝る場所を表す英単語",
     "correct": "bed",
-    "choices": ["desk", "bed", "car", "chair"]
+    "choices": [
+      "desk",
+      "bed",
+      "car",
+      "chair"
+    ]
   },
   {
     "question": "書くときに使うものを指す英単語",
     "correct": "pen",
-    "choices": ["cup", "pen", "spoon", "plate"]
+    "choices": [
+      "cup",
+      "pen",
+      "spoon",
+      "plate"
+    ]
   },
   {
     "question": "空を飛ぶ大きな乗り物を表す英単語",
     "correct": "airplane",
-    "choices": ["bicycle", "airplane", "car", "ship"]
+    "choices": [
+      "bicycle",
+      "airplane",
+      "car",
+      "ship"
+    ]
   },
   {
     "question": "豆から作る朝に飲むものを表す英単語",
     "correct": "coffee",
-    "choices": ["water", "coffee", "juice", "milk"]
+    "choices": [
+      "water",
+      "coffee",
+      "juice",
+      "milk"
+    ]
   },
   {
     "question": "生徒を教える人を表す英単語",
     "correct": "teacher",
-    "choices": ["doctor", "teacher", "driver", "singer"]
+    "choices": [
+      "doctor",
+      "teacher",
+      "driver",
+      "singer"
+    ]
   },
   {
     "question": "人に電話をかける道具を表す英単語",
     "correct": "phone",
-    "choices": ["book", "phone", "table", "paper"]
+    "choices": [
+      "book",
+      "phone",
+      "table",
+      "paper"
+    ]
   },
   {
     "question": "たくさんの本を読める建物を指す英単語",
     "correct": "library",
-    "choices": ["hospital", "library", "school", "station"]
+    "choices": [
+      "hospital",
+      "library",
+      "school",
+      "station"
+    ]
   },
   {
     "question": "葉が落ちる季節を表す英単語",
     "correct": "autumn",
-    "choices": ["spring", "summer", "autumn", "winter"]
+    "choices": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ]
+  },
+  {
+    "question": "暑い日によく食べる冷たい甘い食べ物を表す英単語",
+    "correct": "ice cream",
+    "choices": [
+      "ice cream",
+      "soup",
+      "bread",
+      "tea"
+    ]
+  },
+  {
+    "question": "海を泳ぐ大きな魚を指す英単語",
+    "correct": "shark",
+    "choices": [
+      "shark",
+      "whale",
+      "dolphin",
+      "octopus"
+    ]
+  },
+  {
+    "question": "手首に着けて時間を確認するものを表す英単語",
+    "correct": "watch",
+    "choices": [
+      "watch",
+      "ring",
+      "bracelet",
+      "glove"
+    ]
+  },
+  {
+    "question": "人が住む建物を表す英単語",
+    "correct": "house",
+    "choices": [
+      "house",
+      "car",
+      "street",
+      "tree"
+    ]
+  },
+  {
+    "question": "音楽を聴くための小さな機械を表す英単語",
+    "correct": "radio",
+    "choices": [
+      "radio",
+      "phone",
+      "clock",
+      "desk"
+    ]
+  },
+  {
+    "question": "野球をする場所を表す英単語",
+    "correct": "stadium",
+    "choices": [
+      "stadium",
+      "library",
+      "kitchen",
+      "garden"
+    ]
+  },
+  {
+    "question": "体を洗うために使う石鹸を表す英単語",
+    "correct": "soap",
+    "choices": [
+      "soap",
+      "shampoo",
+      "water",
+      "brush"
+    ]
+  },
+  {
+    "question": "紙を切る道具を表す英単語",
+    "correct": "scissors",
+    "choices": [
+      "scissors",
+      "knife",
+      "pen",
+      "ruler"
+    ]
+  },
+  {
+    "question": "雨の日に使う持ち運びできる屋根を表す英単語",
+    "correct": "umbrella",
+    "choices": [
+      "umbrella",
+      "hat",
+      "coat",
+      "bag"
+    ]
+  },
+  {
+    "question": "夜空で光る自然の衛星を表す英単語",
+    "correct": "moon",
+    "choices": [
+      "moon",
+      "sun",
+      "star",
+      "cloud"
+    ]
   }
 ]

@@ -2,51 +2,201 @@
   {
     "question": "「like / I / pizza」を正しい語順にすると？",
     "correct": "I like pizza",
-    "choices": ["like I pizza", "I pizza like", "I like pizza", "pizza I like"]
+    "choices": [
+      "like I pizza",
+      "I pizza like",
+      "I like pizza",
+      "pizza I like"
+    ]
   },
   {
     "question": "「is / my / this / pen」を正しい語順にすると？",
     "correct": "this is my pen",
-    "choices": ["is pen my this", "this is my pen", "pen my this is", "my pen is this"]
+    "choices": [
+      "is pen my this",
+      "this is my pen",
+      "pen my this is",
+      "my pen is this"
+    ]
   },
   {
     "question": "「you / do / homework」を正しい語順にすると？",
     "correct": "you do homework",
-    "choices": ["do homework you", "homework you do", "you do homework", "you homework do"]
+    "choices": [
+      "do homework you",
+      "homework you do",
+      "you do homework",
+      "you homework do"
+    ]
   },
   {
     "question": "「play / we / soccer / today」を正しい語順にすると？",
     "correct": "we play soccer today",
-    "choices": ["play we soccer today", "we play soccer today", "soccer today we play", "today play we soccer"]
+    "choices": [
+      "play we soccer today",
+      "we play soccer today",
+      "soccer today we play",
+      "today play we soccer"
+    ]
   },
   {
     "question": "「has / she / a / bike」を正しい語順にすると？",
     "correct": "she has a bike",
-    "choices": ["she has a bike", "has she a bike", "a bike she has", "bike a she has"]
+    "choices": [
+      "she has a bike",
+      "has she a bike",
+      "a bike she has",
+      "bike a she has"
+    ]
   },
   {
     "question": "「is / where / the / station」を正しい語順にすると？",
     "correct": "where is the station",
-    "choices": ["station where is the", "where is the station", "is where the station", "the station where is"]
+    "choices": [
+      "station where is the",
+      "where is the station",
+      "is where the station",
+      "the station where is"
+    ]
   },
   {
     "question": "「read / I / books」を正しい語順にすると？",
     "correct": "I read books",
-    "choices": ["read books I", "books I read", "I read books", "books read I"]
+    "choices": [
+      "read books I",
+      "books I read",
+      "I read books",
+      "books read I"
+    ]
   },
   {
     "question": "「wants / he / to / study」を正しい語順にすると？",
     "correct": "he wants to study",
-    "choices": ["he wants to study", "wants he to study", "to study he wants", "study he wants to"]
+    "choices": [
+      "he wants to study",
+      "wants he to study",
+      "to study he wants",
+      "study he wants to"
+    ]
   },
   {
     "question": "「dinner / make / let's」を正しい語順にすると？",
     "correct": "let's make dinner",
-    "choices": ["make dinner let's", "dinner make let's", "let's make dinner", "dinner let's make"]
+    "choices": [
+      "make dinner let's",
+      "dinner make let's",
+      "let's make dinner",
+      "dinner let's make"
+    ]
   },
   {
     "question": "「was / rainy / it / yesterday」を正しい語順にすると？",
     "correct": "it was rainy yesterday",
-    "choices": ["rainy it was yesterday", "it rainy was yesterday", "it was rainy yesterday", "yesterday rainy it was"]
+    "choices": [
+      "rainy it was yesterday",
+      "it rainy was yesterday",
+      "it was rainy yesterday",
+      "yesterday rainy it was"
+    ]
+  },
+  {
+    "question": "「is / he / tall」を正しい語順にすると？",
+    "correct": "he is tall",
+    "choices": [
+      "is he tall",
+      "he is tall",
+      "tall he is",
+      "he tall is"
+    ]
+  },
+  {
+    "question": "「they / playing / are / soccer」を正しい語順にすると？",
+    "correct": "they are playing soccer",
+    "choices": [
+      "playing they are soccer",
+      "they playing are soccer",
+      "they are playing soccer",
+      "soccer are they playing"
+    ]
+  },
+  {
+    "question": "「the / I / like / movie」を正しい語順にすると？",
+    "correct": "I like the movie",
+    "choices": [
+      "like I the movie",
+      "I like the movie",
+      "movie I like the",
+      "the movie like I"
+    ]
+  },
+  {
+    "question": "「new / bought / a / car / she」を正しい語順にすると？",
+    "correct": "she bought a new car",
+    "choices": [
+      "she bought a new car",
+      "bought she a new car",
+      "a new car she bought",
+      "car bought she new a"
+    ]
+  },
+  {
+    "question": "「went / we / to / yesterday / Tokyo」を正しい語順にすると？",
+    "correct": "we went to Tokyo yesterday",
+    "choices": [
+      "went we to Tokyo yesterday",
+      "we went to Tokyo yesterday",
+      "to Tokyo went we yesterday",
+      "yesterday we went to Tokyo"
+    ]
+  },
+  {
+    "question": "「coffee / does / he / like」を正しい語順にすると？",
+    "correct": "does he like coffee",
+    "choices": [
+      "he does like coffee",
+      "does he like coffee",
+      "coffee does he like",
+      "like coffee he does"
+    ]
+  },
+  {
+    "question": "「rainy / today / is / it」を正しい語順にすると？",
+    "correct": "it is rainy today",
+    "choices": [
+      "rainy today is it",
+      "today is it rainy",
+      "it is rainy today",
+      "it rainy today is"
+    ]
+  },
+  {
+    "question": "「at / school / starts / nine」を正しい語順にすると？",
+    "correct": "school starts at nine",
+    "choices": [
+      "starts school at nine",
+      "school starts at nine",
+      "at nine school starts",
+      "school at starts nine"
+    ]
+  },
+  {
+    "question": "「was / the / movie / great」を正しい語順にすると？",
+    "correct": "the movie was great",
+    "choices": [
+      "was the movie great",
+      "the movie was great",
+      "movie was great the",
+      "great was the movie"
+    ]
+  },
+  {
+    "question": "「letters / writes / she / every day」を正しい語順にすると？",
+    "correct": "she writes letters every day",
+    "choices": [
+      "she writes letters every day",
+      "letters writes she every day",
+      "writes she letters every day",
+      "letters she writes every day"
+    ]
   }
 ]
