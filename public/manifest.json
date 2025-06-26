@@ -3,6 +3,7 @@
   "short_name": "クイズRPG",
   "description": "RPG風のクイズゲーム。知識を楽しく学習できます！",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4a90e2",
