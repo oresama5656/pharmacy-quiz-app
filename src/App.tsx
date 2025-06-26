@@ -15,33 +15,6 @@ export const INCORRECT_WAIT_MS = 2000;
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<'category' | 'game' | 'result'>('category');
   
-  // Pull to Refresh（スワイプ更新）を無効化
-  useEffect(() => {
-    let startY = 0;
-    
-    const handleTouchStart = (e: TouchEvent) => {
-      startY = e.touches[0].clientY;
-    };
-
-    const handleTouchMove = (e: TouchEvent) => {
-      const currentY = e.touches[0].clientY;
-      const deltaY = currentY - startY;
-      
-      // 画面最上部で下向きスワイプの場合のみpreventDefault
-      if (window.scrollY === 0 && deltaY > 0) {
-        e.preventDefault();
-      }
-    };
-
-    // Pull to Refreshのみを防ぐ（通常のタッチは許可）
-    document.addEventListener('touchstart', handleTouchStart, { passive: true });
-    document.addEventListener('touchmove', handleTouchMove, { passive: false });
-
-    return () => {
-      document.removeEventListener('touchstart', handleTouchStart);
-      document.removeEventListener('touchmove', handleTouchMove);
-    };
-  }, []);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [attackEffect, setAttackEffect] = useState<'player-attack' | 'enemy-attack' | null>(null);
   const [showWarning, setShowWarning] = useState(false);

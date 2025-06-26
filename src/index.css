@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Pull to Refresh（上から下へのスワイプ更新）を無効化 */
+/* Pull to Refresh（上から下へのスワイプ更新）を完全に無効化 */
 html, body {
-  overscroll-behavior-y: contain;
+  overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
   /* iOS Safariでの引っ張り更新を無効化 */
-  -webkit-overscroll-behavior-y: contain;
+  -webkit-overscroll-behavior-y: none;
 }
 
 /* 全体のコンテナでもPull to Refreshを無効化 */
 #root {
-  overscroll-behavior-y: contain;
-  -webkit-overscroll-behavior-y: contain;
+  overscroll-behavior-y: none;
+  -webkit-overscroll-behavior-y: none;
 }
 
-/* 追加の保険：タッチイベントでの更新を防ぐ */
+/* タッチアクション：通常のタッチ操作（スワイプを含む）を許可 */
 body {
   touch-action: manipulation;
 }
