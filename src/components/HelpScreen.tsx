@@ -6,7 +6,7 @@ interface HelpScreenProps {
   onClose: () => void;
 }
 
-type HelpSection = 'overview' | 'gameplay' | 'save' | 'controls';
+type HelpSection = 'overview' | 'gameplay' | 'controls';
 
 const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
   const [activeSection, setActiveSection] = useState<HelpSection>('overview');
@@ -16,7 +16,6 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
   const sections = [
     { id: 'overview' as HelpSection, title: '🎮 ゲーム概要', icon: '🎮' },
     { id: 'gameplay' as HelpSection, title: '⚔️ 遊び方', icon: '⚔️' },
-    { id: 'save' as HelpSection, title: '💾 セーブ機能', icon: '💾' },
     { id: 'controls' as HelpSection, title: '🎯 操作方法', icon: '🎯' }
   ];
 
@@ -101,47 +100,7 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
           </div>
         );
 
-      case 'save':
-        return (
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-amber-800 mb-4">💾 セーブ機能</h3>
-            
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h4 className="font-bold text-red-800 mb-2">⚠️ 重要な注意点</h4>
-              <p className="text-red-700 text-sm mb-2">
-                進行状況は<strong>ブラウザのローカルストレージ</strong>に保存されます。
-              </p>
-              <ul className="text-red-700 text-sm space-y-1">
-                <li>• ブラウザのキャッシュクリアでデータが消失</li>
-                <li>• 別のブラウザ・デバイスでは引き継げません</li>
-                <li>• プライベートブラウジングでは保存されません</li>
-              </ul>
-            </div>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 className="font-bold text-blue-800 mb-2">💾 セーブデータ管理</h4>
-              <p className="text-blue-700 text-sm mb-2">
-                MAP画面右上の「💾 セーブデータ管理」ボタンから：
-              </p>
-              <ul className="text-blue-700 text-sm space-y-1">
-                <li>• <strong>エクスポート</strong>：進行状況をファイルでダウンロード</li>
-                <li>• <strong>インポート</strong>：バックアップファイルから復元</li>
-                <li>• <strong>緊急復元</strong>：インポート前の状態に戻す</li>
-                <li>• <strong>データ削除</strong>：全進行状況をリセット</li>
-              </ul>
-            </div>
-
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 className="font-bold text-green-800 mb-2">🔄 推奨バックアップ方法</h4>
-              <ol className="text-green-700 text-sm space-y-1">
-                <li>1. 定期的（週1回程度）にエクスポート</li>
-                <li>2. ファイルを安全な場所に保存</li>
-                <li>3. デバイス変更時にインポートで復元</li>
-                <li>4. ブラウザ変更前にも必ずエクスポート</li>
-              </ol>
-            </div>
-          </div>
-        );
 
       case 'controls':
         return (
@@ -152,7 +111,6 @@ const HelpScreen: React.FC<HelpScreenProps> = ({ isOpen, onClose }) => {
               <h4 className="font-bold text-blue-800 mb-2">🗺️ MAP画面</h4>
               <ul className="text-blue-700 text-sm space-y-1">
                 <li>• ギルド看板をクリック：クエストボードを表示</li>
-                <li>• 右上「💾」ボタン：セーブデータ管理</li>
                 <li>• 右上「❓」ボタン：このヘルプを表示</li>
               </ul>
             </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { hasSaveData } from '../utils/saveDataManager';
 
 interface DataLossWarningProps {
   onClose: () => void;
@@ -10,7 +9,8 @@ const DataLossWarning: React.FC<DataLossWarningProps> = ({ onClose }) => {
 
   useEffect(() => {
     // セーブデータがある場合のみ警告を表示
-    if (hasSaveData()) {
+    const hasData = localStorage.length > 0;
+    if (hasData) {
       // 警告を表示済みかチェック
       const warningShown = localStorage.getItem('data_loss_warning_shown');
       if (!warningShown) {
@@ -58,10 +58,10 @@ const DataLossWarning: React.FC<DataLossWarningProps> = ({ onClose }) => {
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded p-3">
-            <p className="text-blue-800 font-semibold mb-2">💡 データを保護する方法：</p>
+            <p className="text-blue-800 font-semibold mb-2">💡 データについて：</p>
             <p className="text-blue-700 text-sm">
-              右上の「💾 セーブデータ管理」ボタンから<br/>
-              定期的にセーブデータをエクスポートしてください
+              進行状況は自動で保存されますが、上記の操作により<br/>
+              データが失われる可能性があることをご了承ください
             </p>
           </div>
         </div>

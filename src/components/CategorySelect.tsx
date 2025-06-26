@@ -9,7 +9,7 @@ import {
   getGuildIdByCategoryId 
 } from '../utils/questStatus';
 import guildsData from '../data/guilds.json';
-import SaveDataManager from './SaveDataManager';
+
 import DataLossWarning from './DataLossWarning';
 import HelpScreen from './HelpScreen';
 
@@ -64,7 +64,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   );
   const [activeGuild, setActiveGuild] = useState<Guild | null>(null);
   const [audioReady, setAudioReady] = useState(false);
-  const [showSaveManager, setShowSaveManager] = useState(false);
+
   const [showDataWarning, setShowDataWarning] = useState(true);
   const [showHelp, setShowHelp] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -206,14 +206,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
     setActiveGuild(null);
   };
 
-  // セーブデータ変更時の処理
-  const handleSaveDataChanged = () => {
-    // 画面を再レンダリングして進行状況を更新
-    setScreen('map');
-    setActiveGuild(null);
-    setShowSaveManager(false);
-  };
-
   // 星表示を生成
   const generateStars = (difficulty: string): string => {
     const starCount = difficulty.length; // "★★" → 2個
@@ -234,8 +226,9 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
   if (screen === 'start') {
     return (
       <>
-        <div className="min-h-screen flex items-center justify-center" 
-          style={{ 
+        <div 
+          className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center relative"
+          style={{
             backgroundImage: `url('${BACKGROUND_IMAGES.title}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
@@ -249,13 +242,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             START
           </button>
         </div>
-        
-        {/* モーダルコンポーネント */}
-        <SaveDataManager
-          isOpen={showSaveManager}
-          onClose={() => setShowSaveManager(false)}
-          onDataChanged={handleSaveDataChanged}
-        />
         
         {showDataWarning && (
           <DataLossWarning
@@ -307,33 +293,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             }}
           >
             ？
-          </button>
-          
-          {/* セーブデータ管理ボタン */}
-          <button
-            onClick={() => setShowSaveManager(true)}
-            className="font-bold w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center text-xl border-2 border-amber-800 hover:scale-105 hover:-translate-y-1"
-            title="セーブデータ管理"
-            style={{
-              backgroundColor: '#DEB887',
-              background: `
-                #DEB887,
-                linear-gradient(145deg, #D2B48C 0%, #DEB887 25%, #F5DEB3 50%, #DEB887 75%, #D2B48C 100%),
-                radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.3) 0%, rgba(139, 69, 19, 0.1) 50%, rgba(139, 69, 19, 0.05) 70%),
-                radial-gradient(circle at 80% 70%, rgba(160, 82, 45, 0.25) 0%, rgba(160, 82, 45, 0.1) 50%, rgba(160, 82, 45, 0.05) 70%)
-              `,
-              boxShadow: `
-                inset 2px 2px 4px rgba(245, 222, 179, 0.9),
-                inset -2px -2px 4px rgba(139, 69, 19, 0.4),
-                0 4px 12px rgba(0, 0, 0, 0.3),
-                0 2px 4px rgba(139, 69, 19, 0.2)
-              `,
-              color: '#8B4513',
-              textShadow: '1px 1px 2px rgba(245, 222, 179, 0.5)',
-              fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif'
-            }}
-          >
-            💾
           </button>
         </div>
 
@@ -404,18 +363,9 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                   }}
                 />
               </button>
-
-
             </div>
           );
         })}
-        
-        {/* モーダルコンポーネント */}
-        <SaveDataManager
-          isOpen={showSaveManager}
-          onClose={() => setShowSaveManager(false)}
-          onDataChanged={handleSaveDataChanged}
-        />
         
         {showDataWarning && (
           <DataLossWarning
@@ -706,13 +656,6 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
             </div>
           </div>
         </div>
-        
-        {/* モーダルコンポーネント */}
-        <SaveDataManager
-          isOpen={showSaveManager}
-          onClose={() => setShowSaveManager(false)}
-          onDataChanged={handleSaveDataChanged}
-        />
         
         {showDataWarning && (
           <DataLossWarning
