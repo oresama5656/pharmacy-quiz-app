@@ -30,64 +30,9 @@ const RESULT_ASSETS = {
 
 const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBackToCategory }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const adRef = useRef<HTMLDivElement>(null);
   const [showContent, setShowContent] = useState(false);
   const [animateFloor, setAnimateFloor] = useState(false);
   const [animateButtons, setAnimateButtons] = useState(false);
-  const [adLoaded, setAdLoaded] = useState(false);
-
-  // 広告スクリプトの読み込みと初期化
-  useEffect(() => {
-    const loadAds = async () => {
-      try {
-        // スクリプトの読み込み
-        const scriptId = 'adsbygoogle-js';
-        if (!document.getElementById(scriptId)) {
-          const script = document.createElement('script');
-          script.id = scriptId;
-          script.async = true;
-          script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508744207193174';
-          script.crossOrigin = 'anonymous';
-          document.head.appendChild(script);
-          
-          // スクリプトの読み込み完了を待つ
-          await new Promise((resolve, reject) => {
-            script.onload = resolve;
-            script.onerror = reject;
-          });
-        }
-
-        // DOM要素の準備完了を待つ
-        await new Promise(resolve => setTimeout(resolve, 500));
-
-        // 広告要素が存在し、サイズが確定してから実行
-        if (adRef.current) {
-          const rect = adRef.current.getBoundingClientRect();
-          if (rect.width > 0) {
-            try {
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-              setAdLoaded(true);
-            } catch (e) {
-              console.error('AdSense initialization error:', e);
-            }
-          } else {
-            // 幅が0の場合は少し待ってから再試行
-            setTimeout(loadAds, 1000);
-          }
-        }
-      } catch (error) {
-        console.error('Failed to load AdSense script:', error);
-      }
-    };
-
-    // コンポーネントがマウントされて少し待ってから広告を読み込む
-    const timer = setTimeout(loadAds, 1000);
-    
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
 
   useEffect(() => {
     const src = gameState.playerWon ? BGM.win : BGM.lose;
@@ -221,34 +166,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ gameState, onRestart, onBac
               <span className="tracking-wide">カテゴリ選択</span>
             </div>
           </button>
-          
-          {/* 広告エリア - ボタンの下に移動 */}
-          <div 
-            ref={adRef}
-            className="w-full bg-gray-800/10 rounded-lg overflow-hidden mt-6"
-          >
-            <ins
-              className="adsbygoogle"
-              style={{ 
-                display: 'block',
-                width: '100%',
-                textAlign: 'center'
-              }}
-              data-ad-client="ca-pub-6508744207193174"
-              data-ad-slot="5884881872"
-              data-ad-format="rectangle"
-              data-full-width-responsive="false"
-            />
-            {!adLoaded && (
-              <div className="flex items-center justify-center h-16 text-gray-400 text-xs">
-                広告を読み込んでいます...
-              </div>
-            )}
-          </div>
         </div>
-        
-        {/* 下部の余白 - 広告用スペース */}
-        <div className="h-32"></div>
       </div>
 
       {/* キャラクター画像表示エリア（後で追加用） */}

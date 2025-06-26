@@ -20,8 +20,8 @@
     "path": "C:\\Users\\oresa_0v05u91\\Desktop\\Program\\pharmacy-quiz-app\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "10",
-  "appVersionCode": 10,
+  "appVersionName": "12",
+  "appVersionCode": 12,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://quiz.coommu.com/manifest.json",
@@ -42,5 +42,5 @@
   "protocolHandlers": [],
   "fileHandlers": [],
   "launchHandlerClientMode": "",
-  "appVersion": "10"
+  "appVersion": "12"
 }
