@@ -76,7 +76,7 @@ import kokugo2_lv1 from './quizzes/kokugo2/lv1_kanji_yomikata.json';
 import kokugo2_lv2 from './quizzes/kokugo2/lv2_jukugo_meaning.json';
 import kokugo2_lv3 from './quizzes/kokugo2/lv3_hyougen_gihou.json';
 import kokugo2_lv4 from './quizzes/kokugo2/lv4_kango_wago_gairaigo.json';
-import kokugo2_lv5 from './quizzes/kokugo2/lv5_sakka_sakuhin.json';
+import kokugo2_lv5 from './quizzes/kokugo2/lv5_keigo_kihon.json';
 import kokugo2_lv6 from './quizzes/kokugo2/lv6_bunpou_ouyou.json';
 import kokugo2_lv7 from './quizzes/kokugo2/lv7_keigo_tsukaikata.json';
 import kokugo2_lv8 from './quizzes/kokugo2/lv8_kaki_hanashi_kotoba.json';
@@ -200,7 +200,7 @@ const quizImportMap: Record<string, any> = {
   'quizzes/kokugo2/lv2_jukugo_meaning.json': kokugo2_lv2,
   'quizzes/kokugo2/lv3_hyougen_gihou.json': kokugo2_lv3,
   'quizzes/kokugo2/lv4_kango_wago_gairaigo.json': kokugo2_lv4,
-  'quizzes/kokugo2/lv5_sakka_sakuhin.json': kokugo2_lv5,
+  'quizzes/kokugo2/lv5_keigo_kihon.json': kokugo2_lv5,
   'quizzes/kokugo2/lv6_bunpou_ouyou.json': kokugo2_lv6,
   'quizzes/kokugo2/lv7_keigo_tsukaikata.json': kokugo2_lv7,
   'quizzes/kokugo2/lv8_kaki_hanashi_kotoba.json': kokugo2_lv8,

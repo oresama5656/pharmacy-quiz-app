@@ -577,12 +577,12 @@
   },
   {
     "id": "kokugo2_lv5",
-    "name": "作家と作品（レベル5）",
-    "description": "著名な作家と代表作品を学ぶ問題です",
-    "icon": "📚",
+    "name": "基本敬語（レベル5）",
+    "description": "基本的な敬語の使い分けを学ぶ問題です",
+    "icon": "🙏",
     "difficulty": "★★",
     "clearFloor": 10,
-    "file": "quizzes/kokugo2/lv5_sakka_sakuhin.json"
+    "file": "quizzes/kokugo2/lv5_keigo_kihon.json"
   },
   {
     "id": "kokugo2_lv6",

@@ -316,7 +316,7 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                 className="guild-signboard group relative"
               >
                 {/* メインの看板部分 */}
-                <div className="relative px-4 py-2 min-w-[120px] text-center rounded-lg shadow-lg transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-amber-800"
+                <div className="relative px-3 py-3 min-w-[120px] max-w-[160px] text-center rounded-lg shadow-lg transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 border-2 border-amber-800"
                   style={{
                     backgroundColor: '#DEB887',
                     background: `
@@ -342,8 +342,9 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                     style={{
                       fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
                       textShadow: '1px 1px 2px rgba(139, 69, 19, 0.3)',
-                      fontSize: '14px',
-                      whiteSpace: 'nowrap'
+                      fontSize: '13px',
+                      lineHeight: '1.2',
+                      wordBreak: 'break-all'
                     }}
                   >
                     {guild.name}
