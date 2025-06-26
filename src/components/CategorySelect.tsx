@@ -342,7 +342,8 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                     style={{
                       fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
                       textShadow: '1px 1px 2px rgba(139, 69, 19, 0.3)',
-                      fontSize: '14px'
+                      fontSize: '14px',
+                      whiteSpace: 'nowrap'
                     }}
                   >
                     {guild.name}
@@ -580,7 +581,10 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                             }`}
                             style={{
                               fontFamily: '"Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho Pro", serif',
-                              fontSize: window.innerWidth < 768 ? '10px' : '12px'
+                              fontSize: window.innerWidth < 768 ? '10px' : '12px',
+                              whiteSpace: 'nowrap',
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis'
                             }}
                           >
                             {category.name}
@@ -603,7 +607,10 @@ const CategorySelect: React.FC<CategorySelectProps> = ({
                             className={`font-mono ${
                               questStatus === 'locked' ? 'text-gray-400' : 'text-orange-600'
                             }`}
-                            style={{ fontSize: '8px' }}
+                            style={{ 
+                              fontSize: '8px',
+                              whiteSpace: 'nowrap'
+                            }}
                           >
                             {stars}
                           </span>
