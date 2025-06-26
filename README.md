@@ -1,54 +1,83 @@
-# React + TypeScript + Vite aa
+# クイストラ - 知識で挑むファンタジーRPG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+薬学知識をクイズ形式で学習できるRPG風Webアプリケーションです。
 
-Currently, two official plugins are available:
+## 🎮 特徴
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **RPG風UI**: ファンタジー世界観でクイズを楽しく学習
+- **多様なカテゴリ**: 薬学、数学、英語、国語など幅広い分野
+- **プログレッシブウェブアプリ**: オフラインでも動作
+- **Android対応**: Google Playストアからダウンロード可能
 
-## Expanding the ESLint configuration
+## 🛠️ 技術スタック
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **フロントエンド**: React + TypeScript + Vite
+- **スタイリング**: Tailwind CSS
+- **アニメーション**: Framer Motion
+- **Android**: Trusted Web Activity (TWA)
+- **デプロイ**: Vercel (Web) + Google Play Console (Android)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 開発環境構築
+
+```bash
+# リポジトリクローン
+git clone [repository-url]
+cd pharmacy-quiz-app
+
+# 依存関係インストール
+npm install
+
+# 開発サーバー起動
+npm run dev
+
+# ビルド
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📚 ドキュメント
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+詳細な開発ドキュメントは[docsディレクトリ](./docs/)を参照してください：
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- [開発ガイド](./docs/開発ガイド.md) - プロジェクト構成と開発手順
+- [バージョン管理ガイド](./docs/バージョン管理ガイド.md) - バージョン管理のルールと手順
+- [カテゴリ追加手順書](./docs/カテゴリ追加手順書.md) - 新しいクイズカテゴリの追加方法
+
+## 📊 現在のバージョン
+
+- **Web**: v20.0.0
+- **Android**: versionCode 20, versionName "20.0.0"
+- **Service Worker**: v2000 (自動生成)
+
+## 🔧 バージョン管理
+
+### Service Workerの自動化 ✅
+- `package.json`のバージョンから自動生成
+- 手動更新不要
+
+### 手動更新が必要
+- Android `versionCode` / `versionName` in `app/build.gradle`
+
+### バージョンアップ手順
+```bash
+# 1. package.jsonを更新
+npm version patch  # バグ修正
+npm version minor  # 機能追加
+npm version major  # 破壊的変更
+
+# 2. Android側を手動更新 (app/build.gradle)
+# versionCode: 21
+# versionName: "20.1.0"
+
+# 3. ビルド実行
+npm run build
+```
+
+## 📱 Android版ビルド
+
+```bash
+# AABファイル生成
+./gradlew bundleRelease
+
+# 署名
+jarsigner -keystore android.keystore app-release-bundle.aab android
 ```
