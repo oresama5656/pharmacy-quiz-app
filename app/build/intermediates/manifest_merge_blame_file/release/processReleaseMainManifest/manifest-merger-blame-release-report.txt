@@ -23,7 +23,7 @@
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 25    package="com.coommu.quiz.twa"
-26    android:versionCode="18"
+26    android:versionCode="19"
 27    android:versionName="1.0" >
 28
 29    <uses-sdk

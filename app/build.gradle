@@ -57,7 +57,7 @@ android {
         applicationId "com.coommu.quiz.twa"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 18
+        versionCode 19
         versionName "1.0"
 
         // The name for the application

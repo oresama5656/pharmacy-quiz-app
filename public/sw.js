@@ -1,4 +1,4 @@
-const CACHE_NAME = 'quiz-rpg-v18';
+const CACHE_NAME = 'quiz-rpg-v19';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -14,7 +14,7 @@ const urlsToCache = [
 
 // Service Workerのインストール
 self.addEventListener('install', (event) => {
-  console.log('Service Worker v18: インストール開始');
+  console.log('Service Worker v19: インストール開始');
   
   // 即座にアクティベート（待機しない）
   self.skipWaiting();
@@ -22,18 +22,18 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
-        console.log('Service Worker v18: ファイルをキャッシュ中...');
+        console.log('Service Worker v19: ファイルをキャッシュ中...');
         return cache.addAll(urlsToCache);
       })
       .catch((error) => {
-        console.log('Service Worker v18: キャッシュエラー', error);
+        console.log('Service Worker v19: キャッシュエラー', error);
       })
   );
 });
 
 // Service Workerのアクティベート
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker v18: アクティベート開始');
+  console.log('Service Worker v19: アクティベート開始');
   
   // 即座に全てのクライアントを制御
   event.waitUntil(
@@ -43,7 +43,7 @@ self.addEventListener('activate', (event) => {
         return Promise.all(
           cacheNames.map((cacheName) => {
             if (cacheName !== CACHE_NAME) {
-              console.log('Service Worker v18: 古いキャッシュを削除', cacheName);
+              console.log('Service Worker v19: 古いキャッシュを削除', cacheName);
               return caches.delete(cacheName);
             }
           })
