@@ -48,6 +48,56 @@
     "question": "A: See you tomorrow. B: ___ に入る返事は？",
     "correct": "See you tomorrow.",
     "choices": ["Good evening.", "I'm fine.", "See you tomorrow.", "That's mine."]
+  },
+  {
+    "question": "A: Are you free tomorrow? B: ___ に入る返答は？",
+    "correct": "Yes, I am.",
+    "choices": ["Yes, I am.", "No, I don't.", "I'm busy.", "See you."]
+  },
+  {
+    "question": "A: Where are you from? B: ___ に入る答えは？",
+    "correct": "I'm from Japan.",
+    "choices": ["I'm from Japan.", "I'm fine, thanks.", "See you later.", "It's sunny."]
+  },
+  {
+    "question": "A: Please pass the salt. B: ___ に入る返答は？",
+    "correct": "Here you are.",
+    "choices": ["Here you are.", "No, thanks.", "Good night.", "I'm sorry."]
+  },
+  {
+    "question": "A: How much is this? B: ___ に入る答えは？",
+    "correct": "It's five dollars.",
+    "choices": ["It's five dollars.", "I'm fifteen.", "I like it.", "See you."]
+  },
+  {
+    "question": "A: Do you want some coffee? B: ___ に入る返事は？",
+    "correct": "Yes, please.",
+    "choices": ["Yes, please.", "No, thanks.", "I'm fine.", "See you."]
+  },
+  {
+    "question": "A: What did you do yesterday? B: ___ に入る答えは？",
+    "correct": "I studied English.",
+    "choices": ["I studied English.", "I am fine.", "It's rainy.", "See you tomorrow."]
+  },
+  {
+    "question": "A: Would you like to join us? B: ___ に入る返事は？",
+    "correct": "I'd love to.",
+    "choices": ["I'm busy.", "I'd love to.", "No way.", "See you."]
+  },
+  {
+    "question": "A: What's the matter? B: ___ に入る答えは？",
+    "correct": "I have a headache.",
+    "choices": ["I'm Tom.", "I have a headache.", "I'm fine.", "See you later."]
+  },
+  {
+    "question": "A: Can I have some water? B: ___ に入る返答は？",
+    "correct": "Sure, here you go.",
+    "choices": ["Sure, here you go.", "No problem.", "See you.", "I'm busy."]
+  },
+  {
+    "question": "A: Let's meet at 5 pm. B: ___ に入る返事は？",
+    "correct": "Okay, see you then.",
+    "choices": ["Good night.", "Okay, see you then.", "I'm fine.", "No, thanks."]
   }
 ]
 

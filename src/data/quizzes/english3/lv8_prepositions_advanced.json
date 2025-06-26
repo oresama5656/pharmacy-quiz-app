@@ -48,5 +48,55 @@
     "question": "He looked ___ the window to see the rain. 空欄に入る前置詞は？",
     "correct": "out of",
     "choices": ["out", "out of", "from", "through"]
+  },
+  {
+    "question": "She walked ___ the bridge to the other side. 空欄に入る前置詞は？",
+    "correct": "across",
+    "choices": ["across", "through", "along", "over"]
+  },
+  {
+    "question": "Put the books ___ the shelf. 空欄に入る前置詞は？",
+    "correct": "on",
+    "choices": ["in", "on", "at", "by"]
+  },
+  {
+    "question": "He sat ___ the table during lunch. 空欄に入る前置詞は？",
+    "correct": "at",
+    "choices": ["at", "on", "in", "over"]
+  },
+  {
+    "question": "We drove ___ the tunnel to the city. 空欄に入る前置詞は？",
+    "correct": "through",
+    "choices": ["across", "along", "through", "over"]
+  },
+  {
+    "question": "The picture is hung ___ the wall. 空欄に入る前置詞は？",
+    "correct": "on",
+    "choices": ["on", "in", "at", "over"]
+  },
+  {
+    "question": "She lives ___ the corner of the street. 空欄に入る前置詞は？",
+    "correct": "at",
+    "choices": ["at", "in", "on", "by"]
+  },
+  {
+    "question": "He put the key ___ his pocket. 空欄に合う前置詞は？",
+    "correct": "in",
+    "choices": ["in", "on", "at", "to"]
+  },
+  {
+    "question": "We arrived ___ the airport early. 空欄に入る前置詞は？",
+    "correct": "at",
+    "choices": ["at", "in", "on", "by"]
+  },
+  {
+    "question": "The cat is hiding ___ the bed. 空欄に入る前置詞は？",
+    "correct": "under",
+    "choices": ["under", "below", "over", "on"]
+  },
+  {
+    "question": "They walked ___ the beach enjoying the sunset. 空欄に入る前置詞は？",
+    "correct": "along",
+    "choices": ["along", "across", "through", "over"]
   }
 ]

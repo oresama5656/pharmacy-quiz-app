@@ -48,5 +48,55 @@
     "question": "電車は遅れて到着しました。どう到着しましたか？",
     "correct": "late",
     "choices": ["early", "on time", "late", "quickly"]
+  },
+  {
+    "question": "Mikeは毎朝ジョギングをします。何をしますか？",
+    "correct": "jogs",
+    "choices": ["jogs", "swims", "reads", "sleeps"]
+  },
+  {
+    "question": "店は9時に開きます。何時に開きますか？",
+    "correct": "at nine",
+    "choices": ["at eight", "at nine", "at ten", "at seven"]
+  },
+  {
+    "question": "Lucyは夜にテレビを見ました。いつ見ましたか？",
+    "correct": "at night",
+    "choices": ["in the morning", "at noon", "at night", "in the afternoon"]
+  },
+  {
+    "question": "彼らはパンと牛乳を買いました。牛乳以外に何を買いましたか？",
+    "correct": "bread",
+    "choices": ["bread", "rice", "meat", "fish"]
+  },
+  {
+    "question": "Tomは図書館で勉強しました。どこで勉強しましたか？",
+    "correct": "at the library",
+    "choices": ["at home", "at school", "at the library", "at the park"]
+  },
+  {
+    "question": "Saraは新しい自転車を買いました。何を買いましたか？",
+    "correct": "a new bike",
+    "choices": ["a new car", "a new book", "a new bike", "a new pen"]
+  },
+  {
+    "question": "昨日はとても暑かったです。どんな天気でしたか？",
+    "correct": "hot",
+    "choices": ["cold", "rainy", "hot", "snowy"]
+  },
+  {
+    "question": "彼は昼食にサンドイッチを食べました。何を食べましたか？",
+    "correct": "a sandwich",
+    "choices": ["soup", "rice", "a sandwich", "salad"]
+  },
+  {
+    "question": "私たちはバスで学校に行きました。何で行きましたか？",
+    "correct": "by bus",
+    "choices": ["by car", "on foot", "by bus", "by bike"]
+  },
+  {
+    "question": "彼女は1時間ピアノを練習しました。何をしましたか？",
+    "correct": "practiced the piano",
+    "choices": ["practiced the piano", "played soccer", "watched TV", "read a book"]
   }
 ]

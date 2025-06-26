@@ -48,5 +48,55 @@
     "question": "正しい文を選択して。",
     "correct": "I'm interested in music.",
     "choices": ["I'm interest in music.", "I'm interesting in music.", "I'm interested in music.", "I interested in music."]
+  },
+  {
+    "question": "正しい文はどれ？",
+    "correct": "She has been to Paris.",
+    "choices": ["She have been to Paris.", "She has been to Paris.", "She has went to Paris.", "She been to Paris."]
+  },
+  {
+    "question": "正しい形を選んでください。",
+    "correct": "My brother doesn't like cheese.",
+    "choices": ["My brother don't like cheese.", "My brother doesn't like cheese.", "My brother isn't like cheese.", "My brother not like cheese."]
+  },
+  {
+    "question": "正しい文を選んでください。",
+    "correct": "There is a book on the table.",
+    "choices": ["There are a book on the table.", "There is a book on the table.", "There be a book on the table.", "There is book on the table."]
+  },
+  {
+    "question": "正しい比較の文はどれ？",
+    "correct": "He is taller than me.",
+    "choices": ["He is tall than me.", "He is taller than me.", "He is tallest than me.", "He is more tall than me."]
+  },
+  {
+    "question": "正しい進行形はどれ？",
+    "correct": "We were watching TV.",
+    "choices": ["We was watching TV.", "We were watching TV.", "We were watch TV.", "We watching TV."]
+  },
+  {
+    "question": "正しい疑問文はどれ？",
+    "correct": "Did you finish your homework?",
+    "choices": ["Do you finish your homework?", "Did you finish your homework?", "Did you finished your homework?", "You finished your homework?"]
+  },
+  {
+    "question": "正しい文はどれ？",
+    "correct": "I bought some apples.",
+    "choices": ["I buy some apples.", "I bought some apples.", "I buying some apples.", "I buys some apples."]
+  },
+  {
+    "question": "正しい現在完了形を選んで。",
+    "correct": "She has lived here for five years.",
+    "choices": ["She have lived here for five years.", "She has lived here for five years.", "She has live here for five years.", "She lived here for five years."]
+  },
+  {
+    "question": "正しい否定文はどれ？",
+    "correct": "They aren't ready yet.",
+    "choices": ["They isn't ready yet.", "They aren't ready yet.", "They not ready yet.", "They doesn't ready yet."]
+  },
+  {
+    "question": "正しい受け身の文はどれ？",
+    "correct": "This car was made in Japan.",
+    "choices": ["This car made in Japan.", "This car was made in Japan.", "This car is make in Japan.", "This car was making in Japan."]
   }
 ]
